@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Duke {
     public static void main(String[] args) {
@@ -9,7 +10,6 @@ public class Duke {
                 + "|____/ \\__,_|_|\\_\\___|\n";
         System.out.println("Hello from\n" + logo);
 
-        //Greets user and exit
         System.out.println("    Hello! I'm Duke");
         System.out.println("    What can i do for you?");
         Scanner userInput = new Scanner(System.in);
@@ -25,20 +25,49 @@ public class Duke {
         }
     }
 
-    public static void matchCommand(String userCommand){
+    public static void matchCommand(String userCommand) {
+
         switch (userCommand) {
-        case "list": {
-            System.out.println("    list");
-        } break;
-        case "blah": {
+        case "list":
+            Task.printList();
+            break;
+        case "blah":
             System.out.println("    blah");
-        } break;
-        case "bye": {
-            System.out.println("    Bye. Hope to see you again soon!");
-        }break;
-        default: {
-        }break;
+            break;
+        case "bye":
+            System.out.println("     Bye. Hope to see you again soon!");
+            break;
+        default:
+            new Task(userCommand);
+            System.out.println("     added: " + userCommand);
+            break;
         }
     }
 }
 
+class Task {
+    protected String description;
+    protected boolean isDone;
+    static ArrayList<Task> list = new ArrayList<>(); //class level member
+
+    public Task(String description) {
+        this.description = description;
+        this.isDone = false;
+        list.add(this);
+    }
+
+    public String getStatusIcon() {
+        return (isDone ? "\u2713" : "\u2718"); //return tick or X symbols
+    }
+    public String getDescription() {
+        return description;
+    }
+
+    public static void printList() {
+        int i =1;
+        for(Task t : list){
+            System.out.println("     "+i+". " + t.getDescription());
+            i++;
+        }
+    }
+}
