@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.StringTokenizer;
 
 public class Duke {
     public static void main(String[] args) {
@@ -14,25 +15,31 @@ public class Duke {
         System.out.println("    What can i do for you?");
         Scanner userInput = new Scanner(System.in);
         String userCommand;
-        while(true){
-            userCommand= userInput.nextLine();
-            System.out.println("    -------------------------");
+        while(true) {
+            userCommand = userInput.nextLine();
+            System.out.println("    ____________________________________________________________");
             matchCommand(userCommand);
-            System.out.println("    -------------------------");
-            if(userCommand.equals("bye")){
+            System.out.println("    ____________________________________________________________");
+            if(userCommand.equals("bye")) {
                 System.exit(1);
             }
         }
     }
 
     public static void matchCommand(String userCommand) {
-
-        switch (userCommand) {
+        StringTokenizer st = new StringTokenizer(userCommand);
+        switch (st.nextToken()) {
         case "list":
             Task.printList();
             break;
-        case "blah":
-            System.out.println("    blah");
+        case "done":
+            System.out.println("     Nice! I've marked this task as done:");
+
+            int itemNum = Integer.parseInt(st.nextToken())-1;
+
+            if(Task.itemExist(itemNum)) {  //First validate if item exist in list
+                Task.markAsDone(itemNum);   //if yes, then we call the completed function.
+            }
             break;
         case "bye":
             System.out.println("     Bye. Hope to see you again soon!");
@@ -63,10 +70,20 @@ class Task {
         return description;
     }
 
+    public static boolean itemExist(int num) {
+        return list.get(num) != null;
+    }
+    public static void markAsDone(int num) {
+        list.get(num).isDone = true;
+        System.out.println("       ["+list.get(num).getStatusIcon()+"] " + list.get(num).getDescription());
+    }
+
     public static void printList() {
         int i =1;
-        for(Task t : list){
-            System.out.println("     "+i+". " + t.getDescription());
+
+        System.out.println("     Here are the task in your list:");
+        for(Task t : list) {
+            System.out.println("     "+i+".["+t.getStatusIcon()+"] " + t.getDescription());
             i++;
         }
     }
