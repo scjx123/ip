@@ -26,12 +26,19 @@ public class Task {
         return description;
     }
 
+    public static void removeItem(int num) {
+        Task t = list.get(num);
+        System.out.println("     Got it. I've removed this task:");
+        System.out.println("       "+t.toString());
+        list.remove(t);
+        System.out.println("     Now you have "+list.size()+" task in the list.");
+    }
     public static boolean itemExist(int num) {
         return list.get(num) != null;
     }
     public static void markAsDone(int num) {
         list.get(num).isDone=true;
-        System.out.println("    ["+list.get(num).getStatusIcon()+"]" + list.get(num).getDescription());
+        System.out.println("    "+list.get(num).toString());
     }
     public static void printList() {
         int i =1;
