@@ -1,8 +1,9 @@
 package duke.task;
 
+import java.util.ArrayList;
+
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
 
 public class Task {
     protected String description;
@@ -23,7 +24,7 @@ public class Task {
     }
 
     public String getStatusIcon() {
-        return (isDone ? "\u2713" : "\u2718"); //return tick or X symbols
+        return (isDone ? "Done" : "Not done");
     }
     public String getDescription() {
         return description;
@@ -60,7 +61,7 @@ public class Task {
         }
     }
     public static void printTask() {
-        //retrieve the last item on the list.
+        //Retrieve the last item on the list.
         Task t = list.get(list.size()-1);
         System.out.println("     Got it. I've added this task:");
         System.out.println("       "+t.toString());

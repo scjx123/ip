@@ -7,21 +7,24 @@ import duke.task.Task;
 import duke.task.Todo;
 import duke.task.Deadline;
 
-import java.io.File;
 import java.util.Scanner;
 import java.util.StringTokenizer;
-import java.io.IOException;
 import java.util.NoSuchElementException;
+import java.io.IOException;
+import java.io.File;
+
 
 
 public interface Command {
     String filePath = "line.txt";
     File f = new File(filePath);
 
-//  loadedTask[0] //event type -> userCommand
-//  loadedTask[1] //true or false -> isDone
-//  loadedTask[2] //description
-    static void load() throws IOException{
+    /**
+     *  loadedTask[0] indicates the type of task.
+     *  loadedTask[1] indicates done or not done.
+     *  loadedTask[2] indicates the task description.
+     */
+    static void load() throws IOException {
         Scanner s = new Scanner(f);
         while(s.hasNext()){
             String[] loadedTask= s.nextLine().split(" ",3);
@@ -35,7 +38,7 @@ public interface Command {
                 Task.markAsDone(object_T,loadedTask[1].equals("true"));
                 break;
             case "D":
-                Event object_D= new Event(loadedCommand,loadedDateTime);
+                Event object_D = new Event(loadedCommand,loadedDateTime);
                 Task.markAsDone(object_D,loadedTask[1].equals("true"));
                 break;
             case "E":
@@ -61,8 +64,7 @@ public interface Command {
 
         StringTokenizer st = new StringTokenizer(userCommand);
         String tokenHolder = st.nextToken();
-
-        int dividerPosition = 0;
+        int dividerPosition;
         String dateTime = "";
 
         if(userCommand.contains("/")) {
@@ -101,7 +103,7 @@ public interface Command {
             System.out.println("     Bye. Hope to see you again soon!");
             break;
         case "todo":
-            if(!st.hasMoreTokens()){
+            if(!st.hasMoreTokens()) {
                 throw new InsufficientArgumentException();
             }
             new Todo(userCommand);
@@ -109,7 +111,7 @@ public interface Command {
             Task.writeFile(filePath);
             break;
         case "deadline":
-            if(!st.hasMoreTokens()){
+            if(!st.hasMoreTokens()) {
                 throw new InsufficientArgumentException();
             }
             new Deadline(userCommand,dateTime);

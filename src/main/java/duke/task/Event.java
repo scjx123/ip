@@ -12,7 +12,7 @@ public class Event extends Task {
 
     @Override
     public String toString() {
-        return "["+this.type+"]" + super.toString() +"("+ dateTime+")";
+        return "[" + this.type + "]" + super.toString() + "(" + dateTime + ")";
     }
 }
 
