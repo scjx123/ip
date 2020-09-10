@@ -1,6 +1,8 @@
 import duke.command.Command;
 import duke.InsufficientArgumentException;
 import duke.InvalidCommandException;
+import java.io.FileWriter;
+import java.io.IOException;
 
 import java.util.NoSuchElementException;
 
@@ -16,6 +18,12 @@ public class Duke {
         System.out.println("    What can i do for you?");
 
         String userCommand;
+        try{
+            Command.load();
+        }catch (IOException e){
+            System.out.println("    Unable to read");
+        }
+
         while (true) {
             userCommand = Command.getCommand();
             System.out.println("    ____________________________________________________________");
@@ -29,6 +37,8 @@ public class Duke {
                 System.out.println("     OOPS!!! I'm sorry, please specify which item done/to be deleted :-(");
             } catch (IndexOutOfBoundsException iobe){
                 System.out.println("     OOPS!!! I'm sorry, task does not exist in the list :-(");
+            } catch (IOException e){
+                System.out.println("     Unable to write");
             }
             System.out.println("    ____________________________________________________________");
             if (userCommand.equals("bye")) {
@@ -36,4 +46,7 @@ public class Duke {
             }
         }
     }
+
 }
+
+
