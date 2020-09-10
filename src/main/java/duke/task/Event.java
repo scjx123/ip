@@ -5,13 +5,14 @@ public class Event extends Task {
         super(description);
         if(!dateTime.isEmpty()) {
             dateTime=dateTime.replaceFirst(" ",": ");
-            this.dateTime = "("+ dateTime +")" ;
+            this.dateTime = dateTime;
         }
+        this.type='E';
     }
 
     @Override
     public String toString() {
-        return "[E]" + super.toString() + dateTime ;
+        return "["+this.type+"]" + super.toString() +"("+ dateTime+")";
     }
 }
 

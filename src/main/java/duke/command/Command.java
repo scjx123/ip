@@ -6,18 +6,57 @@ import duke.task.Event;
 import duke.task.Task;
 import duke.task.Todo;
 import duke.task.Deadline;
+
+
+import java.io.File;
+import java.io.IOException;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
+
 public interface Command {
-    public static String getCommand() {
+    String filePath = "line.txt";
+    File f = new File(filePath);
+
+//  loadedTask[0] //event type -> userCommand
+//  loadedTask[1] //true or false -> isDone
+//  loadedTask[2] //description
+    static void load() throws IOException{
+        Scanner s = new Scanner(f);
+        while(s.hasNext()){
+            String[] loadedTask= s.nextLine().split(" ",3);
+            String loadedCommand;
+            int index = loadedTask[2].indexOf("/");
+            loadedCommand = loadedTask[2].substring(0,index);
+            String loadedDateTime = loadedTask[2].substring(index+1);
+            switch(loadedTask[0]){
+            case "T":
+                Todo object_T = new Todo(loadedCommand);
+                Task.markAsDone(object_T,loadedTask[1].equals("true"));
+                break;
+            case "D":
+                Event object_D= new Event(loadedCommand,loadedDateTime);
+                Task.markAsDone(object_D,loadedTask[1].equals("true"));
+                break;
+            case "E":
+                Deadline object_E = new Deadline(loadedCommand,loadedDateTime);
+                Task.markAsDone(object_E,loadedTask[1].equals("true"));
+                break;
+            default:
+                break;
+            }
+        }
+    }
+
+    static String getCommand() {
         String userCommand;
         Scanner userInput = new Scanner(System.in);
         userCommand = userInput.nextLine();
         return userCommand;
     }
 
-    public static void matchCommand(String userCommand) throws InsufficientArgumentException, InvalidCommandException {
+    static void matchCommand(String userCommand) throws InsufficientArgumentException, InvalidCommandException,
+            IOException {
         StringTokenizer st = new StringTokenizer(userCommand);
         String tokenHolder = st.nextToken();
 
@@ -25,7 +64,7 @@ public interface Command {
         String dateTime = "";
 
         if(userCommand.contains("/")) {
-            dividerPosition = userCommand.indexOf('/');
+            dividerPosition = userCommand.indexOf("/");
             dateTime=userCommand.substring(dividerPosition+1);
             userCommand=userCommand.substring(userCommand.indexOf(' '),dividerPosition);
         } else {
@@ -44,6 +83,7 @@ public interface Command {
             if(Task.itemExist(itemNum)) {
                 Task.markAsDone(itemNum);
             }
+            Task.writeFile(filePath);
             break;
         case "bye":
             System.out.println("     Bye. Hope to see you again soon!");
@@ -54,6 +94,7 @@ public interface Command {
             }
             new Todo(userCommand);
             Task.printTask();
+            Task.writeFile(filePath);
             break;
         case "deadline":
             if(!st.hasMoreTokens()){
@@ -61,6 +102,7 @@ public interface Command {
             }
             new Deadline(userCommand,dateTime);
             Task.printTask();
+            Task.writeFile(filePath);
             break;
         case "event":
             if(!st.hasMoreTokens()){
@@ -68,6 +110,7 @@ public interface Command {
             }
             new Event(userCommand,dateTime);
             Task.printTask();
+            Task.writeFile(filePath);
             break;
         default:
             throw new InvalidCommandException();
