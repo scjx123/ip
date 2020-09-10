@@ -6,6 +6,8 @@ import duke.task.Event;
 import duke.task.Task;
 import duke.task.Todo;
 import duke.task.Deadline;
+
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
@@ -17,7 +19,8 @@ public interface Command {
         return userCommand;
     }
 
-    public static void matchCommand(String userCommand) throws InsufficientArgumentException, InvalidCommandException {
+    public static void matchCommand(String userCommand) throws InsufficientArgumentException, InvalidCommandException,
+            NoSuchElementException {
         StringTokenizer st = new StringTokenizer(userCommand);
         String tokenHolder = st.nextToken();
 
@@ -35,14 +38,24 @@ public interface Command {
         }
 
         switch (tokenHolder) {
+        case "delete":
+            int itemNum = Integer.parseInt(st.nextToken()) - 1;
+            if (Task.itemExist(itemNum)){
+                Task.removeItem(itemNum);
+            }else{
+                throw new IndexOutOfBoundsException();
+            }
+            break;
         case "list":
             Task.printList();
             break;
         case "done":
-            System.out.println("     Nice! I've marked this task as done:");
-            int itemNum = Integer.parseInt(st.nextToken())-1;
-            if(Task.itemExist(itemNum)) {
-                Task.markAsDone(itemNum);
+            itemNum = Integer.parseInt(st.nextToken()) - 1;
+            if(Task.itemExist(itemNum)){
+                    System.out.println("     Nice! I've marked this task as done:");
+                    Task.markAsDone(itemNum);
+            }else{
+                    throw new IndexOutOfBoundsException();
             }
             break;
         case "bye":
