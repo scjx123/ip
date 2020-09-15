@@ -1,5 +1,6 @@
 package duke.task;
 
+import java.nio.file.Path;
 import java.util.ArrayList;
 
 import java.io.FileWriter;
@@ -67,8 +68,9 @@ public class Task {
         System.out.println("       "+t.toString());
         System.out.println("     Now you have "+list.size()+" task in the list.");
     }
-    public static void writeFile(String filePath) throws IOException {
-        FileWriter fw = new FileWriter(filePath);
+    public static void writeFile(Path p2) throws IOException {
+
+        FileWriter fw = new FileWriter(p2.getFileName().toString());
 
         //Writing Data to specified filePath
         for(Task t : list)
