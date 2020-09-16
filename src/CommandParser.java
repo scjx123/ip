@@ -1,74 +1,15 @@
-package duke.command;
-
-import duke.InsufficientArgumentException;
-import duke.InvalidCommandException;
+import duke.DukeException.InsufficientArgumentException;
+import duke.DukeException.InvalidCommandException;
 import duke.task.Event;
 import duke.task.Task;
 import duke.task.Todo;
 import duke.task.Deadline;
 
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.*;
 import java.io.IOException;
 
-
-public interface Command {
-    //get home directory
-    String home = System.getProperty("user.home");
-    //create a path
-    Path p1 = Paths.get(home, "Downloads");
-    String fileName = "line.txt";
-    Path p2 = Paths.get(home, "Downloads", fileName);
-
-    /**
-     * loadedTask[0] indicates the type of task.
-     * loadedTask[1] indicates done or not done.
-     * loadedTask[2] indicates the task description.
-     */
-    static void load() throws IOException {
-        if (!Files.exists(p2)) {
-            Files.createFile(p2);
-        }
-
-        List<String> lineArray = Files.readAllLines(p2);
-        for(String str : lineArray ) {
-            String[] loadedTask = str.split(" ", 3);
-            String loadedCommand;
-            int index = loadedTask[2].indexOf("/");
-            loadedCommand = loadedTask[2].substring(0, index);
-            String loadedDateTime = loadedTask[2].substring(index + 1);
-            switch (loadedTask[0]) {
-            case "T":
-                Todo object_T = new Todo(loadedCommand);
-                Task.markAsDone(object_T, loadedTask[1].equals("true"));
-                break;
-            case "D":
-                Event object_D = new Event(loadedCommand, loadedDateTime);
-                Task.markAsDone(object_D, loadedTask[1].equals("true"));
-                break;
-            case "E":
-                Deadline object_E = new Deadline(loadedCommand, loadedDateTime);
-                Task.markAsDone(object_E, loadedTask[1].equals("true"));
-                break;
-            default:
-                break;
-            }
-        }
-
-
-    }
-
-
-    static String getCommand() {
-        String userCommand;
-        Scanner userInput = new Scanner(System.in);
-        userCommand = userInput.nextLine();
-        return userCommand;
-    }
-
-
+public class CommandParser {
+    static boolean exitStatus = false;
     static void matchCommand(String userCommand) throws InsufficientArgumentException, InvalidCommandException,
             NoSuchElementException, IOException {
 
@@ -110,7 +51,8 @@ public interface Command {
             break;
         case "bye":
             System.out.println("     Bye. Hope to see you again soon!");
-            Task.writeFile(p2);
+            Storage.writeFile(Task.getList());
+            exitStatus=true;
             break;
         case "todo":
             if (!st.hasMoreTokens()) {
@@ -137,6 +79,10 @@ public interface Command {
             throw new InvalidCommandException();
 //            break;
         }
+    }
+
+    public static boolean isExit(){
+        return exitStatus;
     }
 }
 
