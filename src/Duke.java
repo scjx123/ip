@@ -1,11 +1,8 @@
-import duke.DukeException.DukeException;
-
 import duke.DukeException.InsufficientArgumentException;
 import duke.DukeException.InvalidCommandException;
 import duke.task.TaskList;
 
 import java.io.IOException;
-import java.util.Comparator;
 import java.util.NoSuchElementException;
 
 public class Duke {

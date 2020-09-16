@@ -7,12 +7,16 @@ import java.util.ArrayList;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
+
 
 public class Task {
     protected String description;
     protected boolean isDone;
     protected char type;
-    String dateTime = "";
+    String dateTime="";
     static ArrayList<Task> list = new ArrayList<>();
     public static void loadData(List<String> lineArray){
         for(String str : lineArray ) {
@@ -86,6 +90,16 @@ public class Task {
     public static ArrayList<Task> getList(){
         return list;
     }
+    /*public static void find(String userKeyword){
+        //Example find 'book'
+        int i =1;
+        for(Task t : list){
+            if(t.getDescription().contains(userKeyword)){
+                System.out.println("     "+i+"."+t.toString());
+                i++;
+            }
+        }
+    }*/
     public static void printList() {
         int i =1;
         System.out.println("     Here are the task in your list:");
