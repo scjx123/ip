@@ -109,9 +109,6 @@ public class CommandParser {
             new Event(userCommand, dateTime);
             Task.printTask();
             break;
-        /*case "find":
-            Task.find(st.nextToken());
-            break;*/
         default:
             throw new InvalidCommandException();
 //            break;
