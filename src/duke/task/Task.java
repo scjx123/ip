@@ -86,6 +86,16 @@ public class Task {
     public static ArrayList<Task> getList(){
         return list;
     }
+    public static void find(String userKeyword){
+        //Example find 'book'
+        int i =1;
+        for(Task t : list){
+            if(t.getDescription().contains(userKeyword)){
+                System.out.println("     "+i+"."+t.toString());
+                i++;
+            }
+        }
+    }
     public static void printList() {
         int i =1;
         System.out.println("     Here are the task in your list:");

@@ -10,6 +10,7 @@ import java.io.IOException;
 
 public class CommandParser {
     static boolean exitStatus = false;
+
     static void matchCommand(String userCommand) throws InsufficientArgumentException, InvalidCommandException,
             NoSuchElementException, IOException {
 
@@ -52,7 +53,7 @@ public class CommandParser {
         case "bye":
             System.out.println("     Bye. Hope to see you again soon!");
             Storage.writeFile(Task.getList());
-            exitStatus=true;
+            exitStatus = true;
             break;
         case "todo":
             if (!st.hasMoreTokens()) {
@@ -75,13 +76,16 @@ public class CommandParser {
             new Event(userCommand, dateTime);
             Task.printTask();
             break;
+        case "find":
+            Task.find(st.nextToken());
+            break;
         default:
             throw new InvalidCommandException();
 //            break;
         }
     }
 
-    public static boolean isExit(){
+    public static boolean isExit() {
         return exitStatus;
     }
 }
