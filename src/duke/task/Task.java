@@ -1,6 +1,7 @@
 package duke.task;
 
 import java.lang.reflect.Array;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 
@@ -16,6 +17,7 @@ public class Task {
     static ArrayList<Task> list = new ArrayList<>();
     public static void loadData(List<String> lineArray){
         for(String str : lineArray ) {
+            System.out.println(str);
             String[] loadedTask = str.split(" ", 3);
             String loadedCommand;
             int index = loadedTask[2].indexOf("/");
