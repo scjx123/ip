@@ -38,7 +38,6 @@ public class Storage {
         if (!Files.exists(p2)) {
             Files.createFile(p2);
         }
-
         return Files.readAllLines(p2);
 
     }
@@ -48,7 +47,7 @@ public class Storage {
         //String[] s= new String[list.size()];
         //Writing Data to specified filePath
         for(Task t : list) {
-            fw.write(t.getType() + " " + t.getStatusIcon() + " " + t.getDescription() + " " + "/" + t.getDateTime().replaceFirst(":", "") + '\n');
+            fw.write(t.getType() + " " + t.getStatusIcon() + " " + t.getDescription() + " " + t.getDateTime().replaceFirst(":",     "") + '\n');
         }
         fw.close();
     }
