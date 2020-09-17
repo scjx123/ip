@@ -27,11 +27,6 @@ public class Task {
         for (String str : lineArray) {
             if(str!=null) {
                 String[] loadedTask = str.split(" ",3);
-
-                System.out.println(loadedTask[0]);
-                System.out.println(loadedTask[1]);
-                System.out.println(loadedTask[2]);
-                //System.out.println(loadedTask[3]);
                 String commandDescription;
                 int index=0;
                 if(loadedTask[2].contains("/")) {
