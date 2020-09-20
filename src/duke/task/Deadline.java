@@ -1,4 +1,5 @@
 package duke.task;
+import duke.task.Task.commandType;
 
 public class Deadline extends Task {
 
@@ -7,7 +8,7 @@ public class Deadline extends Task {
         if(!dateTime.isEmpty()) {
             this.dateTime=dateTime.replaceFirst(" ",": ");
         }
-        this.type = 'D';
+        this.type = commandType.D;
     }
 
     @Override

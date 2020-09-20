@@ -13,11 +13,9 @@ import java.util.Scanner;
 public class Storage {
     //get home directory
     static String home = System.getProperty("user.home");
-    static String filePath;
     static String[] dir=new String[2];
     private static String filename = "tasks.txt";
     private static String filedir = "data";
-    private static Object Task;
 
     public Storage(String filePath){
         //Path indicated by user;

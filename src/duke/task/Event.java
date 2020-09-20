@@ -1,5 +1,6 @@
 package duke.task;
 
+import duke.task.Task.commandType;
 public class Event extends Task {
     public Event(String description, String dateTime) {
         super(description);
@@ -7,7 +8,7 @@ public class Event extends Task {
             dateTime=dateTime.replaceFirst(" ",": ");
             this.dateTime = dateTime;
         }
-        this.type='E';
+        this.type=commandType.E;
     }
 
     @Override

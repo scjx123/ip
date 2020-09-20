@@ -13,9 +13,12 @@ public class Task {
     static ArrayList<Task> list = new ArrayList<>();
     protected String description;
     protected boolean isDone;
-    protected char type;
+    protected commandType type;
     String dateTime = "";
 
+    public enum commandType {
+        T, D, E
+    }
     public Task(String description) {
         this.description = description;
         this.isDone = false;
@@ -114,7 +117,7 @@ public class Task {
         return description;
     }
 
-    public char getType() {
+    public commandType getType() {
         return type;
     }
 

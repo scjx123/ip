@@ -1,9 +1,11 @@
 package duke.task;
 
+import duke.task.Task.commandType;
+
 public class Todo extends Task {
     public Todo(String description) {
         super(description);
-        this.type='T';
+        this.type=commandType.T;
     }
 
     @Override

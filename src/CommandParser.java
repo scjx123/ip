@@ -5,16 +5,16 @@ import duke.task.Task;
 import duke.task.Todo;
 import duke.task.Deadline;
 
-import java.util.*;
+
 import java.io.IOException;
+import java.util.NoSuchElementException;
+import java.util.StringTokenizer;
 
 public class CommandParser {
     static boolean exitStatus = false;
-    static void matchCommand(String userCommand) throws InsufficientArgumentException, InvalidCommandException,
-            NoSuchElementException, IOException {
 
+    static void parseCommand(String userCommand){
         StringTokenizer st = new StringTokenizer(userCommand);
-        String tokenHolder = st.nextToken();
         int dividerPosition;
         String dateTime = "";
 
@@ -22,11 +22,27 @@ public class CommandParser {
             dividerPosition = userCommand.indexOf("/");
             dateTime = userCommand.substring(dividerPosition + 1);
             userCommand = userCommand.substring(userCommand.indexOf(' '), dividerPosition);
-        } else {
-            if (st.hasMoreTokens()) {
-                userCommand = userCommand.substring(userCommand.indexOf(' '));
-            }
         }
+
+        try {
+            matchCommand(userCommand, dateTime,st);
+        }catch (InsufficientArgumentException iae) {
+            Ui.showError("iae");
+        } catch (InvalidCommandException ie) {
+            Ui.showError("ie");
+        } catch (NoSuchElementException ne){
+            Ui.showError("ne");
+        } catch (IndexOutOfBoundsException iobe){
+            Ui.showError("iobe");
+        } catch (IOException e){
+            Ui.showError("e");
+        } catch (NumberFormatException nfe){
+            Ui.showError("nfe");
+        }
+    }
+    static void matchCommand(String userCommand,String dateTime,StringTokenizer st) throws InsufficientArgumentException, InvalidCommandException,
+            NoSuchElementException, IOException, NumberFormatException {
+        String tokenHolder = st.nextToken();
 
         switch (tokenHolder) {
         case "delete":
@@ -77,7 +93,6 @@ public class CommandParser {
             break;
         default:
             throw new InvalidCommandException();
-//            break;
         }
     }
 
