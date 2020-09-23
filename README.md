@@ -27,12 +27,9 @@ Prerequisites: JDK 11, update Intellij to the most recent version.
 
 ## Features
 
- 1. Adding a new Task
- 2. List  
- 3. Mark as Done   
- 4. Dates and Times    
- 5. Find
+1. Adding a new Task 
+	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDgyMzk0MTVdfQ==
+eyJoaXN0b3J5IjpbLTE3NjAxMzM2OTNdfQ==
 -->
