@@ -68,15 +68,17 @@ A: All task that have been added to the list will automatically be saved when yo
 Q: Where can i find a text file my tasks? 
 A: All task are saved at *./data/tasks.txt* depending on the location you have your duke.jar file. 
 
-Command Summary
-|   |
-|--|--|
-|  |  |
-|  |  |
-|--|--|
-|  |  |
+Command Summary  
+|todo		 |
+|deadline  |
+|event		
+|list
+|done
+|delete
+|find
+|bye
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg4NTEwNjddfQ==
+eyJoaXN0b3J5IjpbNDA3NDE5NjgxXX0=
 -->
