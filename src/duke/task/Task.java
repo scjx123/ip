@@ -1,17 +1,7 @@
 package duke.task;
 
-import java.lang.reflect.Array;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.ArrayList;
-
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.List;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
-
 
 public class Task {
     static ArrayList<Task> list = new ArrayList<>();
@@ -19,81 +9,15 @@ public class Task {
     protected boolean isDone;
     protected commandType type;
     String dateTime = "";
-    static ArrayList<Task> list = new ArrayList<>();
-  
-    public static void loadData(List<String> lineArray){
-        for(String str : lineArray ) {
-            String[] loadedTask = str.split(" ", 3);
-            String loadedCommand;
-            int index = loadedTask[2].indexOf("/");
-            loadedCommand = loadedTask[2].substring(0, index);
-            String loadedDateTime = loadedTask[2].substring(index + 1);
-
-            switch (loadedTask[0]) {
-            case "T":
-                //creating a new object which automatically adds to the list.
-                duke.task.Todo object_T = new duke.task.Todo(loadedCommand);
-                duke.task.Task.markAsDone(object_T, loadedTask[1].equals("true"));
-                break;
-            case "D":
-                duke.task.Event object_D = new duke.task.Event(loadedCommand, loadedDateTime);
-                duke.task.Task.markAsDone(object_D, loadedTask[1].equals("true"));
-                break;
-            case "E":
-                duke.task.Deadline object_E = new duke.task.Deadline(loadedCommand, loadedDateTime);
-                duke.task.Task.markAsDone(object_E, loadedTask[1].equals("true"));
-                break;
-            default:
-                break;
-            }
-        }
-    }
-
 
     public enum commandType {
         T, D, E
     }
+
     public Task(String description) {
         this.description = description;
         this.isDone = false;
         list.add(this);
-    }
-
-    public static void loadData(List<String> lineArray) {
-
-        for (String str : lineArray) {
-            if(str!=null) {
-                String[] loadedTask = str.split(" ",3);
-                String commandDescription;
-                int index=0;
-                if(loadedTask[2].contains("/")) {
-                    index = loadedTask[2].indexOf("/");
-                    commandDescription = loadedTask[2].substring(0, index);
-                }else {
-                    commandDescription = loadedTask[2];
-                }
-                String loadedDateTime = loadedTask[2].substring(index + 1);
-
-                switch (loadedTask[0]) {
-                case "T":
-                    //creating a new object which automatically adds to the list.
-                    Todo object_T = new Todo(commandDescription);
-                    markAsDone(object_T, loadedTask[1].equals("true"));
-                    break;
-                case "D":
-                    Event object_D = new Event(commandDescription, loadedDateTime);
-                    markAsDone(object_D, loadedTask[1].equals("true"));
-                    break;
-                case "E":
-                    Deadline object_E = new Deadline(commandDescription, loadedDateTime);
-                    markAsDone(object_E, loadedTask[1].equals("true"));
-                    break;
-                default:
-                    break;
-                }
-            }
-        }
-
     }
 
     public static void removeItem(int num) {
@@ -119,6 +43,17 @@ public class Task {
 
     public static ArrayList<Task> getList() {
         return list;
+    }
+
+    public static void find(String userKeyword){
+        //Example find 'book'
+        int i =1;
+        for(Task t : list){
+            if(t.getDescription().contains(userKeyword)){
+                System.out.println("     "+i+"."+t.toString());
+                i++;
+            }
+        }
     }
 
     public static void printList() {
