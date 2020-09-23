@@ -27,10 +27,13 @@ Prerequisites: JDK 11, update Intellij to the most recent version.
 
 ## Features
 
-Add, List 
+ 1. Add 
+ 2. Types of events  
+ 3. List 
+ 4. Mark as Done 
+ 5. Dates and Times  
+ 6. Find
 
-Dates and Times 
-Find 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MDY2OTQwMV19
+eyJoaXN0b3J5IjpbLTE4MTQ1MzgyMzBdfQ==
 -->
