@@ -59,7 +59,7 @@ public class Ui {
     public static void showError(String error){
         switch(error){
         case "iae":
-            System.out.println("     OPPS!!! Description cannot be empty.");
+            System.out.println("     OPPS!!! Please enter a description!");
             break;
         case "ie":
             System.out.println("     OOPS!!! I'm sorry, but I don't know what that means :-(");

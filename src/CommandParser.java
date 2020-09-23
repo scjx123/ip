@@ -19,7 +19,7 @@ public class CommandParser {
     static String formattedDateTime;
     static String originalDateTime="";
     static int dividerPosition;
-    static String dateTime = "";
+    static String dateTime = null;
     static String[] tempDateTime;
     static String year, month, day,time;
 
@@ -87,7 +87,7 @@ public class CommandParser {
      * @param userCommand The unformatted string entered by user.
      * @return Returns the formatted userCommand with only its date and time information.
      */
-    static String datetimeFormatter(String userCommand){
+    static String datetimeFormatter(String userCommand) throws NumberFormatException{
         //Divide between Task description and Task date
         dividerPosition=userCommand.indexOf("/")+3;
         formattedDateTime = userCommand.substring(dividerPosition + 1);
@@ -131,15 +131,15 @@ public class CommandParser {
     static void parseCommand(String userCommand){
         StringTokenizer st = new StringTokenizer(userCommand);
 
-        if (userCommand.contains("/")) {
-            dateTime=datetimeFormatter(userCommand);
-            userCommand = userCommandFormatter(userCommand,true);
-        } else {
-            userCommand = userCommandFormatter(userCommand,false);
-        }
-
         try {
+            if (userCommand.contains("/")) {
+                dateTime=datetimeFormatter(userCommand);
+                userCommand = userCommandFormatter(userCommand,true);
+            } else {
+                userCommand = userCommandFormatter(userCommand,false);
+            }
             matchCommand(userCommand, dateTime,st);
+            dateTime=null;
         }catch (InsufficientArgumentException iae) {
             Ui.showError("iae");
         } catch (InvalidCommandException ie) {
@@ -205,23 +205,26 @@ public class CommandParser {
         case "todo":
             if (!st.hasMoreTokens()) {
                 throw new InsufficientArgumentException();
+            } else {
+                new Todo(" "+userCommand);
+                Task.printTask();
             }
-            new Todo(userCommand);
-            Task.printTask();
             break;
         case "deadline":
-            if (!st.hasMoreTokens()) {
+            if (!st.hasMoreTokens()||dateTime==null) {
                 throw new InsufficientArgumentException();
+            }else {
+                new Deadline(userCommand, dateTime);
+                Task.printTask();
             }
-            new Deadline(userCommand, dateTime);
-            Task.printTask();
             break;
         case "event":
-            if (!st.hasMoreTokens()) {
+            if (!st.hasMoreTokens()||dateTime==null) {
                 throw new InsufficientArgumentException();
+            }else {
+                new Event(userCommand, dateTime);
+                Task.printTask();
             }
-            new Event(userCommand, dateTime);
-            Task.printTask();
             break;
         case "find":
             Task.find(st.nextToken());
@@ -239,7 +242,6 @@ public class CommandParser {
     public static boolean isExit() {
         return exitStatus;
     }
-
 }
 
 
