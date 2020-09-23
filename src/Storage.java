@@ -22,7 +22,7 @@ public class Storage {
     /**
      * Splits the filePath variable into file directory and file name.
      *
-     * @param filePath
+     * @param filePath an absolute path of the text file that stores user data.
      */
     public Storage(String filePath){
         dir=filePath.split("/",2);
@@ -41,7 +41,7 @@ public class Storage {
      *
      * @return Files.readAllLines(p2) which is a List<String> collection of
      *                                all the lines stored in the text file.
-     * @throws IOException Signals the the input/reading operation was interrupted/failed.
+     * @throws IOException Thrown by the input/reading operation.
      */
     public static List<String> load() throws IOException {
         if (!Files.exists(p2)) {
@@ -56,7 +56,7 @@ public class Storage {
      * to the filePath specified by the user.
      *
      * @param list A ArrayList<Task> object that stores all the current Task object.
-     * @throws IOException Signals the the writing operation was interrupted/failed.
+     * @throws IOException Thrown by the writing operation.
      */
     public static void writeFile(ArrayList<Task> list) throws IOException {
 

@@ -20,7 +20,6 @@ public class Task {
      *
      * @param description Description of the task specified by user.
      */
-
     public Task(String description) {
         this.description = description;
         this.isDone = false;
@@ -74,7 +73,7 @@ public class Task {
     /**
      * Removes an item on the list.
      *
-     * @param num
+     * @param num The index of the task on the list.
      */
     public static void removeItem(int num) {
         Task t = list.get(num);
@@ -88,15 +87,15 @@ public class Task {
      * Check if an item exist on the list.
      * Returns true if item exist, and false if it does not exist.
      *
-     * @param num the Index of the item on the list.
-     * @return true or false based on whether item exist in the list.
+     * @param num The index of the task on the list.
+     * @return Logical true or false based on whether item exist in the list.
      */
     public static boolean itemExist(int num) {
         return list.get(num) != null;
     }
 
     /**
-     * Mark a Task as completed when provided with a logic.
+     * Mark a Task based on the logic it is provided with.
      * Used mainly for loading in previous data from text file.
      *
      * @param task The task object that is being mark as done.
@@ -130,7 +129,7 @@ public class Task {
     /**
      * Search through the entire list for task with description that matches the userKeyword
      *
-     * @param userKeyword
+     * @param userKeyword A String keyword that the user wish to search in the list.
      */
     public static void find(String userKeyword){
         //Example find 'book'
@@ -182,7 +181,7 @@ public class Task {
     /**
      * Returns the description of the task.
      *
-     * @return description  Description of the task.
+     * @return description Description of the task.
      */
     public String getDescription() {
         return description;
@@ -191,7 +190,7 @@ public class Task {
     /**
      * Returns commandType data type of the event. Mostly used for writing to text file.
      *
-     * @return commandType data type of the event.
+     * @return commandType Data type of the event.
      */
     public commandType getType() {
         return type;

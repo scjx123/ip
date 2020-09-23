@@ -23,13 +23,15 @@ public class CommandParser {
     static String[] tempDateTime;
     static String year, month, day,time;
 
+    /**
+     * Create object based on commands that were loaded from text file.
+     *
+     * @param lineArray Contains lines of data that were previously entered by user
+     */
     static void readCommand(List<String> lineArray){
         for(String str : lineArray ) {
             if (str != null) {
                 String[] loadedTask = str.split(" ", 3);
-                System.out.println(loadedTask[0]);
-                System.out.println(loadedTask[1]);
-                System.out.println(loadedTask[2]);
 
                 if(loadedTask[2].contains("by: ")){
                     loadedTask[2]=loadedTask[2].replace("by: ","/by");
@@ -58,6 +60,15 @@ public class CommandParser {
             }
         }
     }
+
+    /**
+     * Formats the userCommand to sieve out the task description.
+     * It also replaces '/by' with 'by:' for printing purposes in later on.
+     *
+     * @param userCommand The unformatted string entered by user.
+     * @param containsSlash True if userCommand contains slash, false otherwise.
+     * @return Returns the formatted userCommand with only its description.
+     */
     static String userCommandFormatter(String userCommand,boolean containsSlash){
         if(containsSlash) {
             dividerPosition = userCommand.indexOf("/") + 3;
@@ -67,6 +78,15 @@ public class CommandParser {
         }
         return formattedUserCommand;
     }
+
+    /**
+     * Formats the userCommand to sieve out the task date and time.
+     * If the date was 12/09/2019 it will be changed to 12-09-2019.
+     * It also detects whether the user entered 2019/12/1 or 1/12/2019.
+     *
+     * @param userCommand The unformatted string entered by user.
+     * @return Returns the formatted userCommand with only its date and time information.
+     */
     static String datetimeFormatter(String userCommand){
         //Divide between Task description and Task date
         dividerPosition=userCommand.indexOf("/")+3;
@@ -101,6 +121,13 @@ public class CommandParser {
         }
         return formattedDateTime;
     }
+
+    /**
+     * Controls the flow of how a new userCommand is processed.
+     * It also catches error that is thrown by the matchCommand method.
+     *
+     * @param userCommand The unformatted string entered by user.
+     */
     static void parseCommand(String userCommand){
         StringTokenizer st = new StringTokenizer(userCommand);
 
@@ -127,8 +154,26 @@ public class CommandParser {
             Ui.showError("nfe");
         }
     }
+
+    /**
+     * Matches the given command with the possible task object and subsequently, take necessary action that
+     * relates to the command itself.
+     * Relevant errors are being thrown here as well. Read below for Error information.
+     *
+     * @param userCommand The unformatted string entered by user.
+     * @param dateTime The formatted date and time information keyed in by user.
+     * @param st A StringTokenizer that holds the original userCommand information.
+     * @throws InsufficientArgumentException Thrown when user provides insufficient argument after a valid first word.
+     * @throws InvalidCommandException Thrown when user pressed 'enter' without keying anything or it does not make
+     *                                 the word entered is not recognized by switch statement.
+     * @throws NoSuchElementException Thrown when non existing element if expected.
+     * @throws IOException Thrown by writeFile() in the "bye" case of switch statement.
+     * @throws NumberFormatException Thrown when user keys in illegal number format following a valid first word.
+     */
     static void matchCommand(String userCommand,String dateTime,StringTokenizer st) throws InsufficientArgumentException, InvalidCommandException,
             NoSuchElementException, IOException, NumberFormatException {
+
+        /** TokenHolder holds the first word of the userCommand, which enables the use of Switch statement */
         String tokenHolder = st.nextToken();
 
         switch (tokenHolder) {
@@ -186,6 +231,11 @@ public class CommandParser {
         }
     }
 
+    /**
+     * Returns the status of exitStatus.
+     *
+     * @return Returns exitStatus.
+     */
     public static boolean isExit() {
         return exitStatus;
     }
