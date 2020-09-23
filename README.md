@@ -76,15 +76,17 @@ A: All task are saved at *./data/tasks.txt* depending on the location you have y
 
 Command Summary  
 
- - **todo**	 task_name 
- - **deadline**  task_name /by DD/MM/YYYY HHMM 
- - **event** task_name /by DD/MM/YYYY HHMM 
- - **list**  
+ - Add Task to list 
+	 - todo	 task_name 
+	 - deadline  task_name /by DD/MM/YYYY HHMM 
+	 - event task_name /by DD/MM/YYYY HHMM 
+ - List out all task: list
+ - Mark 
  - done task_index_on_list 
  - delete task_index_on_list 
   -  find keyword
  - bye
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDg2MjM5MzFdfQ==
+eyJoaXN0b3J5IjpbMTAwOTEyNzQ2MV19
 -->
