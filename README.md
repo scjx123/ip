@@ -29,12 +29,14 @@ Prerequisites: JDK 11, update Intellij to the most recent version.
 
 1. Adding a new Task 
 	There are 3 different types of Task that you can add to your duke. Todo, Deadline and Event. Their respective formats are given as below: 
-	- Todo 
-		- Format: `todo task_name>`
-	- Deadline 
-	- Event 
+	- Adding a 'Todo' task 
+		- Format: `todo task_name`
+	- Adding a 'Deadline' task 
+		- Format: `deadline task_name /by DD/MM/YYYY HHMM`
+	- Adding an 'Event' task
+		- Format:  event task_name /by DD/MM/YYYY HHMM
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDE0OTg1NTldfQ==
+eyJoaXN0b3J5IjpbLTE0MjQzNjU1NTZdfQ==
 -->
