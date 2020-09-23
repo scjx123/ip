@@ -32,11 +32,14 @@ Prerequisites: JDK 11, update Intellij to the most recent version.
 	- Adds a 'Todo' task 
 		- Format: `todo task_name`
 		- Example: 
-			- todo borrow book
+			- Add 'eat sushi' to list as a todo task: `todo borrow book`
 	- Adds a 'Deadline' task 
 		- Format: `deadline task_name /by DD/MM/YYYY HHMM`
+		- Example:
+			- Add 'eat sushi' to list as a deadline task: `deadline eat sushi /by 1/10/2020 1800`
 	- Adds an 'Event' task
 		- Format:  `event task_name /by DD/MM/YYYY HHMM`
+		- Exa-
 		
 2. List 
 	List out all the task that you have added. 
@@ -82,5 +85,5 @@ bye***
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4OTIyNzU1M119
+eyJoaXN0b3J5IjpbLTIwNjYzMjgzNjhdfQ==
 -->
