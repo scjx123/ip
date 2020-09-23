@@ -50,7 +50,9 @@ Prerequisites: JDK 11, update Intellij to the most recent version.
 	Example: 
 	- To delete the first task on list: `delete 1`
 	
-5. 	
+5. Find 
+	Finds a task by searching for a keyword 
+	Format: find key
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI1ODkyNTFdfQ==
+eyJoaXN0b3J5IjpbMTgxNjIzMjk5XX0=
 -->
