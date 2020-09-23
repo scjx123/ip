@@ -8,6 +8,10 @@ import java.util.ArrayList;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
+
 
 public class Task {
     static ArrayList<Task> list = new ArrayList<>();
@@ -15,6 +19,36 @@ public class Task {
     protected boolean isDone;
     protected commandType type;
     String dateTime = "";
+    static ArrayList<Task> list = new ArrayList<>();
+  
+    public static void loadData(List<String> lineArray){
+        for(String str : lineArray ) {
+            String[] loadedTask = str.split(" ", 3);
+            String loadedCommand;
+            int index = loadedTask[2].indexOf("/");
+            loadedCommand = loadedTask[2].substring(0, index);
+            String loadedDateTime = loadedTask[2].substring(index + 1);
+
+            switch (loadedTask[0]) {
+            case "T":
+                //creating a new object which automatically adds to the list.
+                duke.task.Todo object_T = new duke.task.Todo(loadedCommand);
+                duke.task.Task.markAsDone(object_T, loadedTask[1].equals("true"));
+                break;
+            case "D":
+                duke.task.Event object_D = new duke.task.Event(loadedCommand, loadedDateTime);
+                duke.task.Task.markAsDone(object_D, loadedTask[1].equals("true"));
+                break;
+            case "E":
+                duke.task.Deadline object_E = new duke.task.Deadline(loadedCommand, loadedDateTime);
+                duke.task.Task.markAsDone(object_E, loadedTask[1].equals("true"));
+                break;
+            default:
+                break;
+            }
+        }
+    }
+
 
     public enum commandType {
         T, D, E
