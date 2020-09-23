@@ -6,7 +6,6 @@ import duke.task.Todo;
 import duke.task.Deadline;
 
 import java.io.IOException;
-import java.nio.file.Paths;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.StringTokenizer;
@@ -34,7 +33,6 @@ public class CommandParser {
 
                 if(loadedTask[2].contains("by: ")){
                     loadedTask[2]=loadedTask[2].replace("by: ","/by");
-                    //System.out.println(loadedTask[2]);
                     loadedCommand=userCommandFormatter(loadedTask[2],true);
                     loadedDateTime=datetimeFormatter(loadedTask[2]);
                 }else {
@@ -43,7 +41,6 @@ public class CommandParser {
 
                 switch (str.charAt(0)) {
                 case 'T':
-                    //creating a new object which automatically adds to the list.
                     Todo object_T = new Todo(loadedCommand);
                     Task.markAsDone(object_T, loadedTask[1].equals("true"));
                     break;
@@ -85,7 +82,8 @@ public class CommandParser {
         } else {
             tempDateTime = formattedDateTime.split("-", 3);
         }
-        //figure out user entered year first or day first .
+
+        //Figure out whether user entered year first or day first .
         if (tempDateTime[0].length() > tempDateTime[2].length()) {
             year = tempDateTime[0];
             day = tempDateTime[2];
