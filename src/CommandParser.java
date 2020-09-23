@@ -5,63 +5,111 @@ import duke.task.Task;
 import duke.task.Todo;
 import duke.task.Deadline;
 
-
 import java.io.IOException;
+import java.nio.file.Paths;
+import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.StringTokenizer;
 
-
 public class CommandParser {
     static boolean exitStatus = false;
+    static String loadedCommand;
+    static String loadedDateTime;
+    static String originalDateTime="";
+    static int dividerPosition;
+    static String dateTime = "";
+    static String formattedUserCommand;
+    static String formattedDateTime;
+    static String[] tempDateTime;
+    static String year, month, day,time;
 
+    static void readCommand(List<String> lineArray){
+        for(String str : lineArray ) {
+            if (str != null) {
+                String[] loadedTask = str.split(" ", 3);
+                System.out.println(loadedTask[0]);
+                System.out.println(loadedTask[1]);
+                System.out.println(loadedTask[2]);
+
+                if(loadedTask[2].contains("by: ")){
+                    loadedTask[2]=loadedTask[2].replace("by: ","/by");
+                    //System.out.println(loadedTask[2]);
+                    loadedCommand=userCommandFormatter(loadedTask[2],true);
+                    loadedDateTime=datetimeFormatter(loadedTask[2]);
+                }else {
+                    loadedCommand=loadedTask[2];
+                }
+
+                switch (str.charAt(0)) {
+                case 'T':
+                    //creating a new object which automatically adds to the list.
+                    Todo object_T = new Todo(loadedCommand);
+                    Task.markAsDone(object_T, loadedTask[1].equals("true"));
+                    break;
+                case 'E':
+                    Event object_D = new Event(loadedCommand, loadedDateTime);
+                    Task.markAsDone(object_D, loadedTask[1].equals("true"));
+                    break;
+                case 'D':
+                    Deadline object_E = new Deadline(loadedCommand, loadedDateTime);
+                    Task.markAsDone(object_E, loadedTask[1].equals("true"));
+                    break;
+                default:
+                    break;
+                }
+            }
+        }
+    }
+    static String userCommandFormatter(String userCommand,boolean containsSlash){
+        if(containsSlash) {
+            dividerPosition = userCommand.indexOf("/") + 3;
+            formattedUserCommand = userCommand.substring(userCommand.indexOf(' '), dividerPosition - 3) + "by: ";
+        }else {
+            formattedUserCommand = userCommand.substring(userCommand.indexOf(' ')+1);
+        }
+        return formattedUserCommand;
+    }
+    static String datetimeFormatter(String userCommand){
+        //Divide between Task description and Task date
+        dividerPosition=userCommand.indexOf("/")+3;
+        formattedDateTime = userCommand.substring(dividerPosition + 1);
+        originalDateTime=formattedDateTime;
+        time = formattedDateTime.substring(formattedDateTime.indexOf(" "));
+        time = time.substring(1,3)+":"+time.substring(3);
+        formattedDateTime = formattedDateTime.substring(0,formattedDateTime.indexOf(" "));
+
+        //Re-format the date given by the user
+        if (formattedDateTime.contains("/")) {
+            tempDateTime = formattedDateTime.split("/", 3);
+        } else {
+            tempDateTime = formattedDateTime.split("-", 3);
+        }
+        //figure out user entered year first or day first .
+        if (tempDateTime[0].length() > tempDateTime[2].length()) {
+            year = tempDateTime[0];
+            day = tempDateTime[2];
+        } else {
+            year = tempDateTime[2];
+            day = tempDateTime[0];
+        }
+        month = tempDateTime[1];
+
+        //String building
+        if (Integer.parseInt(day) < 10 && !day.contains("0")) {
+            formattedDateTime = year + "-" + month + "-0" + day+"@"+time;
+        } else {
+            formattedDateTime = year + "-" + month + "-" + day+"@"+time;
+        }
+        return formattedDateTime;
+    }
     static void parseCommand(String userCommand){
         StringTokenizer st = new StringTokenizer(userCommand);
-        int dividerPosition;
-        String dateTime = "";
-        String[] tempDateTime = new String[3];
-        String year, month, day,time;
 
         if (userCommand.contains("/")) {
-            //Divide between Task description and Task date
-            dividerPosition = userCommand.indexOf("/") + 3;
-            dateTime = userCommand.substring(dividerPosition + 1);
-
-            time = dateTime.substring(dateTime.indexOf(" "));
-            time = time.substring(1,3)+":"+time.substring(3);
-            dateTime = dateTime.substring(0,dateTime.indexOf(" "));
-
-            //Re-format the date given by the user
-            if (dateTime.contains("/")) {
-                tempDateTime = dateTime.split("/", 3);
-            } else {
-                tempDateTime = dateTime.split("-", 3);
-            }
-            //figure out user entered year first or day first .
-            if (tempDateTime[0].length() > tempDateTime[2].length()) {
-                year = tempDateTime[0];
-                day = tempDateTime[2];
-            } else {
-                year = tempDateTime[2];
-                day = tempDateTime[0];
-            }
-            month = tempDateTime[1];
-
-            //String building
-            if (Integer.parseInt(day) < 10 && !day.contains("0")) {
-                dateTime = year + "-" + month + "-0" + day+"@"+time;
-            } else {
-                dateTime = year + "-" + month + "-" + day+"@"+time;
-            }
-
-
-            //System.out.println(dateTime);
-            userCommand = userCommand.substring(userCommand.indexOf(' '), dividerPosition - 3) + "by: ";
+            dateTime=datetimeFormatter(userCommand);
+            userCommand = userCommandFormatter(userCommand,true);
         } else {
-            if (st.hasMoreTokens()) {
-                userCommand = userCommand.substring(userCommand.indexOf(' '));
-              //  userCommand = userCommand.substring(userCommand.indexOf(' '), dividerPosition);
-            }
-
+            userCommand = userCommandFormatter(userCommand,false);
         }
 
         try {
@@ -80,7 +128,6 @@ public class CommandParser {
             Ui.showError("nfe");
         }
     }
-  
     static void matchCommand(String userCommand,String dateTime,StringTokenizer st) throws InsufficientArgumentException, InvalidCommandException,
             NoSuchElementException, IOException, NumberFormatException {
         String tokenHolder = st.nextToken();
@@ -140,6 +187,11 @@ public class CommandParser {
     public static boolean isExit() {
         return exitStatus;
     }
+
+    /*public static String getOriginalDateTime(){
+        return originalDateTime;
+    }*/
+
 }
 
 

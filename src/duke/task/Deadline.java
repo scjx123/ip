@@ -1,13 +1,8 @@
 package duke.task;
-import duke.task.Task.commandType;
 
-import java.io.DataOutputStream;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
 
 public class Deadline extends Task {
     public Deadline(String description,String dateTime) {

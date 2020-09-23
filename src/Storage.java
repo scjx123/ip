@@ -1,14 +1,13 @@
 import duke.task.Task;
 
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
-import java.util.Scanner;
 
 public class Storage {
     //get home directory
@@ -45,7 +44,8 @@ public class Storage {
         //String[] s= new String[list.size()];
         //Writing Data to specified filePath
         for(Task t : list) {
-            fw.write(t.getType() + " " + t.getStatusIcon() + " " + t.getDescription() + " " + t.getDateTime().replaceFirst(":",     "") + '\n');
+            //fw.write(t.getType() + " " + t.getStatusIcon() + " " + t.getDescription() + " " + t.getDateTime().replaceFirst(":","") + '\n');
+            fw.write(t.getType() + " " + t.getStatusIcon() + " " + t.getDescription() + " "+ CommandParser.originalDateTime + '\n');
         }
         fw.close();
     }
