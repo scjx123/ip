@@ -44,8 +44,13 @@ Prerequisites: JDK 11, update Intellij to the most recent version.
 	Format: `done task_index_on_list`
 	Example: 
 	- To mark the first task on list as completed: `done 1` 
-
-4. 
+4. Delete 
+	Deletes the specified task on list 
+	Format: `delete task_index_on_list`
+	Example: 
+	- To delete the first task on list: `delete 1`
+	
+5. 	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4Mjk0MDM5MV19
+eyJoaXN0b3J5IjpbNjI1ODkyNTFdfQ==
 -->
