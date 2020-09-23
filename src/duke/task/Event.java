@@ -1,7 +1,12 @@
 package duke.task;
 
-import duke.task.Task.commandType;
 public class Event extends Task {
+    /**
+     * Creates an 'Event' task.
+     *
+     * @param description Description of the task specified by user.
+     * @param dateTime Date and Time of the task specified by user.
+     */
     public Event(String description, String dateTime) {
         super(description);
         if(!dateTime.isEmpty()) {

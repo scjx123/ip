@@ -8,6 +8,13 @@ public class Duke {
     private TaskList tasks;
     private Ui ui;
 
+    /**
+     * Passes the filePath variable to storage class to further read/load in existing data
+     * The same path is also used for writing. This constructor catches error thrown from
+     * storage.load() method as well.
+     *
+     * @param filePath an absolute path of the text file that stores user data.
+     */
     public Duke(String filePath) {
         ui = new Ui();
         storage = new Storage(filePath);
@@ -19,6 +26,11 @@ public class Duke {
         }
     }
 
+
+    /**
+     * Shows the main workflow when the app is running. isExit will be true once the
+     * user types in 'bye' command.
+     */
     public void run() {
         ui.showWelcome();
         boolean isExit = false;
@@ -37,6 +49,7 @@ public class Duke {
             }
         }
     }
+
     public static void main(String[] args) {
         new Duke("data/tasks.txt").run();
     }
