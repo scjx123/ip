@@ -4,16 +4,20 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
+
 public class Event extends Task {
+    /**
+     * Creates an 'Event' task.
+     *
+     * @param description Description of the task specified by user.
+     * @param dateTime Date and Time of the task specified by user.
+     */
     public Event(String description, String dateTime) {
         super(description);
         System.out.println(dateTime);
         LocalDate d = LocalDate.parse(dateTime.substring(0,dateTime.indexOf("@")));
         LocalTime t = LocalTime.parse(dateTime.substring(dateTime.indexOf("@")+1));
         this.dateTime=d.format(DateTimeFormatter.ofPattern("MMM d yyyy")) +" "+ t.format(DateTimeFormatter.ofPattern("hh:mm a"));
-        /*if(!dateTime.isEmpty()) {
-            this.dateTime=dateTime.replaceFirst(" ",": ");
-        }*/
         this.type=commandType.E;
     }
 

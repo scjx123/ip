@@ -10,26 +10,38 @@ import java.util.Comparator;
 import java.util.List;
 
 public class Storage {
-    //get home directory
+    /** Get home directory of the user's operating system */
     static String home = System.getProperty("user.home");
+    /** Temporary stores the file directory and the name of the text file itself
+     * given in the filePath */
     static String[] dir=new String[2];
+
     private static String filename = "tasks.txt";
     private static String filedir = "data";
 
+    /**
+     * Splits the filePath variable into file directory and file name.
+     *
+     * @param filePath an absolute path of the text file that stores user data.
+     */
     public Storage(String filePath){
-        //Path indicated by user;
         dir=filePath.split("/",2);
         filename=dir[1];
         filedir=dir[0];
     }
 
-    //create a path
-    static Path p1 = Paths.get(home, filedir);
+    /** Create a path p2 */
     static Path p2 = Paths.get(home, filedir, filename);
+
     /**
-     * loadedTask[0] indicates the type of task.
-     * loadedTask[1] indicates done or not done.
-     * loadedTask[2] indicates the task description.
+     * Checks if the filePath stated by user exist.
+     * If it does not exist, this method will create a new filePath accordingly.
+     * It will then proceed to read the text file, which can be either empty
+     * or has existing data in it.
+     *
+     * @return Files.readAllLines(p2) which is a List<String> collection of
+     *                                all the lines stored in the text file.
+     * @throws IOException Thrown by the input/reading operation.
      */
     public static List<String> load() throws IOException {
         if (!Files.exists(p2)) {
@@ -38,11 +50,17 @@ public class Storage {
         return Files.readAllLines(p2);
 
     }
+
+    /**
+     * Iterates through the current task objects stored in the list, and writes them
+     * to the filePath specified by the user.
+     *
+     * @param list A ArrayList<Task> object that stores all the current Task object.
+     * @throws IOException Thrown by the writing operation.
+     */
     public static void writeFile(ArrayList<Task> list) throws IOException {
 
         FileWriter fw = new FileWriter(p2.toString());
-        //String[] s= new String[list.size()];
-        //Writing Data to specified filePath
         for(Task t : list) {
             //fw.write(t.getType() + " " + t.getStatusIcon() + " " + t.getDescription() + " " + t.getDateTime().replaceFirst(":","") + '\n');
             fw.write(t.getType() + " " + t.getStatusIcon() + " " + t.getDescription() + " "+ CommandParser.originalDateTime + '\n');
