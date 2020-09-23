@@ -3,6 +3,7 @@ package duke.task;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import duke.task.Task.commandType;
 
 public class Event extends Task {
     public Event(String description, String dateTime) {
@@ -13,7 +14,7 @@ public class Event extends Task {
         /*if(!dateTime.isEmpty()) {
             this.dateTime=dateTime.replaceFirst(" ",": ");
         }*/
-        this.type='E';
+        this.type=commandType.E;
     }
 
     @Override
