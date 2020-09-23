@@ -1,17 +1,24 @@
 package duke.task;
 
-public class Deadline extends Task {
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
+public class Deadline extends Task {
     public Deadline(String description,String dateTime) {
         super(description);
-        if(!dateTime.isEmpty()) {
+        LocalDate d = LocalDate.parse(dateTime.substring(0,dateTime.indexOf("@")));
+        LocalTime t = LocalTime.parse(dateTime.substring(dateTime.indexOf("@")+1));
+        this.dateTime=d.format(DateTimeFormatter.ofPattern("MMM d yyyy")) +" "+ t.format(DateTimeFormatter.ofPattern("hh:mm a"));
+        /*if(!dateTime.isEmpty()) {
             this.dateTime=dateTime.replaceFirst(" ",": ");
-        }
-        this.type = 'D';
+        }*/
+        this.type = commandType.D;
+
     }
 
     @Override
     public String toString() {
-        return "[" +this.type+ "]" + super.toString() + "(" + dateTime + ")" ;
+        return "[" +this.type+ "]" + super.toString()  + dateTime  ;
     }
 }

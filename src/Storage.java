@@ -6,22 +6,26 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class Storage {
     //get home directory
     static String home = System.getProperty("user.home");
+    static String[] dir=new String[2];
+    private static String filename = "tasks.txt";
+    private static String filedir = "data";
 
     public Storage(String filePath){
-        //Path indicated by user
-        Path p2 = Paths.get(home,"Downloads",filePath);
+        //Path indicated by user;
+        dir=filePath.split("/",2);
+        filename=dir[1];
+        filedir=dir[0];
     }
 
     //create a path
-    static Path p1 = Paths.get(home, "Downloads");
-    static String fileName = "line.txt";
-    static Path p2 = Paths.get(home, "Downloads", fileName);
-
+    static Path p1 = Paths.get(home, filedir);
+    static Path p2 = Paths.get(home, filedir, filename);
     /**
      * loadedTask[0] indicates the type of task.
      * loadedTask[1] indicates done or not done.
@@ -31,17 +35,18 @@ public class Storage {
         if (!Files.exists(p2)) {
             Files.createFile(p2);
         }
+        return Files.readAllLines(p2);
 
-        List<String> lineArray = Files.readAllLines(p2);
-        return lineArray;
     }
     public static void writeFile(ArrayList<Task> list) throws IOException {
 
-        FileWriter fw = new FileWriter(p2.getFileName().toString());
-
+        FileWriter fw = new FileWriter(p2.toString());
+        //String[] s= new String[list.size()];
         //Writing Data to specified filePath
-        for(Task t : list)
-            fw.write(t.getType() + " "+ t.getStatusIcon() + " " + t.getDescription() + " "+"/" + t.getDateTime().replaceFirst(":","") + '\n');
+        for(Task t : list) {
+            //fw.write(t.getType() + " " + t.getStatusIcon() + " " + t.getDescription() + " " + t.getDateTime().replaceFirst(":","") + '\n');
+            fw.write(t.getType() + " " + t.getStatusIcon() + " " + t.getDescription() + " "+ CommandParser.originalDateTime + '\n');
+        }
         fw.close();
     }
 

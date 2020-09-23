@@ -1,16 +1,17 @@
-import duke.DukeException.InsufficientArgumentException;
+
 import duke.DukeException.InvalidCommandException;
 
-import java.io.IOException;
-import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class Ui {
 
-    public static String readCommand() {
+    public static String readCommand() throws InvalidCommandException {
         String userCommand;
         Scanner userInput = new Scanner(System.in);
         userCommand = userInput.nextLine();
+        if(userCommand==null){
+            throw new InvalidCommandException();
+        }
         return userCommand;
     }
 
@@ -33,7 +34,29 @@ public class Ui {
         System.out.println("Unable to load file.");
     }
 
-    public static void showError(String errorMessage){
-        System.out.println(errorMessage);
+    public static void showError(String error){
+        switch(error){
+        case "iae":
+
+            System.out.println("     OPPS!!! Description cannot be empty.");
+            break;
+        case "ie":
+            System.out.println("     OOPS!!! I'm sorry, but I don't know what that means :-(");
+            break;
+        case "ne":
+            System.out.println("     OOPS!!! I'm sorry, but that is an invalid command :-(");
+            break;
+        case "iobe":
+            System.out.println("     OOPS!!! I'm sorry, task does not exist in the list :-(");
+            break;
+        case "e":
+            System.out.println("     Unable to write.");
+            break;
+        case "nfe":
+            System.out.println("     OOPS!!! That is an invalid format!");
+        default:
+            break;
+        }
+
     }
 }
