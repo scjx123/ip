@@ -32,7 +32,7 @@ Prerequisites: JDK 11, update Intellij to the most recent version.
 	- Adds a 'Todo' task 
 		- Format: `todo task_name`
 		- Example: 
-			- Add 'eat sushi' to list as a todo task: `todo borrow book`
+			- Add 'eat sushi' to list as a todo task: `todo eat sushi`
 	- Adds a 'Deadline' task 
 		- Format: `deadline task_name /by DD/MM/YYYY HHMM`
 		- Example:
@@ -78,14 +78,18 @@ Command Summary
 
  - **Add Task to list** 
 	 - todo	 task_name 
+		 - eg. `todo eat sushi`
 	 - deadline  task_name /by DD/MM/YYYY HHMM 
+		 - eg. `deadline eat sushi /by 1/10/2020 1800`
 	 - event task_name /by DD/MM/YYYY HHMM 
+		 - eg. `event eat sushi /by 1/10/2020 1800`
  - **List task**: list
+	 - eg. `list`
  - **Mark task as completed**: done task_index_on_list 
  - **Delete Task**: delete task_index_on_list 
  - **Find Task**: find keyword
  - **Exit**: bye
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMzQ3ODA0NV19
+eyJoaXN0b3J5IjpbMTQwMzQwNzkxN119
 -->
