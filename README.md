@@ -1,6 +1,5 @@
 # Duke project template
 
-![A animation GIF i made for Takipi company The characters are Duke java  https://www.google.co.il/search?q=duke+java&rlz=1C1CHNV… | Animated gif,  Character, Animation](https://i.pinimg.com/originals/9c/8c/db/9c8cdbb2bd7b637edd5b3a767b74153a.gif)
 This is a project template for a greenfield Java project. It's named after the Java mascot _Duke_. Given below are instructions on how to use it.
 
 ## Setting up in Intellij
@@ -26,5 +25,5 @@ Prerequisites: JDK 11, update Intellij to the most recent version.
    |____/ \__,_|_|\_\___|
    ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NjYyMzExNF19
+eyJoaXN0b3J5IjpbLTU4MTI2MjQ2MiwtNzQ2NjIzMTE0XX0=
 -->
