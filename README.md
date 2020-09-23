@@ -52,7 +52,12 @@ Prerequisites: JDK 11, update Intellij to the most recent version.
 	
 5. Find 
 	Finds a task by searching for a keyword 
-	Format: find key
+	Format: `find keyword` 
+	Example:
+	- To find all the task with the word "eat": `find eat` 
+
+FAQ 
+Q: W
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNjIzMjk5XX0=
+eyJoaXN0b3J5IjpbMjIyMzE5NjI1XX0=
 -->
