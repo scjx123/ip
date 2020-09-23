@@ -39,7 +39,8 @@ Prerequisites: JDK 11, update Intellij to the most recent version.
 			- Add 'eat sushi' to list as a deadline task: `deadline eat sushi /by 1/10/2020 1800`
 	- Adds an 'Event' task
 		- Format:  `event task_name /by DD/MM/YYYY HHMM`
-		- Exa-
+		- Example:
+			- Add 'eat sushi' to list as an event task: `deadline eat sushi /by 1/10/2020 1800`
 		
 2. List 
 	List out all the task that you have added. 
@@ -74,16 +75,10 @@ Q: Where can i find a text file my tasks?
 A: All task are saved at *./data/tasks.txt* depending on the location you have your duke.jar file. 
 
 Command Summary  
-***todo	 task_name
-deadline  task_name /by DD/MM/YYYY HHMM
-event task_name /by DD/MM/YYYY HHMM
-list 
-done task_index_on_list
-delete task_index_on_list
-find keyword
-bye***
 
+ - ***todo	 task_name deadline  task_name /by DD/MM/YYYY HHMM event task_name /by DD/MM/YYYY HHMM list  done task_index_on_list delete
+   task_index_on_list find keyword bye***
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjYzMjgzNjhdfQ==
+eyJoaXN0b3J5IjpbMTc2NTI5ODcyMl19
 -->
