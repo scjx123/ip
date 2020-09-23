@@ -34,9 +34,12 @@ Prerequisites: JDK 11, update Intellij to the most recent version.
 	- Adding a 'Deadline' task 
 		- Format: `deadline task_name /by DD/MM/YYYY HHMM`
 	- Adding an 'Event' task
-		- Format:  event task_name /by DD/MM/YYYY HHMM
+		- Format:  `event task_name /by DD/MM/YYYY HHMM`
+		
+2. List 
+	To list out all the task that 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjQzNjU1NTZdfQ==
+eyJoaXN0b3J5IjpbMzkyMjExNjE1XX0=
 -->
