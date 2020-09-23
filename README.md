@@ -56,8 +56,14 @@ Prerequisites: JDK 11, update Intellij to the most recent version.
 	Example:
 	- To find all the task with the word "eat": `find eat` 
 
-FAQ 
-Q: W
+6. Bye 
+	Exits the application.
+	Format: `bye` 
+
+## FAQ
+
+Q: Will my data be saved after exiting from the application? 
+A: All task that have been added to the list will automatically be saved when you exit Duke
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIyMzE5NjI1XX0=
+eyJoaXN0b3J5IjpbLTE5MTk0NTA2OTJdfQ==
 -->
