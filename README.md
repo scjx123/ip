@@ -31,6 +31,8 @@ Prerequisites: JDK 11, update Intellij to the most recent version.
 	There are 3 different types of Task that you can add to Duke. Todo, Deadline and Event. Their respective formats are given as below: 
 	- Adds a 'Todo' task 
 		- Format: `todo task_name`
+		- Example: 
+			- todo borrow book
 	- Adds a 'Deadline' task 
 		- Format: `deadline task_name /by DD/MM/YYYY HHMM`
 	- Adds an 'Event' task
@@ -69,16 +71,16 @@ Q: Where can i find a text file my tasks?
 A: All task are saved at *./data/tasks.txt* depending on the location you have your duke.jar file. 
 
 Command Summary  
-|todo		 |
-|deadline  |
-|event		
-|list
-|done
-|delete
-|find
-|bye
+***todo	 task_name
+deadline  task_name /by DD/MM/YYYY HHMM
+event task_name /by DD/MM/YYYY HHMM
+list 
+done task_index_on_list
+delete task_index_on_list
+find keyword
+bye***
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA3NDE5NjgxXX0=
+eyJoaXN0b3J5IjpbMjA4OTIyNzU1M119
 -->
