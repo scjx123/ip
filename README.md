@@ -63,7 +63,14 @@ Prerequisites: JDK 11, update Intellij to the most recent version.
 ## FAQ
 
 Q: Will my data be saved after exiting from the application? 
-A: All task that have been added to the list will automatically be saved when you exit Duke
+A: All task that have been added to the list will automatically be saved when you exit Duke. No Additional action is required to save or load up from boot. 
+
+Q: Where can i find a text file my tasks? 
+A: All task are saved at *./data/tasks.txt* depending on the location you have your duke.jar file. 
+
+Command Summary 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTk0NTA2OTJdfQ==
+eyJoaXN0b3J5IjpbLTEyNTE2NTE0NzVdfQ==
 -->
