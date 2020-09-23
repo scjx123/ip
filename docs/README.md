@@ -98,4 +98,26 @@ A: All task are saved at *./data/tasks.txt* depending on the location you have y
 	 - eg. `find sushi`
  - **Exit**: bye
 	 - eg. `bye`
+User Guide
 
+## Features 
+
+### Feature 1 
+Description of feature.
+
+## Usage
+
+### `Keyword` - Describe action
+
+Describe action and its outcome.
+
+Example of usage: 
+
+`keyword (optional arguments)`
+
+Expected outcome:
+
+`outcome`
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNjg1NDUxMzIxXX0=
+-->
