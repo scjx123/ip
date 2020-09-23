@@ -1,8 +1,4 @@
-# Duke project template
-
-![A animation GIF i made for Takipi company The characters are Duke java  https://www.google.co.il/search?q=duke+java&rlz=1C1CHNV… | Animated gif,  Character, Animation](https://i.pinimg.com/originals/9c/8c/db/9c8cdbb2bd7b637edd5b3a767b74153a.gif)
-
-
+# User Guide 
 This is a project template for a greenfield Java project. It's named after the Java mascot _Duke_. Given below are instructions on how to use it.
 
 ## Setting up in Intellij
@@ -98,26 +94,3 @@ A: All task are saved at *./data/tasks.txt* depending on the location you have y
 	 - eg. `find sushi`
  - **Exit**: bye
 	 - eg. `bye`
-User Guide
-
-## Features 
-
-### Feature 1 
-Description of feature.
-
-## Usage
-
-### `Keyword` - Describe action
-
-Describe action and its outcome.
-
-Example of usage: 
-
-`keyword (optional arguments)`
-
-Expected outcome:
-
-`outcome`
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg1NDUxMzIxXX0=
--->
