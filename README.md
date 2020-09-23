@@ -41,8 +41,11 @@ Prerequisites: JDK 11, update Intellij to the most recent version.
 	Format: `list`
 3. Mark as done 
 	Marks a task as completed. 
-	Format: done task_index_on
+	Format: `done task_index_on_list`
+	Example: 
+	- To mark the first task on list as completed: `done 1` 
 
+4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM0NDk2MDg4XX0=
+eyJoaXN0b3J5IjpbLTg4Mjk0MDM5MV19
 -->
