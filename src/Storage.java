@@ -1,12 +1,12 @@
 import duke.task.Task;
 
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class Storage {
@@ -62,7 +62,8 @@ public class Storage {
 
         FileWriter fw = new FileWriter(p2.toString());
         for(Task t : list) {
-            fw.write(t.getType() + " " + t.getStatusIcon() + " " + t.getDescription() + " " + t.getDateTime().replaceFirst(":",     "") + '\n');
+            //fw.write(t.getType() + " " + t.getStatusIcon() + " " + t.getDescription() + " " + t.getDateTime().replaceFirst(":","") + '\n');
+            fw.write(t.getType() + " " + t.getStatusIcon() + " " + t.getDescription() + " "+ CommandParser.originalDateTime + '\n');
         }
         fw.close();
     }

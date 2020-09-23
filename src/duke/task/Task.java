@@ -1,12 +1,6 @@
 package duke.task;
 
-import java.lang.reflect.Array;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.ArrayList;
-
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.List;
 
 public class Task {
@@ -26,11 +20,13 @@ public class Task {
      *
      * @param description Description of the task specified by user.
      */
+
     public Task(String description) {
         this.description = description;
         this.isDone = false;
         list.add(this);
     }
+
 
     /**
      * Creates task given in the lineArray based on their types T,D or E.
@@ -131,6 +127,21 @@ public class Task {
         return list;
     }
 
+    /**
+     * Search through the entire list for task with description that matches the userKeyword
+     *
+     * @param userKeyword
+     */
+    public static void find(String userKeyword){
+        //Example find 'book'
+        int i =1;
+        for(Task t : list){
+            if(t.getDescription().contains(userKeyword)){
+                System.out.println("     "+i+"."+t.toString());
+                i++;
+            }
+        }
+    }
     /**
      * Iterates through the entire list object and prints each one out.
      */
