@@ -97,7 +97,3 @@ A: All task are saved at *./data/tasks.txt* depending on the location you have y
  - **Exit**: bye
 	 - eg. `bye`
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzE0NjE5OTksLTEyOTA5ODg1NDVdfQ
-==
--->
