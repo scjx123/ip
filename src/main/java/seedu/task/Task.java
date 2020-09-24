@@ -1,16 +1,15 @@
 package seedu.task;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Task {
     static ArrayList<Task> list = new ArrayList<>();
     protected String description;
     protected boolean isDone;
-    protected commandType type;
+    protected CommandType type;
     String dateTime = "";
 
-    public enum commandType {
+    public enum CommandType {
         T, D, E
     }
 
@@ -83,23 +82,25 @@ public class Task {
     }
 
     /**
-     * Search through the entire list for task with description that matches the userKeyword
+     * Search through the entire list for task with description that matches the userKeyword.
      *
      * @param userKeyword A String keyword that the user wish to search in the list.
      */
-    public static void find(String userKeyword){
+    public static void find(String userKeyword) {
         //Example find 'book'
-        int i =1;
-        for(Task t : list){
-            if(t.getDescription().contains(userKeyword)){
-                System.out.println("     "+i+"."+t.toString());
+        int i = 1;
+        for (Task t : list) {
+            if (t.getDescription().contains(userKeyword)) {
+                System.out.println("     " + i + "." + t.toString());
                 i++;
             }
         }
     }
     /**
      * Iterates through the entire list object and prints each one out.
+     *
      */
+
     public static void printList() {
         int i = 1;
         System.out.println("     Here are the task in your list:");
@@ -111,6 +112,7 @@ public class Task {
 
     /**
      * Prints description of a single task object that is being added to the list.
+     *
      */
     public static void printTask() {
         //Retrieve the last item on the list.
@@ -148,7 +150,7 @@ public class Task {
      *
      * @return commandType Data type of the event.
      */
-    public commandType getType() {
+    public CommandType getType() {
         return type;
     }
 

@@ -1,7 +1,7 @@
 package seedu;
 
-import seedu.DukeException.InsufficientArgumentException;
-import seedu.DukeException.InvalidCommandException;
+import seedu.dukeexception.InsufficientArgumentException;
+import seedu.dukeexception.InvalidCommandException;
 import seedu.task.Event;
 import seedu.task.Task;
 import seedu.task.Todo;
@@ -19,42 +19,45 @@ public class CommandParser {
     static String loadedDateTime;
     static String formattedUserCommand;
     static String formattedDateTime;
-    static String originalDateTime="";
+    static String originalDateTime = "";
     static int dividerPosition;
     static String dateTime = null;
     static String[] tempDateTime;
-    static String year, month, day,time;
+    static String year;
+    static String month;
+    static String day;
+    static String time;
 
     /**
      * Create object based on commands that were loaded from text file.
      *
      * @param lineArray Contains lines of data that were previously entered by user
      */
-    static void loadData(List<String> lineArray){
-        for(String str : lineArray ) {
+    static void loadData(List<String> lineArray) {
+        for (String str : lineArray) {
             if (str != null) {
                 String[] loadedTask = str.split(" ", 3);
 
-                if(loadedTask[2].contains("by: ")){
-                    loadedTask[2]=loadedTask[2].replace("by: ","/by");
-                    loadedCommand=userCommandFormatter(loadedTask[2],true);
-                    loadedDateTime=datetimeFormatter(loadedTask[2]);
-                }else {
-                    loadedCommand=loadedTask[2];
+                if (loadedTask[2].contains("by: ")) {
+                    loadedTask[2] = loadedTask[2].replace("by: ","/by");
+                    loadedCommand = userCommandFormatter(loadedTask[2],true);
+                    loadedDateTime = datetimeFormatter(loadedTask[2]);
+                } else {
+                    loadedCommand = loadedTask[2];
                 }
 
                 switch (str.charAt(0)) {
                 case 'T':
-                    Todo object_T = new Todo(loadedCommand);
-                    Task.markAsDone(object_T, loadedTask[1].equals("true"));
+                    Todo objectTask = new Todo(loadedCommand);
+                    Task.markAsDone(objectTask, loadedTask[1].equals("true"));
                     break;
                 case 'E':
-                    Event object_D = new Event(loadedCommand, loadedDateTime);
-                    Task.markAsDone(object_D, loadedTask[1].equals("true"));
+                    Event objectDeadline = new Event(loadedCommand, loadedDateTime);
+                    Task.markAsDone(objectDeadline, loadedTask[1].equals("true"));
                     break;
                 case 'D':
-                    Deadline object_E = new Deadline(loadedCommand, loadedDateTime);
-                    Task.markAsDone(object_E, loadedTask[1].equals("true"));
+                    Deadline objectEvent = new Deadline(loadedCommand, loadedDateTime);
+                    Task.markAsDone(objectEvent, loadedTask[1].equals("true"));
                     break;
                 default:
                     break;
@@ -71,12 +74,12 @@ public class CommandParser {
      * @param containsSlash True if userCommand contains slash, false otherwise.
      * @return Returns the formatted userCommand with only its description.
      */
-    static String userCommandFormatter(String userCommand,boolean containsSlash){
-        if(containsSlash) {
+    static String userCommandFormatter(String userCommand,boolean containsSlash) {
+        if (containsSlash) {
             dividerPosition = userCommand.indexOf("/") + 3;
             formattedUserCommand = userCommand.substring(userCommand.indexOf(' '), dividerPosition - 3) + "by: ";
-        }else {
-            formattedUserCommand = userCommand.substring(userCommand.indexOf(' ')+1);
+        } else {
+            formattedUserCommand = userCommand.substring(userCommand.indexOf(' ') + 1);
         }
         return formattedUserCommand;
     }
@@ -89,13 +92,13 @@ public class CommandParser {
      * @param userCommand The unformatted string entered by user.
      * @return Returns the formatted userCommand with only its date and time information.
      */
-    static String datetimeFormatter(String userCommand) throws NumberFormatException{
+    static String datetimeFormatter(String userCommand) throws NumberFormatException {
         //Divide between Task description and Task date
-        dividerPosition=userCommand.indexOf("/")+3;
+        dividerPosition = userCommand.indexOf("/") + 3;
         formattedDateTime = userCommand.substring(dividerPosition + 1);
-        originalDateTime=formattedDateTime;
+        originalDateTime = formattedDateTime;
         time = formattedDateTime.substring(formattedDateTime.indexOf(" "));
-        time = time.substring(1,3)+":"+time.substring(3);
+        time = time.substring(1,3) + ":" + time.substring(3);
         formattedDateTime = formattedDateTime.substring(0,formattedDateTime.indexOf(" "));
 
         //Re-format the date given by the user
@@ -117,9 +120,9 @@ public class CommandParser {
 
         //String building
         if (Integer.parseInt(day) < 10 && !day.contains("0")) {
-            formattedDateTime = year + "-" + month + "-0" + day+"@"+time;
+            formattedDateTime = year + "-" + month + "-0" + day + "@" + time;
         } else {
-            formattedDateTime = year + "-" + month + "-" + day+"@"+time;
+            formattedDateTime = year + "-" + month + "-" + day + "@" + time;
         }
         return formattedDateTime;
     }
@@ -130,29 +133,29 @@ public class CommandParser {
      *
      * @param userCommand The unformatted string entered by user.
      */
-    static void parseCommand(String userCommand){
+    static void parseCommand(String userCommand) {
         StringTokenizer st = new StringTokenizer(userCommand);
 
         try {
             if (userCommand.contains("/")) {
-                dateTime=datetimeFormatter(userCommand);
+                dateTime = datetimeFormatter(userCommand);
                 userCommand = userCommandFormatter(userCommand,true);
             } else {
                 userCommand = userCommandFormatter(userCommand,false);
             }
             matchCommand(userCommand, dateTime,st);
-            dateTime=null;
-        }catch (InsufficientArgumentException iae) {
+            dateTime = null;
+        } catch (InsufficientArgumentException iae) {
             Ui.showError("iae");
         } catch (InvalidCommandException ie) {
             Ui.showError("ie");
-        } catch (NoSuchElementException ne){
+        } catch (NoSuchElementException ne) {
             Ui.showError("ne");
-        } catch (IndexOutOfBoundsException iobe){
+        } catch (IndexOutOfBoundsException iobe) {
             Ui.showError("iobe");
-        } catch (IOException e){
+        } catch (IOException e) {
             Ui.showError("e");
-        } catch (NumberFormatException nfe){
+        } catch (NumberFormatException nfe) {
             Ui.showError("nfe");
         }
     }
@@ -172,7 +175,8 @@ public class CommandParser {
      * @throws IOException Thrown by writeFile() in the "bye" case of switch statement.
      * @throws NumberFormatException Thrown when user keys in illegal number format following a valid first word.
      */
-    static void matchCommand(String userCommand,String dateTime,StringTokenizer st) throws InsufficientArgumentException, InvalidCommandException,
+    static void matchCommand(String userCommand,String dateTime,StringTokenizer st)
+            throws InsufficientArgumentException, InvalidCommandException,
             NoSuchElementException, IOException, NumberFormatException {
 
         /** TokenHolder holds the first word of the userCommand, which enables the use of Switch statement */
@@ -208,22 +212,22 @@ public class CommandParser {
             if (!st.hasMoreTokens()) {
                 throw new InsufficientArgumentException();
             } else {
-                new Todo(" "+userCommand);
+                new Todo(" " + userCommand);
                 Task.printTask();
             }
             break;
         case "deadline":
-            if (!st.hasMoreTokens()||dateTime==null) {
+            if (!st.hasMoreTokens() || dateTime == null) {
                 throw new InsufficientArgumentException();
-            }else {
+            } else {
                 new Deadline(userCommand, dateTime);
                 Task.printTask();
             }
             break;
         case "event":
-            if (!st.hasMoreTokens()||dateTime==null) {
+            if (!st.hasMoreTokens() || dateTime == null) {
                 throw new InsufficientArgumentException();
-            }else {
+            } else {
                 new Event(userCommand, dateTime);
                 Task.printTask();
             }

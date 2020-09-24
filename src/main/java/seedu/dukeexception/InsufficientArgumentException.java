@@ -1,6 +1,4 @@
-package seedu.DukeException;
-
-import seedu.DukeException.DukeException;
+package seedu.dukeexception;
 
 public class InsufficientArgumentException extends DukeException {
     //no other code needed
