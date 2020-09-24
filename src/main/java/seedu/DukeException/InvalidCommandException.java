@@ -1,6 +1,6 @@
-package duke.DukeException;
+package seedu.DukeException;
 
-import java.util.NoSuchElementException;
+import seedu.DukeException.DukeException;
 
 public class InvalidCommandException extends DukeException {
     //no other code needed

@@ -1,11 +1,4 @@
-package duke.task;
-
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
-
-
-import duke.task.Task.commandType;
+package seedu.task;
 
 public class Todo extends Task {
     public Todo(String description) {

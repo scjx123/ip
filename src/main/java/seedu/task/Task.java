@@ -1,4 +1,4 @@
-package duke.task;
+package seedu.task;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,50 +24,6 @@ public class Task {
         this.description = description;
         this.isDone = false;
         list.add(this);
-    }
-
-
-    /**
-     * Creates task given in the lineArray based on their types T,D or E.
-     *
-     * @param lineArray Contains all previous task (in String) from the text file
-     *                  who's file path is specified by the user.
-     */
-    public static void loadData(List<String> lineArray) {
-
-        for (String str : lineArray) {
-            if(str!=null) {
-                String[] loadedTask = str.split(" ",3);
-                String commandDescription;
-                int index=0;
-                if(loadedTask[2].contains("/")) {
-                    index = loadedTask[2].indexOf("/");
-                    commandDescription = loadedTask[2].substring(0, index);
-                }else {
-                    commandDescription = loadedTask[2];
-                }
-                String loadedDateTime = loadedTask[2].substring(index + 1);
-
-                switch (loadedTask[0]) {
-                case "T":
-                    //creating a new object which automatically adds to the list.
-                    Todo object_T = new Todo(commandDescription);
-                    markAsDone(object_T, loadedTask[1].equals("true"));
-                    break;
-                case "D":
-                    Event object_D = new Event(commandDescription, loadedDateTime);
-                    markAsDone(object_D, loadedTask[1].equals("true"));
-                    break;
-                case "E":
-                    Deadline object_E = new Deadline(commandDescription, loadedDateTime);
-                    markAsDone(object_E, loadedTask[1].equals("true"));
-                    break;
-                default:
-                    break;
-                }
-            }
-        }
-
     }
 
     /**

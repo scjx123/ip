@@ -1,13 +1,17 @@
+package seedu;
 
-import duke.DukeException.InvalidCommandException;
+import seedu.DukeException.InvalidCommandException;
 
 import java.util.Scanner;
 
 public class Ui {
 
+    public Ui(){
+
+    }
     /**
      * Returns string entered by user in the CLI.
-     * If user presses enter without any command, InvalidCommandException will be thrown.
+     * If user presses enter without any command, seedu.DukeException.InvalidCommandException will be thrown.
      *
      * @return userCommand String command entered by the user.
      * @throws InvalidCommandException if userCommand is == null.
@@ -23,7 +27,7 @@ public class Ui {
     }
 
     /**
-     * Shows the welcome text art of Duke.
+     * Shows the welcome text art of seedu.Duke.
      */
     public static void showWelcome(){
         String logo = " ____        _        \n"
@@ -32,7 +36,7 @@ public class Ui {
                 + "| |_| | |_| |   <  __/\n"
                 + "|____/ \\__,_|_|\\_\\___|\n";
         System.out.println("Hello from\n" + logo);
-        System.out.println("    Hello! I'm Duke");
+        System.out.println("    Hello! I'm seedu.Duke");
         System.out.println("    What can i do for you?");
     }
 
@@ -44,7 +48,7 @@ public class Ui {
     }
 
     /**
-     * Prints out "Unable to load file." error message when Storage.load()
+     * Prints out "Unable to load file." error message when seedu.Storage.load()
      * is unable to read text file in the file path.
      */
     public static void showLoadingError(){

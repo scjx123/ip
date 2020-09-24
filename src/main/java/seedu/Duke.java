@@ -1,4 +1,7 @@
-import duke.DukeException.InvalidCommandException;
+package seedu;
+
+
+import seedu.DukeException.InvalidCommandException;
 
 import java.io.IOException;
 
@@ -39,13 +42,12 @@ public class Duke {
                 ui.showLine();
                 CommandParser c = new CommandParser();
                 CommandParser.parseCommand(fullCommand);
+                ui.showLine();
                 isExit = c.isExit();
             }catch(InvalidCommandException ie){
                 ui.showError("ie");
             }
-            finally {
-                ui.showLine();
-            }
+
         }
     }
 

@@ -5,3 +5,10 @@ Hello from
 | |_| | |_| |   <  __/
 |____/ \__,_|_|\_\___|
 
+    Hello! I'm seedu.Duke
+    What can i do for you?
+    ____________________________________________________________
+     Got it. I've added this task:
+       [T][Uncompleted] borrow book
+     Now you have 2 task in the list.
+    ____________________________________________________________

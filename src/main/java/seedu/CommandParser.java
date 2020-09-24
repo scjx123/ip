@@ -1,9 +1,11 @@
-import duke.DukeException.InsufficientArgumentException;
-import duke.DukeException.InvalidCommandException;
-import duke.task.Event;
-import duke.task.Task;
-import duke.task.Todo;
-import duke.task.Deadline;
+package seedu;
+
+import seedu.DukeException.InsufficientArgumentException;
+import seedu.DukeException.InvalidCommandException;
+import seedu.task.Event;
+import seedu.task.Task;
+import seedu.task.Todo;
+import seedu.task.Deadline;
 
 import java.io.IOException;
 import java.util.List;
@@ -28,7 +30,7 @@ public class CommandParser {
      *
      * @param lineArray Contains lines of data that were previously entered by user
      */
-    static void readCommand(List<String> lineArray){
+    static void loadData(List<String> lineArray){
         for(String str : lineArray ) {
             if (str != null) {
                 String[] loadedTask = str.split(" ", 3);
