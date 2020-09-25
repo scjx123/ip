@@ -1,6 +1,5 @@
 # Duke project template
 
-![How to Get Rid of Beard Dandruff For Good - 2 Step Home Remedy - HUSKYBEARD](https://cdn.shopify.com/s/files/1/1590/6373/files/huskybeard_model_large.png?v=1520138981)
 This is a project template for a greenfield Java project. It's named after the Java mascot _Duke_. Given below are instructions on how to use it.
 
 ## Setting up in Intellij
@@ -26,6 +25,6 @@ Prerequisites: JDK 11, update Intellij to the most recent version.
    |____/ \__,_|_|\_\___|
    ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzAzMjA5NzUsOTk0MDM1NTY4LC01OD
-EyNjI0NjIsLTc0NjYyMzExNF19
+eyJoaXN0b3J5IjpbLTU4MTI2MjQ2MiwtMTMzMDMyMDk3NSw5OT
+QwMzU1NjgsLTU4MTI2MjQ2MiwtNzQ2NjIzMTE0XX0=
 -->
