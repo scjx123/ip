@@ -183,6 +183,9 @@ public class CommandParser {
         String tokenHolder = st.nextToken();
 
         switch (tokenHolder) {
+        case "hi":
+            Ui.taskIO("hi",null,-1);
+            break;
         case "delete":
             int itemNum = Integer.parseInt(st.nextToken()) - 1;
             if (Task.itemExist(itemNum)) {

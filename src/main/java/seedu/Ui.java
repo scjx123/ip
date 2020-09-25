@@ -65,21 +65,27 @@ public class Ui {
         switch (error) {
         case "iae":
             System.out.println("     OPPS!!! Please enter a description!");
+            concat = "     OPPS!!! Please enter a description!";
             break;
         case "ie":
             System.out.println("     OOPS!!! I'm sorry, but I don't know what that means :-(");
+            concat ="     OOPS!!! I'm sorry, but I don't know what that means :-(";
             break;
         case "ne":
             System.out.println("     OOPS!!! I'm sorry, but that is an invalid command :-(");
+            concat = "     OOPS!!! I'm sorry, but that is an invalid command :-(";
             break;
         case "iobe":
             System.out.println("     OOPS!!! I'm sorry, task does not exist in the list :-(");
+            concat = "     OOPS!!! I'm sorry, task does not exist in the list :-(";
             break;
         case "e":
             System.out.println("     Unable to write.");
+            concat = "     OOPS!!! I'm sorry, task does not exist in the list :-(";
             break;
         case "nfe":
             System.out.println("     OOPS!!! That is an invalid format!");
+            concat = "     OOPS!!! That is an invalid format!";
             break;
         default:
             break;
@@ -98,6 +104,9 @@ public class Ui {
     public static void taskIO(String taskCases,Task t,int i) {
 
         switch (taskCases) {
+        case "hi":
+            concat = "Hello";
+            break;
         case "delete":
             System.out.println("     Got it. I've removed this task:");
             System.out.println("       " + t.toString());

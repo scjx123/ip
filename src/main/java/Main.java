@@ -1,10 +1,12 @@
 import java.io.IOException;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 import seedu.Duke;
 
 /**
@@ -18,6 +20,7 @@ public class Main extends Application {
 
     }
 
+    Window window;
     @Override
     public void start(Stage stage) {
         try {
@@ -28,6 +31,10 @@ public class Main extends Application {
             stage.setScene(scene);
             fxmlLoader.<MainWindow>getController().setDuke(duke);
             stage.show();
+            if(MainWindow.isExit){
+                window = scene.getWindow();
+                ((Stage) window).close();
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
