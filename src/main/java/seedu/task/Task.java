@@ -1,5 +1,7 @@
 package seedu.task;
 
+import seedu.Ui;
+
 import java.util.ArrayList;
 
 public class Task {
@@ -32,10 +34,8 @@ public class Task {
      */
     public static void removeItem(int num) {
         Task t = list.get(num);
-        System.out.println("     Got it. I've removed this task:");
-        System.out.println("       " + t.toString());
+        Ui.taskIO("delete",t,list.size()-1);
         list.remove(t);
-        System.out.println("     Now you have " + list.size() + " task in the list.");
     }
 
     /**
@@ -68,8 +68,9 @@ public class Task {
      * @param num The index of the task on the list.
      */
     public static void markAsDone(int num) {
-        list.get(num).isDone = true;
-        System.out.println("    " + list.get(num).toString());
+        Task t = list.get(num);
+        t.isDone = true;
+        Ui.taskIO("done",t,list.size());
     }
 
     /**
@@ -91,7 +92,7 @@ public class Task {
         int i = 1;
         for (Task t : list) {
             if (t.getDescription().contains(userKeyword)) {
-                System.out.println("     " + i + "." + t.toString());
+                Ui.taskIO("find",t,i);
                 i++;
             }
         }
@@ -103,9 +104,9 @@ public class Task {
 
     public static void printList() {
         int i = 1;
-        System.out.println("     Here are the task in your list:");
+        Ui.taskIO("listHeader",null,-1);
         for (Task t : list) {
-            System.out.println("     " + i + "." + t.toString());
+            Ui.taskIO("list", t, i);
             i++;
         }
     }
@@ -117,9 +118,7 @@ public class Task {
     public static void printTask() {
         //Retrieve the last item on the list.
         Task t = list.get(list.size() - 1);
-        System.out.println("     Got it. I've added this task:");
-        System.out.println("       " + t.toString());
-        System.out.println("     Now you have " + list.size() + " task in the list.");
+        Ui.taskIO("task",t,list.size());
     }
 
     @Override

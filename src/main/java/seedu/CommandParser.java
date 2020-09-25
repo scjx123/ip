@@ -197,14 +197,13 @@ public class CommandParser {
         case "done":
             itemNum = Integer.parseInt(st.nextToken()) - 1;
             if (Task.itemExist(itemNum)) {
-                System.out.println("     Nice! I've marked this task as done:");
                 Task.markAsDone(itemNum);
             } else {
                 throw new IndexOutOfBoundsException();
             }
             break;
         case "bye":
-            System.out.println("     Bye. Hope to see you again soon!");
+            Ui.taskIO("bye",null,-1);
             Storage.writeFile(Task.getList());
             exitStatus = true;
             break;

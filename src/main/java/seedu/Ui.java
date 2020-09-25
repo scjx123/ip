@@ -1,10 +1,15 @@
 package seedu;
 
+import seedu.dukeexception.InsufficientArgumentException;
 import seedu.dukeexception.InvalidCommandException;
+import seedu.task.Deadline;
+import seedu.task.Event;
+import seedu.task.Task;
+import seedu.task.Todo;
 
 import java.util.Scanner;
 
-public class Ui {
+public class Ui<concat> {
 
     public Ui() {
 
@@ -83,6 +88,57 @@ public class Ui {
             break;
         default:
             break;
+        }
+    }
+
+    public static String concat = "Hello";
+
+    public static void taskIO(String taskCases,Task t,int i){
+
+        switch (taskCases) {
+        case "delete":
+            System.out.println("     Got it. I've removed this task:");
+            System.out.println("       " + t.toString());
+            System.out.println("     Now you have " + i + " task in the list.");
+            concat = "     Got it. I've removed this task:\n"
+                    + "       " + t.toString() + "\n"
+                    + "     Now you have " + i + " task in the list.";
+            break;
+        case "listHeader":
+            System.out.println("     Here are the task in your list:");
+            concat = "Here are the task in your list:";
+            break;
+        case "list":
+            concat = concat.replace("Hello","");
+            if(i != -1) {
+                System.out.println("        " + i + "." + t.toString());
+                concat =concat.concat("\n" + "     " + i + "." + t.toString());
+            }
+            break;
+        case "done":
+            System.out.println("     Nice! I've marked this task as done:");
+            System.out.println("    " + t.toString());
+            concat ="     Nice! I've marked this task as done:\n"
+                    + "     " + t.toString();
+            break;
+        case "bye":
+            System.out.println("     Bye. Hope to see you again soon!");
+            concat = "     Bye. Hope to see you again soon!";
+            break;
+        case "task":
+            System.out.println("     Got it. I've added this task:");
+            System.out.println("       " + t.toString());
+            System.out.println("     Now you have " + i + " task in the list.");
+            concat = "     Got it. I've added this task:\n"
+                    + "       " + t.toString() + "\n"
+                    + "     Now you have " + i + " task in the list.";
+            break;
+        case "find":
+            System.out.println("     " + i + "." + t.toString());
+            concat = "     " + i + "." + t.toString();
+            break;
+        default:
+
         }
     }
 }
