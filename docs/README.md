@@ -2,8 +2,7 @@
 
 ![How to Get Rid of Beard Dandruff For Good - 2 Step Home Remedy - HUSKYBEARD](https://cdn.shopify.com/s/files/1/1590/6373/files/huskybeard_model_large.png?v=1520138981)
 
-This is a project template for a greenfield Java project. It's named after the Java mascot _Duke_. Given below are instructions on how to use it.
-
+Duke is a 
 ## Setting up in Intellij
 
 Prerequisites: JDK 11, update Intellij to the most recent version.
@@ -118,5 +117,5 @@ Expected outcome:
 
 `outcome`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMjMzMTU5M119
+eyJoaXN0b3J5IjpbMzQwMjQ1OTU3XX0=
 -->
