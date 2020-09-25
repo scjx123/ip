@@ -2,7 +2,8 @@
 
 ![How to Get Rid of Beard Dandruff For Good - 2 Step Home Remedy - HUSKYBEARD](https://cdn.shopify.com/s/files/1/1590/6373/files/huskybeard_model_large.png?v=1520138981)
 
-Duke is a 
+Duke is a Personal Assistant Chatbot that helps a person to keep track of various things. It has both CLI and GUI to allow user to use it. 
+
 ## Setting up in Intellij
 
 Prerequisites: JDK 11, update Intellij to the most recent version.
@@ -117,5 +118,5 @@ Expected outcome:
 
 `outcome`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQwMjQ1OTU3XX0=
+eyJoaXN0b3J5IjpbMjI3MDQ5Mzk1XX0=
 -->
