@@ -1,5 +1,6 @@
 # Duke project template
 
+
 This is a project template for a greenfield Java project. It's named after the Java mascot _Duke_. Given below are instructions on how to use it.
 
 ## Setting up in Intellij
@@ -25,5 +26,6 @@ Prerequisites: JDK 11, update Intellij to the most recent version.
    |____/ \__,_|_|\_\___|
    ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MTI2MjQ2MiwtNzQ2NjIzMTE0XX0=
+eyJoaXN0b3J5IjpbOTk0MDM1NTY4LC01ODEyNjI0NjIsLTc0Nj
+YyMzExNF19
 -->
