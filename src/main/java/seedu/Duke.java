@@ -1,20 +1,12 @@
 package seedu;
 
-import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
-import javafx.scene.shape.Circle;
-import javafx.stage.Stage;
-import javafx.scene.layout.Region;
-import javafx.scene.control.Label;
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 
-import seedu.dukeexception.DukeException;
 import seedu.dukeexception.InvalidCommandException;
 
 import java.io.IOException;
@@ -34,7 +26,7 @@ public class Duke {
 
 
     /**
-     * Empty constructor to bypass classpath issue for JavaFx
+     * Empty constructor to bypass classpath issue for JavaFx.
      */
     public Duke(){
 
@@ -97,7 +89,7 @@ public class Duke {
         CommandParser c = new CommandParser();
         c.parseCommand(fullCommand);
 
-        return Ui.concat ;
+        return Ui.concat;
     }
 }
 

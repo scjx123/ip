@@ -34,7 +34,7 @@ public class Task {
      */
     public static void removeItem(int num) {
         Task t = list.get(num);
-        Ui.taskIO("delete",t,list.size()-1);
+        Ui.taskIO("delete",t,list.size() - 1);
         list.remove(t);
     }
 

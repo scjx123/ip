@@ -9,7 +9,7 @@ import seedu.task.Todo;
 
 import java.util.Scanner;
 
-public class Ui<concat> {
+public class Ui {
 
     public Ui() {
 
@@ -93,7 +93,14 @@ public class Ui<concat> {
 
     public static String concat = "Hello";
 
-    public static void taskIO(String taskCases,Task t,int i){
+    /**
+     * Prints out the necessary statements corresponding to the user's command.
+     *
+     * @param taskCases Specifies individual task to print.
+     * @param t Task object passed in from individual task.
+     * @param i the index of the task or it can also be the number of the task left in the list depending on cases.
+     */
+    public static void taskIO(String taskCases,Task t,int i) {
 
         switch (taskCases) {
         case "delete":
@@ -110,15 +117,15 @@ public class Ui<concat> {
             break;
         case "list":
             concat = concat.replace("Hello","");
-            if(i != -1) {
+            if (i != -1) {
                 System.out.println("        " + i + "." + t.toString());
-                concat =concat.concat("\n" + "     " + i + "." + t.toString());
+                concat = concat.concat("\n" + "     " + i + "." + t.toString());
             }
             break;
         case "done":
             System.out.println("     Nice! I've marked this task as done:");
             System.out.println("    " + t.toString());
-            concat ="     Nice! I've marked this task as done:\n"
+            concat = "     Nice! I've marked this task as done:\n"
                     + "     " + t.toString();
             break;
         case "bye":
