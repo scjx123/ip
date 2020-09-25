@@ -1,7 +1,6 @@
 package seedu.task;
 
 import seedu.Ui;
-
 import java.util.ArrayList;
 
 public class Task {

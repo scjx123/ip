@@ -43,18 +43,12 @@ test {
 }
 
 application {
-    mainClassName = "seedu.Duke"
-//    jar {
-//        manifest {
-//            attributes 'Main-Class': 'seedu.Duke'
-//        }
-//        from {
-//            configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
-//        }
+    //mainClassName = "seedu.Duke"
+    mainClassName = "Launcher"
 }
 
 shadowJar {
-    archiveBaseName = "seedu.duke"
+    archiveBaseName = "ip"
     archiveClassifier = null
 }
 

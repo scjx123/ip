@@ -1,12 +1,7 @@
 package seedu;
 
-import seedu.dukeexception.InsufficientArgumentException;
 import seedu.dukeexception.InvalidCommandException;
-import seedu.task.Deadline;
-import seedu.task.Event;
 import seedu.task.Task;
-import seedu.task.Todo;
-
 import java.util.Scanner;
 
 public class Ui {
