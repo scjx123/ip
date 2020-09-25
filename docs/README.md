@@ -1,8 +1,6 @@
 # User Guide Duke project template
 
-![A animation GIF i made for Takipi company The characters are Duke java  https://www.google.co.il/search?q=duke+java&rlz=1C1CHNV… | Animated gif,  Character, Animation](https://i.pinimg.com/originals/9c/8c/db/9c8cdbb2bd7b637edd5b3a767b74153a.gif)
-
-
+![How to Get Rid of Beard Dandruff For Good - 2 Step Home Remedy - HUSKYBEARD](https://cdn.shopify.com/s/files/1/1590/6373/files/huskybeard_model_large.png?v=1520138981)
 This is a project template for a greenfield Java project. It's named after the Java mascot _Duke_. Given below are instructions on how to use it.
 
 ## Setting up in Intellij
@@ -119,5 +117,5 @@ Expected outcome:
 
 `outcome`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTIxNDEyNTJdfQ==
+eyJoaXN0b3J5IjpbMTMwNjAzMjMxN119
 -->
