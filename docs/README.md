@@ -106,6 +106,8 @@ During the chat, you may feel free to change your chatbot assistant anytime duri
 	Expected output: 
 	
 		  > Bye. Hope to see you again soon!
+
+
 ## FAQ
 
 Q: **Will my data be saved after exiting from the application?** 
@@ -135,3 +137,6 @@ A: All task are saved at *./data/tasks.txt* depending on the location you have y
 	 - eg. `find sushi`
  - **Exit**: bye
 	 - eg. `bye`
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTM5NDcxMzc0NF19
+-->
