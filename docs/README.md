@@ -1,6 +1,5 @@
 # User Guide Duke project (Marvel-Themed) 
 ![Marvel The Avengers Logo Hd Wallpaper - Marvel - 1600x900 - Download HD  Wallpaper - WallpaperTip](https://wi.wallpapertip.com/wsimgs/26-262036_marvel-the-avengers-logo-hd-wallpaper-marvel.jpg)
-![enter image description here](https://pbs.twimg.com/profile_images/2955406958/3f74743072a5643bb3551a7e66b10612.jpeg)
 
 Duke is a Personal Assistant Chatbot that helps a person to keep track of various tasks. It comes in both CLI and GUI to allow user to visualize the conversation better. 
 
@@ -138,5 +137,5 @@ A: All task are saved at *./data/tasks.txt* depending on the location you have y
  - **Exit**: bye
 	 - eg. `bye`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMjE4MDg2OF19
+eyJoaXN0b3J5IjpbLTE4MzE0MDY1ODNdfQ==
 -->
