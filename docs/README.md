@@ -36,8 +36,11 @@ During the chat, you may feel free to change your chatbot assistant anytime duri
 			- Add 'eat sushi' to list as a deadline task: `deadline eat sushi /by 1/10/2020 1800`
 		- Expected output: 
 			>  Got it. I've added this task: 
-			> 	[D][Uncompleted] eat sushi 
-			> 	Now you have 1 task in the list.
+			> 	[D][Uncompleted] eat sushi by: Oct 1 2020 06:00PM
+			> 	Now you have 2 task in the list.
+			
+
+	    -	note that you will only have 2 task in the list, if you have added the previous 'todo' example. 
 
 	- Adds an 'Event' task
 		- Format:  `event task_name /by DD/MM/YYYY HHMM`
@@ -98,5 +101,5 @@ A: All task are saved at *./data/tasks.txt* depending on the location you have y
  - **Exit**: bye
 	 - eg. `bye`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg1NDgzMjU4XX0=
+eyJoaXN0b3J5IjpbLTc0MTg2MzA1OF19
 -->
