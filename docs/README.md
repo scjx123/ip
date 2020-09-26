@@ -22,14 +22,25 @@ During the chat, you may feel free to change your chatbot assistant anytime duri
 		- Format: `todo task_name`
 		- Example: 
 			- Add 'eat sushi' to list as a todo task: `todo eat sushi`
+		
 		- Expected output: 
-			- Got it. I've added this task: 
-					[T][Uncompleted] eat sushi 
-			 Now you have 1 task in the list.
+				
+
+			>  Got it. I've added this task: 
+			> 					[T][Uncompleted] eat sushi 
+			> 			 Now you have 1 task in the list.
+
 	- Adds a 'Deadline' task 
 		- Format: `deadline task_name /by DD/MM/YYYY HHMM`
 		- Example:
 			- Add 'eat sushi' to list as a deadline task: `deadline eat sushi /by 1/10/2020 1800`
+
+- Expected output: 
+				
+
+			>  Got it. I've added this task: 
+			> 					[T][Uncompleted] eat sushi 
+			> 			 Now you have 1 task in the list.
 	- Adds an 'Event' task
 		- Format:  `event task_name /by DD/MM/YYYY HHMM`
 		- Example:
@@ -89,5 +100,5 @@ A: All task are saved at *./data/tasks.txt* depending on the location you have y
  - **Exit**: bye
 	 - eg. `bye`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MTY4ODg0NV19
+eyJoaXN0b3J5IjpbLTE1NDU0MTgzODBdfQ==
 -->
