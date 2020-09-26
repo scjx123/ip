@@ -55,6 +55,13 @@ During the chat, you may feel free to change your chatbot assistant anytime duri
 2. **List** 
 	List out all the task that you have added. 
 	Format: `list`
+	Expected output: 
+				
+
+			>  Here are the task in your list: 
+			> [T][Uncompleted] borrow book 
+			> [D][Uncompleted] eat sushi by: Oct 1 2020 06:00PM
+			> [E][Uncompleted] eat sushi by: Oct 1 2020 06:00PM
 3. **Mark as done** 
 	Marks a task as completed. 
 	Format: `done task_index_on_list`
@@ -106,5 +113,5 @@ A: All task are saved at *./data/tasks.txt* depending on the location you have y
  - **Exit**: bye
 	 - eg. `bye`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzg5MzcyMl19
+eyJoaXN0b3J5IjpbLTkyNTY1MjQwOF19
 -->
