@@ -50,8 +50,8 @@ During the chat, you may feel free to change your chatbot assistant anytime duri
 				
 
 			>  Got it. I've added this task: 
-			> 					[T][Uncompleted] eat sushi 
-			> 			 Now you have 1 task in the list.
+			> 					[E][Uncompleted] eat sushi by: Oct 1 2020 06:00PM
+			> 			 Now you have 3 task in the list.
 2. **List** 
 	List out all the task that you have added. 
 	Format: `list`
@@ -106,5 +106,5 @@ A: All task are saved at *./data/tasks.txt* depending on the location you have y
  - **Exit**: bye
 	 - eg. `bye`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2NjcyNzkyNF19
+eyJoaXN0b3J5IjpbLTExNzg5MzcyMl19
 -->
