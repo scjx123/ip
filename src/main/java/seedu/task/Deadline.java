@@ -14,12 +14,16 @@ public class Deadline extends Task {
      */
     public Deadline(String description,String dateTime) {
         super(description);
-        LocalDate d = LocalDate.parse(dateTime.substring(0,dateTime.indexOf("@")));
-        LocalTime t = LocalTime.parse(dateTime.substring(dateTime.indexOf("@") + 1));
-        this.dateTime = d.format(DateTimeFormatter.ofPattern("MMM d yyyy")) + " "
-                + t.format(DateTimeFormatter.ofPattern("hh:mm a"));
+        this.dateTime = dateTimeParser(dateTime);
         this.type = CommandType.D;
 
+    }
+
+    private String dateTimeParser(String dateTime) {
+        LocalDate d = LocalDate.parse(dateTime.substring(0,dateTime.indexOf("@")));
+        LocalTime t = LocalTime.parse(dateTime.substring(dateTime.indexOf("@") + 1));
+        return d.format(DateTimeFormatter.ofPattern("MMM d yyyy")) + " "
+                + t.format(DateTimeFormatter.ofPattern("hh:mm a"));
     }
 
     @Override

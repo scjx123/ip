@@ -14,11 +14,15 @@ public class Event extends Task {
      */
     public Event(String description, String dateTime) {
         super(description);
+        this.dateTime = dateTimeParser(dateTime);
+        this.type = CommandType.E;
+    }
+
+    private String dateTimeParser(String dateTime) {
         LocalDate d = LocalDate.parse(dateTime.substring(0,dateTime.indexOf("@")));
         LocalTime t = LocalTime.parse(dateTime.substring(dateTime.indexOf("@") + 1));
-        this.dateTime = d.format(DateTimeFormatter.ofPattern("MMM d yyyy")) + " "
+        return d.format(DateTimeFormatter.ofPattern("MMM d yyyy")) + " "
                 + t.format(DateTimeFormatter.ofPattern("hh:mm a"));
-        this.type = CommandType.E;
     }
 
     @Override

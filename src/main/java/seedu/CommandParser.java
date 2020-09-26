@@ -13,20 +13,20 @@ import java.util.NoSuchElementException;
 import java.util.StringTokenizer;
 
 public class CommandParser {
-    static boolean exitStatus = false;
-
+    public static boolean exitStatus = false;
+    static final int NOTUSED = -1;
     static String loadedCommand;
     static String loadedDateTime;
-    static String formattedUserCommand;
-    static String formattedDateTime;
-    static String originalDateTime = "";
-    static int dividerPosition;
-    static String dateTime = null;
-    static String[] tempDateTime;
-    static String year;
-    static String month;
-    static String day;
-    static String time;
+    public static String formattedUserCommand;
+    public static String formattedDateTime;
+    public static String originalDateTime = "";
+    private static int dividerPosition;
+    protected static String dateTime = null;
+    private static String[] tempDateTime;
+    private static String year;
+    private static String month;
+    private static String day;
+    private static String time;
 
     /**
      * Create object based on commands that were loaded from text file.
@@ -182,9 +182,9 @@ public class CommandParser {
         /** TokenHolder holds the first word of the userCommand, which enables the use of Switch statement */
         String tokenHolder = st.nextToken();
 
-        switch (tokenHolder) {
+        switch (tokenHolder.toLowerCase()) {
         case "hi":
-            Ui.taskIO("hi",null,-1);
+            Ui.taskIO("hi",null,NOTUSED);
             break;
         case "delete":
             int itemNum = Integer.parseInt(st.nextToken()) - 1;
@@ -206,7 +206,7 @@ public class CommandParser {
             }
             break;
         case "bye":
-            Ui.taskIO("bye",null,-1);
+            Ui.taskIO("bye",null,NOTUSED);
             Storage.writeFile(Task.getList());
             exitStatus = true;
             break;
@@ -237,7 +237,17 @@ public class CommandParser {
         case "find":
             Task.find(st.nextToken());
             break;
+        case "tony":
+            Ui.agentMessage("tony");
+            break;
+        case "romanoff":
+            Ui.agentMessage("romanoff");
+            break;
+        case "steve":
+            Ui.agentMessage("steve");
+            break;
         default:
+            Ui.agentMessage("nick");
             throw new InvalidCommandException();
         }
     }

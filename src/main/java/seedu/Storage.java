@@ -12,9 +12,9 @@ import java.util.List;
 
 public class Storage {
     /** Get home directory of the user's operating system. */
-    static String home = System.getProperty("user.home");
+    private static String home = System.getProperty("user.home");
     /** Temporary stores the file directory and the name of the text file itself given in the filePath. */
-    static String[] dir = new String[2];
+    private static String[] dir = new String[2];
 
     private static String filename = "tasks.txt";
     private static String filedir = "data";

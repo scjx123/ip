@@ -5,9 +5,9 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
-import javafx.stage.Window;
 import seedu.Duke;
+import seedu.Ui;
+
 
 /**
  * Controller for MainWindow. Provides the layout for the other controls.
@@ -22,10 +22,20 @@ public class MainWindow extends AnchorPane {
     @FXML
     private Button sendButton;
 
+
     private seedu.Duke duke;
 
     private Image userImage = new Image(this.getClass().getResourceAsStream("/images/DaUser.png"));
-    private Image dukeImage = new Image(this.getClass().getResourceAsStream("/images/DaDuke.png"));
+    private Image nickImage = new Image(this.getClass().getResourceAsStream("/images/nickfury.jpg"));
+    private Image steveImage = new Image(this.getClass().getResourceAsStream("/images/steve.jpg"));
+    private Image tonyImage = new Image(this.getClass().getResourceAsStream("/images/stark.jpg"));
+    private Image romanoffImage = new Image(this.getClass().getResourceAsStream("/images/romanoff.jpg"));
+
+    public enum CharacterChoice {
+        STEVE,STARK,ROMANOFF,NULL
+    }
+
+    public CharacterChoice choice = CharacterChoice.NULL;
 
     @FXML
     public void initialize() {
@@ -33,14 +43,14 @@ public class MainWindow extends AnchorPane {
     }
 
     public void setDuke(Duke d) {
+        dialogContainer.getChildren().add(DialogBox.getDukeDialog(Ui.guiWelcome(), nickImage));
         duke = d;
     }
 
     public MainWindow(){
-
     }
 
-    public static boolean isExit=false;
+    public static boolean isExit = false;
 
     /**
      * Creates two dialog boxes, one echoing user input and the other containing Duke's reply and then appends them to
@@ -49,15 +59,51 @@ public class MainWindow extends AnchorPane {
     @FXML
     private void handleUserInput() {
         String input = userInput.getText();
+        setChoice(input);
         String response = duke.getResponse(input);
-        dialogContainer.getChildren().addAll(
-                DialogBox.getUserDialog(input, userImage),
-                DialogBox.getDukeDialog(response, dukeImage)
-        );
+
+        if (choice == CharacterChoice.STEVE) {
+            dialogContainer.getChildren().addAll(
+                    DialogBox.getUserDialog(input, userImage),
+                    DialogBox.getDukeDialog(response, steveImage)
+            );
+        } else if (choice == CharacterChoice.STARK) {
+            dialogContainer.getChildren().addAll(
+                    DialogBox.getUserDialog(input, userImage),
+                    DialogBox.getDukeDialog(response, tonyImage)
+            );
+        } else if (choice == CharacterChoice.ROMANOFF) {
+            dialogContainer.getChildren().addAll(
+                    DialogBox.getUserDialog(input, userImage),
+                    DialogBox.getDukeDialog(response, romanoffImage)
+            );
+        } else if (choice == CharacterChoice.NULL) {
+            dialogContainer.getChildren().addAll(
+                    DialogBox.getUserDialog(input, userImage),
+                    DialogBox.getDukeDialog(response, nickImage)
+            );
+        }
         if (input.equals("bye")) {
             isExit = true;
         } else {
             userInput.clear();
+        }
+
+    }
+
+    private void setChoice(String input) {
+        switch (input.toLowerCase()) {
+        case "steve":
+            choice = CharacterChoice.STEVE;
+            break;
+        case "tony":
+            choice = CharacterChoice.STARK;
+            break;
+        case "romanoff":
+            choice = CharacterChoice.ROMANOFF;
+            break;
+        default:
+            break;
         }
 
     }

@@ -27,6 +27,28 @@ public class Ui {
         return userCommand;
     }
 
+    public static String guiWelcome() {
+        return "Hello Avenger, who would you like to speak with today?" + "\n"
+                + "- Agent Romanoff\n -Steve Roger\n -Tony Stark\n" + "\ntype: TONY / STEVE / ROMANOFF";
+    }
+
+
+    public static void agentMessage(String name) {
+        switch (name) {
+        case "tony":
+            concat = "I'll take over, since i'm the smartest in the room.";
+            break;
+        case "romanoff":
+            concat = "Hey fella, let me remind you of your task. (:";
+            break;
+        case "steve":
+            concat = "Glad to work with you, Avenger. I'll make sure you never forget anything since 1975.";
+            break;
+        default:
+            break;
+        }
+    }
+
     /**
      * Shows the welcome text art of seedu.Duke.
      */
@@ -69,7 +91,7 @@ public class Ui {
             break;
         case "ie":
             System.out.println("     OOPS!!! I'm sorry, but I don't know what that means :-(");
-            concat ="     OOPS!!! I'm sorry, but I don't know what that means :-(";
+            concat = "     OOPS!!! I'm sorry, but I don't know what that means :-(";
             break;
         case "ne":
             System.out.println("     OOPS!!! I'm sorry, but that is an invalid command :-(");
