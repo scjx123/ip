@@ -49,9 +49,9 @@ During the chat, you may feel free to change your chatbot assistant anytime duri
 		- Expected output: 
 				
 
-			>  Got it. I've added this task: 
-			> 					[E][Uncompleted] eat sushi by: Oct 1 2020 06:00PM
-			> 			 Now you have 3 task in the list.
+				>  Got it. I've added this task: 
+				> 					[E][Uncompleted] eat sushi by: Oct 1 2020 06:00PM
+				> 			 Now you have 3 task in the list.
 2. **List** 
 	List out all the task that you have added. 
 	Format: `list`
@@ -69,7 +69,11 @@ During the chat, you may feel free to change your chatbot assistant anytime duri
 	Example: 
 	- To mark the first task on list as completed: `done 1` 
 
-Expected output: 
+	Expected output: 
+	
+		> Nice! I've marked this task as done:  	
+		> [T][Uncompleted] borrow book
+
 4. **Delete** 
 	Deletes the specified task on list 
 	Format: `delete task_index_on_list`
@@ -116,5 +120,5 @@ A: All task are saved at *./data/tasks.txt* depending on the location you have y
  - **Exit**: bye
 	 - eg. `bye`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjYzMDA2NTVdfQ==
+eyJoaXN0b3J5IjpbLTE4NzUyNzY2MV19
 -->
