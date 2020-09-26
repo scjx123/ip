@@ -4,6 +4,9 @@
 
 Duke is a Personal Assistant Chatbot that helps a person to keep track of various tasks. It comes with both CLI and GUI to allow user to visual the conversations better. 
 
+## Setting up
+
+Upon download and running the command java -jar <ip.jar
 ## Features
 
 1. **Adding a new Task** 
@@ -75,5 +78,5 @@ A: All task are saved at *./data/tasks.txt* depending on the location you have y
  - **Exit**: bye
 	 - eg. `bye`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMTg0NjQxNV19
+eyJoaXN0b3J5IjpbLTEzNTQ3NzM0MjZdfQ==
 -->
