@@ -62,11 +62,14 @@ During the chat, you may feel free to change your chatbot assistant anytime duri
 			> [T][Uncompleted] borrow book 
 			> [D][Uncompleted] eat sushi by: Oct 1 2020 06:00PM
 			> [E][Uncompleted] eat sushi by: Oct 1 2020 06:00PM
+	However, do note that for GUI, the display is limited. Hence, the list will be chop off. You may refer to the CLI for the whole list. 
 3. **Mark as done** 
 	Marks a task as completed. 
 	Format: `done task_index_on_list`
 	Example: 
 	- To mark the first task on list as completed: `done 1` 
+
+Expected output: 
 4. **Delete** 
 	Deletes the specified task on list 
 	Format: `delete task_index_on_list`
@@ -113,5 +116,5 @@ A: All task are saved at *./data/tasks.txt* depending on the location you have y
  - **Exit**: bye
 	 - eg. `bye`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNTY1MjQwOF19
+eyJoaXN0b3J5IjpbLTIxMjYzMDA2NTVdfQ==
 -->
