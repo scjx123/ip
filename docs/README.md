@@ -2,12 +2,12 @@
 
 ![enter image description here](https://pbs.twimg.com/profile_images/2955406958/3f74743072a5643bb3551a7e66b10612.jpeg)
 
-Duke is a Personal Assistant Chatbot that helps a person to keep track of various tasks. It comes with both CLI and GUI to allow user to visual the conversations better. 
+Duke is a Personal Assistant Chatbot that helps a person to keep track of various tasks. It comes in both CLI and GUI to allow user to visualize the conversation better. 
 
 ## Setting up
 
-Upon download and running the command `java -jar <ip.jar path>`
-turn up your volume and start off by choosing a character to serve as your chat bot assistant. You can may key in the following option : 
+Upon downloading and running the command `java -jar <ip.jar path>`
+turn up your volume and start off by choosing a character to serve as your chat bot assistant. You may type in the one of the following option : 
 - `TONY`
 - `STEVE`
 - `ROMANOFF`
@@ -22,6 +22,7 @@ During the chat, you may feel free to change your chatbot assistant anytime duri
 		- Format: `todo task_name`
 		- Example: 
 			- Add 'eat sushi' to list as a todo task: `todo eat sushi`
+			- 
 	- Adds a 'Deadline' task 
 		- Format: `deadline task_name /by DD/MM/YYYY HHMM`
 		- Example:
@@ -85,5 +86,5 @@ A: All task are saved at *./data/tasks.txt* depending on the location you have y
  - **Exit**: bye
 	 - eg. `bye`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NjgwNDA3MV19
+eyJoaXN0b3J5IjpbMTM0MTI5MDYyNV19
 -->
