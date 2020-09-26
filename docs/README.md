@@ -76,24 +76,30 @@ During the chat, you may feel free to change your chatbot assistant anytime duri
 	Expected output: 
 	
 		  > Nice! I've marked this task as done:  	
-		  > [T][Uncompleted] borrow book
+		  > [T][Completed] borrow book
 
 4. **Delete** 
 	Deletes the specified task on list 
 	Format: `delete task_index_on_list`
 	Example: 
 	- To delete the first task on list: `delete 1`
-		Expected output: 
+
+	Expected output: 
 	
-		  > Nice! I've marked this task as done:  	
-		  > [T][Uncompleted] borrow book
+		  > Got it. I've removed this task:
+		  > [T][Completed] borrow book
+		  > Now you have 2 task in the list.
 	
 5. **Find** 
 	Finds a task by searching for a keyword 
 	Format: `find keyword` 
 	Example:
 	- To find all the task with the word "eat": `find eat` 
-
+	
+	Expected output: 
+	
+		  > Nice! I've marked this task as done:  	
+		  > [T][Uncompleted] borrow book
 6. **Bye** 
 	Exits the application.
 	Format: `bye` 
@@ -128,5 +134,5 @@ A: All task are saved at *./data/tasks.txt* depending on the location you have y
  - **Exit**: bye
 	 - eg. `bye`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNzYwOTg4Ml19
+eyJoaXN0b3J5IjpbLTI1NjIzNzE0MF19
 -->
