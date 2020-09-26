@@ -26,18 +26,22 @@ During the chat, you may feel free to change your chatbot assistant anytime duri
 		- Expected output: 
 				
 
-			>  Got it. I've added this task: 
-			> 					[T][Uncompleted] eat sushi 
-			> 			 Now you have 1 task in the list.
+			
+
+				>     Got it. I've added this task: 
+				> 	[T][Uncompleted] eat sushi 
+				> 	Now you have 1 task in the list.
 
 	- Adds a 'Deadline' task 
 		- Format: `deadline task_name /by DD/MM/YYYY HHMM`
 		- Example:
 			- Add 'eat sushi' to list as a deadline task: `deadline eat sushi /by 1/10/2020 1800`
 		- Expected output: 
-			>  Got it. I've added this task: 
-			> 	[D][Uncompleted] eat sushi by: Oct 1 2020 06:00PM
-			> 	Now you have 2 task in the list.
+
+				>     Got it. I've added this task: 
+				> 	[D][Uncompleted] eat sushi by: Oct 1 2020 06:00PM
+				> 	Now you have 2 task in the list.
+
 			
 
 	    -	note that you will only have 2 task in the list, if you have added the previous 'todo' example. 
@@ -49,9 +53,9 @@ During the chat, you may feel free to change your chatbot assistant anytime duri
 		- Expected output: 
 				
 
-				>  Got it. I've added this task: 
-				> 					[E][Uncompleted] eat sushi by: Oct 1 2020 06:00PM
-				> 			 Now you have 3 task in the list.
+				>     Got it. I've added this task: 
+				> 	[E][Uncompleted] eat sushi by: Oct 1 2020 06:00PM
+				> 	Now you have 3 task in the list.
 2. **List** 
 	List out all the task that you have added. 
 	Format: `list`
@@ -71,14 +75,18 @@ During the chat, you may feel free to change your chatbot assistant anytime duri
 
 	Expected output: 
 	
-		> Nice! I've marked this task as done:  	
-		> [T][Uncompleted] borrow book
+		  > Nice! I've marked this task as done:  	
+		  > [T][Uncompleted] borrow book
 
 4. **Delete** 
 	Deletes the specified task on list 
 	Format: `delete task_index_on_list`
 	Example: 
 	- To delete the first task on list: `delete 1`
+		Expected output: 
+	
+		  > Nice! I've marked this task as done:  	
+		  > [T][Uncompleted] borrow book
 	
 5. **Find** 
 	Finds a task by searching for a keyword 
@@ -120,5 +128,5 @@ A: All task are saved at *./data/tasks.txt* depending on the location you have y
  - **Exit**: bye
 	 - eg. `bye`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzUyNzY2MV19
+eyJoaXN0b3J5IjpbLTkxNzYwOTg4Ml19
 -->
