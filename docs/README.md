@@ -98,12 +98,14 @@ During the chat, you may feel free to change your chatbot assistant anytime duri
 	
 	Expected output: 
 	
-		  > Nice! I've marked this task as done:  	
-		  > [T][Uncompleted] borrow book
+		  > 1.[D][Uncompleted] eat sushi by: Oct 1 2020 06:00PM
+		  > 2.[E][Uncompleted] eat sushi by: Oct 1 2020 06:00PM
 6. **Bye** 
 	Exits the application.
 	Format: `bye` 
-
+	Expected output: 
+	
+		  > Bye. Hope to see you again soon!
 ## FAQ
 
 Q: **Will my data be saved after exiting from the application?** 
@@ -134,5 +136,5 @@ A: All task are saved at *./data/tasks.txt* depending on the location you have y
  - **Exit**: bye
 	 - eg. `bye`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1NjIzNzE0MF19
+eyJoaXN0b3J5IjpbODA1OTUwNTJdfQ==
 -->
