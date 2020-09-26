@@ -54,6 +54,7 @@ During the chat, you may feel free to change your chatbot assistant anytime duri
 				>     Got it. I've added this task: 
 				> 	[E][Uncompleted] eat sushi by: Oct 1 2020 06:00PM
 				> 	Now you have 3 task in the list.
+
 2. **List** 
 	List out all the task that you have added. 
 	Format: `list`
@@ -65,6 +66,7 @@ During the chat, you may feel free to change your chatbot assistant anytime duri
 			> [D][Uncompleted] eat sushi by: Oct 1 2020 06:00PM
 			> [E][Uncompleted] eat sushi by: Oct 1 2020 06:00PM
 	However, do note that for GUI, the display is limited. Hence, the list will be chop off. You may refer to the CLI for the whole list. 
+
 3. **Mark as done** 
 	Marks a task as completed. 
 	Format: `done task_index_on_list`
@@ -98,6 +100,7 @@ During the chat, you may feel free to change your chatbot assistant anytime duri
 	
 		  > 1.[D][Uncompleted] eat sushi by: Oct 1 2020 06:00PM
 		  > 2.[E][Uncompleted] eat sushi by: Oct 1 2020 06:00PM
+
 6. **Bye** 
 	Exits the application.
 	Format: `bye` 
