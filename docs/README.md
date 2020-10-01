@@ -1,32 +1,17 @@
-# User Guide Duke project 
+# User Guide Duke project (Marvel-Themed) 
+![Marvel The Avengers Logo Hd Wallpaper - Marvel - 1600x900 - Download HD  Wallpaper - WallpaperTip](https://wi.wallpapertip.com/wsimgs/26-262036_marvel-the-avengers-logo-hd-wallpaper-marvel.jpg)
 
-![How to Get Rid of Beard Dandruff For Good - 2 Step Home Remedy - HUSKYBEARD](https://cdn.shopify.com/s/files/1/1590/6373/files/huskybeard_model_large.png?v=1520138981)
+Duke is a Personal Assistant Chatbot that helps a person to keep track of various tasks. It comes in both CLI and GUI to allow user to visualize the conversation better. 
 
-Duke is a Personal Assistant Chatbot that helps a person to keep track of various things. It has comes with both CLI and GUI to allow user to visual the conversations better. 
+## Setting up
 
-## Setting up in Intellij
+Upon downloading and running the command `java -jar <ip.jar path>` start off by choosing a character to serve as your chat bot assistant. You may type in the one of the following option : 
+- `TONY`
+- `STEVE`
+- `ROMANOFF`
 
-Prerequisites: JDK 11, update Intellij to the most recent version.
-
-1. Open Intellij (if you are not in the welcome screen, click `File` > `Close Project` to close the existing project dialog first)
-1. Set up the correct JDK version, as follows:
-   1. Click `Configure` > `Structure for New Projects` and then `Project Settings` > `Project` > `Project SDK`
-   1. If JDK 11 is listed in the drop down, select it. If it is not, click `New...` and select the directory where you installed JDK 11
-   1. Click `OK`
-1. Import the project into Intellij as follows:
-   1. Click `Open or Import`.
-   1. Select the project directory, and click `OK`
-   1. If there are any further prompts, accept the defaults.
-1. After the importing is complete, locate the `src/main/java/Duke.java` file, right-click it, and choose `Run Duke.main()`. If the setup is correct, you should see something like the below:
-   ```
-   Hello from
-    ____        _        
-   |  _ \ _   _| | _____ 
-   | | | | | | | |/ / _ \
-   | |_| | |_| |   <  __/
-   |____/ \__,_|_|\_\___|
-   ```
-
+*Note that caps do not matter. 
+During the chat, you may feel free to change your chatbot assistant anytime during the chat, by typing in the above names as mentioned. 
 ## Features
 
 1. **Adding a new Task** 
@@ -35,38 +20,94 @@ Prerequisites: JDK 11, update Intellij to the most recent version.
 		- Format: `todo task_name`
 		- Example: 
 			- Add 'eat sushi' to list as a todo task: `todo eat sushi`
+		
+		- Expected output: 
+				
+
+			
+
+				>     Got it. I've added this task: 
+				> 	[T][Uncompleted] eat sushi 
+				> 	Now you have 1 task in the list.
+
 	- Adds a 'Deadline' task 
 		- Format: `deadline task_name /by DD/MM/YYYY HHMM`
 		- Example:
 			- Add 'eat sushi' to list as a deadline task: `deadline eat sushi /by 1/10/2020 1800`
+		- Expected output: 
+
+				>     Got it. I've added this task: 
+				> 	[D][Uncompleted] eat sushi by: Oct 1 2020 06:00PM
+				> 	Now you have 2 task in the list.
+
+			
+
+	    -	note that you will only have 2 task in the list, if you have added the previous 'todo' example. 
+
 	- Adds an 'Event' task
 		- Format:  `event task_name /by DD/MM/YYYY HHMM`
 		- Example:
-			- Add 'eat sushi' to list as an event task: `deadline eat sushi /by 1/10/2020 1800`
-		
+			- Add 'eat sushi' to list as an event task: `event eat sushi /by 1/10/2020 1800`
+		- Expected output: 
+				
+
+				>     Got it. I've added this task: 
+				> 	[E][Uncompleted] eat sushi by: Oct 1 2020 06:00PM
+				> 	Now you have 3 task in the list.
+
 2. **List** 
 	List out all the task that you have added. 
 	Format: `list`
+	Expected output: 
+				
+
+			>  Here are the task in your list: 
+			> [T][Uncompleted] borrow book 
+			> [D][Uncompleted] eat sushi by: Oct 1 2020 06:00PM
+			> [E][Uncompleted] eat sushi by: Oct 1 2020 06:00PM
+	However, do note that for GUI, the display is limited. Hence, the list will be chop off. You may refer to the CLI for the whole list. 
+
 3. **Mark as done** 
 	Marks a task as completed. 
 	Format: `done task_index_on_list`
 	Example: 
 	- To mark the first task on list as completed: `done 1` 
+
+	Expected output: 
+	
+		  > Nice! I've marked this task as done:  	
+		  > [T][Completed] borrow book
+
 4. **Delete** 
 	Deletes the specified task on list 
 	Format: `delete task_index_on_list`
 	Example: 
 	- To delete the first task on list: `delete 1`
+
+	Expected output: 
+	
+		  > Got it. I've removed this task:
+		  > [T][Completed] borrow book
+		  > Now you have 2 task in the list.
 	
 5. **Find** 
 	Finds a task by searching for a keyword 
 	Format: `find keyword` 
 	Example:
 	- To find all the task with the word "eat": `find eat` 
+	
+	Expected output: 
+	
+		  > 1.[D][Uncompleted] eat sushi by: Oct 1 2020 06:00PM
+		  > 2.[E][Uncompleted] eat sushi by: Oct 1 2020 06:00PM
 
 6. **Bye** 
 	Exits the application.
 	Format: `bye` 
+	Expected output: 
+	
+		  > Bye. Hope to see you again soon!
+
 
 ## FAQ
 
