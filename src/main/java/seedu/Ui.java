@@ -7,8 +7,9 @@ import java.util.Scanner;
 public class Ui {
 
     public Ui() {
-
     }
+
+    static String userCommand;
     /**
      * Returns string entered by user in the CLI.
      * If user presses enter without any command, seedu.DukeException.InvalidCommandException will be thrown.
@@ -16,9 +17,8 @@ public class Ui {
      * @return userCommand String command entered by the user.
      * @throws InvalidCommandException if userCommand is == null.
      */
-
     public static String readCommand() throws InvalidCommandException {
-        String userCommand;
+
         Scanner userInput = new Scanner(System.in);
         userCommand = userInput.nextLine();
         if (userCommand == null) {

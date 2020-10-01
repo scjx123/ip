@@ -10,5 +10,5 @@ Hello from
     ____________________________________________________________
      Got it. I've added this task:
        [T][Uncompleted] borrow book
-     Now you have 2 task in the list.
+     Now you have 3 task in the list.
     ____________________________________________________________

@@ -1,19 +1,13 @@
 package seedu;
 
 import seedu.dukeexception.InvalidCommandException;
+
 import java.io.IOException;
 
 public class Duke {
     private Storage storage;
     private TaskList tasks;
     private Ui ui;
-
-    /**
-     * Empty constructor to bypass classpath issue for JavaFx.
-     */
-    public Duke(){
-
-    }
 
     /**
      * Passes the filePath variable to storage class to further read/load in existing data
@@ -34,6 +28,9 @@ public class Duke {
         }
     }
 
+    public static void main(String[] args) {
+        new Duke("data/tasks.txt").run();
+    }
 
     /**
      * Shows the main workflow when the app is running. isExit will be true once the
@@ -57,20 +54,15 @@ public class Duke {
         }
     }
 
-    public static void main(String[] args) {
-        new Duke("data/tasks.txt").run();
-    }
-
     /**
      * You should have your own function to generate a response to user input.
      * Replace this stub with your completed method.
      */
     public String getResponse(String input) {
-        ui.showWelcome();
-        String fullCommand = input;
+        ui.showLine();
         CommandParser c = new CommandParser();
-        c.parseCommand(fullCommand);
-
+        CommandParser.parseCommand(input);
+        ui.showLine();
         return Ui.concat;
     }
 

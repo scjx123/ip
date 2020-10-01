@@ -182,7 +182,7 @@ public class CommandParser {
         /** TokenHolder holds the first word of the userCommand, which enables the use of Switch statement */
         String tokenHolder = st.nextToken();
 
-        switch (tokenHolder.toLowerCase()) {
+        switch (tokenHolder.toLowerCase().trim()) {
         case "hi":
             Ui.taskIO("hi",null,NOTUSED);
             break;

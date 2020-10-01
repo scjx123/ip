@@ -2,20 +2,23 @@ package seedu;
 
 import seedu.task.Task;
 
+import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
+import java.nio.file.FileSystems;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.nio.file.Path;
+import java.util.Scanner;
 
 public class Storage {
     /** Get home directory of the user's operating system. */
     private static String home = System.getProperty("user.home");
     /** Temporary stores the file directory and the name of the text file itself given in the filePath. */
     private static String[] dir = new String[2];
-
     private static String filename = "tasks.txt";
     private static String filedir = "data";
 
@@ -31,7 +34,11 @@ public class Storage {
     }
 
     /** Create a path p2. */
-    static Path p2 = Paths.get(home, filedir, filename);
+    static Path p2 = Paths.get(home + File.separator + filedir + File.separator + filename);
+    static Path p1 = Paths.get(filename);
+
+    private static String OS = System.getProperty("os.name").toLowerCase();
+    static File file = new File(filename);
 
     /**
      * Checks if the filePath stated by user exist.
@@ -43,10 +50,21 @@ public class Storage {
      * @throws IOException Thrown by the input/reading operation.
      */
     public static List<String> load() throws IOException {
-        if (!Files.exists(p2)) {
-            Files.createFile(p2);
+        List<String> dataList = null;
+        if (OS.contains("mac")) {
+            if (!Files.exists(p2)) {
+                file.createNewFile();
+            }
+
+            dataList = Files.readAllLines(p1);
+
+        } else {
+            if (!Files.exists(p2)) {
+                Files.createFile(p2);
+            }
+            dataList = Files.readAllLines(p2);
         }
-        return Files.readAllLines(p2);
+        return dataList;
     }
 
     /**
@@ -58,11 +76,26 @@ public class Storage {
      */
     public static void writeFile(ArrayList<Task> list) throws IOException {
 
-        FileWriter fw = new FileWriter(p2.toString());
-        for (Task t : list) {
-            fw.write(t.getType() + " " + t.getStatusIcon() + " " + t.getDescription() + " "
-                    + CommandParser.originalDateTime + '\n');
+        if (OS.contains("mac")) {
+            FileWriter fileWriter = new FileWriter(file.getAbsoluteFile());
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+
+            if (list.isEmpty()) {
+                bufferedWriter.close();
+            } else {
+                for (Task t : list) {
+                    bufferedWriter.write(t.getType() + " " + t.getStatusIcon() + " " + t.getDescription() + " "
+                            + CommandParser.originalDateTime + '\n');
+                }
+                bufferedWriter.close();
+            }
+        } else {
+            FileWriter fw = new FileWriter(p2.toString());
+            for (Task t : list) {
+                fw.write(t.getType() + " " + t.getStatusIcon() + " " + t.getDescription() + " "
+                        + CommandParser.originalDateTime + '\n');
+            }
+            fw.close();
         }
-        fw.close();
     }
 }

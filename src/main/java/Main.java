@@ -1,4 +1,5 @@
 
+import java.io.File;
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -14,8 +15,7 @@ import seedu.Duke;
  * A GUI for Duke using FXML.
  */
 public class Main extends Application {
-
-    private Duke duke = new Duke();
+    private Duke duke = new Duke("data/tasks.txt");
 
     public Main() {
 
@@ -35,10 +35,6 @@ public class Main extends Application {
             mediaPlayer.play();
             fxmlLoader.<MainWindow>getController().setDuke(duke);
             stage.show();
-            if (MainWindow.isExit) {
-                window = scene.getWindow();
-                ((Stage) window).close();
-            }
         } catch (IOException e) {
             e.printStackTrace();
         }
