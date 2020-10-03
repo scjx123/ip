@@ -49,7 +49,12 @@ application {
     //mainClassName = "seedu.Duke"
     mainClassName = "Launcher"
 }
-
+jar {
+    manifest {
+        attributes(
+                "Class-Path": configurations.compile.collect { it.getName() }.join(' '))
+    }
+}
 shadowJar {
     archiveBaseName = "ip"
     archiveClassifier = null
