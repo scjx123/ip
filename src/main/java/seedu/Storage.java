@@ -36,6 +36,8 @@ public class Storage {
     /** Create a path p2. */
     static Path p2 = Paths.get(home + File.separator + filedir + File.separator + filename);
     static Path p1 = Paths.get(filename);
+    static Path filePath = Paths.get(filedir,filename);
+    static Path fileDirectory = Paths.get(filedir);
 
     private static String OS = System.getProperty("os.name").toLowerCase();
     static File file = new File(filename);
@@ -59,11 +61,13 @@ public class Storage {
             dataList = Files.readAllLines(p1);
 
         } else {
-            if (!Files.exists(p2)) {
-                System.out.println("testing creating file.");
-                file.createNewFile();
+            if (!Files.exists(fileDirectory)) {
+                Files.createDirectory(fileDirectory);
             }
-            dataList = Files.readAllLines(p2);
+            if (!Files.exists(filePath)) {
+                Files.createFile(filePath);
+            }
+            dataList = Files.readAllLines(filePath);
         }
         return dataList;
     }
@@ -91,7 +95,7 @@ public class Storage {
                 bufferedWriter.close();
             }
         } else {
-            FileWriter fw = new FileWriter(p2.toString());
+            FileWriter fw = new FileWriter(filePath.toString());
             for (Task t : list) {
                 fw.write(t.getType() + " " + t.getStatusIcon() + " " + t.getDescription() + " "
                         + CommandParser.originalDateTime + '\n');
