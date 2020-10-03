@@ -10,6 +10,7 @@ public class Ui {
     }
 
     static String userCommand;
+
     /**
      * Returns string entered by user in the CLI.
      * If user presses enter without any command, seedu.DukeException.InvalidCommandException will be thrown.

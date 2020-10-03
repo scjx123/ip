@@ -60,7 +60,8 @@ public class Storage {
 
         } else {
             if (!Files.exists(p2)) {
-                Files.createFile(p2);
+                System.out.println("testing creating file.");
+                file.createNewFile();
             }
             dataList = Files.readAllLines(p2);
         }
