@@ -2,7 +2,7 @@
 
 ## Design & implementation
 The Architecture Diagram below represents a high-level design overview of the App. Specifically, it is done with an n-tier architecture.
-![here](Architecture dDiagram.PNG)
+![here](Architecture Diagram.PNG)
 
 
 
@@ -34,6 +34,6 @@ The Architecture Diagram below represents a high-level design overview of the Ap
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzUyNjIyNDgsMjAxNTA2MjExMCwxMT
-UyMDk5MTgzLDE3NTgzOTc2MTRdfQ==
+eyJoaXN0b3J5IjpbLTE4MDYwMjYwLDIwMTUwNjIxMTAsMTE1Mj
+A5OTE4MywxNzU4Mzk3NjE0XX0=
 -->
