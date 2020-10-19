@@ -5,8 +5,6 @@ The Architecture Diagram below represents a high-level design overview of the Ap
 
 ![here](Architecture_Diagram.PNG)
 
-M
-
 
 
 ## Product scope
@@ -37,7 +35,7 @@ M
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI2NDIwNzI2LDE0NjA0ODcyMjAsMTgxOD
-UwMTk1MCwtMTgwNjAyNjAsMjAxNTA2MjExMCwxMTUyMDk5MTgz
-LDE3NTgzOTc2MTRdfQ==
+eyJoaXN0b3J5IjpbODY4MTc2MTUsODI2NDIwNzI2LDE0NjA0OD
+cyMjAsMTgxODUwMTk1MCwtMTgwNjAyNjAsMjAxNTA2MjExMCwx
+MTUyMDk5MTgzLDE3NTgzOTc2MTRdfQ==
 -->
