@@ -6,6 +6,7 @@ The Architecture Diagram below represents a high-level design overview of the Ap
 ![here](Architecture_Diagram.PNG)
 
 Main 
+
 UI
 Command Interpreter
 Executer
@@ -40,7 +41,7 @@ Storage
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzIxMjcwMzQsODI2NDIwNzI2LDE0Nj
-A0ODcyMjAsMTgxODUwMTk1MCwtMTgwNjAyNjAsMjAxNTA2MjEx
-MCwxMTUyMDk5MTgzLDE3NTgzOTc2MTRdfQ==
+eyJoaXN0b3J5IjpbMTk1MDI3MjExNiwtMTg3MjEyNzAzNCw4Mj
+Y0MjA3MjYsMTQ2MDQ4NzIyMCwxODE4NTAxOTUwLC0xODA2MDI2
+MCwyMDE1MDYyMTEwLDExNTIwOTkxODMsMTc1ODM5NzYxNF19
 -->
