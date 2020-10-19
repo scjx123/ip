@@ -3,6 +3,7 @@
 ## Design & implementation
 The architecture diagram below, gives a high-level architecture of 
 
+
 ## Product scope
 ### Target user profile
 
@@ -31,5 +32,5 @@ The architecture diagram below, gives a high-level architecture of
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1ODM5NzYxNF19
+eyJoaXN0b3J5IjpbOTc3MTQ1MjQ0LDE3NTgzOTc2MTRdfQ==
 -->
