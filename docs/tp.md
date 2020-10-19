@@ -25,6 +25,10 @@ Once CI processed the user input, duke proceeds to redirect the input to Execute
 **Storage**
 
 ## Implementation
+[add ur individual features here]
+
+
+
 
 ## Product scope
 ### Target user profile
@@ -54,8 +58,7 @@ Once CI processed the user input, duke proceeds to redirect the input to Execute
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDMwNDY4NzAsLTE4NzIxMjcwMzQsOD
-I2NDIwNzI2LDE0NjA0ODcyMjAsMTgxODUwMTk1MCwtMTgwNjAy
-NjAsMjAxNTA2MjExMCwxMTUyMDk5MTgzLDE3NTgzOTc2MTRdfQ
-==
+eyJoaXN0b3J5IjpbLTI2MjY0MzMyOCwtMTg3MjEyNzAzNCw4Mj
+Y0MjA3MjYsMTQ2MDQ4NzIyMCwxODE4NTAxOTUwLC0xODA2MDI2
+MCwyMDE1MDYyMTEwLDExNTIwOTkxODMsMTc1ODM5NzYxNF19
 -->
