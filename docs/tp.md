@@ -1,7 +1,7 @@
 # Developer Guide
 
 ## Design & implementation
-The architecture diagram below, gives a high-level architecture of 
+The team have have represented the  n-tier architecture diagram to 
 
 
 ## Product scope
@@ -32,5 +32,5 @@ The architecture diagram below, gives a high-level architecture of
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc3MTQ1MjQ0LDE3NTgzOTc2MTRdfQ==
+eyJoaXN0b3J5IjpbMTA4NDk3NjEzMCwxNzU4Mzk3NjE0XX0=
 -->
