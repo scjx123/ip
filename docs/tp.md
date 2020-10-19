@@ -14,7 +14,10 @@ Main's interaction with UI
 Main gets user input and displays messages through the use of UI component. 
 
 Main's interaction with Command Interpreter 
-Upon receivei
+Upon receiving command from the UI, Duke would pass the entire user input into Command Interpreter (CI)
+
+Main's interaction with Execute 
+Once CI proces
 
 **UI**
 **Command Interpreter**
@@ -50,7 +53,8 @@ Upon receivei
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwOTg1MTYyMSwtMTg3MjEyNzAzNCw4Mj
-Y0MjA3MjYsMTQ2MDQ4NzIyMCwxODE4NTAxOTUwLC0xODA2MDI2
-MCwyMDE1MDYyMTEwLDExNTIwOTkxODMsMTc1ODM5NzYxNF19
+eyJoaXN0b3J5IjpbLTEzMjE4NzQ5NjQsLTE4NzIxMjcwMzQsOD
+I2NDIwNzI2LDE0NjA0ODcyMjAsMTgxODUwMTk1MCwtMTgwNjAy
+NjAsMjAxNTA2MjExMCwxMTUyMDk5MTgzLDE3NTgzOTc2MTRdfQ
+==
 -->
