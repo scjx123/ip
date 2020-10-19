@@ -6,7 +6,7 @@ The Architecture Diagram below represents a high-level design overview of the Ap
 ![here](Architecture_Diagram.PNG)
 
 **Main**
-For the main layer, it consist of a
+For the main layer, it contains a single class known as Duke. During the app launch, Duke runs the respective c
 **UI**
 **Command Interpreter**
 **Executer**
@@ -41,7 +41,7 @@ For the main layer, it consist of a
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDU4NTE0NCwtMTg3MjEyNzAzNCw4Mj
+eyJoaXN0b3J5IjpbMTUyNDM2MzY3NCwtMTg3MjEyNzAzNCw4Mj
 Y0MjA3MjYsMTQ2MDQ4NzIyMCwxODE4NTAxOTUwLC0xODA2MDI2
 MCwyMDE1MDYyMTEwLDExNTIwOTkxODMsMTc1ODM5NzYxNF19
 -->
