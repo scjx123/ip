@@ -6,7 +6,7 @@ The Architecture Diagram below represents a high-level design overview of the Ap
 ![here](Architecture_Diagram.PNG)
 
 **Main**
-For the main layer, it contains a single class known as Duke. During the app launch, Duke first attempts to load any previous data from storage and followed by connecting the res 
+For the main layer, it contains a single class known as Duke. e app launch, Duke  to load any previous data from storage and followed by running the components of the app in sequence. Upon shutting down,  Duke calls upon method to save user's data automatically.  
 **UI**
 **Command Interpreter**
 **Executer**
@@ -41,7 +41,7 @@ For the main layer, it contains a single class known as Duke. During the app lau
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTQwNjAxNjQsLTE4NzIxMjcwMzQsOD
+eyJoaXN0b3J5IjpbLTE2MTA4MTgyNTYsLTE4NzIxMjcwMzQsOD
 I2NDIwNzI2LDE0NjA0ODcyMjAsMTgxODUwMTk1MCwtMTgwNjAy
 NjAsMjAxNTA2MjExMCwxMTUyMDk5MTgzLDE3NTgzOTc2MTRdfQ
 ==
