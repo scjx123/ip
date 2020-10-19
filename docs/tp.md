@@ -3,7 +3,7 @@
 ## Design & implementation
 The Architecture Diagram below represents a high-level design overview of the App. Specifically, it is done with an n-tier architecture.
 
-![here](docs/ArchitectureDiagram.PNG)
+![here](docs/Architecture_Diagram.PNG)
 
 
 
