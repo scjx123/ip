@@ -1,10 +1,15 @@
 # Developer Guide
 
 ## Design & implementation
-The Architecture Diagram below represents a high-level design overview of the App. Specifically, it is done with an n-tier architecture.
+The Architecture Diagram below represents a high-level design overview of the App. Specifically, it is done with an n-tier architectural style, where the higher layers make use of services provided by lower layers. 
 
 ![here](Architecture_Diagram.PNG)
 
+Main 
+UI
+Command Interpreter
+Executer
+Storage
 
 
 ## Product scope
@@ -35,7 +40,7 @@ The Architecture Diagram below represents a high-level design overview of the Ap
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY4MTc2MTUsODI2NDIwNzI2LDE0NjA0OD
-cyMjAsMTgxODUwMTk1MCwtMTgwNjAyNjAsMjAxNTA2MjExMCwx
-MTUyMDk5MTgzLDE3NTgzOTc2MTRdfQ==
+eyJoaXN0b3J5IjpbLTE4NzIxMjcwMzQsODI2NDIwNzI2LDE0Nj
+A0ODcyMjAsMTgxODUwMTk1MCwtMTgwNjAyNjAsMjAxNTA2MjEx
+MCwxMTUyMDk5MTgzLDE3NTgzOTc2MTRdfQ==
 -->
