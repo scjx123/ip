@@ -17,7 +17,7 @@ Main's interaction with Command Interpreter
 Upon receiving command from the UI, Duke would pass the entire user input into Command Interpreter (CI)
 
 Main's interaction with Execute 
-Once CI proces
+Once CI processed the user input, duke proceeds to redirect the input to Execute for execution of action. 
 
 **UI**
 **Command Interpreter**
@@ -53,8 +53,7 @@ Once CI proces
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjE4NzQ5NjQsLTE4NzIxMjcwMzQsOD
-I2NDIwNzI2LDE0NjA0ODcyMjAsMTgxODUwMTk1MCwtMTgwNjAy
-NjAsMjAxNTA2MjExMCwxMTUyMDk5MTgzLDE3NTgzOTc2MTRdfQ
-==
+eyJoaXN0b3J5IjpbMjIzOTA5NDAyLC0xODcyMTI3MDM0LDgyNj
+QyMDcyNiwxNDYwNDg3MjIwLDE4MTg1MDE5NTAsLTE4MDYwMjYw
+LDIwMTUwNjIxMTAsMTE1MjA5OTE4MywxNzU4Mzk3NjE0XX0=
 -->
