@@ -5,13 +5,12 @@ The Architecture Diagram below represents a high-level design overview of the Ap
 
 ![here](Architecture_Diagram.PNG)
 
-Main
-
-	
-UI
-Command Interpreter
-Executer
-Storage
+**Main**
+For the main layer, it consist of a
+**UI**
+**Command Interpreter**
+**Executer**
+**Storage**
 
 
 ## Product scope
@@ -42,7 +41,7 @@ Storage
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MDg4MzAxOCwtMTg3MjEyNzAzNCw4Mj
+eyJoaXN0b3J5IjpbLTE5MDU4NTE0NCwtMTg3MjEyNzAzNCw4Mj
 Y0MjA3MjYsMTQ2MDQ4NzIyMCwxODE4NTAxOTUwLC0xODA2MDI2
 MCwyMDE1MDYyMTEwLDExNTIwOTkxODMsMTc1ODM5NzYxNF19
 -->
