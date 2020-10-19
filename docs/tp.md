@@ -1,7 +1,7 @@
 # Developer Guide
 
 ## Design & implementation
-The team have have represented the  n-tier architecture diagram to 
+The Architecture Diagram below represents a high-level design overview of the App. Specifically, it is done with an n-tier architecture.
 
 
 ## Product scope
@@ -32,5 +32,5 @@ The team have have represented the  n-tier architecture diagram to
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4NDk3NjEzMCwxNzU4Mzk3NjE0XX0=
+eyJoaXN0b3J5IjpbMTU0MzMxODU2MywxNzU4Mzk3NjE0XX0=
 -->
