@@ -1,6 +1,6 @@
 # Developer Guide
 
-## Design & implementation
+## Design
 The Architecture Diagram below represents a high-level design overview of the App. Specifically, it is done with an n-tier architectural style, where the higher layers make use of services provided by lower layers. 
 
 ![here](Architecture_Diagram.PNG)
@@ -24,6 +24,7 @@ Once CI processed the user input, duke proceeds to redirect the input to Execute
 **Executer**
 **Storage**
 
+## Implementation
 
 ## Product scope
 ### Target user profile
@@ -53,7 +54,8 @@ Once CI processed the user input, duke proceeds to redirect the input to Execute
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIzOTA5NDAyLC0xODcyMTI3MDM0LDgyNj
-QyMDcyNiwxNDYwNDg3MjIwLDE4MTg1MDE5NTAsLTE4MDYwMjYw
-LDIwMTUwNjIxMTAsMTE1MjA5OTE4MywxNzU4Mzk3NjE0XX0=
+eyJoaXN0b3J5IjpbLTEwNDMwNDY4NzAsLTE4NzIxMjcwMzQsOD
+I2NDIwNzI2LDE0NjA0ODcyMjAsMTgxODUwMTk1MCwtMTgwNjAy
+NjAsMjAxNTA2MjExMCwxMTUyMDk5MTgzLDE3NTgzOTc2MTRdfQ
+==
 -->
