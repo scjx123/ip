@@ -1,9 +1,7 @@
 # Developer Guide
 
 ## Design & implementation
-
-{Describe the design and implementation of the product. Use UML diagrams and short code snippets where applicable.}
-
+The architecture diagram below, gives a high-level architecture of 
 
 ## Product scope
 ### Target user profile
@@ -32,3 +30,6 @@
 ## Instructions for manual testing
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTc1ODM5NzYxNF19
+-->
