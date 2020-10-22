@@ -256,11 +256,16 @@ _{More to be added}_
 
 ## Appendix F. Instructions for manual testing
 
-{Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
+1. Downloading and beginning the application 
+Step 1: Download the latest version of  `Duke`  from  [Our Release Page](https://github.com/AY2021S1-CS2113-T13-2/tp/releases/tag/v1.0).
+Step 2: Copy the file to the folder you want to use as the home folder for your Mobile Nusmod.
+Step 3: Open the Command Prompt if you are running on Windows or Terminal if you are running on Mac OS.
+Step 4: Navigate to your home folder and type ‘java -jar domnus.jar’
+Step 5: Type ‘bye’ to terminate your session.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NDQwNzM2NCwxMDU3MDExMjMsLTE4MT
-M4MzAwNDksLTEwNTE5Njk5NiwtNDYyNjY1ODA5LDI2MTk5NjI5
-NiwtMzYyMDI4MjkxLDE2MjMyNjM3OTMsMTk4MzYzOTIyMiw2Mj
-Y4MzUwODUsMjAxMTM1MzRdfQ==
+eyJoaXN0b3J5IjpbNTI0MTU4ODcsMTA1NzAxMTIzLC0xODEzOD
+MwMDQ5LC0xMDUxOTY5OTYsLTQ2MjY2NTgwOSwyNjE5OTYyOTYs
+LTM2MjAyODI5MSwxNjIzMjYzNzkzLDE5ODM2MzkyMjIsNjI2OD
+M1MDg1LDIwMTEzNTM0XX0=
 -->
