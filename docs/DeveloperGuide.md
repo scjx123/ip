@@ -37,8 +37,7 @@ UI also reads data from the Data object for refreshing purposes, but does not mo
 **Storage**<br>
 
 ## Implementation<br>
-[add ur individual features here]
-
+This section decribes some key highlight of our implementation 
 ### module planner feature
 
 The module planner feature entails many *Actions* which extend `Action`. Their functionalities and usages
@@ -147,3 +146,6 @@ These operations are exposed in the Model interface as Model#commitAddressBook()
 ## Instructions for manual testing
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjYzODk4MjU4XX0=
+-->
