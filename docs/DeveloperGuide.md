@@ -191,7 +191,7 @@ All in one app to track tasks and their dates, monitor productivity and calculat
 
 |Version| As a ... | I want to ... | So that I can ...|
 |--------|----------|---------------|------------------|
-|v1.0|new user|take |refer to them when I forget how to use the application|
+|v1.0|Stud||refer to them when I forget how to use the application|
 |v2.0|user|find a to-do item by name|locate a to-do without having to go through the entire list|
 
 ## Appendix C. Non-Functional Requirements
@@ -211,7 +211,7 @@ _{More to be added}_
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjk5MjA1MiwyNjE5OTYyOTYsLTM2Mj
-AyODI5MSwxNjIzMjYzNzkzLDE5ODM2MzkyMjIsNjI2ODM1MDg1
-LDIwMTEzNTM0XX0=
+eyJoaXN0b3J5IjpbLTE5NjY3NTIyMDgsMjYxOTk2Mjk2LC0zNj
+IwMjgyOTEsMTYyMzI2Mzc5MywxOTgzNjM5MjIyLDYyNjgzNTA4
+NSwyMDExMzUzNF19
 -->
