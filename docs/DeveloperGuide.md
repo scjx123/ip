@@ -206,7 +206,8 @@ All in one app to track tasks and their dates, monitor productivity and calculat
 
 {More to be added}
 ## Appendix C. Use Cases: 
-
+Use Case: Delete Item 
+Use Case: 
 
 
 ## Appendix D. Non-Functional Requirements
@@ -226,7 +227,8 @@ _{More to be added}_
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTM4MzAwNDksLTEwNTE5Njk5NiwtND
-YyNjY1ODA5LDI2MTk5NjI5NiwtMzYyMDI4MjkxLDE2MjMyNjM3
-OTMsMTk4MzYzOTIyMiw2MjY4MzUwODUsMjAxMTM1MzRdfQ==
+eyJoaXN0b3J5IjpbLTk4NzMxMzA4MSwtMTgxMzgzMDA0OSwtMT
+A1MTk2OTk2LC00NjI2NjU4MDksMjYxOTk2Mjk2LC0zNjIwMjgy
+OTEsMTYyMzI2Mzc5MywxOTgzNjM5MjIyLDYyNjgzNTA4NSwyMD
+ExMzUzNF19
 -->
