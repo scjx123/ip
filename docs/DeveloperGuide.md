@@ -193,7 +193,11 @@ These operations are exposed in the Model interface as Model#commitAddressBook()
 
 ## Appendix C. Non-Functional Requirements
 
-{Give non-functional requirements}
+1.  Should work on any  _mainstream OS_  as long as it has Java  `11`  or above installed.
+2.  Should be able to hold up to 1000 persons without a noticeable sluggishness in performance for typical usage.
+3.  A user with above average typing speed for regular English text (i.e. not code, not system admin commands) should be able to accomplish most of the tasks faster using commands than using the mouse.
+
+_{More to be added}_
 
 ## Appendix D. Glossary
 
@@ -204,7 +208,7 @@ These operations are exposed in the Model interface as Model#commitAddressBook()
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTEzMzUyMjcsLTM2MjAyODI5MSwxNj
-IzMjYzNzkzLDE5ODM2MzkyMjIsNjI2ODM1MDg1LDIwMTEzNTM0
-XX0=
+eyJoaXN0b3J5IjpbMjYxOTk2Mjk2LC0zNjIwMjgyOTEsMTYyMz
+I2Mzc5MywxOTgzNjM5MjIyLDYyNjgzNTA4NSwyMDExMzUzNF19
+
 -->
