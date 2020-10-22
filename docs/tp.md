@@ -35,31 +35,142 @@ The **Architecture Diagram** below represents a high-level design overview of th
 
 ![here](Architecture_Diagram.PNG)
 
-**Main**
-For the main layer, it contains a single class known as `Duke`. 
-Main's interaction with Storage 
+
+**1.1 Main**<br>
+For the main layer, it contains a single class known as *Duke*. 
+Main's interaction with Storage<br>
 When the app launches, Duke loads any previous data from storage and then connects the components of the app in sequence. Upon shutting down,  Duke calls upon method to save user's data automatically.  
 
-Main's interaction with UI
+**1.2 Main's interaction with UI**<br>
 Main gets user input and displays messages through the use of UI component. 
+The UI layer entails the package *visualize*, which contains classes *ColoredString*, *Bitmap*, *UI*, *Cli*, 
+*FancyCli* and enumerations *Color* and *Sprite* in the following structure:
+![uml](Package%20visualize.png)
 
-Main's interaction with Command Interpreter 
+UI's interaction with user<br>
+UI gets user input through *nextline()*, and renders strings as a user-comprehensible interface through 
+*update(String, Data)*.
+
+UI's interaction with the rest of the program<br>
+UI passes the user's input string out to the Duke object, which then passes the string to the Command Interpreter layer.
+UI also reads data from the Data object for refreshing purposes, but does not modify it.
+
+**1.3 Main's interaction with Command Interpreter**<br>
 Upon receiving command from the UI, Duke would pass the entire user input into Command Interpreter (CI)
 
-Main's interaction with Execute 
+**1.4 Main's interaction with Execute**<br>
 Once CI processed the user input, duke proceeds to redirect the input to Execute for execution of action. 
 
-**UI**
-**Command Interpreter**
-**Executer**
-**Storage**
-
-## Implementation
-[add ur individual features here]
+**1.5 Main's interaction with Storage**<br>
+Once CI processed the user input, duke proceeds to redirect the input to Execute for execution of action. 
 
 
+## 2. Implementation<br>
+This section highlights some of our project's key feature and its implementation. 
+
+### 2.1 Module Planner Feature
+
+The module planner feature entails many *Actions* which extend `Action`. Their functionalities and usages
+are in the table below:
+
+|Table|To|Be|Filled|
+|-----|---|---|------|
+|blah|blah|blah|blah|
+
+A typical flow of execution would be:
+1. blah
+1. blah
+1. blah
+
+### 2.2 Checker Feature 
+![here](Checker_Diagram.png)
+
+The checker mechanism is facilitated by the utility class `Checker`. It is an independent class on its own without extensions and is stored under the `Data` package of our app. The class implements the following operations: 
+
+ - `checkDuplicates()`- Calls the checkClash method and return the status of boolean variable `isClash` .
+ - `checkClash(ArrayList< item >, Item)`- Updates `isClash` once a duplicate item is found in the list.
+ - `checkRecurrenceDate(Task)` - Checks if the current date is beyond the stated date in the list, and provides a new update for the date recurring date.
+
+Given below is an example usage scenario and how the checker mechanism behaves at each step. 
+
+Step 1. A new `Deadline` object is created and needs to be added to the existing list of task. Hence it calls `addTask()` method under `Data` class. 
+
+Step 2. Data instantiates a Checker with its existing list by calling its constructor, and the task to be added to the list 
+
+Step 3. Data proceeds to call the `checkRecurrenceDate(Task)` of the Checker class, to get a newDate if today's date is beyond the stated weekly date.
+ 
+Step 4. If `newDate` is not `null`it shows that there is a new updated date. Therefore, we proceed to update the object with our updated weekly date. 
+
+Step 5. Now we proceed to call `checkDuplicates()` of Checker class. 
+
+Step 6. If `false` , there is no duplicates in the existing list, and the task can be safely added. Otherwise, no action will be taken. 
+
+### 2.3 CAP calculator feature
+
+The proposed undo/redo mechanism is facilitated by `CalculateCapAction`. It extends `Action` to execute command given by the user, output are then passed on to `Ui` for display. 
+Additionally, it implements the following operations:
+
+* `CalculateCapAction#act()` - Calculate the user CAP based on stored user grades / input modules.
+* `CalculateCapAction#prepare()` - Parse user command to suitable parameter for `CalculateCapAction#act()` function.
+
+Given below is an example usage scenario and how thecap calculator mechanism behaves at each step.
+
+Step 1. The user executes `cap` command find his current CAP grade. Command is then parsed by `CalculateCapAction#prepare()` to be passed as arguments for `CalculateCapAction#act()`.
+
+Step 2. `CalculateCapAction#act()` retrieves data from the stored user's grades.
+
+Step 3. `CalculateCapAction#act()` then retrieves module data from the `modulelist.txt` to determine Modular Credit (MC) allocation.
+
+Step 4. CAP value is calculated and returned to the user through `Ui`.
+
+The following activity diagram summarizes what happens when a user executes a new command:
+
+![cap uml diagram](./Cap_Calculator_Diagram.JPG)
 
 
+### 2.4 Reminder Feature
+
+The proposed undo/redo mechanism is facilitated by `ReminderAction`. It extends `Action` and the output is passed onto `UI` for display. Additionally, it implements the following operations:
+
+* `ReminderAction#act()` — List out the deadlines and events tasks that are due within 3 days
+
+Given below is an example usage scenario and how the reminder mechanism behaves at each step.
+
+Step 1. The user executes `reminder` command to list out tasks due within 3 days. Command is then parsed by `ReminderAction#act()`.
+
+Step 2. `ReminderAction#act` retrieves tasklist data from the user's list
+
+Step 3. `ReminderAction#act` then sorts the due dates in ascending order
+
+Step 4: Tasks due within 3 days are returned to the user through Ui
+
+The following sequence diagram diagram shows how the reminder operation works
+
+![Reminder_Sequence_Diagram](./ReminderAction_Sequence_Diagram.png)
+
+### 2.5 Postpone Feature
+
+The proposed undo/redo mechanism is facilitated by `PostponeAction`. It extends `Action` to execute command given by the user, output are then passed on to `Ui` for display. 
+Additionally, it implements the following operations:
+
+* `PostponeAction#act()` - Postpone the deadline or event task by the chosen parameter.
+* `PostponeAction#prepare()` - Parse user command to suitable parameter for `PostponeAction#act()` function.
+
+Given below is an example usage scenario and how thecap calculator mechanism behaves at each step.
+
+Step 1. The user executes `postpone [index]` command to postpone the targeted task. Command is then parsed by `PostponeAction#prepare()` to be passed as arguments for `PostponeAction#act()`.
+
+Step 2. `PostponeAction#act()` re-sets the date of the targeted task from the stored user's tasks by default a day.
+
+Step 3. `PostponeAction#act()` then updates the stored user's data.
+
+Step 4. Postponed target task is returned to the user through `Ui`.
+
+The following activity diagram summarizes what happens when a user executes a new command:
+
+![Postpone_Sequence_Diagram](./PostponeAction_Sequence_Diagram.png)
+
+These operations are exposed in the Model interface as Model#commitAddressBook(), Model#undoAddressBook() and Model#redoAddressBook() respectively.
 ## Appendix A. Product scope
 ### Target user profile
 
@@ -88,8 +199,8 @@ Once CI processed the user input, duke proceeds to redirect the input to Execute
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NjY0NTc0MSwzOTUxODM1MjgsLTE2OT
-E0OTQyMzYsLTI2MjY0MzMyOCwtMTg3MjEyNzAzNCw4MjY0MjA3
-MjYsMTQ2MDQ4NzIyMCwxODE4NTAxOTUwLC0xODA2MDI2MCwyMD
-E1MDYyMTEwLDExNTIwOTkxODMsMTc1ODM5NzYxNF19
+eyJoaXN0b3J5IjpbMjI1MDk3MTA2LDM5NTE4MzUyOCwtMTY5MT
+Q5NDIzNiwtMjYyNjQzMzI4LC0xODcyMTI3MDM0LDgyNjQyMDcy
+NiwxNDYwNDg3MjIwLDE4MTg1MDE5NTAsLTE4MDYwMjYwLDIwMT
+UwNjIxMTAsMTE1MjA5OTE4MywxNzU4Mzk3NjE0XX0=
 -->
