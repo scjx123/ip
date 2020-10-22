@@ -22,7 +22,12 @@
 **10. Appendix F. Instruction for Manual Testing**
 
 ## 2. Setting Up
-
+1.  Ensure that you have Java 11 or above installed.
+2.  Download the latest version of  `Duke`  from  [Our Release Page](https://github.com/AY2021S1-CS2113-T13-2/tp/releases/tag/v1.0).
+3.  Copy the file to the folder you want to use as the home folder for your Mobile Nusmod.
+4.  Open the Command Prompt if you are running on Windows or Terminal if you are running on Mac OS.
+5.  Navigate to your home folder and type ‘java -jar domnus.jar’
+6.  Type ‘bye’ to terminate your session.
 
 ## Design
 
@@ -83,8 +88,8 @@ Once CI processed the user input, duke proceeds to redirect the input to Execute
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk1MTgzNTI4LC0xNjkxNDk0MjM2LC0yNj
-I2NDMzMjgsLTE4NzIxMjcwMzQsODI2NDIwNzI2LDE0NjA0ODcy
-MjAsMTgxODUwMTk1MCwtMTgwNjAyNjAsMjAxNTA2MjExMCwxMT
-UyMDk5MTgzLDE3NTgzOTc2MTRdfQ==
+eyJoaXN0b3J5IjpbLTU3ODU0OTI2MSwzOTUxODM1MjgsLTE2OT
+E0OTQyMzYsLTI2MjY0MzMyOCwtMTg3MjEyNzAzNCw4MjY0MjA3
+MjYsMTQ2MDQ4NzIyMCwxODE4NTAxOTUwLC0xODA2MDI2MCwyMD
+E1MDYyMTEwLDExNTIwOTkxODMsMTc1ODM5NzYxNF19
 -->
