@@ -63,9 +63,13 @@ The checker mechanism is facilitated by the utility class `Checker`. It is an in
 Given below is an example usage scenario and how the checker mechanism behaves at each step. 
 
 Step 1: A new `Deadline` object is created and needs to be added to the existing list of task. Hence it calls `addTask()` method under `Data` class. 
+
 Step 2: Data instantiates a Checker with its existing list by calling its constructor, and the task to be added to the list 
-Step 3: Data proceeds to call the `checkRecurrenceDate(Task)` of the Checker class, to get a newDate if today's date is beyond the stated weekly date. 
+
+Step 3: Data proceeds to call the `checkRecurrenceDate(Task)` of the Checker class, to get a newDate if today's date is beyond the stated weekly date.
+ 
 Step 4: If `newDate` is not `null`it shows that there is a new updated date. Therefore, we proceed to update the object with our updated weekly date. 
+
 Step 5: Now we proceed to call `checkDuplicates()` of Checker class. If `false` , there is no duplicates in the existing list, and the task can be safely added. Otherwise, no action will be taken. 
 
 
@@ -165,6 +169,6 @@ These operations are exposed in the Model interface as Model#commitAddressBook()
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjAzOTI1MjIsNjI2ODM1MDg1LDIwMT
+eyJoaXN0b3J5IjpbLTExMjEwNDg4MTQsNjI2ODM1MDg1LDIwMT
 EzNTM0XX0=
 -->
