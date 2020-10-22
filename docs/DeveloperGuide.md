@@ -52,7 +52,7 @@ A typical flow of execution would be:
 1. blah
 
 ### 2.2 Checker Feature 
-![here](Checker_Diagram.png)
+![here](Checker_Diagram.)
 
 The checker mechanism is facilitated by the utility class `Checker`. It is an independent class on its own without extensions and is stored under the `Data` package of our app. The class implements the following operations: 
 
@@ -169,6 +169,6 @@ These operations are exposed in the Model interface as Model#commitAddressBook()
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MzYzOTIyMiw2MjY4MzUwODUsMjAxMT
-M1MzRdfQ==
+eyJoaXN0b3J5IjpbMTYyMzI2Mzc5MywxOTgzNjM5MjIyLDYyNj
+gzNTA4NSwyMDExMzUzNF19
 -->
