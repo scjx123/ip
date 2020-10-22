@@ -206,8 +206,9 @@ All in one app to track tasks and their dates, monitor productivity and calculat
 
 {More to be added}
 ## Appendix C. Use Cases: 
+This section describes the Use Cases for some of the feat
 Use Case: Add module  
-Use Case: 
+Use Case: List Module 
 
 
 ## Appendix D. Non-Functional Requirements
@@ -227,7 +228,7 @@ _{More to be added}_
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTc5OTg5MTgsLTE4MTM4MzAwNDksLT
+eyJoaXN0b3J5IjpbLTIxNDA2MzgyNzEsLTE4MTM4MzAwNDksLT
 EwNTE5Njk5NiwtNDYyNjY1ODA5LDI2MTk5NjI5NiwtMzYyMDI4
 MjkxLDE2MjMyNjM3OTMsMTk4MzYzOTIyMiw2MjY4MzUwODUsMj
 AxMTM1MzRdfQ==
