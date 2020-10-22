@@ -2,30 +2,24 @@
 
 ## 1. Table of content
 **1. Table of content**
-**2. Introduction**
-		2.1 Purpose of Document
-		2.2 Audience
-		2.3 Documentation Organization 
-		2.4 User Guide
-		2.5 Markup  
-**3. Setting Up** 
-    3.1 Prerequisites
-	3.2 Setting up the project on your own Device 
-**4. Design** 
-	4.1 Architecture  
-	4.2 Main Layer 
-	4.3 UI Layer 
-	4.4 Command Interpreter Layer
-	4.5 Executor Layer 
-	4.6 Storage Layer 
-**5. Implementation**
-	5.1 Interpreting a 
-**6. Appendix A Product Scope** 
-**8. Appendix B User Stories** 
-**9. Appendix C Use Cases** 
-**10. Appendix D Non-funcitonal Requirements** 
-**11. Appendix E Glossary** 
-**12. Appendix F. Instruction for Manual Testing**
+**2. Setting Up** 
+    2.1 Prerequisites
+	2.2 Setting up the project on your own Device 
+**3. Design** 
+	3.1 Architecture  
+	3.2 Main Layer 
+	3.3 UI Layer 
+	3.4 Command Interpreter Layer
+	3.5 Executor Layer 
+	3.6 Storage Layer 
+**4. Implementation**
+	4.1 Interpreting a 
+**5. Appendix A Product Scope** 
+**6. Appendix B User Stories** 
+**7. Appendix C Use Cases** 
+**8. Appendix D Non-funcitonal Requirements** 
+**9. Appendix E Glossary** 
+**10. Appendix F. Instruction for Manual Testing**
 
 ## 2. Introduction
 Domnus is a 
@@ -91,8 +85,8 @@ Once CI processed the user input, duke proceeds to redirect the input to Execute
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDc0NDI5MzgsLTE2OTE0OTQyMzYsLT
-I2MjY0MzMyOCwtMTg3MjEyNzAzNCw4MjY0MjA3MjYsMTQ2MDQ4
-NzIyMCwxODE4NTAxOTUwLC0xODA2MDI2MCwyMDE1MDYyMTEwLD
-ExNTIwOTkxODMsMTc1ODM5NzYxNF19
+eyJoaXN0b3J5IjpbMTc1MDYzMjk2NiwtMTY5MTQ5NDIzNiwtMj
+YyNjQzMzI4LC0xODcyMTI3MDM0LDgyNjQyMDcyNiwxNDYwNDg3
+MjIwLDE4MTg1MDE5NTAsLTE4MDYwMjYwLDIwMTUwNjIxMTAsMT
+E1MjA5OTE4MywxNzU4Mzk3NjE0XX0=
 -->
