@@ -261,12 +261,13 @@ Step 1: Download the latest version of  `Duke`  from  [Our Release Page](https:/
 Step 2: Copy the file to the folder you want to use as the home folder for your Mobile Nusmod.
 Step 3: Open the Command Prompt if you are running on Windows or Terminal if you are running on Mac OS.
 Step 4: Navigate to your home folder and type  **‘java -jar domnus.jar’**
-Step 5: Type in "EnableTest" to enter manual testing mode. DOMNUS 
-2. 
+
+2. Adding Module 
+3. Deleting mod
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDIxMDc5MzAsMTA1NzAxMTIzLC0xOD
-EzODMwMDQ5LC0xMDUxOTY5OTYsLTQ2MjY2NTgwOSwyNjE5OTYy
-OTYsLTM2MjAyODI5MSwxNjIzMjYzNzkzLDE5ODM2MzkyMjIsNj
-I2ODM1MDg1LDIwMTEzNTM0XX0=
+eyJoaXN0b3J5IjpbLTc0NTY5NTcsMTA1NzAxMTIzLC0xODEzOD
+MwMDQ5LC0xMDUxOTY5OTYsLTQ2MjY2NTgwOSwyNjE5OTYyOTYs
+LTM2MjAyODI5MSwxNjIzMjYzNzkzLDE5ODM2MzkyMjIsNjI2OD
+M1MDg1LDIwMTEzNTM0XX0=
 -->
