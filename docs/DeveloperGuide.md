@@ -56,8 +56,8 @@ A typical flow of execution would be:
 
 The checker mechanism is facilitated by the utility class `Checker`. It is an independent class on its own without extensions and is stored under the `Data` package of our app. The class implements the following operations: 
 
- - `checkDuplicates()`- 
- - checkClash(ArrayList< item >, Item)
+ - `checkDuplicates()`- Calls the checkClash method and return the status of boolean variable `isClash` 
+ - `checkClash(ArrayList< item >, Item)`- Updates isClash b
  - checkRecurrenceDate(Task)
 
 ### 2.3 CAP calculator feature
@@ -155,5 +155,5 @@ These operations are exposed in the Model interface as Model#commitAddressBook()
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2OTUyMTQ1OSwyMDExMzUzNF19
+eyJoaXN0b3J5IjpbLTU0NTQ0Njg3NywyMDExMzUzNF19
 -->
