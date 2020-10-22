@@ -2,21 +2,23 @@
 
 ## 1. Table of content
 **1. Table of content**
-2. Introduction
+**2. Introduction**
 	2.1 Purpose of Document
 	2.2 Audience
 	2.3 Documentation Organization 
 	2.4 User Guide
 	2.5 Markup  
-3. Setting Up 
-4. Design 
-5. Implementation
-6. Appendix A Product Scope 
-7. Appendix B User Stories 
-8. Appendix C Use Cases 
-9. Appendix D Non-funcitonal Requirements 
-10. Appendix E Glossary 
-11. Appendix F. Instruction for Manual Testing  
+**3. Setting Up** 
+    3.1 Prerequisites
+	3.2 Setting up the project on your own Device 
+**4. Design** 
+**5. Implementation**
+**6. Appendix A Product Scope 
+8. Appendix B User Stories 
+9. Appendix C Use Cases 
+10. Appendix D Non-funcitonal Requirements 
+11. Appendix E Glossary 
+12. Appendix F. Instruction for Manual Testing**  
 
 ## 2. Introduction
 
@@ -82,8 +84,8 @@ Once CI processed the user input, duke proceeds to redirect the input to Execute
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIyNjcwNDc3LC0xNjkxNDk0MjM2LC0yNj
-I2NDMzMjgsLTE4NzIxMjcwMzQsODI2NDIwNzI2LDE0NjA0ODcy
-MjAsMTgxODUwMTk1MCwtMTgwNjAyNjAsMjAxNTA2MjExMCwxMT
-UyMDk5MTgzLDE3NTgzOTc2MTRdfQ==
+eyJoaXN0b3J5IjpbMTQ3Njk4NjI0MiwtMTY5MTQ5NDIzNiwtMj
+YyNjQzMzI4LC0xODcyMTI3MDM0LDgyNjQyMDcyNiwxNDYwNDg3
+MjIwLDE4MTg1MDE5NTAsLTE4MDYwMjYwLDIwMTUwNjIxMTAsMT
+E1MjA5OTE4MywxNzU4Mzk3NjE0XX0=
 -->
