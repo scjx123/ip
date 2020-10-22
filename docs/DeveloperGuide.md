@@ -217,16 +217,20 @@ MSS:
  4. DOMNUS marks the module as taken
 
 Use case ends. 
-
 Extensions 
-
  - 2a. The module given is invalid 
 		 - Use case shows `[NOT FOUND]` message 
 		 - Use case resumes at step 3
 - 2b. User adds in the wrong module 
-		- The untake 
+		- The `untake` command can be used to untake the taken module 
 
-Use Case: List Module 
+Use Case: List MC
+MSS:
+
+ 1. User requests to list total MC on a given list
+ 2. DOMNUS shows 
+
+ 
 Use Case: 
 
 ## Appendix D. Non-Functional Requirements
@@ -246,8 +250,8 @@ _{More to be added}_
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjkxOTc3NDQsMTA1NzAxMTIzLC0xOD
-EzODMwMDQ5LC0xMDUxOTY5OTYsLTQ2MjY2NTgwOSwyNjE5OTYy
-OTYsLTM2MjAyODI5MSwxNjIzMjYzNzkzLDE5ODM2MzkyMjIsNj
-I2ODM1MDg1LDIwMTEzNTM0XX0=
+eyJoaXN0b3J5IjpbLTk0OTMxOTQzMSwxMDU3MDExMjMsLTE4MT
+M4MzAwNDksLTEwNTE5Njk5NiwtNDYyNjY1ODA5LDI2MTk5NjI5
+NiwtMzYyMDI4MjkxLDE2MjMyNjM3OTMsMTk4MzYzOTIyMiw2Mj
+Y4MzUwODUsMjAxMTM1MzRdfQ==
 -->
