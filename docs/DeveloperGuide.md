@@ -64,7 +64,7 @@ Given below is an example usage scenario and how the checker mechanism behaves a
 
 Step 1: A new `Deadline` object is created and needs to be added to the existing list of task. Hence it calls `addTask()` method under `Data` class. 
 Step 2: Data instantiates a Checker with its existing list, and the task to be added to the list 
-Step 3: Data proceeds to call the checkRecurrenceDate(Task) of the 
+Step 3: Data proceeds to call the checkRecurrenceDate(Task) of the Checker class, to get a newDate if today's date is beyond the s. 
 
 ### 2.3 CAP calculator feature
 
@@ -161,5 +161,5 @@ These operations are exposed in the Model interface as Model#commitAddressBook()
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3OTgyMzMzMSwyMDExMzUzNF19
+eyJoaXN0b3J5IjpbNjI2ODM1MDg1LDIwMTEzNTM0XX0=
 -->
