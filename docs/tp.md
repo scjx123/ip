@@ -21,9 +21,7 @@
 **9. Appendix E Glossary** 
 **10. Appendix F. Instruction for Manual Testing**
 
-## 2. Introduction
-Domnus is a 
-## 3. Setting Up
+## 2. Setting Up
 
 
 ## Design
@@ -85,8 +83,8 @@ Once CI processed the user input, duke proceeds to redirect the input to Execute
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MDYzMjk2NiwtMTY5MTQ5NDIzNiwtMj
-YyNjQzMzI4LC0xODcyMTI3MDM0LDgyNjQyMDcyNiwxNDYwNDg3
-MjIwLDE4MTg1MDE5NTAsLTE4MDYwMjYwLDIwMTUwNjIxMTAsMT
-E1MjA5OTE4MywxNzU4Mzk3NjE0XX0=
+eyJoaXN0b3J5IjpbMzk1MTgzNTI4LC0xNjkxNDk0MjM2LC0yNj
+I2NDMzMjgsLTE4NzIxMjcwMzQsODI2NDIwNzI2LDE0NjA0ODcy
+MjAsMTgxODUwMTk1MCwtMTgwNjAyNjAsMjAxNTA2MjExMCwxMT
+UyMDk5MTgzLDE3NTgzOTc2MTRdfQ==
 -->
