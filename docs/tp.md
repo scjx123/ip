@@ -12,6 +12,12 @@
     3.1 Prerequisites
 	3.2 Setting up the project on your own Device 
 **4. Design** 
+	4.1 Architecture  
+	4.2 Main Layer 
+	4.3 UI Layer 
+	4.4 Command Interpreter Layer
+	4.5 Executor Layer 
+	4.6 Storage Layer 
 **5. Implementation**
 **6. Appendix A Product Scope 
 8. Appendix B User Stories 
@@ -84,8 +90,8 @@ Once CI processed the user input, duke proceeds to redirect the input to Execute
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3Njk4NjI0MiwtMTY5MTQ5NDIzNiwtMj
-YyNjQzMzI4LC0xODcyMTI3MDM0LDgyNjQyMDcyNiwxNDYwNDg3
-MjIwLDE4MTg1MDE5NTAsLTE4MDYwMjYwLDIwMTUwNjIxMTAsMT
-E1MjA5OTE4MywxNzU4Mzk3NjE0XX0=
+eyJoaXN0b3J5IjpbLTE0NTU5OTkxNzcsLTE2OTE0OTQyMzYsLT
+I2MjY0MzMyOCwtMTg3MjEyNzAzNCw4MjY0MjA3MjYsMTQ2MDQ4
+NzIyMCwxODE4NTAxOTUwLC0xODA2MDI2MCwyMDE1MDYyMTEwLD
+ExNTIwOTkxODMsMTc1ODM5NzYxNF19
 -->
