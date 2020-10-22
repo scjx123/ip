@@ -39,8 +39,6 @@ The **Architecture Diagram** below represents a high-level design overview of th
 
 **1.1 Main**<br>
 For the `main` layer, it contains a single class known as `Duke`. 
-Main's interaction with Storage<br>
-When the app launches, Duke loads any previous data from storage and then connects the components of the app in sequence. Upon shutting down,  Duke calls upon method to save user's data automatically.  
 
 **1.2 Main's interaction with UI**<br>
 Main gets user input and displays messages through the use of UI component. 
@@ -55,6 +53,7 @@ UI gets user input through *nextline()*, and renders strings as a user-comprehen
 UI's interaction with the rest of the program<br>
 UI passes the user's input string out to the Duke object, which then passes the string to the Command Interpreter layer.
 UI also reads data from the Data object for refreshing purposes, but does not modify it.
+ 
 
 **1.3 Main's interaction with Command Interpreter**<br>
 Upon receiving command from the UI, Duke would pass the entire user input into Command Interpreter (CI)
@@ -200,6 +199,6 @@ These operations are exposed in the Model interface as Model#commitAddressBook()
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNTEwNDk3OCwxNjIzMjYzNzkzLDE5OD
+eyJoaXN0b3J5IjpbMjA3MDcwODg4NywxNjIzMjYzNzkzLDE5OD
 M2MzkyMjIsNjI2ODM1MDg1LDIwMTEzNTM0XX0=
 -->
