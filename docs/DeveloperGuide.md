@@ -1,25 +1,28 @@
 
+
 # Developer Guide
 
 ## 1. Table of content
-**1. Table of content**
-**2. Setting Up** 
-    2.1 Prerequisites
-	2.2 Setting up the project on your own Device 
-**3. Design** 
-	3.1 Architecture  
-	3.2 Main Layer 
-	3.3 UI Layer 
-	3.4 Command Interpreter Layer
-	3.5 Executor Layer 
-	3.6 Storage Layer 
-**4. Implementation**
-	4.1 Interpreting a 
-**5. Appendix A Product Scope** 
-**6. Appendix B User Stories** 
-**7. Appendix C Use Cases** 
-**8. Appendix D Non-funcitonal Requirements** 
-**9. Appendix E Glossary** 
+**1. Table of content**\
+**2. Setting Up**\
+**3. Design**\
+&nbsp;&nbsp;&nbsp;3.1 Architecture\
+&nbsp;&nbsp;&nbsp;3.2 Main Layer\
+&nbsp;&nbsp;&nbsp;3.3 UI Layer\
+&nbsp;&nbsp;&nbsp;3.4 Command Interpreter Layer\
+&nbsp;&nbsp;&nbsp;3.5 Executor Layer\
+&nbsp;&nbsp;&nbsp;3.6 Storage Layer\
+**4. Implementation**\
+&nbsp;&nbsp;&nbsp;4.1 Module Planner Feature\
+&nbsp;&nbsp;&nbsp;4.2 Checker Feature\
+&nbsp;&nbsp;&nbsp;4.3 Cap Caculator Feature\
+&nbsp;&nbsp;&nbsp;4.4 Reminder Feature\
+&nbsp;&nbsp;&nbsp;4.5 Postpone Feature\
+**5. Appendix A Product Scope**\
+**6. Appendix B User Stories** \
+**7. Appendix C Use Cases** \
+**8. Appendix D Non-funcitonal Requirements** \
+**9. Appendix E Glossary** \
 **10. Appendix F. Instruction for Manual Testing**
 
 ## 2. Setting Up
@@ -199,7 +202,9 @@ These operations are exposed in the Model interface as Model#commitAddressBook()
 ## Appendix E. Instructions for manual testing
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MjAyODI5MSwxNjIzMjYzNzkzLDE5OD
-M2MzkyMjIsNjI2ODM1MDg1LDIwMTEzNTM0XX0=
+eyJoaXN0b3J5IjpbLTE4NTEzMzUyMjcsLTM2MjAyODI5MSwxNj
+IzMjYzNzkzLDE5ODM2MzkyMjIsNjI2ODM1MDg1LDIwMTEzNTM0
+XX0=
 -->
