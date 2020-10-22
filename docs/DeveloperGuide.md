@@ -263,11 +263,11 @@ Step 3: Open the Command Prompt if you are running on Windows or Terminal if you
 Step 4: Navigate to your home folder and type  **‘java -jar domnus.jar’**
 
 2. Adding Module 
-3. Deleting mod
+3. Tracking 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NTY5NTcsMTA1NzAxMTIzLC0xODEzOD
-MwMDQ5LC0xMDUxOTY5OTYsLTQ2MjY2NTgwOSwyNjE5OTYyOTYs
-LTM2MjAyODI5MSwxNjIzMjYzNzkzLDE5ODM2MzkyMjIsNjI2OD
-M1MDg1LDIwMTEzNTM0XX0=
+eyJoaXN0b3J5IjpbODY0NDEzNTk0LDEwNTcwMTEyMywtMTgxMz
+gzMDA0OSwtMTA1MTk2OTk2LC00NjI2NjU4MDksMjYxOTk2Mjk2
+LC0zNjIwMjgyOTEsMTYyMzI2Mzc5MywxOTgzNjM5MjIyLDYyNj
+gzNTA4NSwyMDExMzUzNF19
 -->
