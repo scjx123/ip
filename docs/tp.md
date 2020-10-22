@@ -1,9 +1,9 @@
 # Developer Guide
 
 ## 1. Table of content
-1. Table of content 
-2. Introduction
-3. Setting Up 
+### 1. Table of content 
+### 2. Introduction
+### 3. Setting Up 
 4. Design 
 5. Implementation
 6. Appendix A Product Scope 
@@ -12,20 +12,11 @@
 9. Appendix D Non-funcitonal Requirements 
 10. Appendix E Glossary 
 11. Appendix F. Instruction for Manual Testing  
-
 
 ## 2. Introduction
 
 ## 3. Setting Up
 
-4. Design 
-5. Implementation
-6. Appendix A Product Scope 
-7. Appendix B User Stories 
-8. Appendix C Use Cases 
-9. Appendix D Non-funcitonal Requirements 
-10. Appendix E Glossary 
-11. Appendix F. Instruction for Manual Testing  
 
 ## Design
 
@@ -58,7 +49,7 @@ Once CI processed the user input, duke proceeds to redirect the input to Execute
 
 
 
-## Product scope
+## Appendix A. Product scope
 ### Target user profile
 
 {Describe the target user profile}
@@ -67,27 +58,27 @@ Once CI processed the user input, duke proceeds to redirect the input to Execute
 
 {Describe the value proposition: what problem does it solve?}
 
-## User Stories
+## Appendix B. User Stories
 
 |Version| As a ... | I want to ... | So that I can ...|
 |--------|----------|---------------|------------------|
 |v1.0|new user|see usage instructions|refer to them when I forget how to use the application|
 |v2.0|user|find a to-do item by name|locate a to-do without having to go through the entire list|
 
-## Non-Functional Requirements
+## Appendix C. Non-Functional Requirements
 
 {Give non-functional requirements}
 
-## Glossary
+## Appendix D. Glossary
 
 * *glossary item* - Definition
 
-## Instructions for manual testing
+## Appendix E. Instructions for manual testing
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMTU1MjM4NiwtMTY5MTQ5NDIzNiwtMj
-YyNjQzMzI4LC0xODcyMTI3MDM0LDgyNjQyMDcyNiwxNDYwNDg3
-MjIwLDE4MTg1MDE5NTAsLTE4MDYwMjYwLDIwMTUwNjIxMTAsMT
-E1MjA5OTE4MywxNzU4Mzk3NjE0XX0=
+eyJoaXN0b3J5IjpbMTkzMzgwNjIxLC0xNjkxNDk0MjM2LC0yNj
+I2NDMzMjgsLTE4NzIxMjcwMzQsODI2NDIwNzI2LDE0NjA0ODcy
+MjAsMTgxODUwMTk1MCwtMTgwNjAyNjAsMjAxNTA2MjExMCwxMT
+UyMDk5MTgzLDE3NTgzOTc2MTRdfQ==
 -->
