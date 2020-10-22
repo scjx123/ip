@@ -249,6 +249,8 @@ _{More to be added}_
 
 ## Appendix E. Glossary
 
+ - N-tier Architectural Style 
+	 - In the n-tier style, high layers make use of services provided by lower layers. Lower layers are independent of higher layers. 
  - Mainstream OS: Windows, Linux, Unix, OS-X
  - Private contact detail 
 
@@ -257,7 +259,7 @@ _{More to be added}_
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3ODA5MDg1MywxMDU3MDExMjMsLTE4MT
+eyJoaXN0b3J5IjpbMTk4NDQwNzM2NCwxMDU3MDExMjMsLTE4MT
 M4MzAwNDksLTEwNTE5Njk5NiwtNDYyNjY1ODA5LDI2MTk5NjI5
 NiwtMzYyMDI4MjkxLDE2MjMyNjM3OTMsMTk4MzYzOTIyMiw2Mj
 Y4MzUwODUsMjAxMTM1MzRdfQ==
