@@ -275,11 +275,11 @@ Step 4: Navigate to your home folder and type  **‘java -jar domnus.jar’**
 	2.1 Add modules
 	2.2 Add task
 	2.3 Add task to modules 
-6. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNTg2NjAwNiwtOTA4MzcwODMsMTA1Nz
-AxMTIzLC0xODEzODMwMDQ5LC0xMDUxOTY5OTYsLTQ2MjY2NTgw
-OSwyNjE5OTYyOTYsLTM2MjAyODI5MSwxNjIzMjYzNzkzLDE5OD
-M2MzkyMjIsNjI2ODM1MDg1LDIwMTEzNTM0XX0=
+eyJoaXN0b3J5IjpbMTM4OTkzNDk4MCwxNjE1ODY2MDA2LC05MD
+gzNzA4MywxMDU3MDExMjMsLTE4MTM4MzAwNDksLTEwNTE5Njk5
+NiwtNDYyNjY1ODA5LDI2MTk5NjI5NiwtMzYyMDI4MjkxLDE2Mj
+MyNjM3OTMsMTk4MzYzOTIyMiw2MjY4MzUwODUsMjAxMTM1MzRd
+fQ==
 -->
