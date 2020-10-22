@@ -31,12 +31,12 @@
 
 ## Design
 
-The Architecture Diagram below represents a high-level design overview of the App. Specifically, it is done with an n-tier architectural style, where the higher layers make use of services provided by lower layers. 
+The **Architecture Diagram** below represents a high-level design overview of the App. Specifically, it is done with an **N-tier architectural style**, where the higher layers make use of services provided by lower layers. 
 
 ![here](Architecture_Diagram.PNG)
 
 **Main**
-For the main layer, it contains a single class known as *Duke*. 
+For the main layer, it contains a single class known as `Duke`. 
 Main's interaction with Storage 
 When the app launches, Duke loads any previous data from storage and then connects the components of the app in sequence. Upon shutting down,  Duke calls upon method to save user's data automatically.  
 
@@ -88,7 +88,7 @@ Once CI processed the user input, duke proceeds to redirect the input to Execute
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3ODU0OTI2MSwzOTUxODM1MjgsLTE2OT
+eyJoaXN0b3J5IjpbLTM1NjY0NTc0MSwzOTUxODM1MjgsLTE2OT
 E0OTQyMzYsLTI2MjY0MzMyOCwtMTg3MjEyNzAzNCw4MjY0MjA3
 MjYsMTQ2MDQ4NzIyMCwxODE4NTAxOTUwLC0xODA2MDI2MCwyMD
 E1MDYyMTEwLDExNTIwOTkxODMsMTc1ODM5NzYxNF19
