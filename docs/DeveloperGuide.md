@@ -208,11 +208,17 @@ All in one app to track tasks and their dates, monitor productivity and calculat
 ## Appendix C. Use Cases: 
 This section describes the Use Cases for some of the features implemented in DOMNUS. 
 
-Use Case: Add module 
+Use Case: Taking a module 
 MSS: 
 
- 1. User requests to list all m
+ 1. User requests to list all modules 
+ 2. DOMNUS shows a list of modules 
+ 3. User requests to mark a specific module as 'taken' 
+ 4. DOMNUS marks the module as taken
 
+Use case ends. 
+
+Extensions
 Use Case: List Module 
 Use Case: 
 
@@ -233,8 +239,8 @@ _{More to be added}_
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTYzMTQ0OTIsLTE4MTM4MzAwNDksLT
-EwNTE5Njk5NiwtNDYyNjY1ODA5LDI2MTk5NjI5NiwtMzYyMDI4
-MjkxLDE2MjMyNjM3OTMsMTk4MzYzOTIyMiw2MjY4MzUwODUsMj
-AxMTM1MzRdfQ==
+eyJoaXN0b3J5IjpbNDc3NjAwNjI2LC0xODEzODMwMDQ5LC0xMD
+UxOTY5OTYsLTQ2MjY2NTgwOSwyNjE5OTYyOTYsLTM2MjAyODI5
+MSwxNjIzMjYzNzkzLDE5ODM2MzkyMjIsNjI2ODM1MDg1LDIwMT
+EzNTM0XX0=
 -->
