@@ -264,7 +264,7 @@ Step 4: Navigate to your home folder and type  **‘java -jar domnus.jar’**
 
 2. Switching between Fancy and CLI 
 3. Focusing between different list
-	3.1 Focus mod
+	3.1 Focus mod 
 	3.2 Focus Task 
 	3.3 Focus Taken 
 4. List all Modules and Task 
@@ -278,8 +278,8 @@ Step 4: Navigate to your home folder and type  **‘java -jar domnus.jar’**
 6. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM2MzE5NDI4LC05MDgzNzA4MywxMDU3MD
-ExMjMsLTE4MTM4MzAwNDksLTEwNTE5Njk5NiwtNDYyNjY1ODA5
-LDI2MTk5NjI5NiwtMzYyMDI4MjkxLDE2MjMyNjM3OTMsMTk4Mz
-YzOTIyMiw2MjY4MzUwODUsMjAxMTM1MzRdfQ==
+eyJoaXN0b3J5IjpbMTYxNTg2NjAwNiwtOTA4MzcwODMsMTA1Nz
+AxMTIzLC0xODEzODMwMDQ5LC0xMDUxOTY5OTYsLTQ2MjY2NTgw
+OSwyNjE5OTYyOTYsLTM2MjAyODI5MSwxNjIzMjYzNzkzLDE5OD
+M2MzkyMjIsNjI2ODM1MDg1LDIwMTEzNTM0XX0=
 -->
