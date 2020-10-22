@@ -204,7 +204,10 @@ All in one app to track tasks and their dates, monitor productivity and calculat
 |v1.0|Student after the semester|Calculate the CAP of my individual modules|Easily find out my performance this semester |
 |v1.0|Student after the semester|Clear the list of tasks and modules|Start afresh for the next semester |
 
+{More to be added}
 ## Appendix C. Non-Functional Requirements
+
+## Appendix D. Non-Functional Requirements
 
 1.  Should work on any  _mainstream OS_  as long as it has Java  `11`  or above installed.
 2.  Should be able to hold up to 1000 persons without a noticeable sluggishness in performance for typical usage.
@@ -212,16 +215,16 @@ All in one app to track tasks and their dates, monitor productivity and calculat
 
 _{More to be added}_
 
-## Appendix D. Glossary
+## Appendix E. Glossary
 
 * *glossary item* - Definition
 
-## Appendix E. Instructions for manual testing
+## Appendix F. Instructions for manual testing
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MjY2NTgwOSwyNjE5OTYyOTYsLTM2Mj
-AyODI5MSwxNjIzMjYzNzkzLDE5ODM2MzkyMjIsNjI2ODM1MDg1
-LDIwMTEzNTM0XX0=
+eyJoaXN0b3J5IjpbNjU5Mjk5NjA4LC00NjI2NjU4MDksMjYxOT
+k2Mjk2LC0zNjIwMjgyOTEsMTYyMzI2Mzc5MywxOTgzNjM5MjIy
+LDYyNjgzNTA4NSwyMDExMzUzNF19
 -->
