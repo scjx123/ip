@@ -62,7 +62,7 @@ The checker mechanism is facilitated by the utility class `Checker`. It is an in
 
 Given below is an example usage scenario and how the checker mechanism behaves at each step. 
 
-Step 1: A new deadline object is created and
+Step 1: A new `Deadline` object is created and needs to be added to the existing list of task. Hence it calls `addTask()` method under Data c
 
 ### 2.3 CAP calculator feature
 
@@ -159,5 +159,5 @@ These operations are exposed in the Model interface as Model#commitAddressBook()
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTQ2NDg3NDUsMjAxMTM1MzRdfQ==
+eyJoaXN0b3J5IjpbLTE3ODAxODYyMjUsMjAxMTM1MzRdfQ==
 -->
