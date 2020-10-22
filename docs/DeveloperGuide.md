@@ -1,12 +1,44 @@
+
 # Developer Guide
 
-## 1. Design
-The Architecture Diagram below represents a high-level design overview of the App. Specifically, it is done with an n-tier architectural style, where the higher layers make use of services provided by lower layers. 
+## 1. Table of content
+**1. Table of content**
+**2. Setting Up** 
+    2.1 Prerequisites
+	2.2 Setting up the project on your own Device 
+**3. Design** 
+	3.1 Architecture  
+	3.2 Main Layer 
+	3.3 UI Layer 
+	3.4 Command Interpreter Layer
+	3.5 Executor Layer 
+	3.6 Storage Layer 
+**4. Implementation**
+	4.1 Interpreting a 
+**5. Appendix A Product Scope** 
+**6. Appendix B User Stories** 
+**7. Appendix C Use Cases** 
+**8. Appendix D Non-funcitonal Requirements** 
+**9. Appendix E Glossary** 
+**10. Appendix F. Instruction for Manual Testing**
+
+## 2. Setting Up
+1.  Ensure that you have Java 11 or above installed.
+2.  Download the latest version of  `Duke`  from  [Our Release Page](https://github.com/AY2021S1-CS2113-T13-2/tp/releases/tag/v1.0).
+3.  Copy the file to the folder you want to use as the home folder for your Mobile Nusmod.
+4.  Open the Command Prompt if you are running on Windows or Terminal if you are running on Mac OS.
+5.  Navigate to your home folder and type ‘java -jar domnus.jar’
+6.  Type ‘bye’ to terminate your session.
+
+## Design
+
+The **Architecture Diagram** below represents a high-level design overview of the App. Specifically, it is done with an **N-tier architectural style**, where the higher layers make use of services provided by lower layers. 
 
 ![here](Architecture_Diagram.PNG)
 
+
 **1.1 Main**<br>
-For the main layer, it contains a single class known as *Duke*. 
+For the `main` layer, it contains a single class known as `Duke`. 
 Main's interaction with Storage<br>
 When the app launches, Duke loads any previous data from storage and then connects the components of the app in sequence. Upon shutting down,  Duke calls upon method to save user's data automatically.  
 
@@ -52,7 +84,7 @@ A typical flow of execution would be:
 1. blah
 
 ### 2.2 Checker Feature 
-![here](Checker_Diagram.)
+![here](Checker_Diagram.png)
 
 The checker mechanism is facilitated by the utility class `Checker`. It is an independent class on its own without extensions and is stored under the `Data` package of our app. The class implements the following operations: 
 
@@ -140,35 +172,34 @@ The following activity diagram summarizes what happens when a user executes a ne
 ![Postpone_Sequence_Diagram](./PostponeAction_Sequence_Diagram.png)
 
 These operations are exposed in the Model interface as Model#commitAddressBook(), Model#undoAddressBook() and Model#redoAddressBook() respectively.
-
-## 3. Product scope
-### 3.1 Target user profile
+## Appendix A. Product scope
+### Target user profile
 
 {Describe the target user profile}
 
-### 3.2 Value proposition
+### Value proposition
 
 {Describe the value proposition: what problem does it solve?}
 
-## 4. User Stories
+## Appendix B. User Stories
 
 |Version| As a ... | I want to ... | So that I can ...|
 |--------|----------|---------------|------------------|
 |v1.0|new user|see usage instructions|refer to them when I forget how to use the application|
 |v2.0|user|find a to-do item by name|locate a to-do without having to go through the entire list|
 
-## 5. Non-Functional Requirements
+## Appendix C. Non-Functional Requirements
 
 {Give non-functional requirements}
 
-## 6. Glossary
+## Appendix D. Glossary
 
 * *glossary item* - Definition
 
-## 7. Instructions for manual testing
+## Appendix E. Instructions for manual testing
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMzI2Mzc5MywxOTgzNjM5MjIyLDYyNj
-gzNTA4NSwyMDExMzUzNF19
+eyJoaXN0b3J5IjpbMTQxNTEwNDk3OCwxNjIzMjYzNzkzLDE5OD
+M2MzkyMjIsNjI2ODM1MDg1LDIwMTEzNTM0XX0=
 -->
