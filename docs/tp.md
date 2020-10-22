@@ -1,7 +1,23 @@
 # Developer Guide
+
+## 1. Table of content
 1. Table of content 
 2. Introduction
 3. Setting Up 
+4. Design 
+5. Implementation
+6. Appendix A Product Scope 
+7. Appendix B User Stories 
+8. Appendix C Use Cases 
+9. Appendix D Non-funcitonal Requirements 
+10. Appendix E Glossary 
+11. Appendix F. Instruction for Manual Testing  
+
+
+## 2. Introduction
+
+## 3. Setting Up
+
 4. Design 
 5. Implementation
 6. Appendix A Product Scope 
@@ -70,7 +86,7 @@ Once CI processed the user input, duke proceeds to redirect the input to Execute
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNDIwNTY4MywtMTY5MTQ5NDIzNiwtMj
+eyJoaXN0b3J5IjpbMTkwMTU1MjM4NiwtMTY5MTQ5NDIzNiwtMj
 YyNjQzMzI4LC0xODcyMTI3MDM0LDgyNjQyMDcyNiwxNDYwNDg3
 MjIwLDE4MTg1MDE5NTAsLTE4MDYwMjYwLDIwMTUwNjIxMTAsMT
 E1MjA5OTE4MywxNzU4Mzk3NjE0XX0=
