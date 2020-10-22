@@ -22,7 +22,7 @@
 **9. Appendix E Glossary** 
 **10. Appendix F. Instruction for Manual Testing**
 
-# 2. Setting Up
+## 2. Setting Up
 
 1.  Ensure that you have Java 11 or above installed.
 2.  Download the latest version of  `Duke`  from  [Our Release Page](https://github.com/AY2021S1-CS2113-T13-2/tp/releases/tag/v1.0).
@@ -200,6 +200,6 @@ These operations are exposed in the Model interface as Model#commitAddressBook()
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjk3OTkxOTgsMTYyMzI2Mzc5MywxOT
-gzNjM5MjIyLDYyNjgzNTA4NSwyMDExMzUzNF19
+eyJoaXN0b3J5IjpbLTM2MjAyODI5MSwxNjIzMjYzNzkzLDE5OD
+M2MzkyMjIsNjI2ODM1MDg1LDIwMTEzNTM0XX0=
 -->
