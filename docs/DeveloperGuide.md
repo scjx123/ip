@@ -5,21 +5,13 @@ The Architecture Diagram below represents a high-level design overview of the Ap
 
 ![here](Architecture_Diagram.PNG)
 
-**Main**<br>
+**1.1 Main**<br>
 For the main layer, it contains a single class known as *Duke*. 
 Main's interaction with Storage<br>
 When the app launches, Duke loads any previous data from storage and then connects the components of the app in sequence. Upon shutting down,  Duke calls upon method to save user's data automatically.  
 
-Main's interaction with UI<br>
+**Main's interaction with UI**<br>
 Main gets user input and displays messages through the use of UI component. 
-
-Main's interaction with Command Interpreter<br>
-Upon receiving command from the UI, Duke would pass the entire user input into Command Interpreter (CI)
-
-Main's interaction with Execute<br>
-Once CI processed the user input, duke proceeds to redirect the input to Execute for execution of action. 
-
-**UI**<br>
 The UI layer entails the package *visualize*, which contains classes *ColoredString*, *Bitmap*, *UI*, *Cli*, 
 *FancyCli* and enumerations *Color* and *Sprite* in the following structure:
 ![uml](Package%20visualize.png)
@@ -31,10 +23,6 @@ UI gets user input through *nextline()*, and renders strings as a user-comprehen
 UI's interaction with the rest of the program<br>
 UI passes the user's input string out to the Duke object, which then passes the string to the Command Interpreter layer.
 UI also reads data from the Data object for refreshing purposes, but does not modify it.
-
-**Command Interpreter**<br>
-**Executer**<br>
-**Storage**<br>
 
 ## 2. Implementation<br>
 This section highlights some of our project's key feature and its implementation. 
@@ -151,5 +139,5 @@ These operations are exposed in the Model interface as Model#commitAddressBook()
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTM2NTMxMDYsMjAxMTM1MzRdfQ==
+eyJoaXN0b3J5IjpbLTE2Nzk4ODk1MTAsMjAxMTM1MzRdfQ==
 -->
