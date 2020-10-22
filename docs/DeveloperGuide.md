@@ -221,7 +221,10 @@ Use case ends.
 Extensions 
 
  - 2a. The module given is invalid 
-		 - Use case shows [
+		 - Use case shows `[NOT FOUND]` message 
+		 - Use case resumes at step 3
+- 2b. User adds in the wrong module 
+		- The untake 
 
 Use Case: List Module 
 Use Case: 
@@ -243,7 +246,7 @@ _{More to be added}_
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzkxOTE3MTgsMTA1NzAxMTIzLC0xOD
+eyJoaXN0b3J5IjpbLTE0MjkxOTc3NDQsMTA1NzAxMTIzLC0xOD
 EzODMwMDQ5LC0xMDUxOTY5OTYsLTQ2MjY2NTgwOSwyNjE5OTYy
 OTYsLTM2MjAyODI5MSwxNjIzMjYzNzkzLDE5ODM2MzkyMjIsNj
 I2ODM1MDg1LDIwMTEzNTM0XX0=
