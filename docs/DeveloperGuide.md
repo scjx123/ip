@@ -30,7 +30,9 @@
 5.  Navigate to your home folder and type ‘java -jar domnus.jar’
 6.  Type ‘bye’ to terminate your session.
 
-## Design
+## 3. Design
+
+##*emphasized text* 3.1 Architecture
 
 The **Architecture Diagram** below represents a high-level design overview of the App. Specifically, it is done with an **N-tier architectural style**, where the higher layers make use of services provided by lower layers. 
 
@@ -52,16 +54,15 @@ UI gets user input through *nextline()*, and renders strings as a user-comprehen
 
 UI's interaction with the rest of the program<br>
 UI passes the user's input string out to the Duke object, which then passes the string to the Command Interpreter layer.
-UI also reads data from the Data object for refreshing purposes, but does not modify it.
- 
+UI also reads data from the Data object for refreshing purposes, but does not modify it. 
 
-**1.3 Main's interaction with Command Interpreter**<br>
+**1.3 Command Interpreter**<br>
 Upon receiving command from the UI, Duke would pass the entire user input into Command Interpreter (CI)
 
-**1.4 Main's interaction with Execute**<br>
+**1.4 Execute**<br>
 Once CI processed the user input, duke proceeds to redirect the input to Execute for execution of action. 
 
-**1.5 Main's interaction with Storage**<br>
+**1.5 Storage**<br>
 Once CI processed the user input, duke proceeds to redirect the input to Execute for execution of action. 
 
 
@@ -199,6 +200,6 @@ These operations are exposed in the Model interface as Model#commitAddressBook()
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MDcwODg4NywxNjIzMjYzNzkzLDE5OD
-M2MzkyMjIsNjI2ODM1MDg1LDIwMTEzNTM0XX0=
+eyJoaXN0b3J5IjpbLTEzMjQ5OTAxNDUsMTYyMzI2Mzc5MywxOT
+gzNjM5MjIyLDYyNjgzNTA4NSwyMDExMzUzNF19
 -->
