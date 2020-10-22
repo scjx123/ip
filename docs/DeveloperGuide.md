@@ -233,7 +233,9 @@ MSS:
 Use case ends 
 Extensions 
 
- 1. List item
+ 1a. User not focusing on the correct list 
+	 1a1. DOMNUS shows the entire module list total MC instead of the 'taken' list MC 
+2a.  
 
  
 Use Case: 
@@ -255,7 +257,7 @@ _{More to be added}_
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNzgyMTY0MywxMDU3MDExMjMsLTE4MT
+eyJoaXN0b3J5IjpbMTA4NzQ3ODAyNCwxMDU3MDExMjMsLTE4MT
 M4MzAwNDksLTEwNTE5Njk5NiwtNDYyNjY1ODA5LDI2MTk5NjI5
 NiwtMzYyMDI4MjkxLDE2MjMyNjM3OTMsMTk4MzYzOTIyMiw2Mj
 Y4MzUwODUsMjAxMTM1MzRdfQ==
