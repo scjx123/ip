@@ -22,7 +22,8 @@
 **9. Appendix E Glossary** 
 **10. Appendix F. Instruction for Manual Testing**
 
-## 2. Setting Up
+# 2. Setting Up
+
 1.  Ensure that you have Java 11 or above installed.
 2.  Download the latest version of  `Duke`  from  [Our Release Page](https://github.com/AY2021S1-CS2113-T13-2/tp/releases/tag/v1.0).
 3.  Copy the file to the folder you want to use as the home folder for your Mobile Nusmod.
@@ -32,17 +33,16 @@
 
 ## 3. Design
 
-##*emphasized text* 3.1 Architecture
-
+### 3.1 Architecture
 The **Architecture Diagram** below represents a high-level design overview of the App. Specifically, it is done with an **N-tier architectural style**, where the higher layers make use of services provided by lower layers. 
 
 ![here](Architecture_Diagram.PNG)
 
 
-**1.1 Main**<br>
+**3.2 Main**<br>
 For the `main` layer, it contains a single class known as `Duke`. 
 
-**1.2 Main's interaction with UI**<br>
+**3.3 UI**<br>
 Main gets user input and displays messages through the use of UI component. 
 The UI layer entails the package *visualize*, which contains classes *ColoredString*, *Bitmap*, *UI*, *Cli*, 
 *FancyCli* and enumerations *Color* and *Sprite* in the following structure:
@@ -200,6 +200,6 @@ These operations are exposed in the Model interface as Model#commitAddressBook()
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjQ5OTAxNDUsMTYyMzI2Mzc5MywxOT
+eyJoaXN0b3J5IjpbLTE5NTg3NTc4NjcsMTYyMzI2Mzc5MywxOT
 gzNjM5MjIyLDYyNjgzNTA4NSwyMDExMzUzNF19
 -->
