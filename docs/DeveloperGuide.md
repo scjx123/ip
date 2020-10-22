@@ -266,17 +266,20 @@ Step 4: Navigate to your home folder and type  **‘java -jar domnus.jar’**
 3. Focusing between different list
 	3.1 Focus mod
 	3.2 Focus Task 
-	3
-
-4. Add Modules and Task 
+	3.3 Focus Taken 
+4. List all Modules and Task 
+	4.1 List all module
+	4.2 List all task. 
+	4.3 List all taken module 
+5. Add Modules and Task 
 	2.1 Add modules
 	2.2 Add task
 	2.3 Add task to modules 
-5. 
+6. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MDk2NTQzMywtOTA4MzcwODMsMTA1Nz
-AxMTIzLC0xODEzODMwMDQ5LC0xMDUxOTY5OTYsLTQ2MjY2NTgw
-OSwyNjE5OTYyOTYsLTM2MjAyODI5MSwxNjIzMjYzNzkzLDE5OD
-M2MzkyMjIsNjI2ODM1MDg1LDIwMTEzNTM0XX0=
+eyJoaXN0b3J5IjpbNDM2MzE5NDI4LC05MDgzNzA4MywxMDU3MD
+ExMjMsLTE4MTM4MzAwNDksLTEwNTE5Njk5NiwtNDYyNjY1ODA5
+LDI2MTk5NjI5NiwtMzYyMDI4MjkxLDE2MjMyNjM3OTMsMTk4Mz
+YzOTIyMiw2MjY4MzUwODUsMjAxMTM1MzRdfQ==
 -->
