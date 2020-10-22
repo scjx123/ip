@@ -19,7 +19,7 @@
 	4.5 Executor Layer 
 	4.6 Storage Layer 
 **5. Implementation**
-
+	5.1 Interpreting a 
 **6. Appendix A Product Scope** 
 **8. Appendix B User Stories** 
 **9. Appendix C Use Cases** 
@@ -28,7 +28,7 @@
 **12. Appendix F. Instruction for Manual Testing**
 
 ## 2. Introduction
-
+Domnus is a 
 ## 3. Setting Up
 
 
@@ -91,8 +91,8 @@ Once CI processed the user input, duke proceeds to redirect the input to Execute
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTA2NDgxOSwtMTY5MTQ5NDIzNiwtMj
-YyNjQzMzI4LC0xODcyMTI3MDM0LDgyNjQyMDcyNiwxNDYwNDg3
-MjIwLDE4MTg1MDE5NTAsLTE4MDYwMjYwLDIwMTUwNjIxMTAsMT
-E1MjA5OTE4MywxNzU4Mzk3NjE0XX0=
+eyJoaXN0b3J5IjpbLTIwMDc0NDI5MzgsLTE2OTE0OTQyMzYsLT
+I2MjY0MzMyOCwtMTg3MjEyNzAzNCw4MjY0MjA3MjYsMTQ2MDQ4
+NzIyMCwxODE4NTAxOTUwLC0xODA2MDI2MCwyMDE1MDYyMTEwLD
+ExNTIwOTkxODMsMTc1ODM5NzYxNF19
 -->
