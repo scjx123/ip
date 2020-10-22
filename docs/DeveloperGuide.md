@@ -52,7 +52,7 @@ A typical flow of execution would be:
 1. blah
 
 ### 2.2 Checker Feature 
-![here](Checker_Diagram.PNG)
+![here](Checker_Diagram.png)
 
 The checker mechanism is facilitated by the utility class `Checker`. It is an independent class on its own without extensions and is stored under the `Data` package of our app. The class implements the following operations: 
 
