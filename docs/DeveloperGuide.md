@@ -194,9 +194,9 @@ All in one app to track tasks and their dates, monitor productivity and calculat
 |v1.0|Student before start of semester|List the modules MC |Follow the recommended MC |
 |v1.0|Student before start of semester|List of module available|Easily Choose which modules to take|
 |v1.0|Student before start of semester|Find the modules either by keyword, module code or even MC |Easily see the desired modules |
-|v1.0|Student before start of semester|Details of the Module|To find out more about the modules.|
+|v1.0|Student before start of semester|Find out the etails of the Module|To find out more about the modules.|
 |v1.0|Student before start of semester|Take the desired modules|Mark the modules that i want to take as taken  |
-|v1.0|Student during the start of semester|See modules MC |Follow the recommended MC |
+|v1.0|Student during the semester|Add various types of task such as todo,deadline and event into my list|T |
 |v2.0|user|find a to-do item by name|locate a to-do without having to go through the entire list|
 
 ## Appendix C. Non-Functional Requirements
@@ -216,7 +216,7 @@ _{More to be added}_
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDc5NzQzMTcsMjYxOTk2Mjk2LC0zNj
-IwMjgyOTEsMTYyMzI2Mzc5MywxOTgzNjM5MjIyLDYyNjgzNTA4
-NSwyMDExMzUzNF19
+eyJoaXN0b3J5IjpbODMwMjU2MzgyLDI2MTk5NjI5NiwtMzYyMD
+I4MjkxLDE2MjMyNjM3OTMsMTk4MzYzOTIyMiw2MjY4MzUwODUs
+MjAxMTM1MzRdfQ==
 -->
