@@ -205,7 +205,7 @@ All in one app to track tasks and their dates, monitor productivity and calculat
 |v1.0|Student after the semester|Clear the list of tasks and modules|Start afresh for the next semester |
 
 {More to be added}
-## Appendix C. Non-Functional Requirements
+## Appendix C. Use Cases: 
 
 
 
@@ -226,7 +226,7 @@ _{More to be added}_
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTE5Njk5NiwtNDYyNjY1ODA5LDI2MT
-k5NjI5NiwtMzYyMDI4MjkxLDE2MjMyNjM3OTMsMTk4MzYzOTIy
-Miw2MjY4MzUwODUsMjAxMTM1MzRdfQ==
+eyJoaXN0b3J5IjpbLTE4MTM4MzAwNDksLTEwNTE5Njk5NiwtND
+YyNjY1ODA5LDI2MTk5NjI5NiwtMzYyMDI4MjkxLDE2MjMyNjM3
+OTMsMTk4MzYzOTIyMiw2MjY4MzUwODUsMjAxMTM1MzRdfQ==
 -->
