@@ -185,7 +185,7 @@ These operations are exposed in the Model interface as Model#commitAddressBook()
  - is reasonably comfortable using CLI apps 
 
 ### Value proposition
-
+A quicker method to manage workload with the ease of finding out the next task due, monitoring productivity, and 
 
 ## Appendix B. User Stories
 
@@ -211,7 +211,7 @@ _{More to be added}_
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5OTExODYzNCwyNjE5OTYyOTYsLTM2Mj
+eyJoaXN0b3J5IjpbMTIyNTk4NzI5MCwyNjE5OTYyOTYsLTM2Mj
 AyODI5MSwxNjIzMjYzNzkzLDE5ODM2MzkyMjIsNjI2ODM1MDg1
 LDIwMTEzNTM0XX0=
 -->
