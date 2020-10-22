@@ -208,8 +208,8 @@ All in one app to track tasks and their dates, monitor productivity and calculat
 ## Appendix C. Use Cases: 
 This section describes the Use Cases for some of the features implemented in DOMNUS. 
 
-Use Case: Taking a module 
-MSS: 
+**Use Case: Taking a module 
+MSS:** 
 
  1. User requests to list all modules 
  2. DOMNUS shows a list of modules 
@@ -217,25 +217,24 @@ MSS:
  4. DOMNUS marks the module as taken
 
 Use case ends. 
-Extensions 
+**Extensions** 
  - 3a. The module given is invalid 
 		 - Use case shows `[NOT FOUND]` message 
 		 - Use case resumes at step 3
 - 3b. User adds in the wrong module 
 		- The `untake` command can be used to untake the taken module 
 
-Use Case: List MC
-MSS:
+**Use Case: List MC**
+**MSS:**
 
  1. User requests to list total MC on the current list. 
  2. DOMNUS shows the total MC of the current list. Default list is entire modules list. 
 
 Use case ends 
-Extensions 
+**Extensions** 
 
  1a. User not focusing on the correct list 
 	 1a1. DOMNUS shows the entire module list total MC instead of the 'taken' list MC 
-2a.  
 
  
 Use Case: 
@@ -250,14 +249,15 @@ _{More to be added}_
 
 ## Appendix E. Glossary
 
-* *glossary item* - Definition
+ - Mainstream OS: Windows, Linux, Unix, OS-X
+ - Private contact detail 
 
 ## Appendix F. Instructions for manual testing
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4NzQ3ODAyNCwxMDU3MDExMjMsLTE4MT
+eyJoaXN0b3J5IjpbMTc3ODA5MDg1MywxMDU3MDExMjMsLTE4MT
 M4MzAwNDksLTEwNTE5Njk5NiwtNDYyNjY1ODA5LDI2MTk5NjI5
 NiwtMzYyMDI4MjkxLDE2MjMyNjM3OTMsMTk4MzYzOTIyMiw2Mj
 Y4MzUwODUsMjAxMTM1MzRdfQ==
