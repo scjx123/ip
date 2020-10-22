@@ -220,7 +220,8 @@ Use case ends.
 
 Extensions 
 
- - 2a. The 
+ - 2a. The module given is invalid 
+		 - Use case shows [
 
 Use Case: List Module 
 Use Case: 
@@ -242,8 +243,8 @@ _{More to be added}_
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NzAxMTIzLC0xODEzODMwMDQ5LC0xMD
-UxOTY5OTYsLTQ2MjY2NTgwOSwyNjE5OTYyOTYsLTM2MjAyODI5
-MSwxNjIzMjYzNzkzLDE5ODM2MzkyMjIsNjI2ODM1MDg1LDIwMT
-EzNTM0XX0=
+eyJoaXN0b3J5IjpbLTE5MzkxOTE3MTgsMTA1NzAxMTIzLC0xOD
+EzODMwMDQ5LC0xMDUxOTY5OTYsLTQ2MjY2NTgwOSwyNjE5OTYy
+OTYsLTM2MjAyODI5MSwxNjIzMjYzNzkzLDE5ODM2MzkyMjIsNj
+I2ODM1MDg1LDIwMTEzNTM0XX0=
 -->
