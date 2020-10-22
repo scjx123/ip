@@ -60,7 +60,9 @@ The checker mechanism is facilitated by the utility class `Checker`. It is an in
  - `checkClash(ArrayList< item >, Item)`- Updates `isClash` once a duplicate item is found in the list.
  - `checkRecurrenceDate(Task)` - Checks if the current date is beyond the stated date in the list, and provides a new update for the date recurring date.
 
-G
+Given below is an example usage scenario and how the checker mechanism behaves at each step. 
+
+Step 1: A new deadline object is created and
 
 ### 2.3 CAP calculator feature
 
@@ -157,5 +159,5 @@ These operations are exposed in the Model interface as Model#commitAddressBook()
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NzM1ODg1NCwyMDExMzUzNF19
+eyJoaXN0b3J5IjpbLTEwMTQ2NDg3NDUsMjAxMTM1MzRdfQ==
 -->
