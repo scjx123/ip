@@ -39,10 +39,10 @@ The **Architecture Diagram** below represents a high-level design overview of th
 ![here](Architecture_Diagram.PNG)
 
 
-**3.2 Main**<br>
+**3.2 Main Layer**<br>
 For the `main` layer, it contains a single class known as `Duke`. 
 
-**3.3 UI**<br>
+**3.3 UI Layer**<br>
 Main gets user input and displays messages through the use of UI component. 
 The UI layer entails the package *visualize*, which contains classes *ColoredString*, *Bitmap*, *UI*, *Cli*, 
 *FancyCli* and enumerations *Color* and *Sprite* in the following structure:
@@ -56,20 +56,20 @@ UI's interaction with the rest of the program<br>
 UI passes the user's input string out to the Duke object, which then passes the string to the Command Interpreter layer.
 UI also reads data from the Data object for refreshing purposes, but does not modify it. 
 
-**1.3 Command Interpreter**<br>
+**1.3 Command Interpreter Layer**<br>
 Upon receiving command from the UI, Duke would pass the entire user input into Command Interpreter (CI)
 
-**1.4 Execute**<br>
+**1.4 Execute Layer**<br>
 Once CI processed the user input, duke proceeds to redirect the input to Execute for execution of action. 
 
-**1.5 Storage**<br>
+**1.5 Storage Layer**<br>
 Once CI processed the user input, duke proceeds to redirect the input to Execute for execution of action. 
 
 
-## 2. Implementation<br>
+## 4. Implementation<br>
 This section highlights some of our project's key feature and its implementation. 
 
-### 2.1 Module Planner Feature
+### 4.1 Module Planner Feature
 
 The module planner feature entails many *Actions* which extend `Action`. Their functionalities and usages
 are in the table below:
@@ -83,7 +83,7 @@ A typical flow of execution would be:
 1. blah
 1. blah
 
-### 2.2 Checker Feature 
+### 4.2 Checker Feature 
 ![here](Checker_Diagram.png)
 
 The checker mechanism is facilitated by the utility class `Checker`. It is an independent class on its own without extensions and is stored under the `Data` package of our app. The class implements the following operations: 
@@ -106,7 +106,7 @@ Step 5. Now we proceed to call `checkDuplicates()` of Checker class.
 
 Step 6. If `false` , there is no duplicates in the existing list, and the task can be safely added. Otherwise, no action will be taken. 
 
-### 2.3 CAP calculator feature
+### 4.3 CAP calculator feature
 
 The proposed undo/redo mechanism is facilitated by `CalculateCapAction`. It extends `Action` to execute command given by the user, output are then passed on to `Ui` for display. 
 Additionally, it implements the following operations:
@@ -129,7 +129,7 @@ The following activity diagram summarizes what happens when a user executes a ne
 ![cap uml diagram](./Cap_Calculator_Diagram.JPG)
 
 
-### 2.4 Reminder Feature
+### 4.4 Reminder Feature
 
 The proposed undo/redo mechanism is facilitated by `ReminderAction`. It extends `Action` and the output is passed onto `UI` for display. Additionally, it implements the following operations:
 
@@ -149,7 +149,7 @@ The following sequence diagram diagram shows how the reminder operation works
 
 ![Reminder_Sequence_Diagram](./ReminderAction_Sequence_Diagram.png)
 
-### 2.5 Postpone Feature
+### 4.5 Postpone Feature
 
 The proposed undo/redo mechanism is facilitated by `PostponeAction`. It extends `Action` to execute command given by the user, output are then passed on to `Ui` for display. 
 Additionally, it implements the following operations:
@@ -200,6 +200,6 @@ These operations are exposed in the Model interface as Model#commitAddressBook()
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTg3NTc4NjcsMTYyMzI2Mzc5MywxOT
+eyJoaXN0b3J5IjpbLTIwMjk3OTkxOTgsMTYyMzI2Mzc5MywxOT
 gzNjM5MjIyLDYyNjgzNTA4NSwyMDExMzUzNF19
 -->
