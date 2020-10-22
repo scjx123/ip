@@ -39,9 +39,7 @@ UI also reads data from the Data object for refreshing purposes, but does not mo
 ## 2. Implementation<br>
 This section highlights some of our project's key feature and its implementation. 
 
-2.1 
-
-### module planner feature
+### 2.1 Module Planner Feature
 
 The module planner feature entails many *Actions* which extend `Action`. Their functionalities and usages
 are in the table below:
@@ -55,7 +53,10 @@ A typical flow of execution would be:
 1. blah
 1. blah
 
-### CAP calculator feature
+### 2.2 Checker Feature 
+
+
+### 2.3 CAP calculator feature
 
 The proposed undo/redo mechanism is facilitated by `CalculateCapAction`. It extends `Action` to execute command given by the user, output are then passed on to `Ui` for display. 
 Additionally, it implements the following operations:
@@ -78,7 +79,7 @@ The following activity diagram summarizes what happens when a user executes a ne
 ![cap uml diagram](./Cap_Calculator_Diagram.JPG)
 
 
-### Reminder Feature
+### 2.4 Reminder Feature
 
 The proposed undo/redo mechanism is facilitated by `ReminderAction`. It extends `Action` and the output is passed onto `UI` for display. Additionally, it implements the following operations:
 
@@ -98,7 +99,7 @@ The following sequence diagram diagram shows how the reminder operation works
 
 ![Reminder_Sequence_Diagram](./ReminderAction_Sequence_Diagram.png)
 
-### Postpone Feature
+### 2.5 Postpone Feature
 
 The proposed undo/redo mechanism is facilitated by `PostponeAction`. It extends `Action` to execute command given by the user, output are then passed on to `Ui` for display. 
 Additionally, it implements the following operations:
@@ -122,33 +123,33 @@ The following activity diagram summarizes what happens when a user executes a ne
 
 These operations are exposed in the Model interface as Model#commitAddressBook(), Model#undoAddressBook() and Model#redoAddressBook() respectively.
 
-## Product scope
-### Target user profile
+## 3. Product scope
+### 3.1 Target user profile
 
 {Describe the target user profile}
 
-### Value proposition
+### 3.2 Value proposition
 
 {Describe the value proposition: what problem does it solve?}
 
-## User Stories
+## 4. User Stories
 
 |Version| As a ... | I want to ... | So that I can ...|
 |--------|----------|---------------|------------------|
 |v1.0|new user|see usage instructions|refer to them when I forget how to use the application|
 |v2.0|user|find a to-do item by name|locate a to-do without having to go through the entire list|
 
-## Non-Functional Requirements
+## 5. Non-Functional Requirements
 
 {Give non-functional requirements}
 
-## Glossary
+## 6. Glossary
 
 * *glossary item* - Definition
 
-## Instructions for manual testing
+## 7. Instructions for manual testing
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMTM1MzRdfQ==
+eyJoaXN0b3J5IjpbLTE5OTM2NTMxMDYsMjAxMTM1MzRdfQ==
 -->
