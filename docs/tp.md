@@ -3,6 +3,11 @@
 ## 1. Table of content
 **1. Table of content**
 2. Introduction
+	2.1 Purpose of Document
+	2.2 Audience
+	2.3 Documentation Organization 
+	2.4 User Guide
+	2.5 Markup  
 3. Setting Up 
 4. Design 
 5. Implementation
@@ -14,7 +19,6 @@
 11. Appendix F. Instruction for Manual Testing  
 
 ## 2. Introduction
-2.1 
 
 ## 3. Setting Up
 
@@ -78,8 +82,8 @@ Once CI processed the user input, duke proceeds to redirect the input to Execute
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDYyNTA1MTEsLTE2OTE0OTQyMzYsLT
-I2MjY0MzMyOCwtMTg3MjEyNzAzNCw4MjY0MjA3MjYsMTQ2MDQ4
-NzIyMCwxODE4NTAxOTUwLC0xODA2MDI2MCwyMDE1MDYyMTEwLD
-ExNTIwOTkxODMsMTc1ODM5NzYxNF19
+eyJoaXN0b3J5IjpbNzIyNjcwNDc3LC0xNjkxNDk0MjM2LC0yNj
+I2NDMzMjgsLTE4NzIxMjcwMzQsODI2NDIwNzI2LDE0NjA0ODcy
+MjAsMTgxODUwMTk1MCwtMTgwNjAyNjAsMjAxNTA2MjExMCwxMT
+UyMDk5MTgzLDE3NTgzOTc2MTRdfQ==
 -->
