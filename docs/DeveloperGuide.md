@@ -199,8 +199,9 @@ All in one app to track tasks and their dates, monitor productivity and calculat
 |v1.0|Student during the semester|Add tasks such as todo,deadline and event into my list|Easily keep track of all the task i have to complete  |
 |v1.0|Student during the semester|Have a Reminder of which deadline is due soon|Ensure that no task is missed out  |
 |v1.0|Student during the semester|Add task to modules |Easily know which tasks belongs to which modules  |
-|v1.0|Student after the semester|Add task to modules |Easily know which tasks belongs to which modules  |
-|v1.0|Student after the semester|Add task to modules |Easily know which tasks belongs to which modules  |
+|v1.0|Student during the semester|Delete task once they are completed |Remove unnecessary task on the list |
+|v1.0|Student after the semester|Calculate the CAP of my individual modules|Easily find out my performance this semester |
+|v1.0|Student after the semester|Clear the |Easily know which tasks belongs to which modules  |
 
 ## Appendix C. Non-Functional Requirements
 
@@ -219,7 +220,7 @@ _{More to be added}_
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3Nzg4NjUxOCwyNjE5OTYyOTYsLTM2Mj
+eyJoaXN0b3J5IjpbMTY5ODk5MTQ0NSwyNjE5OTYyOTYsLTM2Mj
 AyODI5MSwxNjIzMjYzNzkzLDE5ODM2MzkyMjIsNjI2ODM1MDg1
 LDIwMTEzNTM0XX0=
 -->
