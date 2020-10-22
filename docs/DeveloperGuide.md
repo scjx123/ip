@@ -191,9 +191,10 @@ All in one app to track tasks and their dates, monitor productivity and calculat
 
 |Version| As a ... | I want to ... | So that I can ...|
 |--------|----------|---------------|------------------|
-|v1.0|Student before start of semester|List the modules MC |Follow the recommended MC |
+|v1.0|Student before start of semester|List the modules MC|Follow the recommended MC |
 |v1.0|Student before start of semester|List of module available|Easily Choose which modules to take|
 |v1.0|Student before start of semester|Find the modules either by keyword, module code or even MC |Easily see the desired modules |
+|v1.0|Student before start of semester|Select the modules but not taking it yet |Easily see the desired modules |
 |v1.0|Student before start of semester|Find out the etails of the Module|To find out more about the modules.|
 |v1.0|Student before start of semester|Take the desired modules|Mark the modules that i want to take as taken  |
 |v1.0|Student during the semester|Add tasks such as todo,deadline and event into my list|Easily keep track of all the task i have to complete  |
@@ -201,7 +202,7 @@ All in one app to track tasks and their dates, monitor productivity and calculat
 |v1.0|Student during the semester|Add task to modules |Easily know which tasks belongs to which modules  |
 |v1.0|Student during the semester|Delete task once they are completed |Remove unnecessary task on the list |
 |v1.0|Student after the semester|Calculate the CAP of my individual modules|Easily find out my performance this semester |
-|v1.0|Student after the semester|Clear the |Easily know which tasks belongs to which modules  |
+|v1.0|Student after the semester|Clear the list of tasks and modules|Start afresh for the next semester |
 
 ## Appendix C. Non-Functional Requirements
 
@@ -220,7 +221,7 @@ _{More to be added}_
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5ODk5MTQ0NSwyNjE5OTYyOTYsLTM2Mj
-AyODI5MSwxNjIzMjYzNzkzLDE5ODM2MzkyMjIsNjI2ODM1MDg1
-LDIwMTEzNTM0XX0=
+eyJoaXN0b3J5IjpbNTExOTEzMDg3LDI2MTk5NjI5NiwtMzYyMD
+I4MjkxLDE2MjMyNjM3OTMsMTk4MzYzOTIyMiw2MjY4MzUwODUs
+MjAxMTM1MzRdfQ==
 -->
