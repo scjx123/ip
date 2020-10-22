@@ -218,7 +218,6 @@ MSS:
 
 Use case ends. 
 Extensions 
- - 2a. The module file was not properly laoded.
  - 3a. The module given is invalid 
 		 - Use case shows `[NOT FOUND]` message 
 		 - Use case resumes at step 3
@@ -228,12 +227,13 @@ Extensions
 Use Case: List MC
 MSS:
 
- . User requests to list total MC on a given list
+ 1. User requests to list total MC on the current list. 
  2. DOMNUS shows the total MC of the current list. Default list is entire modules list. 
 
 Use case ends 
 Extensions 
 
+ 1. List item
 
  
 Use Case: 
@@ -255,7 +255,7 @@ _{More to be added}_
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExMTQ1NDkyNSwxMDU3MDExMjMsLTE4MT
+eyJoaXN0b3J5IjpbMjEzNzgyMTY0MywxMDU3MDExMjMsLTE4MT
 M4MzAwNDksLTEwNTE5Njk5NiwtNDYyNjY1ODA5LDI2MTk5NjI5
 NiwtMzYyMDI4MjkxLDE2MjMyNjM3OTMsMTk4MzYzOTIyMiw2Mj
 Y4MzUwODUsMjAxMTM1MzRdfQ==
