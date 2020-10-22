@@ -262,11 +262,10 @@ Step 2: Copy the file to the folder you want to use as the home folder for your 
 Step 3: Open the Command Prompt if you are running on Windows or Terminal if you are running on Mac OS.
 Step 4: Navigate to your home folder and type  **‘java -jar domnus.jar’**
 
-2. Adding Module 
-3. Tracking 
+2. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY0NDEzNTk0LDEwNTcwMTEyMywtMTgxMz
+eyJoaXN0b3J5IjpbLTkwODM3MDgzLDEwNTcwMTEyMywtMTgxMz
 gzMDA0OSwtMTA1MTk2OTk2LC00NjI2NjU4MDksMjYxOTk2Mjk2
 LC0zNjIwMjgyOTEsMTYyMzI2Mzc5MywxOTgzNjM5MjIyLDYyNj
 gzNTA4NSwyMDExMzUzNF19
