@@ -176,9 +176,10 @@ The following activity diagram summarizes what happens when a user executes a ne
 
 These operations are exposed in the Model interface as Model#commitAddressBook(), Model#undoAddressBook() and Model#redoAddressBook() respectively.
 ## Appendix A. Product scope
-### Target user profile
+### Target user profile:
 
-{Describe the target user profile}
+ - has a need to manage significant number of schedules 
+ - 
 
 ### Value proposition
 
@@ -208,7 +209,7 @@ _{More to be added}_
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjYxOTk2Mjk2LC0zNjIwMjgyOTEsMTYyMz
-I2Mzc5MywxOTgzNjM5MjIyLDYyNjgzNTA4NSwyMDExMzUzNF19
-
+eyJoaXN0b3J5IjpbNzM5OTIwNjk3LDI2MTk5NjI5NiwtMzYyMD
+I4MjkxLDE2MjMyNjM3OTMsMTk4MzYzOTIyMiw2MjY4MzUwODUs
+MjAxMTM1MzRdfQ==
 -->
