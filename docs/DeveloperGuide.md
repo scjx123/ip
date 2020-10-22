@@ -185,13 +185,13 @@ These operations are exposed in the Model interface as Model#commitAddressBook()
  - is reasonably comfortable using CLI apps 
 
 ### Value proposition
-All in one app to track tasks and their dates, monitor productivity, calculate cap with 
+All in one app to track tasks and their dates, monitor productivity and calculate cap. 
 
 ## Appendix B. User Stories
 
 |Version| As a ... | I want to ... | So that I can ...|
 |--------|----------|---------------|------------------|
-|v1.0|new user|see usage instructions|refer to them when I forget how to use the application|
+|v1.0|new user|take |refer to them when I forget how to use the application|
 |v2.0|user|find a to-do item by name|locate a to-do without having to go through the entire list|
 
 ## Appendix C. Non-Functional Requirements
@@ -211,7 +211,7 @@ _{More to be added}_
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNjQ2MzY4OSwyNjE5OTYyOTYsLTM2Mj
+eyJoaXN0b3J5IjpbLTExMjk5MjA1MiwyNjE5OTYyOTYsLTM2Mj
 AyODI5MSwxNjIzMjYzNzkzLDE5ODM2MzkyMjIsNjI2ODM1MDg1
 LDIwMTEzNTM0XX0=
 -->
