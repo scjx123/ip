@@ -1,6 +1,6 @@
 # Developer Guide
 
-## Design
+## 1. Design
 The Architecture Diagram below represents a high-level design overview of the App. Specifically, it is done with an n-tier architectural style, where the higher layers make use of services provided by lower layers. 
 
 ![here](Architecture_Diagram.PNG)
@@ -36,8 +36,11 @@ UI also reads data from the Data object for refreshing purposes, but does not mo
 **Executer**<br>
 **Storage**<br>
 
-## Implementation<br>
-This section decribes some key highlight of our implementation 
+## 2. Implementation<br>
+This section highlights some of our project's key feature and its implementation. 
+
+2.1 
+
 ### module planner feature
 
 The module planner feature entails many *Actions* which extend `Action`. Their functionalities and usages
@@ -147,5 +150,5 @@ These operations are exposed in the Model interface as Model#commitAddressBook()
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjYzODk4MjU4XX0=
+eyJoaXN0b3J5IjpbMjAxMTM1MzRdfQ==
 -->
