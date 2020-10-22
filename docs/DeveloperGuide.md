@@ -72,7 +72,7 @@ Step 4: If `newDate` is not `null`it shows that there is a new updated date. The
 
 Step 5: Now we proceed to call `checkDuplicates()` of Checker class. If `false` , there is no duplicates in the existing list, and the task can be safely added. Otherwise, no action will be taken. 
 
-
+![here](Info_Icon.PNG)
 
 ### 2.3 CAP calculator feature
 
@@ -169,6 +169,6 @@ These operations are exposed in the Model interface as Model#commitAddressBook()
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjEwNDg4MTQsNjI2ODM1MDg1LDIwMT
+eyJoaXN0b3J5IjpbLTE5ODE4OTIyMzEsNjI2ODM1MDg1LDIwMT
 EzNTM0XX0=
 -->
