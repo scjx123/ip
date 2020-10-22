@@ -176,14 +176,16 @@ The following activity diagram summarizes what happens when a user executes a ne
 
 These operations are exposed in the Model interface as Model#commitAddressBook(), Model#undoAddressBook() and Model#redoAddressBook() respectively.
 ## Appendix A. Product scope
-### Target user profile:
+### Target user profile
 
  - has a need to manage significant number of schedules 
- - 
+ - prefer desktop apps over other types 
+ - can type fast
+ - prefers typing to mouse interactions 
+ - is reasonably comfortable using CLI apps 
 
 ### Value proposition
 
-{Describe the value proposition: what problem does it solve?}
 
 ## Appendix B. User Stories
 
@@ -209,7 +211,7 @@ _{More to be added}_
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM5OTIwNjk3LDI2MTk5NjI5NiwtMzYyMD
-I4MjkxLDE2MjMyNjM3OTMsMTk4MzYzOTIyMiw2MjY4MzUwODUs
-MjAxMTM1MzRdfQ==
+eyJoaXN0b3J5IjpbLTU5OTExODYzNCwyNjE5OTYyOTYsLTM2Mj
+AyODI5MSwxNjIzMjYzNzkzLDE5ODM2MzkyMjIsNjI2ODM1MDg1
+LDIwMTEzNTM0XX0=
 -->
