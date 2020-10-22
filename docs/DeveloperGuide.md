@@ -54,7 +54,7 @@ A typical flow of execution would be:
 ### 2.2 Checker Feature 
 ![here](Checker_Diagram.PNG)
 
-The checker mechanism is used to 
+The checker mechanism is done through the utility class `Checker`. 
 
 ### 2.3 CAP calculator feature
 
@@ -151,5 +151,5 @@ These operations are exposed in the Model interface as Model#commitAddressBook()
 
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzEyNTYzMzMsMjAxMTM1MzRdfQ==
+eyJoaXN0b3J5IjpbMTYwMDMyODcwMCwyMDExMzUzNF19
 -->
