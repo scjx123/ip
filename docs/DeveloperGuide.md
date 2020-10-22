@@ -207,6 +207,8 @@ All in one app to track tasks and their dates, monitor productivity and calculat
 {More to be added}
 ## Appendix C. Non-Functional Requirements
 
+
+
 ## Appendix D. Non-Functional Requirements
 
 1.  Should work on any  _mainstream OS_  as long as it has Java  `11`  or above installed.
@@ -224,7 +226,7 @@ _{More to be added}_
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU5Mjk5NjA4LC00NjI2NjU4MDksMjYxOT
-k2Mjk2LC0zNjIwMjgyOTEsMTYyMzI2Mzc5MywxOTgzNjM5MjIy
-LDYyNjgzNTA4NSwyMDExMzUzNF19
+eyJoaXN0b3J5IjpbLTEwNTE5Njk5NiwtNDYyNjY1ODA5LDI2MT
+k5NjI5NiwtMzYyMDI4MjkxLDE2MjMyNjM3OTMsMTk4MzYzOTIy
+Miw2MjY4MzUwODUsMjAxMTM1MzRdfQ==
 -->
