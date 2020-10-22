@@ -192,9 +192,9 @@ All in one app to track tasks and their dates, monitor productivity and calculat
 |Version| As a ... | I want to ... | So that I can ...|
 |--------|----------|---------------|------------------|
 |v1.0|Student before start of semester|List the modules MC |Follow the recommended MC |
-|v1.0|Student before start of semester|List of module available|Choose which modules to take|
-|v1.0|Student before start of semester|Find the modules according to my course either by keyword, module code or even MC |Wants to see the desired modules |
-|v1.0|Student before start of semester|Check out the details of the Module|To see if the modules fits my requirement |
+|v1.0|Student before start of semester|List of module available|Easily Choose which modules to take|
+|v1.0|Student before start of semester|Find the modules either by keyword, module code or even MC |Easily see the desired modules |
+|v1.0|Student before start of semester|Details of the Module|To find out more about the modules.|
 |v1.0|Student before start of semester|Take the modules that i have selected |Follow the recommended MC |
 |v1.0|Student before start of semester|See modules MC |Follow the recommended MC |
 |v2.0|user|find a to-do item by name|locate a to-do without having to go through the entire list|
@@ -216,7 +216,7 @@ _{More to be added}_
 {Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3OTk0MTA1MywyNjE5OTYyOTYsLTM2Mj
-AyODI5MSwxNjIzMjYzNzkzLDE5ODM2MzkyMjIsNjI2ODM1MDg1
-LDIwMTEzNTM0XX0=
+eyJoaXN0b3J5IjpbLTE4ODg1NzY4MTIsMjYxOTk2Mjk2LC0zNj
+IwMjgyOTEsMTYyMzI2Mzc5MywxOTgzNjM5MjIyLDYyNjgzNTA4
+NSwyMDExMzUzNF19
 -->
