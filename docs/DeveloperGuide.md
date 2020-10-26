@@ -274,7 +274,9 @@ Test case: `Fancy` ,`Plain`
 Expected: Error message due to cap sensitive. 
 3. Focusing between different list
 	3.1 Test case: `focus mod`/`task`/`todo`/`deadline`/`event`/`selected`/`taken`
-		   Expected : Shows the current list you are focused on. No list will be shown. 
+			   Expected : Shows the current list you are focused on. No list will be shown. 
+	Test case: `focus taken` 
+	Expected: Shows the current list of modules you have taken. 
 	3.2 Other incorrect focus commands to try: `focus 0` , `focus what?`, ... (focus on non-existent list) 
 	Expected : Error message due to invalid command. 
 	
@@ -304,9 +306,12 @@ Test cases: `focus task` -> `take 1 2`
 Expected: Task is not module, therefore it cannot be taken.
 Test cases: `focus mod` -> `take CS2113` 
 Expected: Mark CS2113 as taken.
-Test cases: `focus mod` ->
+Test cases: `focus mod` -> `take cs2113`
+Expected: Module not found as inputs are case sensitive. 
+7. See taken module 
+8. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NTg1NTI3NiwtOTE0NTYxNjQ3LDExNz
+eyJoaXN0b3J5IjpbMTg0NDIyMTUyNiwtOTE0NTYxNjQ3LDExNz
 g3ODQ0MF19
 -->
