@@ -272,19 +272,19 @@ Test case: `plain`
 Expected: Switches to plain mode of display
 Test case: `Fancy` ,`Plain`
 Expected: Error message due to cap sensitive. 
-4. Focusing between different list
+3. Focusing between different list
 	3.1 Test case: `focus mod`/`task`/`todo`/`deadline`/`event`/`selected`/`taken`
 		   Expected : Shows the current list you are focused on. No list will be shown. 
 	3.2 Other incorrect focus commands to try: `focus 0` , `focus what?`, ... (focus on non-existent list) 
 	Expected : Error message due to invalid command. 
 	
-5. List Modules/Task
+4. List Modules/Task
 Test case: `focus mod` -> `list`
 	Expected: Shows the list of modules. 
 	Test case: `focus task` -> `list` 
 	Expected: Shows the current list of task. 
 	
-6. Find Modules 
+5. Find Modules 
 Test case: `focus mod` -> `find Engin` 
 Expected: Shows the list of available modules with keyword 'Engin' 
 Test case:  `focus mod` -> `find 2113`
@@ -296,9 +296,11 @@ Test case: `focus task`-> find deadline
  Expected: Shows Module code, name, mc, and description. 
 Test cases: `detail 1`
 Expected: Shows the information of the 1st task based on the current list focused on. 
-Test c
-7. 
+Test cases: `detail xyz` No detail of such item is found. 
+6. Take Modules 
+Test Cases: 1focus mod`Take 1 2` 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYzNDk4OTUsLTkxNDU2MTY0NywxMTc4Nz
-g0NDBdfQ==
+eyJoaXN0b3J5IjpbLTE0MjQ0MjYxNDgsLTkxNDU2MTY0NywxMT
+c4Nzg0NDBdfQ==
 -->
