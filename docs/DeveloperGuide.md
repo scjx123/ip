@@ -291,11 +291,9 @@ Test case:  `focus mod` -> `find 2113`
 Expected: Shows the list of modules with keyword '2113'
 Test case: `focus task`-> find deadline 
 
-7. Add Modules and Task 
-	5.1 Add modules
-	5.2 Add task
-	5.3 Add task to modules
+ 6. Details of Modules 
+ Test cases: `detail CS2113`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNTEzMDExMCwtOTE0NTYxNjQ3LDExNz
-g3ODQ0MF19
+eyJoaXN0b3J5IjpbLTIwOTIyOTg3MDksLTkxNDU2MTY0NywxMT
+c4Nzg0NDBdfQ==
 -->
