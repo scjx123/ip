@@ -276,15 +276,13 @@ Step 4: Navigate to your home folder and type  **‘java -jar domnus.jar’**\
 Test case: `focus mod` -> `list`
 	Expected: An output showing you the entire list of modules. 
 	Test case: `focus task` -> `list` 
-	Expected: An output showing you and entire list of task. If there is no task in the list, 
+	Expected: An output showing you and entire the current list of task. 
 	
-	4.1 List all module
-	4.2 List all task. 
-	4.3 List all taken module
-7. Add Modules and Task 
+5. Find all module
+6. Add Modules and Task 
 	5.1 Add modules
 	5.2 Add task
 	5.3 Add task to modules
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk0MTIxMTQwLDExNzg3ODQ0MF19
+eyJoaXN0b3J5IjpbLTE0OTk2MzA1NDgsMTE3ODc4NDQwXX0=
 -->
