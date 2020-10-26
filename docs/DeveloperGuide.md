@@ -302,9 +302,11 @@ Test cases: `focus mod` -> `take 1 2`
 Expected: Takes the 1st and 2nd module on the module list.
 Test cases: `focus task` -> `take 1 2` 
 Expected: Task is not module, therefore it cannot be taken.
-Test cases: 1
+Test cases: `focus mod` -> `take CS2113` 
+Expected: Mark CS2113 as taken.
+Test cases: `focus mod` ->
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMDI4NDQwMSwtOTE0NTYxNjQ3LDExNz
+eyJoaXN0b3J5IjpbMTU5NTg1NTI3NiwtOTE0NTYxNjQ3LDExNz
 g3ODQ0MF19
 -->
