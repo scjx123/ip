@@ -310,12 +310,12 @@ Test cases: `focus mod` -> `take cs2113`
 Expected: Module not found as inputs are case sensitive. 
 7. Reminder 
 Test cases: `reminder `
-Expected: Shows task that are due within 3 days 
+Expected: Shows task that are due within 3 days. 
 
 8. Cap Calculation 
-Test cases: `cap -m CS2113 A+ EE2026 B CS1010 C-
-Expected: Shows you the calcu
+Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-
+Expected: Shows you the calculated cap. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzYwOTYxOTMsLTkxNDU2MTY0NywxMT
-c4Nzg0NDBdfQ==
+eyJoaXN0b3J5IjpbLTU0OTU3MzczNiwtOTE0NTYxNjQ3LDExNz
+g3ODQ0MF19
 -->
