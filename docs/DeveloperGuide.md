@@ -268,9 +268,9 @@ Step 4: Navigate to your home folder and type  **‘java -jar domnus.jar’**\
 2. Switching between Fancy and CLI 
 3. Focusing between different list
 	3.1 Test case: `focus mod` 
-		   Expected : focuses on the module list but 
-	3.2 Test case: `focus task`
-	3.3 Test case: `focus taken`
+		   Expected : Tells you are you are focusing on mod. but not yet showing you the list. 
+	3.2 Test case: `focus what?`
+	Expected : Error details sh
 4. List all Modules and Task 
 	4.1 List all module
 	4.2 List all task. 
@@ -280,5 +280,5 @@ Step 4: Navigate to your home folder and type  **‘java -jar domnus.jar’**\
 	5.2 Add task
 	5.3 Add task to modules
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjA4NzM3NjksMTE3ODc4NDQwXX0=
+eyJoaXN0b3J5IjpbMjA5MDgyODU0OCwxMTc4Nzg0NDBdfQ==
 -->
