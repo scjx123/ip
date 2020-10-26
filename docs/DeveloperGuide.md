@@ -308,10 +308,12 @@ Test cases: `focus mod` -> `take CS2113`
 Expected: Mark CS2113 as taken.
 Test cases: `focus mod` -> `take cs2113`
 Expected: Module not found as inputs are case sensitive. 
-7. See taken module 
-8. 
+7. Reminder 
+Test cases: reminder 
+Expected: Shows task that are due within 3 days 
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NDIyMTUyNiwtOTE0NTYxNjQ3LDExNz
+eyJoaXN0b3J5IjpbMTI3MzYyNzUyNCwtOTE0NTYxNjQ3LDExNz
 g3ODQ0MF19
 -->
