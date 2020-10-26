@@ -192,11 +192,11 @@ All in one app to track tasks and their dates, monitor productivity and calculat
 
 ## Appendix B. User Stories
 
-|Version| As a ... | I want to ... | So that I can ...|
+|Priority| As a ... | I want to ... | So that I can ...|
 |--------|----------|---------------|------------------|
-|v1.0|Student before start of semester|List the modules MC|Follow the recommended MC |
-|v1.0|Student before start of semester|List of module available|Easily Choose which modules to take|
-|v1.0|Student before start of semester|Find the modules either by keyword, module code or even MC |Easily see the desired modules |
+|***|Student before start of semester|List the modules MC|Follow the recommended MC |
+|***|Student before start of semester|List of module available|Easily Choose which modules to take|
+|**|Student before start of semester|Find the modules either by keyword, module code or even MC |Easily see the desired modules |
 |v1.0|Student before start of semester|Select the modules but not taking it yet |Easily whether the MC fits my requirement |
 |v1.0|Student before start of semester|Find out the etails of the Module|To find out more about the modules.|
 |v1.0|Student before start of semester|Take the desired modules|Mark the modules that i want to take as taken  |
@@ -316,6 +316,6 @@ Expected: Shows task that are due within 3 days.
 Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-
 Expected: Shows you the calculated cap. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0OTU3MzczNiwtOTE0NTYxNjQ3LDExNz
-g3ODQ0MF19
+eyJoaXN0b3J5IjpbLTE0ODA0NDQyNDUsLTU0OTU3MzczNiwtOT
+E0NTYxNjQ3LDExNzg3ODQ0MF19
 -->
