@@ -314,7 +314,8 @@ Expected: Shows task that are due within 3 days
 
 8. Cap Calculation 
 Test cases: `cap -m CS2113 A+ EE2026 B CS1010 C-
+Expected: Shows you the calcu
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzEzNjM0MjUsLTkxNDU2MTY0NywxMT
+eyJoaXN0b3J5IjpbLTE3NzYwOTYxOTMsLTkxNDU2MTY0NywxMT
 c4Nzg0NDBdfQ==
 -->
