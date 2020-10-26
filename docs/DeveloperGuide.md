@@ -272,9 +272,10 @@ Step 4: Navigate to your home folder and type  **‘java -jar domnus.jar’**\
 	3.2 Other incorrect focus commands to try: `focus 0` , `focus what?`, ... (focus on non-existent list) 
 	Expected : Error message due to invalid command. 
 	
-4. List all Modules and Task 
-5. Test case: `focus mod` -> `list`
-	Expected 
+4. List all Modules/Task
+Test case: `focus mod` -> `list`
+	Expected: An output showing you the entire list of available modules. 
+	Test case: 
 	4.1 List all module
 	4.2 List all task. 
 	4.3 List all taken module
@@ -283,5 +284,5 @@ Step 4: Navigate to your home folder and type  **‘java -jar domnus.jar’**\
 	5.2 Add task
 	5.3 Add task to modules
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDcwMjc5MTAsMTE3ODc4NDQwXX0=
+eyJoaXN0b3J5IjpbLTE0ODU1MDQwMTIsMTE3ODc4NDQwXX0=
 -->
