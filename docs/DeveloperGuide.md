@@ -266,34 +266,35 @@ Step 3: Open the Command Prompt if you are running on Windows or Terminal if you
 Step 4: Navigate to your home folder and type  **‘java -jar domnus.jar’**\
 
 2. Switching between Fancy and CLI 
-Test case: `Fancy`
+Test case: `fancy`
 Expected: Switches to fancy mode of display 
-Test case: `Plain`
+Test case: `plain`
 Expected: Switches to plain mode of display
-Test case 
+Test case: `Fancy` ,`Plain`
+Expected: Error message due to cap sensitive. 
 4. Focusing between different list
 	3.1 Test case: `focus mod` 
 		   Expected : Shows the current list you are focused on. No list will be shown. 
 	3.2 Other incorrect focus commands to try: `focus 0` , `focus what?`, ... (focus on non-existent list) 
 	Expected : Error message due to invalid command. 
 	
-5. List all Modules/Task
+5. List Modules/Task
 Test case: `focus mod` -> `list`
 	Expected: Shows the list of modules. 
 	Test case: `focus task` -> `list` 
 	Expected: Shows the current list of task. 
 	
-6. Find all modules available
+6. Find Modules 
 Test case: `focus mod` -> `find Engin` 
 Expected: Shows the list of available modules with keyword 'Engin' 
 Test case:  `focus mod` -> `find 2113`
 Expected: Shows the list of modules with keyword '2113'
-Test case: 
+Test case: `focus task`-> find deadline 
 
 7. Add Modules and Task 
 	5.1 Add modules
 	5.2 Add task
 	5.3 Add task to modules
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjU0NDE1MTIsMTE3ODc4NDQwXX0=
+eyJoaXN0b3J5IjpbLTkxNDU2MTY0NywxMTc4Nzg0NDBdfQ==
 -->
