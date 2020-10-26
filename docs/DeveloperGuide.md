@@ -39,7 +39,7 @@
 ### 3.1 Architecture
 The **Architecture Diagram** below represents a high-level design overview of the App. Specifically, it is done with an **N-tier architectural style**, where the higher layers make use of services provided by lower layers. 
 
-![here](Architecture_Diagram.PNG)
+![here](Images/Architecture_Diagram.PNG)
 
 
 **3.2 Main Layer**<br>
@@ -49,7 +49,7 @@ For the `main` layer, it contains a single class known as `Duke`.
 Main gets user input and displays messages through the use of UI component. 
 The UI layer entails the package *visualize*, which contains classes *ColoredString*, *Bitmap*, *UI*, *Cli*, 
 *FancyCli* and enumerations *Color* and *Sprite* in the following structure:
-![uml](Package%20visualize.png)
+![uml](Images/Package%20visualize.png)
 
 UI's interaction with user<br>
 UI gets user input through *nextline()*, and renders strings as a user-comprehensible interface through 
@@ -68,6 +68,9 @@ Once CI processed the user input, duke proceeds to redirect the input to Execute
 **1.5 Storage Layer**<br>
 Once CI processed the user input, duke proceeds to redirect the input to Execute for execution of action. 
 
+**1.6 Flow of DOMSUM**<br>
+The sequence diagram below shows the main interaction of classes with each other throughout the whole lifecycle of DOMSUM.
+![uml](Images/DOMSUM_Main_Flow.png)
 
 ## 4. Implementation<br>
 This section highlights some of our project's key feature and its implementation. 
@@ -87,7 +90,7 @@ A typical flow of execution would be:
 1. blah
 
 ### 4.2 Checker Feature 
-![here](Checker_Diagram.png)
+![here](Images/Checker_Diagram.png)
 
 The checker mechanism is facilitated by the utility class `Checker`. It is an independent class on its own without extensions and is stored under the `Data` package of our app. The class implements the following operations: 
 
@@ -129,7 +132,7 @@ Step 4. CAP value is calculated and returned to the user through `Ui`.
 
 The following activity diagram summarizes what happens when a user executes a new command:
 
-![cap uml diagram](./Cap_Calculator_Diagram.JPG)
+![cap uml diagram](Images/Cap_Calculator_Diagram.JPG)
 
 
 ### 4.4 Reminder Feature
@@ -150,7 +153,7 @@ Step 4: Tasks due within 3 days are returned to the user through Ui
 
 The following sequence diagram diagram shows how the reminder operation works
 
-![Reminder_Sequence_Diagram](./ReminderAction_Sequence_Diagram.png)
+![Reminder_Sequence_Diagram](Images/ReminderAction_Sequence_Diagram.png)
 
 ### 4.5 Postpone Feature
 
@@ -172,7 +175,7 @@ Step 4. Postponed target task is returned to the user through `Ui`.
 
 The following activity diagram summarizes what happens when a user executes a new command:
 
-![Postpone_Sequence_Diagram](./PostponeAction_Sequence_Diagram.png)
+![Postpone_Sequence_Diagram](Images/PostponeAction_Sequence_Diagram.png)
 
 These operations are exposed in the Model interface as Model#commitAddressBook(), Model#undoAddressBook() and Model#redoAddressBook() respectively.
 ## Appendix A. Product scope
@@ -216,25 +219,25 @@ MSS:**
  3. User requests to mark a specific module as 'taken' 
  4. DOMNUS marks the module as taken
 
-Use case ends. 
-**Extensions** 
- - 3a. The module given is invalid 
-		 - Use case shows `[NOT FOUND]` message 
-		 - Use case resumes at step 3
-- 3b. User adds in the wrong module 
-		- The `untake` command can be used to untake the taken module 
+Use case ends.<br>
+**Extensions** \
+&nbsp;&nbsp;&nbsp;3a. The module given is invalid\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3a.1Use case shows `[NOT FOUND]` message\ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use case resumes at step 3\
+&nbsp;&nbsp;&nbsp;3b. User adds in the wrong module \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3b.1The `untake` command can be used to untake the taken module \
 
 **Use Case: List MC**
 **MSS:**
 
- 1. User requests to list total MC on the current list. 
- 2. DOMNUS shows the total MC of the current list. Default list is entire modules list. 
+ 1. User requests to list total MC on the current list. \
+ 2. DOMNUS shows the total MC of the current list. Default list is entire modules list. \
 
-Use case ends 
+Use case ends.<br> 
 **Extensions** 
 
- 1a. User not focusing on the correct list 
-	 1a1. DOMNUS shows the entire module list total MC instead of the 'taken' list MC 
+&nbsp;&nbsp;&nbsp;1a. User not focusing on the correct list \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1a1. DOMNUS shows the entire module list total MC instead of the 'taken' list MC \
 
  
 Use Case: 
@@ -257,29 +260,21 @@ _{More to be added}_
 ## Appendix F. Instructions for manual testing
 
 1. Launch and Shutdown 
-Step 1: Download the latest version of  `Duke`  from  [Our Release Page](https://github.com/AY2021S1-CS2113-T13-2/tp/releases/tag/v1.0).
-Step 2: Copy the file to the folder you want to use as the home folder for your Mobile Nusmod.
-Step 3: Open the Command Prompt if you are running on Windows or Terminal if you are running on Mac OS.
-Step 4: Navigate to your home folder and type  **‘java -jar domnus.jar’**
+Step 1: Download the latest version of  `Duke`  from  [Our Release Page](https://github.com/AY2021S1-CS2113-T13-2/tp/releases/tag/v1.0).\
+Step 2: Copy the file to the folder you want to use as the home folder for your Mobile Nusmod.\
+Step 3: Open the Command Prompt if you are running on Windows or Terminal if you are running on Mac OS.\
+Step 4: Navigate to your home folder and type  **‘java -jar domnus.jar’**\
 
-2. Switching between Fancy and CLI 
-3. Focusing between different list
-	3.1 Focus mod 
-	3.2 Focus Task 
-	3.3 Focus Taken 
-4. List all Modules and Task 
-	4.1 List all module
-	4.2 List all task. 
-	4.3 List all taken module 
-5. Add Modules and Task 
-	2.1 Add modules
-	2.2 Add task
-	2.3 Add task to modules 
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4OTkzNDk4MCwxNjE1ODY2MDA2LC05MD
-gzNzA4MywxMDU3MDExMjMsLTE4MTM4MzAwNDksLTEwNTE5Njk5
-NiwtNDYyNjY1ODA5LDI2MTk5NjI5NiwtMzYyMDI4MjkxLDE2Mj
-MyNjM3OTMsMTk4MzYzOTIyMiw2MjY4MzUwODUsMjAxMTM1MzRd
-fQ==
--->
+2. Switching between Fancy and CLI \
+3. Focusing between different list\
+	3.1 Focus mod \
+	3.2 Focus Task \
+	3.3 Focus Taken \
+4. List all Modules and Task\ 
+	4.1 List all module\
+	4.2 List all task. \
+	4.3 List all taken module\ 
+5. Add Modules and Task \
+	5.1 Add modules\
+	5.2 Add task\
+	5.3 Add task to modules\ 
