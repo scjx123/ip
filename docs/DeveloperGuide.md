@@ -273,7 +273,7 @@ Expected: Switches to plain mode of display
 Test case: `Fancy` ,`Plain`
 Expected: Error message due to cap sensitive. 
 4. Focusing between different list
-	3.1 Test case: `focus mod` 
+	3.1 Test case: `focus mod`/`task`/`todo`/`deadline`/`event`/`selected`/`taken`
 		   Expected : Shows the current list you are focused on. No list will be shown. 
 	3.2 Other incorrect focus commands to try: `focus 0` , `focus what?`, ... (focus on non-existent list) 
 	Expected : Error message due to invalid command. 
@@ -296,5 +296,6 @@ Test case: `focus task`-> find deadline
 	5.2 Add task
 	5.3 Add task to modules
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNDU2MTY0NywxMTc4Nzg0NDBdfQ==
+eyJoaXN0b3J5IjpbLTIzNTEzMDExMCwtOTE0NTYxNjQ3LDExNz
+g3ODQ0MF19
 -->
