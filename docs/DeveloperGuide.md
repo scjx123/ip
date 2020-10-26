@@ -268,22 +268,25 @@ Step 4: Navigate to your home folder and type  **‘java -jar domnus.jar’**\
 2. Switching between Fancy and CLI 
 3. Focusing between different list
 	3.1 Test case: `focus mod` 
-		   Expected : An output showing you the current list you are focused on. No list will be shown. 
+		   Expected : Showsthe current list you are focused on. No list will be shown. 
 	3.2 Other incorrect focus commands to try: `focus 0` , `focus what?`, ... (focus on non-existent list) 
 	Expected : Error message due to invalid command. 
 	
 4. List all Modules/Task
 Test case: `focus mod` -> `list`
-	Expected: An output showing you the entire list of modules. 
+	Expected: Shows the entire list of modules. 
 	Test case: `focus task` -> `list` 
-	Expected: An output showing you and entire the current list of task. 
+	Expected: Shows the entire the current list of task. 
 	
 5. Find all modules available
-Test case: `find Engin` 
+Test case: `focus mod` -> `find Engin` 
+Expected: Shows the entire list of available modules with keyword 'Engin' 
+Test case: 
+
 7. Add Modules and Task 
 	5.1 Add modules
 	5.2 Add task
 	5.3 Add task to modules
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ3NTcxNTA5LDExNzg3ODQ0MF19
+eyJoaXN0b3J5IjpbLTE1MzAxMzQ4NzksMTE3ODc4NDQwXX0=
 -->
