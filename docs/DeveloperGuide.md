@@ -293,7 +293,12 @@ Test case: `focus task`-> find deadline
 
  6. Details of Modules 
  Test cases: `detail CS2113`
+ Expected: Shows Module code, name, mc, and description. 
+Test cases: `detail 1`
+Expected: Shows the information of the 1st task based on the current list focused on. 
+Test c
+7. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTIyOTg3MDksLTkxNDU2MTY0NywxMT
-c4Nzg0NDBdfQ==
+eyJoaXN0b3J5IjpbOTYzNDk4OTUsLTkxNDU2MTY0NywxMTc4Nz
+g0NDBdfQ==
 -->
