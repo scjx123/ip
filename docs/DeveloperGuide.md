@@ -269,17 +269,19 @@ Step 4: Navigate to your home folder and type  **‘java -jar domnus.jar’**\
 3. Focusing between different list
 	3.1 Test case: `focus mod` 
 		   Expected : An output showing you the current list you are focused on. No list will be shown. 
-	3.2 Other incorrect foc: `focus what?`
+	3.2 Other incorrect focus commands to try: `focus 0` , `focus what?`, ... (focus on non-existent list) 
 	Expected : Error message due to invalid command. 
 	
 4. List all Modules and Task 
+5. Test case: `focus mod` -> `list`
+	Expected 
 	4.1 List all module
 	4.2 List all task. 
 	4.3 List all taken module
-5. Add Modules and Task 
+7. Add Modules and Task 
 	5.1 Add modules
 	5.2 Add task
 	5.3 Add task to modules
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTA2Njc0OTQsMTE3ODc4NDQwXX0=
+eyJoaXN0b3J5IjpbNDcwMjc5MTAsMTE3ODc4NDQwXX0=
 -->
