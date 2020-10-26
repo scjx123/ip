@@ -298,9 +298,13 @@ Test cases: `detail 1`
 Expected: Shows the information of the 1st task based on the current list focused on. 
 Test cases: `detail xyz` No detail of such item is found. 
 6. Take Modules 
-Test Cases: 1focus mod`Take 1 2` 
+Test cases: `focus mod` -> `take 1 2` 
+Expected: Takes the 1st and 2nd module on the module list.
+Test cases: `focus task` -> `take 1 2` 
+Expected: Task is not module, therefore it cannot be taken.
+Test cases: 1
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjQ0MjYxNDgsLTkxNDU2MTY0NywxMT
-c4Nzg0NDBdfQ==
+eyJoaXN0b3J5IjpbMjEzMDI4NDQwMSwtOTE0NTYxNjQ3LDExNz
+g3ODQ0MF19
 -->
