@@ -265,16 +265,19 @@ Step 2: Copy the file to the folder you want to use as the home folder for your 
 Step 3: Open the Command Prompt if you are running on Windows or Terminal if you are running on Mac OS.\
 Step 4: Navigate to your home folder and type  **‘java -jar domnus.jar’**\
 
-2. Switching between Fancy and CLI \
-3. Focusing between different list\
-	3.1 Focus mod \
-	3.2 Focus Task \
-	3.3 Focus Taken \
-4. List all Modules and Task\ 
-	4.1 List all module\
-	4.2 List all task. \
-	4.3 List all taken module\ 
-5. Add Modules and Task \
-	5.1 Add modules\
-	5.2 Add task\
-	5.3 Add task to modules\ 
+2. Switching between Fancy and CLI 
+3. Focusing between different list
+	3.1 Focus mod 
+	3.2 Focus Task 
+	3.3 Focus Taken 
+4. List all Modules and Task 
+	4.1 List all module
+	4.2 List all task. 
+	4.3 List all taken module
+5. Add Modules and Task 
+	5.1 Add modules
+	5.2 Add task
+	5.3 Add task to modules
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTE3ODc4NDQwXX0=
+-->
