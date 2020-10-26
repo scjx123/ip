@@ -281,12 +281,12 @@ Test case: `focus mod` -> `list`
 5. Find all modules available
 Test case: `focus mod` -> `find Engin` 
 Expected: Shows the entire list of available modules with keyword 'Engin' 
-Test case: 
+Test case: 'find 1' 
 
 7. Add Modules and Task 
 	5.1 Add modules
 	5.2 Add task
 	5.3 Add task to modules
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzAxMzQ4NzksMTE3ODc4NDQwXX0=
+eyJoaXN0b3J5IjpbLTExMTk0ODMzMDMsMTE3ODc4NDQwXX0=
 -->
