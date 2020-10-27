@@ -104,7 +104,9 @@ The statistic mechanism is facilitated by the StatsAction class. It extends Acti
 	 - Pros: Reduces Coupling and increase testability as a software unit itself. 
 	 - Cons: May have performance issues in terms of memory usage 
 
- - Alternative 2: initialize statistics as 0 a
+ - Alternative 2: initialize statistics as zero and each task contains an aspect called statistics
+	 - Pros:  Easier to implement
+	 - Cons: Increase chances of bug due to changing statistics of the list.
 
 ### 4.3 Checker Feature 
 ![here](Images/Checker_Diagram.png)
@@ -342,7 +344,7 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-<br>
 Expected: Shows you the calculated cap. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0MDQ5OTk4MSwxNjM1MDQ2Mzg4LC0xND
-gwNDQ0MjQ1LC01NDk1NzM3MzYsLTkxNDU2MTY0NywxMTc4Nzg0
-NDBdfQ==
+eyJoaXN0b3J5IjpbMjgwMjQ3OTg4LDE2MzUwNDYzODgsLTE0OD
+A0NDQyNDUsLTU0OTU3MzczNiwtOTE0NTYxNjQ3LDExNzg3ODQ0
+MF19
 -->
