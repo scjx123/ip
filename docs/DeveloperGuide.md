@@ -104,12 +104,11 @@ The statistic mechanism is facilitated by the StatsAction class. It extends Acti
 	 - Pros: Reduces Coupling and increase testability as a software unit itself. 
 	 - Cons: May have performance issues in terms of memory usage 
 
- - Alternative 2: initialize statistics as zero and each task contains an aspect called statistics
-	 - Pros:  Easier to implement
-	 - Cons: Increase chances of bug due to changing statistics of the list.
+ - **Alternative 2:** initialize statistics as zero and each task contains an aspect called statistics
+	 - Pros: Will use less memory since the task itself will be deleted. 
+	 - Cons: Stats will be updated constantly even though we do not need it. 
 
 ### 4.3 Checker Feature 
-![here](Images/Checker_Diagram.png)
 
 The checker mechanism is facilitated by the utility class `Checker`. It is an independent class on its own without extensions and is stored under the `Data` package of our app. The class implements the following operations: 
 
@@ -118,6 +117,8 @@ The checker mechanism is facilitated by the utility class `Checker`. It is an in
  - `checkRecurrenceDate(Task)` - Checks if the current date is beyond the stated date in the list, and provides a new update for the date recurring date.
 
 Given below is an example usage scenario and how the checker mechanism behaves at each step. 
+
+![here](Images/Checker_Diagram.png)
 
 Step 1. A new `Deadline` object is created and needs to be added to the existing list of task. Hence it calls `addTask()` method under `Data` class. 
 
@@ -130,6 +131,9 @@ Step 4. If `newDate` is not `null`it shows that there is a new updated date. The
 Step 5. Now we proceed to call `checkDuplicates()` of Checker class. 
 
 Step 6. If `false` , there is no duplicates in the existing list, and the task can be safely added. Otherwise, no action will be taken. 
+
+Design consideration: 
+Aspect: How 
 
 ### 4.4 CAP calculator feature
 
@@ -344,7 +348,7 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-<br>
 Expected: Shows you the calculated cap. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgwMjQ3OTg4LDE2MzUwNDYzODgsLTE0OD
-A0NDQyNDUsLTU0OTU3MzczNiwtOTE0NTYxNjQ3LDExNzg3ODQ0
-MF19
+eyJoaXN0b3J5IjpbLTEwMzY5MjgzNDQsMTYzNTA0NjM4OCwtMT
+Q4MDQ0NDI0NSwtNTQ5NTczNzM2LC05MTQ1NjE2NDcsMTE3ODc4
+NDQwXX0=
 -->
