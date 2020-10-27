@@ -91,7 +91,7 @@ A typical flow of execution would be:
 1. blah
 
 ### 4.2 Statistic Feature 
-The statistic mechanism is facilitated by the StatsAction class. It extends Action class, and takes in 
+The statistic mechanism is facilitated by the StatsAction class. It extends Action class, and takes in an Arr 
 
 
 ### 4.3 Checker Feature 
@@ -330,7 +330,7 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-<br>
 Expected: Shows you the calculated cap. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQwMzI5Njk2LDE2MzUwNDYzODgsLTE0OD
+eyJoaXN0b3J5IjpbOTk2ODA0NDk0LDE2MzUwNDYzODgsLTE0OD
 A0NDQyNDUsLTU0OTU3MzczNiwtOTE0NTYxNjQ3LDExNzg3ODQ0
 MF19
 -->
