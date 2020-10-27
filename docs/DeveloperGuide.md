@@ -98,8 +98,9 @@ The statistic mechanism is facilitated by the StatsAction class. It extends Acti
  - `roundedRatioBar()`- Returns a rounded ratio enclosed in square brackets for printing. 
 Design consideration: 
 Aspect : How statistics executes
- - Alternative 1: Create a separate class and get list of tasks/taken modules' task and scan through them to calculate statistics
-	 - Pros: Reduces Coupling and les
+ - **Alternative 1 (current choise):** Create a separate class and get list of tasks/taken modules' task and scan through them to calculate statistics
+	 - Pros: Reduces Coupling and increase testability as a software unit itself. 
+	 - Cons: May have performance issues in terms of memory usage 
 
 ### 4.3 Checker Feature 
 ![here](Images/Checker_Diagram.png)
@@ -337,7 +338,7 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-<br>
 Expected: Shows you the calculated cap. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMDEwMTQ1NywxNjM1MDQ2Mzg4LC0xND
-gwNDQ0MjQ1LC01NDk1NzM3MzYsLTkxNDU2MTY0NywxMTc4Nzg0
-NDBdfQ==
+eyJoaXN0b3J5IjpbLTEyMTA3NjMyODEsMTYzNTA0NjM4OCwtMT
+Q4MDQ0NDI0NSwtNTQ5NTczNzM2LC05MTQ1NjE2NDcsMTE3ODc4
+NDQwXX0=
 -->
