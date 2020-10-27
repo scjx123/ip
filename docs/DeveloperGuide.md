@@ -105,7 +105,11 @@ Step 2. `prepare()` looks at the input called `ParamNode args` which is user com
 
 Step 3. Next, execute layer will call `action.act()` which causes StatsAction to begin its `act()` operation. If `isMod` flag is set, `act()` will search for the user specified module and get the list of tasks tagged to it.
 
-Step 5. Once the list of task is obtain, the operation will loop through the task list and count the number of completed task
+Step 5. Once the list of task is obtain, the operation will loop through the task list and count the number of completed task followed by generating a ratio. 
+
+Step 6. This ratio will be passed into roundedRatioBar to return *String* of a rounded ratio to 1 decimal place enclosing it in square brackets. 
+
+Step 7. Now StatsAction is completed and it will return this string back to Execute for 
 
 
 **Design consideration:**
@@ -366,7 +370,7 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-<br>
 Expected: Shows you the calculated cap. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjM5NjA3MTYsMTYzNTA0NjM4OCwtMT
-Q4MDQ0NDI0NSwtNTQ5NTczNzM2LC05MTQ1NjE2NDcsMTE3ODc4
-NDQwXX0=
+eyJoaXN0b3J5IjpbMTk2MDEyODk4MCwxNjM1MDQ2Mzg4LC0xND
+gwNDQ0MjQ1LC01NDk1NzM3MzYsLTkxNDU2MTY0NywxMTc4Nzg0
+NDBdfQ==
 -->
