@@ -107,9 +107,9 @@ Step 3. Next, execute layer will call `action.act()` which causes StatsAction to
 
 Step 5. Once the list of task is obtain, the operation will loop through the task list and count the number of completed task followed by generating a ratio. 
 
-Step 6. This ratio will be passed into roundedRatioBar to return *String* of a rounded ratio to 1 decimal place enclosing it in square brackets. 
+Step 6. This ratio will be passed into `roundedRatioBar` to return *String* of a rounded ratio to 1 decimal place enclosing it in square brackets. 
 
-Step 7. Now StatsAction is completed and it will return this string back to Execute for 
+Step 7. Now `StatsAction` is completed and it will return this string back to `Execute` for to be printed through `UI`. 
 
 
 **Design consideration:**
@@ -370,7 +370,7 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-<br>
 Expected: Shows you the calculated cap. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MDEyODk4MCwxNjM1MDQ2Mzg4LC0xND
+eyJoaXN0b3J5IjpbLTgwMDU4MjYwMSwxNjM1MDQ2Mzg4LC0xND
 gwNDQ0MjQ1LC01NDk1NzM3MzYsLTkxNDU2MTY0NywxMTc4Nzg0
 NDBdfQ==
 -->
