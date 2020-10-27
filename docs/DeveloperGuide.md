@@ -93,8 +93,8 @@ A typical flow of execution would be:
 ### 4.2 Statistic Feature 
 The statistic mechanism is facilitated by the StatsAction class. It extends Action class, and internally stores an arraylist of Item object in `targetList`. Additionally, it implements the following operation: 
 
- - `prepare()` - Set `isMod` flag according to user's 
- - `act()`- Get
+ - `prepare()` - Sets `isMod` flag according to user's 
+ - `act()`- Gets `targetList` and calculates the raw ratio of the 
  - `roundedRatioBar()`
 
 ### 4.3 Checker Feature 
@@ -333,7 +333,7 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-<br>
 Expected: Shows you the calculated cap. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjEwNjc1NjIsMTYzNTA0NjM4OCwtMT
+eyJoaXN0b3J5IjpbLTE3MjI2OTY4OTUsMTYzNTA0NjM4OCwtMT
 Q4MDQ0NDI0NSwtNTQ5NTczNzM2LC05MTQ1NjE2NDcsMTE3ODc4
 NDQwXX0=
 -->
