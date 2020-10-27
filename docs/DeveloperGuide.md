@@ -101,7 +101,9 @@ Given below is an example usage scenario and how the statistic mechanism behaves
 
 Step 1. The user enters `stats -mod CS2113`	once the execute layer executes the message and calls act() class, StatsAction will begin its `prepare()` operation
 
-Step 2. prepare() looks at the input called ParamNode args which is processed by Command Intepreter layer, and starts to identify whether user 
+Step 2. `prepare()` looks at the input called `ParamNode args` which is user command processed by Command Intepreter layer, and starts to identify whether user has enter the keyword `mod ` if userInput contains the keyword, the it `isMod` flag will be set. 
+
+Step 3. `next
 
 
 **Design consideration:**
@@ -362,7 +364,7 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-<br>
 Expected: Shows you the calculated cap. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4ODA2MTAwMywxNjM1MDQ2Mzg4LC0xND
-gwNDQ0MjQ1LC01NDk1NzM3MzYsLTkxNDU2MTY0NywxMTc4Nzg0
-NDBdfQ==
+eyJoaXN0b3J5IjpbLTE3NDg0MjcxNzEsMTYzNTA0NjM4OCwtMT
+Q4MDQ0NDI0NSwtNTQ5NTczNzM2LC05MTQ1NjE2NDcsMTE3ODc4
+NDQwXX0=
 -->
