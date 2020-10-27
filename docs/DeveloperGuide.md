@@ -97,7 +97,11 @@ The statistic mechanism is facilitated by the StatsAction class. It extends Acti
  - `act()`- Gets `targetList` and calculates the raw ratio of the completed items.
  - `roundedRatioBar()`- Returns a rounded ratio enclosed in square brackets for printing. 
 
-Given below is an example usage scenario and how the checker mechanism behaves at each step. 
+Given below is an example usage scenario and how the statistic mechanism behaves at each step. 
+
+Step 1: The user enters `stats -mod CS2113
+
+
 **Design consideration:**
 
 **Aspect : How statistics executes**
@@ -356,7 +360,7 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-<br>
 Expected: Shows you the calculated cap. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAyMDM2NDIxLDE2MzUwNDYzODgsLTE0OD
-A0NDQyNDUsLTU0OTU3MzczNiwtOTE0NTYxNjQ3LDExNzg3ODQ0
-MF19
+eyJoaXN0b3J5IjpbMTA4NjQzNzk5OSwxNjM1MDQ2Mzg4LC0xND
+gwNDQ0MjQ1LC01NDk1NzM3MzYsLTkxNDU2MTY0NywxMTc4Nzg0
+NDBdfQ==
 -->
