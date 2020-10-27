@@ -97,6 +97,7 @@ The statistic mechanism is facilitated by the StatsAction class. It extends Acti
  - `act()`- Gets `targetList` and calculates the raw ratio of the completed items.
  - `roundedRatioBar()`- Returns a rounded ratio enclosed in square brackets for printing. 
 
+Given below is an example usage scenario and how the checker mechanism behaves at each step. 
 **Design consideration:**
 
 **Aspect : How statistics executes**
@@ -132,14 +133,14 @@ Step 5. Now we proceed to call `checkDuplicates()` of Checker class.
 
 Step 6. If `false` , there is no duplicates in the existing list, and the task can be safely added. Otherwise, no action will be taken. 
 
-Design consideration: 
-Aspect: How checker executes
+**Design consideration: 
+Aspect: How checker executes**
 
- - Alternative 1(current choice): Check for clashes *before* adding task onto list: 
-	 - Pros: Easy to implement as we know specifically what to find in the list eg dates & description
-	 - Cons: 
- - Alternative 2: Check for clash after task is being added onto list 
-	 - Pros:
+ - **Alternative 1(current choice):** Check for clashes *before* adding task onto list: 
+	 - Pros: Easy to implement as we know specifically what to find in the list eg similar dates & description.
+	 - Cons: Delays the efficiency of adding tasks onto list. 
+ - **Alternative 2:** Check for clash after task is being added onto list 
+	 - Pros: Does not hinder the speed of task adding. 
 	 - Cons: Harder to implement as we have to loop through the entire list to look for duplicates. 
 
 ### 4.4 CAP calculator feature
@@ -355,7 +356,7 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-<br>
 Expected: Shows you the calculated cap. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODg0NTcwNSwxNjM1MDQ2Mzg4LC0xND
-gwNDQ0MjQ1LC01NDk1NzM3MzYsLTkxNDU2MTY0NywxMTc4Nzg0
-NDBdfQ==
+eyJoaXN0b3J5IjpbMzAyMDM2NDIxLDE2MzUwNDYzODgsLTE0OD
+A0NDQyNDUsLTU0OTU3MzczNiwtOTE0NTYxNjQ3LDExNzg3ODQ0
+MF19
 -->
