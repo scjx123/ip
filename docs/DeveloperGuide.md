@@ -136,7 +136,11 @@ Design consideration:
 Aspect: How checker executes
 
  - Alternative 1(current choice): Check for clashes *before* adding task onto list: 
+	 - Pros: Easy to implement as we know specifically what to find in the list eg dates & description
+	 - Cons: 
  - Alternative 2: Check for clash after task is being added onto list 
+	 - Pros:
+	 - Cons: Harder to implement as we have to loop through the entire list to look for duplicates. 
 
 ### 4.4 CAP calculator feature
 
@@ -351,7 +355,7 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-<br>
 Expected: Shows you the calculated cap. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MTM2MDIxMiwxNjM1MDQ2Mzg4LC0xND
+eyJoaXN0b3J5IjpbLTE1ODg0NTcwNSwxNjM1MDQ2Mzg4LC0xND
 gwNDQ0MjQ1LC01NDk1NzM3MzYsLTkxNDU2MTY0NywxMTc4Nzg0
 NDBdfQ==
 -->
