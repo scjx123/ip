@@ -103,7 +103,7 @@ Step 1. The user enters `stats -mod CS2113`	once the execute layer executes the 
 
 Step 2. `prepare()` looks at the input called `ParamNode args` which is user command processed by Command Intepreter layer, and starts to identify whether user has enter the keyword `mod ` if `userInput` contains the keyword, then `isMod` flag will be set. 
 
-Step 3. Next, execute layer will call `action.act() class.` 
+Step 3. Next, execute layer will call `action.act()` which causes StatsAction to begin its act() operation. If `isMod` flag is set, it will 
 
 
 **Design consideration:**
@@ -364,7 +364,7 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-<br>
 Expected: Shows you the calculated cap. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzY3MDk1MTIsMTYzNTA0NjM4OCwtMT
-Q4MDQ0NDI0NSwtNTQ5NTczNzM2LC05MTQ1NjE2NDcsMTE3ODc4
-NDQwXX0=
+eyJoaXN0b3J5IjpbMTM1MDgyMDk3MCwxNjM1MDQ2Mzg4LC0xND
+gwNDQ0MjQ1LC01NDk1NzM3MzYsLTkxNDU2MTY0NywxMTc4Nzg0
+NDBdfQ==
 -->
