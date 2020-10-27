@@ -90,7 +90,11 @@ A typical flow of execution would be:
 1. blah
 1. blah
 
-### 4.2 Checker Feature 
+### 4.2 Statistic Feature 
+The statistic mechanism is facilitated by 
+
+
+### 4.3 Checker Feature 
 ![here](Images/Checker_Diagram.png)
 
 The checker mechanism is facilitated by the utility class `Checker`. It is an independent class on its own without extensions and is stored under the `Data` package of our app. The class implements the following operations: 
@@ -113,7 +117,7 @@ Step 5. Now we proceed to call `checkDuplicates()` of Checker class.
 
 Step 6. If `false` , there is no duplicates in the existing list, and the task can be safely added. Otherwise, no action will be taken. 
 
-### 4.3 CAP calculator feature
+### 4.4 CAP calculator feature
 
 The proposed undo/redo mechanism is facilitated by `CalculateCapAction`. It extends `Action` to execute command given by the user, output are then passed on to `Ui` for display. 
 Additionally, it implements the following operations:
@@ -136,7 +140,7 @@ The following activity diagram summarizes what happens when a user executes a ne
 ![cap uml diagram](Images/Cap_Calculator_Diagram.JPG)
 
 
-### 4.4 Reminder Feature
+### 4.5 Reminder Feature
 
 The proposed undo/redo mechanism is facilitated by `ReminderAction`. It extends `Action` and the output is passed onto `UI` for display. Additionally, it implements the following operations:
 
@@ -156,7 +160,7 @@ The following sequence diagram diagram shows how the reminder operation works
 
 ![Reminder_Sequence_Diagram](Images/ReminderAction_Sequence_Diagram.png)
 
-### 4.5 Postpone Feature
+### 4.6 Postpone Feature
 
 The proposed undo/redo mechanism is facilitated by `PostponeAction`. It extends `Action` to execute command given by the user, output are then passed on to `Ui` for display. 
 Additionally, it implements the following operations:
@@ -326,6 +330,7 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-<br>
 Expected: Shows you the calculated cap. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNTA0NjM4OCwtMTQ4MDQ0NDI0NSwtNT
-Q5NTczNzM2LC05MTQ1NjE2NDcsMTE3ODc4NDQwXX0=
+eyJoaXN0b3J5IjpbMjc0MjMwMzg0LDE2MzUwNDYzODgsLTE0OD
+A0NDQyNDUsLTU0OTU3MzczNiwtOTE0NTYxNjQ3LDExNzg3ODQ0
+MF19
 -->
