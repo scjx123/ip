@@ -92,11 +92,9 @@ Step 1. The user enters `take 1 2 CS2113`	once the execute layer executes the me
 
 Step 2. `prepare()` first verifies user's input by calling the `safetyCheck()` method to check for modules/indices that does not exist in the module list. 
 
-Step 3. `prepare()` then maintains two ArrayList() known as `indices` and `codes` . In which, `indices` stores the index of the module that user have keyed in, while `codes` stores the module code on the other hand. `Prepare()` 
+Step 3. `prepare()` then maintains two ArrayList() known as `indices` and `codes` . In which, `indices` stores the index of the module that user have keyed in, while `codes` stores the module code on the other hand.
 
-Step 3. prepare() also calls safetyCe the isBlind() 
-
-Step 3. Next, execute layer will call `action.act()` which causes TakeAction to begin its `act()` operation. If `isMod` flag is set, `act()` will search for the user specified module and get the list of tasks tagged to it.
+Step 4. Next, execute layer will call `action.act()` which causes `TakeAction` to begin its `act()` operation. If `isMod` flag is set, `act()` will search for the user specified module and get the list of tasks tagged to it.
 
 Step 4. Once the list of task is obtain, the operation will loop through the task list and count the number of completed task followed by generating a ratio. 
 
@@ -399,7 +397,7 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-<br>
 Expected: Shows you the calculated cap. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDA3MjMyMjcsLTgwMDU4MjYwMSwxNj
-M1MDQ2Mzg4LC0xNDgwNDQ0MjQ1LC01NDk1NzM3MzYsLTkxNDU2
-MTY0NywxMTc4Nzg0NDBdfQ==
+eyJoaXN0b3J5IjpbMTg3NDM5MzUzNCwtODAwNTgyNjAxLDE2Mz
+UwNDYzODgsLTE0ODA0NDQyNDUsLTU0OTU3MzczNiwtOTE0NTYx
+NjQ3LDExNzg3ODQ0MF19
 -->
