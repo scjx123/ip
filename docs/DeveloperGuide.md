@@ -88,9 +88,9 @@ The take mechanism is facilitated by the TakeAction class. It extends Action cla
 
 Given below is an example usage scenario and how the statistic mechanism behaves at each step. 
 
-Step 1. The user enters `take`	once the execute layer executes the message and calls `action.prepare()` class, `TakeAction` will begin its `prepare()` operation
+Step 1. The user enters `take 1 2`	once the execute layer executes the message and calls `action.prepare()` class, `TakeAction` will begin its `prepare()` operation
 
-Step 2. `prepare()` initializes 2 
+Step 2. `prepare()` initializes two ArrayList() known as `indices` and `codes` . In which if user entered 
 
 Step 3. Next, execute layer will call `action.act()` which causes StatsAction to begin its `act()` operation. If `isMod` flag is set, `act()` will search for the user specified module and get the list of tasks tagged to it.
 
@@ -395,7 +395,7 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-<br>
 Expected: Shows you the calculated cap. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MDY3ODY3NSwtODAwNTgyNjAxLDE2Mz
-UwNDYzODgsLTE0ODA0NDQyNDUsLTU0OTU3MzczNiwtOTE0NTYx
-NjQ3LDExNzg3ODQ0MF19
+eyJoaXN0b3J5IjpbODAxNzkyMDMwLC04MDA1ODI2MDEsMTYzNT
+A0NjM4OCwtMTQ4MDQ0NDI0NSwtNTQ5NTczNzM2LC05MTQ1NjE2
+NDcsMTE3ODc4NDQwXX0=
 -->
