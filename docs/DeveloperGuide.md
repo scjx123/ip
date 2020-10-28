@@ -88,9 +88,9 @@ The take mechanism is facilitated by the TakeAction class. It extends Action cla
 
 Given below is an example usage scenario and how the statistic mechanism behaves at each step. 
 
-Step 1. The user enters `stats -mod CS2113`	once the execute layer executes the message and calls `action.prepare()` class, `StatsAction` will begin its `prepare()` operation
+Step 1. The user enters `take`	once the execute layer executes the message and calls `action.prepare()` class, `TakeAction` will begin its `prepare()` operation
 
-Step 2. `prepare()` looks at the input called `ParamNode args` which is user command processed by Command Intepreter layer, and starts to identify whether user has enter the keyword `mod ` if `userInput` contains the keyword, then `isMod` flag will be set. 
+Step 2. `prepare()` initializes 2 
 
 Step 3. Next, execute layer will call `action.act()` which causes StatsAction to begin its `act()` operation. If `isMod` flag is set, `act()` will search for the user specified module and get the list of tasks tagged to it.
 
@@ -100,7 +100,7 @@ Step 5. This ratio will be passed into `roundedRatioBar` to return *String* of a
 
 Step 6. Now `StatsAction` is completed and it will return this string back to `Execute` for to be printed through `UI`. 
 
-Note: if user did not enter -mod keyword, then at step 3, the flag will not be set, and hence only the original task  
+*Note*: if user did not enter `-mod` keyword, then at step 3, the flag will not be set, and hence all task's statistics will be calculated.  
 
 **Design consideration:**
 
@@ -395,7 +395,7 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-<br>
 Expected: Shows you the calculated cap. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NzU5NTA2LC04MDA1ODI2MDEsMTYzNT
-A0NjM4OCwtMTQ4MDQ0NDI0NSwtNTQ5NTczNzM2LC05MTQ1NjE2
-NDcsMTE3ODc4NDQwXX0=
+eyJoaXN0b3J5IjpbLTk5MDY3ODY3NSwtODAwNTgyNjAxLDE2Mz
+UwNDYzODgsLTE0ODA0NDQyNDUsLTU0OTU3MzczNiwtOTE0NTYx
+NjQ3LDExNzg3ODQ0MF19
 -->
