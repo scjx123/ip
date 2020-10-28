@@ -90,8 +90,9 @@ Given below is an example usage scenario and how the statistic mechanism behaves
 
 Step 1. The user enters `take 1 2 CS2113`	once the execute layer executes the message and calls `action.prepare()` class, `TakeAction` will begin its `prepare()` operation
 
-Step 2. `prepare()` first checks th
-Step 2. `prepare()` initializes two ArrayList() known as `indices` and `codes` . In which, `indices` stores the index of the module that user have keyed in, while `codes` stores the module code on the other hand. `Prepare()` 
+Step 2. `prepare()` first verifies user's input by calling the `safetyCheck()` method to check for modules/indices that does not exist in the module list. 
+
+Step 3. `prepare()` then maintains two ArrayList() known as `indices` and `codes` . In which, `indices` stores the index of the module that user have keyed in, while `codes` stores the module code on the other hand. `Prepare()` 
 
 Step 3. prepare() also calls safetyCe the isBlind() 
 
@@ -398,7 +399,7 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-<br>
 Expected: Shows you the calculated cap. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUxMTEyNDUwLC04MDA1ODI2MDEsMTYzNT
-A0NjM4OCwtMTQ4MDQ0NDI0NSwtNTQ5NTczNzM2LC05MTQ1NjE2
-NDcsMTE3ODc4NDQwXX0=
+eyJoaXN0b3J5IjpbLTE1NDA3MjMyMjcsLTgwMDU4MjYwMSwxNj
+M1MDQ2Mzg4LC0xNDgwNDQ0MjQ1LC01NDk1NzM3MzYsLTkxNDU2
+MTY0NywxMTc4Nzg0NDBdfQ==
 -->
