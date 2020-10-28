@@ -90,9 +90,9 @@ Given below is an example usage scenario and how the statistic mechanism behaves
 
 Step 1. The user enters `take 1 2 CS2113`	once the execute layer executes the message and calls `action.prepare()` class, `TakeAction` will begin its `prepare()` operation
 
-Step 2. `prepare()` initializes two ArrayList() known as `indices` and `codes` . In which, `indices` stores the index of the module that user have keyed in, while `codes` stores the module code on the other hand. Prepare() also cgh
+Step 2. `prepare()` initializes two ArrayList() known as `indices` and `codes` . In which, `indices` stores the index of the module that user have keyed in, while `codes` stores the module code on the other hand. `Prepare()` also checks for invalid user input at this stage 
 
-Step 3. Next, execute layer will call `action.act()` which causes StatsAction to begin its `act()` operation. If `isMod` flag is set, `act()` will search for the user specified module and get the list of tasks tagged to it.
+Step 3. Next, execute layer will call `action.act()` which causes TakeAction to begin its `act()` operation. If `isMod` flag is set, `act()` will search for the user specified module and get the list of tasks tagged to it.
 
 Step 4. Once the list of task is obtain, the operation will loop through the task list and count the number of completed task followed by generating a ratio. 
 
@@ -395,7 +395,7 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-<br>
 Expected: Shows you the calculated cap. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NjA4NzU0OCwtODAwNTgyNjAxLDE2Mz
-UwNDYzODgsLTE0ODA0NDQyNDUsLTU0OTU3MzczNiwtOTE0NTYx
-NjQ3LDExNzg3ODQ0MF19
+eyJoaXN0b3J5IjpbNjk0MzUzNzExLC04MDA1ODI2MDEsMTYzNT
+A0NjM4OCwtMTQ4MDQ0NDI0NSwtNTQ5NTczNzM2LC05MTQ1NjE2
+NDcsMTE3ODc4NDQwXX0=
 -->
