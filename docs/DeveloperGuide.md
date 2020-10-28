@@ -90,30 +90,17 @@ Given below is an example usage scenario and how the statistic mechanism behaves
 
 Step 1. The user enters `take 1 2 CS2113`	once the execute layer executes the message and calls `action.prepare()` class, `TakeAction` will begin its `prepare()` operation
 
-Step 2. `prepare()` first verifies user's input by calling the `safetyCheck()` method to check for modules/indices that does not exist in the module list. 
+Step 2. `prepare()` first verifies user's input by calling the `safetyCheck()` method to check if the specified modules/indices exist in the module list. 
 
 Step 3. `prepare()` then maintains two ArrayList() known as `indices` and `codes` . In which, `indices` stores the index of the module that user have keyed in, while `codes` stores the module code on the other hand.
 
-Step 4. Next, execute layer will call `action.act()` which causes `TakeAction` to begin its `act()` operation. If `isMod` flag is set, `act()` will search for the user specified module and get the list of tasks tagged to it.
-
-Step 4. Once the list of task is obtain, the operation will loop through the task list and count the number of completed task followed by generating a ratio. 
-
-Step 5. This ratio will be passed into `roundedRatioBar` to return *String* of a rounded ratio to 1 decimal place enclosing it in square brackets. 
-
-Step 6. Now `StatsAction` is completed and it will return this string back to `Execute` for to be printed through `UI`. 
-
-*Note*: if user did not enter `-mod` keyword, then at step 3, the flag will not be set, and hence all task's statistics will be calculated.  
+Step 4. Next, execute layer will call `action.act()` which causes `TakeAction` to begin its `act()` operation.....
 
 **Design consideration:**
 
-**Aspect : How statistics executes**
- - **Alternative 1 (current choice):** Create a separate class and get list of tasks/taken modules' task and scan through them to calculate statistics
-	 - Pros: Reduces Coupling and increase testability as a software unit itself. 
-	 - Cons: May have performance issues in terms of memory usage 
-
- - **Alternative 2:** initialize statistics as zero and each task contains an aspect called statistics
-	 - Pros: Will use less memory since the task itself will be deleted. 
-	 - Cons: Stats will be updated constantly even though we do not need it. 
+**Aspect : How TakeAction executes**
+ - **Alternative 1 (current choice):** 
+ - **Alternative 2:** 
 
 
 
@@ -397,7 +384,7 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-<br>
 Expected: Shows you the calculated cap. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NDM5MzUzNCwtODAwNTgyNjAxLDE2Mz
+eyJoaXN0b3J5IjpbLTgyNzk3MjI0MCwtODAwNTgyNjAxLDE2Mz
 UwNDYzODgsLTE0ODA0NDQyNDUsLTU0OTU3MzczNiwtOTE0NTYx
 NjQ3LDExNzg3ODQ0MF19
 -->
