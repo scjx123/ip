@@ -77,11 +77,14 @@ The sequence diagram below shows the main interaction of classes with each other
 This section highlights some of our project's key feature and its implementation. 
 
 ### 4.1 Take Feature
-The take mechanism is facilitated by the TakeAction class. It extends Action class, and internally stores an arraylist of Item object in `targetList`. Additionally, it implements the following operation: 
+The take mechanism is facilitated by the TakeAction class. It extends Action class, and internally it stores an arraylist of Item object in `targetBackup`. Additionally, it implements the following operation: 
 
  - `prepare()` - Sets `isMod` flag according to user's 
- - `act()`- Gets `targetList` and calculates the raw ratio of the completed items.
- - `roundedRatioBar()`- Returns a rounded ratio enclosed in square brackets for printing. 
+ - `act()`- Gets `targetList` 
+ - `modifyObject`()
+ - `getObjectInfo`
+ - `safetyCheck()`
+ - `superAct()`
 
 Given below is an example usage scenario and how the statistic mechanism behaves at each step. 
 
@@ -391,7 +394,7 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-<br>
 Expected: Shows you the calculated cap. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIzNzAyNzU0LC04MDA1ODI2MDEsMTYzNT
-A0NjM4OCwtMTQ4MDQ0NDI0NSwtNTQ5NTczNzM2LC05MTQ1NjE2
-NDcsMTE3ODc4NDQwXX0=
+eyJoaXN0b3J5IjpbMTkzMDIwMTM1MCwtODAwNTgyNjAxLDE2Mz
+UwNDYzODgsLTE0ODA0NDQyNDUsLTU0OTU3MzczNiwtOTE0NTYx
+NjQ3LDExNzg3ODQ0MF19
 -->
