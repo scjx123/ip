@@ -76,19 +76,10 @@ The sequence diagram below shows the main interaction of classes with each other
 ## 4. Implementation<br>
 This section highlights some of our project's key feature and its implementation. 
 
-### 4.1 Module Planner Feature
+### 4.1 Take Feature
 
-The module planner feature entails many *Actions* which extend `Action`. Their functionalities and usages
-are in the table below:
+The take mechanism is facili
 
-|Table|To|Be|Filled|
-|-----|---|---|------|
-|blah|blah|blah|blah|
-
-A typical flow of execution would be:
-1. blah
-1. blah
-1. blah
 
 ### 4.2 Statistic Feature 
 The statistic mechanism is facilitated by the StatsAction class. It extends Action class, and internally stores an arraylist of Item object in `targetList`. Additionally, it implements the following operation: 
@@ -370,7 +361,7 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-<br>
 Expected: Shows you the calculated cap. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMDU4MjYwMSwxNjM1MDQ2Mzg4LC0xND
-gwNDQ0MjQ1LC01NDk1NzM3MzYsLTkxNDU2MTY0NywxMTc4Nzg0
-NDBdfQ==
+eyJoaXN0b3J5IjpbNDExNzc1NzcxLC04MDA1ODI2MDEsMTYzNT
+A0NjM4OCwtMTQ4MDQ0NDI0NSwtNTQ5NTczNzM2LC05MTQ1NjE2
+NDcsMTE3ODc4NDQwXX0=
 -->
