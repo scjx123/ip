@@ -79,18 +79,18 @@ This section highlights some of our project's key feature and its implementation
 ### 4.1 Take Feature
 The take mechanism is facilitated by the TakeAction class. It extends Action class, and internally it stores an arraylist of Item object in `targetBackup`. Additionally, it implements the following operation: 
 
- - `prepare()` - Sets `isMod` flag according to user's 
- - `act()`- Gets `targetList` 
+ - `prepare()` - Validates user input and stores the codes/indices 
+ - `act()`- Gets `targetBackup` 
  - `modifyObject`()
  - `getObjectInfo`
- - `safetyCheck()`
+ - `safetyCheck()`- Sets the 
  - `superAct()`
 
 Given below is an example usage scenario and how the statistic mechanism behaves at each step. 
 
 Step 1. The user enters `take 1 2 CS2113`	once the execute layer executes the message and calls `action.prepare()` class, `TakeAction` will begin its `prepare()` operation
 
-Step 2. `prepare()` first verifies user's input by calling the `safetyCheck()` method to check if the specified modules/indices exist in the module list. 
+Step 2. `prepare()` first verifies user's input by calling the `safetyCheck()` method to check if the specified codes/indices exist in the module list, else, it sets the `isBlind()` flag.
 
 Step 3. `prepare()` then maintains two ArrayList() known as `indices` and `codes` . In which, `indices` stores the index of the module that user have keyed in, while `codes` stores the module code on the other hand.
 
@@ -384,7 +384,7 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-<br>
 Expected: Shows you the calculated cap. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNzk3MjI0MCwtODAwNTgyNjAxLDE2Mz
-UwNDYzODgsLTE0ODA0NDQyNDUsLTU0OTU3MzczNiwtOTE0NTYx
-NjQ3LDExNzg3ODQ0MF19
+eyJoaXN0b3J5IjpbLTE4NDI2MzI4MjUsLTgwMDU4MjYwMSwxNj
+M1MDQ2Mzg4LC0xNDgwNDQ0MjQ1LC01NDk1NzM3MzYsLTkxNDU2
+MTY0NywxMTc4Nzg0NDBdfQ==
 -->
