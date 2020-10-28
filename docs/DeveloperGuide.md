@@ -77,8 +77,38 @@ The sequence diagram below shows the main interaction of classes with each other
 This section highlights some of our project's key feature and its implementation. 
 
 ### 4.1 Take Feature
+The take mechanism is facilitated by the TakeAction class. It extends Action class, and internally stores an arraylist of Item object in `targetList`. Additionally, it implements the following operation: 
 
-The take mechanism is facili
+ - `prepare()` - Sets `isMod` flag according to user's 
+ - `act()`- Gets `targetList` and calculates the raw ratio of the completed items.
+ - `roundedRatioBar()`- Returns a rounded ratio enclosed in square brackets for printing. 
+
+Given below is an example usage scenario and how the statistic mechanism behaves at each step. 
+
+Step 1. The user enters `stats -mod CS2113`	once the execute layer executes the message and calls `action.prepare()` class, `StatsAction` will begin its `prepare()` operation
+
+Step 2. `prepare()` looks at the input called `ParamNode args` which is user command processed by Command Intepreter layer, and starts to identify whether user has enter the keyword `mod ` if `userInput` contains the keyword, then `isMod` flag will be set. 
+
+Step 3. Next, execute layer will call `action.act()` which causes StatsAction to begin its `act()` operation. If `isMod` flag is set, `act()` will search for the user specified module and get the list of tasks tagged to it.
+
+Step 5. Once the list of task is obtain, the operation will loop through the task list and count the number of completed task followed by generating a ratio. 
+
+Step 6. This ratio will be passed into `roundedRatioBar` to return *String* of a rounded ratio to 1 decimal place enclosing it in square brackets. 
+
+Step 7. Now `StatsAction` is completed and it will return this string back to `Execute` for to be printed through `UI`. 
+
+
+**Design consideration:**
+
+**Aspect : How statistics executes**
+ - **Alternative 1 (current choice):** Create a separate class and get list of tasks/taken modules' task and scan through them to calculate statistics
+	 - Pros: Reduces Coupling and increase testability as a software unit itself. 
+	 - Cons: May have performance issues in terms of memory usage 
+
+ - **Alternative 2:** initialize statistics as zero and each task contains an aspect called statistics
+	 - Pros: Will use less memory since the task itself will be deleted. 
+	 - Cons: Stats will be updated constantly even though we do not need it. 
+
 
 
 ### 4.2 Statistic Feature 
@@ -361,7 +391,7 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-<br>
 Expected: Shows you the calculated cap. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDExNzc1NzcxLC04MDA1ODI2MDEsMTYzNT
+eyJoaXN0b3J5IjpbOTIzNzAyNzU0LC04MDA1ODI2MDEsMTYzNT
 A0NjM4OCwtMTQ4MDQ0NDI0NSwtNTQ5NTczNzM2LC05MTQ1NjE2
 NDcsMTE3ODc4NDQwXX0=
 -->
