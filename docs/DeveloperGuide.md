@@ -53,7 +53,7 @@ By default, IntelliJ has Gradle plugins installed. Ensure they are enabled by go
 
    ```
    
- Type  `bye` to ensure there is no error saving/creating a new file when exiting. Re-launch and type `help` for all commands available in the program. 
+ Type  `bye` to ensure there is no error saving or creating a new file when exiting. Re-launch and type `help` for all commands available in the program. 
 
 ## 3. Design
 ### 3.1 Introduction 
@@ -540,9 +540,9 @@ Expected: Shows you the calculated cap from given input modules. <br>
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODk5NTI2NDUsLTEyOTgwNDg4MDYsLT
-E4MDYxMDE0NzQsLTczOTQ0Njc4NiwxNzQ4NTcxNjQ5LC0yMDYz
-MTU4OTQsLTg3MzkyNjM3LC04MDA1ODI2MDEsMTYzNTA0NjM4OC
-wtMTQ4MDQ0NDI0NSwtNTQ5NTczNzM2LC05MTQ1NjE2NDcsMTE3
-ODc4NDQwXX0=
+eyJoaXN0b3J5IjpbMTUzNDI3MTU1NywtMTI5ODA0ODgwNiwtMT
+gwNjEwMTQ3NCwtNzM5NDQ2Nzg2LDE3NDg1NzE2NDksLTIwNjMx
+NTg5NCwtODczOTI2MzcsLTgwMDU4MjYwMSwxNjM1MDQ2Mzg4LC
+0xNDgwNDQ0MjQ1LC01NDk1NzM3MzYsLTkxNDU2MTY0NywxMTc4
+Nzg0NDBdfQ==
 -->
