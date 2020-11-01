@@ -153,7 +153,7 @@ indescriminatively to any `Command` object and executed indifferently.
     - Cons: Harder to implement and extend. Everytime we want a new functionality we would need to create a new list.
 
 ### 4.2 Statistic Feature 
-The statistic mechanism is facilitated by the StatsAction class. It extends Action class, and internally stores an arraylist of Item object in `targetList`. Additionally, it implements the following operation: 
+The statistic feature is facilitated by the StatsAction class. It extends Action class, and internally stores an arraylist of Item object in `targetList`. Additionally, it implements the following operation: 
 
  - `prepare()` - Sets `isMod` flag according to user's 
  - `act()`- Gets `targetList` and calculates the raw ratio of the completed items.
@@ -514,7 +514,8 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-`<br>
 Expected: Shows you the calculated cap from given input modules. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjMxNTg5NCwtODczOTI2MzcsLTgwMD
-U4MjYwMSwxNjM1MDQ2Mzg4LC0xNDgwNDQ0MjQ1LC01NDk1NzM3
-MzYsLTkxNDU2MTY0NywxMTc4Nzg0NDBdfQ==
+eyJoaXN0b3J5IjpbLTIwNDQ2NzI0MDksLTIwNjMxNTg5NCwtOD
+czOTI2MzcsLTgwMDU4MjYwMSwxNjM1MDQ2Mzg4LC0xNDgwNDQ0
+MjQ1LC01NDk1NzM3MzYsLTkxNDU2MTY0NywxMTc4Nzg0NDBdfQ
+==
 -->
