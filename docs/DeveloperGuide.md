@@ -25,7 +25,10 @@
 **10. Appendix F. Instruction for Manual Testing**
 
 ## 2. Setting Up
-3.2 
+2.1 Prerequisite 
+2.2 Setting up the project
+2.3 Verifying the setup 
+2.3 
 
 ## 3. Design
 
@@ -508,7 +511,7 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-`<br>
 Expected: Shows you the calculated cap from given input modules. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTg2NzY4OTcsMTc0ODU3MTY0OSwtMj
+eyJoaXN0b3J5IjpbLTEwNjg5NDQ3ODksMTc0ODU3MTY0OSwtMj
 A2MzE1ODk0LC04NzM5MjYzNywtODAwNTgyNjAxLDE2MzUwNDYz
 ODgsLTE0ODA0NDQyNDUsLTU0OTU3MzczNiwtOTE0NTYxNjQ3LD
 ExNzg3ODQ0MF19
