@@ -159,7 +159,7 @@ The statistic feature is facilitated by the StatsAction class. It extends Action
  - `act()`- Gets `targetList` and calculates the raw ratio of the completed items.
  - `roundedRatioBar()`- Returns a rounded ratio enclosed in square brackets for printing. 
 
-Given below is an example usage scenario and how the statistic mechanism behaves at each step. 
+Given below is an example usage scenario and how the statistic feature behaves at each step. 
 
 Step 1. The user enters `stats -mod CS2113`	once the execute layer executes the message and calls `action.prepare()` class, `StatsAction` will begin its `prepare()` operation
 
@@ -185,7 +185,7 @@ Step 7. Now `StatsAction` is completed and it will return this string back to `E
 	 - Pros: Will use less memory since the task itself will be deleted. 
 	 - Cons: Stats will be updated constantly even though we do not need it. 
 
-### 4.3 Checker Feature 
+### 4.3 Checker Mechanism 
 
 The checker mechanism is facilitated by the utility class `Checker`. It is an independent class on its own without extensions and is stored under the `Data` package of our app. The class implements the following operations: 
 
@@ -514,8 +514,7 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-`<br>
 Expected: Shows you the calculated cap from given input modules. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDQ2NzI0MDksLTIwNjMxNTg5NCwtOD
-czOTI2MzcsLTgwMDU4MjYwMSwxNjM1MDQ2Mzg4LC0xNDgwNDQ0
-MjQ1LC01NDk1NzM3MzYsLTkxNDU2MTY0NywxMTc4Nzg0NDBdfQ
-==
+eyJoaXN0b3J5IjpbMTc0ODU3MTY0OSwtMjA2MzE1ODk0LC04Nz
+M5MjYzNywtODAwNTgyNjAxLDE2MzUwNDYzODgsLTE0ODA0NDQy
+NDUsLTU0OTU3MzczNiwtOTE0NTYxNjQ3LDExNzg3ODQ0MF19
 -->
