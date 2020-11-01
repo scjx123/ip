@@ -455,7 +455,7 @@ Use case ends.<br>
 
 ## Appendix D. Non-Functional Requirements
 
-1.  Should work on any  _mainstream OS_  as long as it has Java  `11`  or above installed.
+1.  Should work on Mac, Linux (Ubuntu is preferred) or Windows. As long as it has Java  `11`  or above installed.
 2.  Should be able to hold up to 1000 persons without a noticeable sluggishness in performance for typical usage.
 3.  A user with above average typing speed for regular English text (i.e. not code, not system admin commands) should be able to accomplish most of the tasks faster using commands than using the mouse.
 
@@ -540,9 +540,9 @@ Expected: Shows you the calculated cap from given input modules. <br>
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MTY1MTY4OCwtMTI5ODA0ODgwNiwtMT
-gwNjEwMTQ3NCwtNzM5NDQ2Nzg2LDE3NDg1NzE2NDksLTIwNjMx
-NTg5NCwtODczOTI2MzcsLTgwMDU4MjYwMSwxNjM1MDQ2Mzg4LC
-0xNDgwNDQ0MjQ1LC01NDk1NzM3MzYsLTkxNDU2MTY0NywxMTc4
-Nzg0NDBdfQ==
+eyJoaXN0b3J5IjpbLTEyODk5NTI2NDUsLTEyOTgwNDg4MDYsLT
+E4MDYxMDE0NzQsLTczOTQ0Njc4NiwxNzQ4NTcxNjQ5LC0yMDYz
+MTU4OTQsLTg3MzkyNjM3LC04MDA1ODI2MDEsMTYzNTA0NjM4OC
+wtMTQ4MDQ0NDI0NSwtNTQ5NTczNzM2LC05MTQ1NjE2NDcsMTE3
+ODc4NDQwXX0=
 -->
