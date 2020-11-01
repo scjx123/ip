@@ -26,11 +26,12 @@
 
 ## 2. Setting Up
 2.1 Prerequisite 
-1. JDK 11 or later 
+1. **JDK** 11 or later 
 	Please ensure that you have the correct java version installed on your computer to prevent any unintended behavior. 
-	2. IntelliJ IDE 
-By default, IntelliJ cine
+2. **IntelliJ** IDE 
+By default, IntelliJ has Gradle plugins installed. Ensure they are enabled by going to **File** > **Settings** > **Plugins**. 
 2.2 Setting up the project
+F
 2.3 Verifying the setup 
 
 ## 3. Design
@@ -514,8 +515,8 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-`<br>
 Expected: Shows you the calculated cap from given input modules. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTAwMjIxNSwxNzQ4NTcxNjQ5LC0yMD
-YzMTU4OTQsLTg3MzkyNjM3LC04MDA1ODI2MDEsMTYzNTA0NjM4
-OCwtMTQ4MDQ0NDI0NSwtNTQ5NTczNzM2LC05MTQ1NjE2NDcsMT
-E3ODc4NDQwXX0=
+eyJoaXN0b3J5IjpbODkzMzg0MDIxLDE3NDg1NzE2NDksLTIwNj
+MxNTg5NCwtODczOTI2MzcsLTgwMDU4MjYwMSwxNjM1MDQ2Mzg4
+LC0xNDgwNDQ0MjQ1LC01NDk1NzM3MzYsLTkxNDU2MTY0NywxMT
+c4Nzg0NDBdfQ==
 -->
