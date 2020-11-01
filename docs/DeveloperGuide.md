@@ -25,13 +25,33 @@
 **10. Appendix F. Instruction for Manual Testing**
 
 ## 2. Setting Up
-2.1 Prerequisite 
+**2.1 Prerequisite** 
 1. **JDK** 11 or later 
 	Please ensure that you have the correct java version installed on your computer to prevent any unintended behavior. 
 2. **IntelliJ** IDE 
 By default, IntelliJ has Gradle plugins installed. Ensure they are enabled by going to **File** > **Settings** > **Plugins**. 
-2.2 Setting up the project
-F
+
+**2.2 Setting up the project**
+
+1. **Configure Intellij for JDK 11**, as described [here](https://se-education.org/guides/tutorials/intellijJdk.html).
+1. **Import the project _as a Gradle project_**, as described [here](https://se-education.org/guides/tutorials/intellijImportGradleProject.html).
+1. **Verify the set up**: After the importing is complete, locate the `src/main/java/seedu/duke/Duke.java` file, right-click it, and choose `Run Duke.main()`. If the setup is correct, you should see something like the below:
+   ```
+   > Task :compileJava
+   > Task :processResources NO-SOURCE
+   > Task :classes
+   
+   > Task :Duke.main()
+   Hello from
+    ____        _        
+   |  _ \ _   _| | _____ 
+   | | | | | | | |/ / _ \
+   | |_| | |_| |   <  __/
+   |____/ \__,_|_|\_\___|
+   
+   What is your name?
+   ```
+   Type some word and press enter to let the execution proceed to the end.
 2.3 Verifying the setup 
 
 ## 3. Design
@@ -515,8 +535,8 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-`<br>
 Expected: Shows you the calculated cap from given input modules. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkzMzg0MDIxLDE3NDg1NzE2NDksLTIwNj
-MxNTg5NCwtODczOTI2MzcsLTgwMDU4MjYwMSwxNjM1MDQ2Mzg4
-LC0xNDgwNDQ0MjQ1LC01NDk1NzM3MzYsLTkxNDU2MTY0NywxMT
-c4Nzg0NDBdfQ==
+eyJoaXN0b3J5IjpbMTAyNDg5MTAwNSwxNzQ4NTcxNjQ5LC0yMD
+YzMTU4OTQsLTg3MzkyNjM3LC04MDA1ODI2MDEsMTYzNTA0NjM4
+OCwtMTQ4MDQ0NDI0NSwtNTQ5NTczNzM2LC05MTQ1NjE2NDcsMT
+E3ODc4NDQwXX0=
 -->
