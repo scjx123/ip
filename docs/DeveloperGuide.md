@@ -35,7 +35,7 @@ By default, IntelliJ has Gradle plugins installed. Ensure they are enabled by go
 
 1. **Configure Intellij for JDK 11**, as described [here](https://se-education.org/guides/tutorials/intellijJdk.html).
 1. **Import the project _as a Gradle project_**, as described [here](https://se-education.org/guides/tutorials/intellijImportGradleProject.html).
-1. **Verify the set up**: After the importing is complete, locate the `src/main/java/seedu/duke/Domnus.java` file, right-click it, and choose `Run Duke.main()`. If the setup is correct, you should see something like the below:
+1. **Verify the set up**: After the importing is complete, locate the `src/main/java/seedu/duke/Domnus.java` file, right-click it, and choose `Run Domnus.main()`. If the setup is correct, you should see something like the below:
    ```
 
     > Task :compileJava UP-TO-DATE
@@ -82,16 +82,16 @@ UI's interaction with the rest of the program<br>
 UI passes the user's input string out to the Duke object, which then passes the string to the Command Interpreter layer.
 UI also reads data from the Data object for refreshing purposes, but does not modify it. 
 
-**1.3 Command Interpreter Layer**<br>
+**3.4 Command Interpreter Layer**<br>
 Upon receiving command from the UI, Duke would pass the entire user input into Command Interpreter (CI)
 
-**1.4 Execute Layer**<br>
+**3.5 Execute Layer**<br>
 Once CI processed the user input, duke proceeds to redirect the input to Execute for execution of action. 
 
-**1.5 Storage Layer**<br>
+**3.6 Storage Layer**<br>
 Once CI processed the user input, duke proceeds to redirect the input to Execute for execution of action. 
 
-**1.6 Flow of DOMSUN**<br>
+**3.7 Flow of DOMSUN**<br>
 The sequence diagram below shows the main interaction of classes with each other throughout the whole lifecycle of DOMSUM.
 ![uml](Images/DOMSUM_Main_Flow.png)
 
@@ -539,7 +539,7 @@ Expected: Shows you the calculated cap from given input modules. <br>
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDQzMjA3NjksLTE4MDYxMDE0NzQsLT
+eyJoaXN0b3J5IjpbLTEyOTgwNDg4MDYsLTE4MDYxMDE0NzQsLT
 czOTQ0Njc4NiwxNzQ4NTcxNjQ5LC0yMDYzMTU4OTQsLTg3Mzky
 NjM3LC04MDA1ODI2MDEsMTYzNTA0NjM4OCwtMTQ4MDQ0NDI0NS
 wtNTQ5NTczNzM2LC05MTQ1NjE2NDcsMTE3ODc4NDQwXX0=
