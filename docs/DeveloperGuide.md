@@ -393,6 +393,7 @@ The following activity diagram summarizes what happens when a user executes a ne
 ### Target user profile
 
  - has a need to manage significant number of schedules 
+ - wants to manage their NUS module requirements 
  - prefer desktop apps over other types 
  - can type fast
  - prefers typing to mouse interactions 
@@ -539,8 +540,9 @@ Expected: Shows you the calculated cap from given input modules. <br>
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTgwNDg4MDYsLTE4MDYxMDE0NzQsLT
-czOTQ0Njc4NiwxNzQ4NTcxNjQ5LC0yMDYzMTU4OTQsLTg3Mzky
-NjM3LC04MDA1ODI2MDEsMTYzNTA0NjM4OCwtMTQ4MDQ0NDI0NS
-wtNTQ5NTczNzM2LC05MTQ1NjE2NDcsMTE3ODc4NDQwXX0=
+eyJoaXN0b3J5IjpbMTM5MTY1MTY4OCwtMTI5ODA0ODgwNiwtMT
+gwNjEwMTQ3NCwtNzM5NDQ2Nzg2LDE3NDg1NzE2NDksLTIwNjMx
+NTg5NCwtODczOTI2MzcsLTgwMDU4MjYwMSwxNjM1MDQ2Mzg4LC
+0xNDgwNDQ0MjQ1LC01NDk1NzM3MzYsLTkxNDU2MTY0NywxMTc4
+Nzg0NDBdfQ==
 -->
