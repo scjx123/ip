@@ -209,7 +209,7 @@ Step 7. Now `StatsAction` is completed and it will return this string back to `E
 
 ### 4.3 Checker Mechanism 
 
-The checker mechanism is facilitated by the utility class `Checker`. It is an independent class on its own without extensions and is stored under the `Data` package of our app. The class implements the following operations: 
+The Checker mechanism is facilitated by the utility class `Checker`. It is an independent class on its own without extensions and is stored under the `Data` package of our app. The class implements the following operations: 
 
  - `checkDuplicates()`- Calls the checkClash method and return the status of boolean variable `isClash` .
  - `checkClash(ArrayList< item >, Item)`- Updates `isClash` once a duplicate item is found in the list.
@@ -537,8 +537,8 @@ Expected: Shows you the calculated cap from given input modules. <br>
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczOTQ0Njc4NiwxNzQ4NTcxNjQ5LC0yMD
-YzMTU4OTQsLTg3MzkyNjM3LC04MDA1ODI2MDEsMTYzNTA0NjM4
-OCwtMTQ4MDQ0NDI0NSwtNTQ5NTczNzM2LC05MTQ1NjE2NDcsMT
-E3ODc4NDQwXX0=
+eyJoaXN0b3J5IjpbLTE4MDYxMDE0NzQsLTczOTQ0Njc4NiwxNz
+Q4NTcxNjQ5LC0yMDYzMTU4OTQsLTg3MzkyNjM3LC04MDA1ODI2
+MDEsMTYzNTA0NjM4OCwtMTQ4MDQ0NDI0NSwtNTQ5NTczNzM2LC
+05MTQ1NjE2NDcsMTE3ODc4NDQwXX0=
 -->
