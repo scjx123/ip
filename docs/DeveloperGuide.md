@@ -26,9 +26,12 @@
 
 ## 2. Setting Up
 2.1 Prerequisite 
+1. JDK 11 or later 
+	Please ensure that you have the correct java version installed on your computer to prevent any unintended behavior. 
+	2. IntelliJ IDE 
+By default, IntelliJ cine
 2.2 Setting up the project
 2.3 Verifying the setup 
-2.3 
 
 ## 3. Design
 
@@ -511,8 +514,8 @@ Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-`<br>
 Expected: Shows you the calculated cap from given input modules. <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjg5NDQ3ODksMTc0ODU3MTY0OSwtMj
-A2MzE1ODk0LC04NzM5MjYzNywtODAwNTgyNjAxLDE2MzUwNDYz
-ODgsLTE0ODA0NDQyNDUsLTU0OTU3MzczNiwtOTE0NTYxNjQ3LD
-ExNzg3ODQ0MF19
+eyJoaXN0b3J5IjpbLTEwOTAwMjIxNSwxNzQ4NTcxNjQ5LC0yMD
+YzMTU4OTQsLTg3MzkyNjM3LC04MDA1ODI2MDEsMTYzNTA0NjM4
+OCwtMTQ4MDQ0NDI0NSwtNTQ5NTczNzM2LC05MTQ1NjE2NDcsMT
+E3ODc4NDQwXX0=
 -->
