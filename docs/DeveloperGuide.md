@@ -56,7 +56,7 @@ By default, IntelliJ has Gradle plugins installed. Ensure they are enabled by go
  Type  `bye` to ensure there is no error saving/creating a new file when exiting. Re-launch and type `help` for all commands available in the program. 
 
 ## 3. Design
-
+### 3.1 
 ### 3.1 Architecture
 The **Architecture Diagram** below represents a high-level design overview of the App. Specifically, it is done with an **N-tier architectural style**, where the higher layers make use of services provided by lower layers. 
 
@@ -537,8 +537,8 @@ Expected: Shows you the calculated cap from given input modules. <br>
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDYxMDE0NzQsLTczOTQ0Njc4NiwxNz
-Q4NTcxNjQ5LC0yMDYzMTU4OTQsLTg3MzkyNjM3LC04MDA1ODI2
-MDEsMTYzNTA0NjM4OCwtMTQ4MDQ0NDI0NSwtNTQ5NTczNzM2LC
-05MTQ1NjE2NDcsMTE3ODc4NDQwXX0=
+eyJoaXN0b3J5IjpbLTEzNDg1Mjg5MzcsLTE4MDYxMDE0NzQsLT
+czOTQ0Njc4NiwxNzQ4NTcxNjQ5LC0yMDYzMTU4OTQsLTg3Mzky
+NjM3LC04MDA1ODI2MDEsMTYzNTA0NjM4OCwtMTQ4MDQ0NDI0NS
+wtNTQ5NTczNzM2LC05MTQ1NjE2NDcsMTE3ODc4NDQwXX0=
 -->
