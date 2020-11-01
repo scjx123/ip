@@ -37,21 +37,22 @@ By default, IntelliJ has Gradle plugins installed. Ensure they are enabled by go
 1. **Import the project _as a Gradle project_**, as described [here](https://se-education.org/guides/tutorials/intellijImportGradleProject.html).
 1. **Verify the set up**: After the importing is complete, locate the `src/main/java/seedu/duke/Duke.java` file, right-click it, and choose `Run Duke.main()`. If the setup is correct, you should see something like the below:
    ```
-   > Task :compileJava
-   > Task :processResources NO-SOURCE
-   > Task :classes
-   
-   > Task :Duke.main()
-   Hello from
-    ____        _        
-   |  _ \ _   _| | _____ 
-   | | | | | | | |/ / _ \
-   | |_| | |_| |   <  __/
-   |____/ \__,_|_|\_\___|
-   
-   What is your name?
+
+    > Task :compileJava UP-TO-DATE
+    > Task :processResources UP-TO-DATE
+    > Task :classes UP-TO-DATE
+    
+    > Task :Duke.main()
+    	____________________________________________________________
+    		Hello, I'm Duke. What can I do for you?
+    	____________________________________________________________
+    	____________________________________________________________
+    		Here are the tasks due within 3 days: 
+    		No task within 3 days from now
+    	____________________________________________________________
+
    ```
-   Type some word and press enter to let the execution proceed to the end.
+   Type some bye to ensure no errand press enter to let the execution proceed to the end.
 2.3 Verifying the setup 
 
 ## 3. Design
@@ -534,9 +535,10 @@ Expected: Shows you the calculated cap from stored useer data. <br>
 Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-`<br>
 Expected: Shows you the calculated cap from given input modules. <br>
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNDg5MTAwNSwxNzQ4NTcxNjQ5LC0yMD
-YzMTU4OTQsLTg3MzkyNjM3LC04MDA1ODI2MDEsMTYzNTA0NjM4
-OCwtMTQ4MDQ0NDI0NSwtNTQ5NTczNzM2LC05MTQ1NjE2NDcsMT
-E3ODc4NDQwXX0=
+eyJoaXN0b3J5IjpbLTE4Njk5ODExODAsMTc0ODU3MTY0OSwtMj
+A2MzE1ODk0LC04NzM5MjYzNywtODAwNTgyNjAxLDE2MzUwNDYz
+ODgsLTE0ODA0NDQyNDUsLTU0OTU3MzczNiwtOTE0NTYxNjQ3LD
+ExNzg3ODQ0MF19
 -->
