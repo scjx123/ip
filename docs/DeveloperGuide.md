@@ -35,16 +35,16 @@ By default, IntelliJ has Gradle plugins installed. Ensure they are enabled by go
 
 1. **Configure Intellij for JDK 11**, as described [here](https://se-education.org/guides/tutorials/intellijJdk.html).
 1. **Import the project _as a Gradle project_**, as described [here](https://se-education.org/guides/tutorials/intellijImportGradleProject.html).
-1. **Verify the set up**: After the importing is complete, locate the `src/main/java/seedu/duke/Duke.java` file, right-click it, and choose `Run Duke.main()`. If the setup is correct, you should see something like the below:
+1. **Verify the set up**: After the importing is complete, locate the `src/main/java/seedu/duke/Domnus.java` file, right-click it, and choose `Run Duke.main()`. If the setup is correct, you should see something like the below:
    ```
 
     > Task :compileJava UP-TO-DATE
     > Task :processResources UP-TO-DATE
     > Task :classes UP-TO-DATE
     
-    > Task :Duke.main()
+    > Task :Domnus.main()
     	____________________________________________________________
-    		Hello, I'm Duke. What can I do for you?
+    		Hello, I'm Domnus. What can I do for you?
     	____________________________________________________________
     	____________________________________________________________
     		Here are the tasks due within 3 days: 
@@ -56,15 +56,17 @@ By default, IntelliJ has Gradle plugins installed. Ensure they are enabled by go
  Type  `bye` to ensure there is no error saving/creating a new file when exiting. Re-launch and type `help` for all commands available in the program. 
 
 ## 3. Design
-### 3.1 
-### 3.1 Architecture
+### 3.1 Introduction 
+Domnus is a portable timetable scheduler for NUS students and provides 3 main feature namely: Task Tracking, Timetabling and Cap Calculating features. This application aims to increase the productivity of students in the context of having an effective task tracking software product.
+
+### 3.2 Architecture
 The **Architecture Diagram** below represents a high-level design overview of the App. Specifically, it is done with an **N-tier architectural style**, where the higher layers make use of services provided by lower layers. 
 
 ![here](Images/Architecture_Diagram.PNG)
 
 
 **3.2 Main Layer**<br>
-For the `main` layer, it contains a single class known as `Duke`. 
+For the `main` layer, it contains a single class known as `Domnus`. 
 
 **3.3 UI Layer**<br>
 Main gets user input and displays messages through the use of UI component. 
@@ -537,7 +539,7 @@ Expected: Shows you the calculated cap from given input modules. <br>
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDg1Mjg5MzcsLTE4MDYxMDE0NzQsLT
+eyJoaXN0b3J5IjpbLTEwNDQzMjA3NjksLTE4MDYxMDE0NzQsLT
 czOTQ0Njc4NiwxNzQ4NTcxNjQ5LC0yMDYzMTU4OTQsLTg3Mzky
 NjM3LC04MDA1ODI2MDEsMTYzNTA0NjM4OCwtMTQ4MDQ0NDI0NS
 wtNTQ5NTczNzM2LC05MTQ1NjE2NDcsMTE3ODc4NDQwXX0=
