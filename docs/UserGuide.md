@@ -1,5 +1,5 @@
 # User Guide
-![here](Logo.png)
+![](Logo.PNG)
 
 ## * [Introduction
 
@@ -86,18 +86,20 @@ $ java -jar domsun.jar
 
 > Note: You can also run Domsun by double clicking the `domsun.jar` file directly.
 
-### Guide format
+### Domsun Tutorial 
+Here is an overview of how Domsun works. It maintains 3 key lists that you should take note. 
+![here](pic2.PNG)
 
-Words in `[]` are parameters to be supplied by the user. 
+1. `focus` command focuses the app onto the list of task that you currently have. 
+2. Likewise, `focus mod`focuses the app on the entire list of modules available in NUS, while `focus taken` is the list of taken modules of your choice. 
+3. To add a task under a module, you may enter the command `add -task 1 2 -mod CS2113`. 1 and 2 here are indices of the tasks in the task list. So be sure to have some task added BEFORE typing this command. 
+4. To mark a module as 'taken', you may enter `take CS2113 CS1010` while focusing on the module list by using `focus mod`. alternatively, you may use the indices method as before such as `take 1 2` to take the 1st and 2nd module available on the module list. 
+5. The `list` commands follows the app's current focus. If it is focusing on list of task, typing list will show all task. Likewise for modules and taken. 
+6. Typing `detail 1` when focusing on task list, will display the 1st index, task details. 
+7. Note that `detail 2` here will display different results as the two indicies of 2 represent different modules! 
 
-> Example: `done [index]`
-> 
-> Here, `index` is a parameter supplied by the user, in this case to specify which task will be marked as done.
-
-//can more stuff here -> we got a lot of this kind of stuff (eg: {}, ..., etc)Prompt if you are running on Windows or Terminal if you are running on Mac OS. 
-5. Navigate to your home folder and type ‘java -jar domnus.jar’
-6. Type ‘bye’ to terminate your session.  
-
+*A points to note before venturing into the libraries of commands that we have.*
+![here](pic1.PNG)
 
 ## Features 
 
