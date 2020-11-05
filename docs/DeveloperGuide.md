@@ -84,6 +84,10 @@ Words in `[]` are parameters to be supplied by the user.
 
 //can more stuff here -> we got a lot of this kind of stuff (eg: {}, ..., etc)
 
+**A point to note before venturing into the libraries of commands that we have.**
+You can switch between fancy mode display, and plain display anytime during the program. 
+During `list` command, you will be able to toggle between pages of fancy by using `prev` and `next`
+However, the current version of fancy mode is still in beta, hence, it is expected to not be able to fully display certain commands that are too long. such as `help`, `detail`,`mc` etc. Do look forward to the next update!
 ## Features 
 
 ### Addition and removal of tasks
@@ -1261,9 +1265,9 @@ A cheat sheet of commonly used commands:
 |**prev**|`prev [option]`|`prev`|
 |**bye**|`bye`||
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMzExNzkwOCwxNTM0MjcxNTU3LC0xMj
-k4MDQ4ODA2LC0xODA2MTAxNDc0LC03Mzk0NDY3ODYsMTc0ODU3
-MTY0OSwtMjA2MzE1ODk0LC04NzM5MjYzNywtODAwNTgyNjAxLD
-E2MzUwNDYzODgsLTE0ODA0NDQyNDUsLTU0OTU3MzczNiwtOTE0
-NTYxNjQ3LDExNzg3ODQ0MF19
+eyJoaXN0b3J5IjpbMTI4MzExMjMzMSwtNTMzMTE3OTA4LDE1Mz
+QyNzE1NTcsLTEyOTgwNDg4MDYsLTE4MDYxMDE0NzQsLTczOTQ0
+Njc4NiwxNzQ4NTcxNjQ5LC0yMDYzMTU4OTQsLTg3MzkyNjM3LC
+04MDA1ODI2MDEsMTYzNTA0NjM4OCwtMTQ4MDQ0NDI0NSwtNTQ5
+NTczNzM2LC05MTQ1NjE2NDcsMTE3ODc4NDQwXX0=
 -->
