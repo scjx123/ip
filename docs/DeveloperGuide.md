@@ -1,154 +1,1269 @@
-# Developer Guide
 
-## 1. Design
-The Architecture Diagram below represents a high-level design overview of the App. Specifically, it is done with an n-tier architectural style, where the higher layers make use of services provided by lower layers. 
+# User Guide
 
-![here](Architecture_Diagram.PNG)
+## Introduction
 
-**Main**<br>
-For the main layer, it contains a single class known as *Duke*. 
-Main's interaction with Storage<br>
-When the app launches, Duke loads any previous data from storage and then connects the components of the app in sequence. Upon shutting down,  Duke calls upon method to save user's data automatically.  
+Domsun is a **Desktop Command Line Interface (CLI) program that allows users to manage tasks and modules.** <br>
+Domsun is targeted at busy NUS students who want to manage their tasks and modules well to achieve their dream CAP. <br>
+Users will be able to browse and select modules, create and arrange tasks, add tasks to modules,<br>
+create reminders, calculate and set goals for their MCs / CAPs.
 
-Main's interaction with UI<br>
-Main gets user input and displays messages through the use of UI component. 
+## Contents
 
-Main's interaction with Command Interpreter<br>
-Upon receiving command from the UI, Duke would pass the entire user input into Command Interpreter (CI)
+- [Preliminaries](#preliminaries)
+  * [Installation](#installation)
+  * [Running the program](#running-the-program)
+  * [Guide format](#guide-format)
+- [Features](#features)
+- [Usage](#usage)
+    * [`add` - Add task(s) to module(s)](#add---add-task-to-module)
+    * [`bye` - Quit the program](#bye---quit-the-program)
+    * [`cap` - Prints CAPs](#cap---calculate-caps)
+    * [`clear` - Clear the task list](#clear---clear-the-task-list)
+    * [`deadline` - Add a deadline to the task list](#deadline---add-a-deadline-to-the-task-list)
+    * [`delete` - Delete a task from the task list](#delete---delete-a-task-from-the-task-list)
+    * [`detail` - Prints item detail](#detail---Prints-item-detail)
+    * [`done` - Mark a task as done](#done---mark-a-task-as-done)
+    * [`edit` - Modify attributes of an item](#edit---Modify-attributes-of-an-item)
+    * [`event` - Add an event to the task list](#event---add-an-event-to-the-task-list)
+    * [`fancy` - Switch the UI to the fancy mode (GUI-like CLI)](#fancy---switch-the-ui-to-the-fancy-mode-(gui-like-cli))
+    * [`find` - Find an event in the task list](#find---find-an-event-in-the-task-list)
+    * [`focus` - Change the context of the program](#focus---change-the-context-of-the-program)
+    * [`grade` - Add grade to course or module](#grade---add-grade-to-course-or-module)  
+    * [`help` - Print help text of the commands](#help---print-help-text-of-the-commands)
+    * [`list` - Print a list of added tasks](#list---print-a-list-of-added-tasks)
+    * [`mc` - Prints MCs](#mc---prints-mcs)
+    * [`next` - Switch the target region to the next page ***(GUI mode only)***](#next---switch-the-target-region-to-the-next-page)
+    * [`plain` - Switch the UI to the plain mode (pure-text CLI)](#plain---switch-the-ui-to-the-plain-mode-(pure-text-cli))
+    * [`prev` - Switch the target region to the previous page ***(GUI mode only)***](#prev---switch-the-target-region-to-the-previous-page)
+    * [`postpone` - Postpone a task to a later date](#postpone---postpone-a-task-to-a-later-date)
+    * [`reminder` - Print tasks that are due soon](#reminder---print-tasks-that-are-due-soon)
+    * [`sel` - Select items by index](#sel---select-items-by-index)
+    * [`snooze` - Delays reminder popup](#snooze---delays-reminder-popup)
+    * [`stats` - Prints Statistics](#stats---Prints-Statistics)
+    * [`take` - Take module(s)](#take---take-module)
+    * [`todo` - Add a todo to the task list](#todo---add-a-todo-to-the-task-list)
+    * [`undone` - Mark a task as undone](#undone---mark-a-task-as-undone)
+    * [`unknown` - Prints error message](#unknown---prints-error-message)
+    * [`unsel` - Unselect items](#unsel---unselect-items)
+    * [`untake` - Untake module(s)](#untake---untake-module)
+- [Triggering the syntax reminder](#triggering-the-syntax-reminder)
+- [FAQ](#faq)
+- [Command Summary](#command-summary)
 
-Main's interaction with Execute<br>
-Once CI processed the user input, duke proceeds to redirect the input to Execute for execution of action. 
+## Preliminaries
 
-**UI**<br>
-The UI layer entails the package *visualize*, which contains classes *ColoredString*, *Bitmap*, *UI*, *Cli*, 
-*FancyCli* and enumerations *Color* and *Sprite* in the following structure:
-![uml](Package%20visualize.png)
+### Installation
 
-UI's interaction with user<br>
-UI gets user input through *nextline()*, and renders strings as a user-comprehensible interface through 
-*update(String, Data)*.
+1. Ensure that you have Java 11 or above installed.
+2. Download the latest version of `Domsun` from [Our Release Page](https://github.com/AY2021S1-CS2113-T13-2/tp/releases).
 
-UI's interaction with the rest of the program<br>
-UI passes the user's input string out to the Duke object, which then passes the string to the Command Interpreter layer.
-UI also reads data from the Data object for refreshing purposes, but does not modify it.
+> Java 11 and above is highly recommended, although Domsun might run on a lower version.
 
-**Command Interpreter**<br>
-**Executer**<br>
-**Storage**<br>
+### Running the program
 
-## 2. Implementation<br>
-This section highlights some of our project's key feature and its implementation. 
+Open your command line or terminal and navigate to the folder where you downloaded the jar file (e.g., `~/downloads`). 
+Then simply run the command `java -jar domsun.jar`:
 
-2.1 
+```batch
+$ cd ~/downloads
+$ ls 
+domsun.jar
+$ java -jar domsun.jar
+```
 
-### module planner feature
+> Note: You can also run Domsun by double clicking the `domsun.jar` file directly.
 
-The module planner feature entails many *Actions* which extend `Action`. Their functionalities and usages
-are in the table below:
+### Guide format
 
-|Table|To|Be|Filled|
-|-----|---|---|------|
-|blah|blah|blah|blah|
+Words in `[]` are parameters to be supplied by the user. 
 
-A typical flow of execution would be:
-1. blah
-1. blah
-1. blah
+> Example: `done [index]`
+> 
+> Here, `index` is a parameter supplied by the user, in this case to specify which task will be marked as done.
 
-### CAP calculator feature
+//can more stuff here -> we got a lot of this kind of stuff (eg: {}, ..., etc)
 
-The proposed undo/redo mechanism is facilitated by `CalculateCapAction`. It extends `Action` to execute command given by the user, output are then passed on to `Ui` for display. 
-Additionally, it implements the following operations:
+## Features 
 
-* `CalculateCapAction#act()` - Calculate the user CAP based on stored user grades / input modules.
-* `CalculateCapAction#prepare()` - Parse user command to suitable parameter for `CalculateCapAction#act()` function.
+### Addition and removal of tasks
+The program allows user to add or delete tasks from the task list.<br>
+The program also provides shortcuts such as the `clear` command to delete tasks quickly.
 
-Given below is an example usage scenario and how thecap calculator mechanism behaves at each step.
+### Mark tasks as done or undone
+The program allows user to mark tasks as done (denoted by `[V]`) or undone (denoted by `[X]`).
 
-Step 1. The user executes `cap` command find his current CAP grade. Command is then parsed by `CalculateCapAction#prepare()` to be passed as arguments for `CalculateCapAction#act()`.
+### List tasks and reorder them by their ***date*** field
+The program allows user to list tasks in ascending order or descending order with respect to their ***date*** values.<br>
+The program also allows the user to filter the task list and only display tasks within a specified date.
 
-Step 2. `CalculateCapAction#act()` retrieves data from the stored user's grades.
+### Deadlines, Events and ToDo's
+The program allows user to create 3 different kinds of tasks, *deadlines*, *events* and *todos*.<br>
+*deadline* and *event* consists of both *description* and *time*, while *todo* does not contain *time*.<br>
+The *time* field consists of a *date* part (such as `Oct 13 1998`), and a *time* part (such as `00:00`).<br>
 
-Step 3. `CalculateCapAction#act()` then retrieves module data from the `modulelist.txt` to determine Modular Credit (MC) allocation.
+### Fuzzy parsing
+The program fuzzily parses user's inputs with respect to date and time.<br>
+`"Oct 13 1998"`, `10/13/98`, `13-10-1998`, `13 Oct 98` and many more common date formats are all supported.<br>
+`1:1:0`, `01:01:00`, `1:01`, `01:1` and many more common time formats are all supported.
 
-Step 4. CAP value is calculated and returned to the user through `Ui`.
+### Auto-save and auto-load
+The program saves the tasks list automatically every time the list changes. <br>
+When the program loads up, it looks for the last saved tasks list first and tries to load it.
 
-The following activity diagram summarizes what happens when a user executes a new command:
+### Syntax reminder
+The program can remind the user of the syntax of a command if the command is correct but wrong syntax is present.
 
-![cap uml diagram](./Cap_Calculator_Diagram.JPG)
+### Module operations
+The program allows users to list modules, mark modules as taken or untaken, and score grades for each module.
+
+### Find function
+The program allows users to find items (tasks or modules) by keyword using the `find` command. 
+
+### Dynamic target
+The program operates data dynamically. Users can operate on items as-is in the displayed sequence,<br>
+and need not follow the sequence of task creation or module addition.
+
+### GUI inside CLI
+The program has a GUI mode that accomplishes a GUI-like CLI interface using the ansi escape code sequence.<br> 
+The user can use `fancy` to switch to the GUI mode and use `plain` to switch to plain text CLI mode.
+
+### Link tasks to Modules
+The program allows users to add some tasks to modules using the `add` command.
+
+### Reminders
+The program allows user to set reminders at certain time, or remind themselves of the most urgent tasks on start-up.
+
+## Usage
 
 
-### Reminder Feature
+## Features - Daily Tasks 
 
-The proposed undo/redo mechanism is facilitated by `ReminderAction`. It extends `Action` and the output is passed onto `UI` for display. Additionally, it implements the following operations:
+### `todo` - Add a todo to the task list
 
-* `ReminderAction#act()` — List out the deadlines and events tasks that are due within 3 days
+Typing `todo` allows the program to parse user's input and create a ***todo*** object with 
+specified *description*. It will be appended to the end of the task list.
 
-Given below is an example usage scenario and how the reminder mechanism behaves at each step.
+Syntax:
 
-Step 1. The user executes `reminder` command to list out tasks due within 3 days. Command is then parsed by `ReminderAction#act()`.
+`todo [description]`
 
-Step 2. `ReminderAction#act` retrieves tasklist data from the user's list
+Example of usage: 
 
-Step 3. `ReminderAction#act` then sorts the due dates in ascending order
+`todo class`
 
-Step 4: Tasks due within 3 days are returned to the user through Ui
+Expected outcome:
 
-The following sequence diagram diagram shows how the reminder operation works
+   ```  
+    ____________________________________________________________
+        Got it. I've added this task:
+        [T][X] class
+        Now you have 1 tasks in the list.
+    ____________________________________________________________
+   ```
 
-![Reminder_Sequence_Diagram](./ReminderAction_Sequence_Diagram.png)
+### `deadline` - Add a deadline to the task list
 
-### Postpone Feature
+Typing `deadline` allows the program to parse user's input and create a ***deadline*** object with 
+specified *description* and *time*. It will be appended to the end of the task list.
 
-The proposed undo/redo mechanism is facilitated by `PostponeAction`. It extends `Action` to execute command given by the user, output are then passed on to `Ui` for display. 
-Additionally, it implements the following operations:
+Syntax: 
 
-* `PostponeAction#act()` - Postpone the deadline or event task by the chosen parameter.
-* `PostponeAction#prepare()` - Parse user command to suitable parameter for `PostponeAction#act()` function.
+`deadline [description] /by [time]`
 
-Given below is an example usage scenario and how thecap calculator mechanism behaves at each step.
+Example of usage:
 
-Step 1. The user executes `postpone [index]` command to postpone the targeted task. Command is then parsed by `PostponeAction#prepare()` to be passed as arguments for `PostponeAction#act()`.
+`deadline ddl /by 21/9/15 1:12`
 
-Step 2. `PostponeAction#act()` re-sets the date of the targeted task from the stored user's tasks by default a day.
+Expected outcome:
 
-Step 3. `PostponeAction#act()` then updates the stored user's data.
+   ```  
+    ____________________________________________________________
+        Got it. I've added this task:
+        [D][X] ddl (by: Sep 15 2021 01:12)
+        Now you have 1 tasks in the list.
+    ____________________________________________________________
+   ```
 
-Step 4. Postponed target task is returned to the user through `Ui`.
 
-The following activity diagram summarizes what happens when a user executes a new command:
+    ____________________________________________________________
+        Noted. I've removed this task:
+        [D][X] ddl (by: Sep 15 2021 01:12)
+        Now you have 0 tasks in the list.
+    ____________________________________________________________
+   ```
 
-![Postpone_Sequence_Diagram](./PostponeAction_Sequence_Diagram.png)
+### `event` - Add an event to the task list
 
-These operations are exposed in the Model interface as Model#commitAddressBook(), Model#undoAddressBook() and Model#redoAddressBook() respectively.
+Typing `event` allows the program to parse user's input and create an ***event*** object with 
+specified *description* and *time*. It will be appended to the end of the task list.
 
-## Product scope
-### Target user profile
+Syntax:
 
-{Describe the target user profile}
+`event [description] /at [time]`
 
-### Value proposition
+Example of usage: 
 
-{Describe the value proposition: what problem does it solve?}
+`event midterm exam /at May 13 2020 8:00`
 
-## User Stories
+Expected outcome:
 
-|Version| As a ... | I want to ... | So that I can ...|
-|--------|----------|---------------|------------------|
-|v1.0|new user|see usage instructions|refer to them when I forget how to use the application|
-|v2.0|user|find a to-do item by name|locate a to-do without having to go through the entire list|
+   ```  
+    ____________________________________________________________
+        Got it. I've added this task:
+        [E][X] midterm exam (at: May 13 2020 08:00)
+        Now you have 1 tasks in the list.
+    ____________________________________________________________
+   ```
 
-## Non-Functional Requirements
+### `list` - Print a list of added tasks
 
-{Give non-functional requirements}
+Typing `list` commands the program to print either all added tasks or tasks at a specified *date*.<br>
+The user can also control how the tasks printed are ordered with respect to *date*:<br>
 
-## Glossary
+The `asc` parameter tells the program to list tasks in ascending order with respect to their *date* field.<br>
+The `desc` parameter tells the program to list tasks in descending order with respect to their *date* field.<br>
+The `spec` parameter tells the program to only list tasks with the specified value of the *date* field.<br>
 
-* *glossary item* - Definition
+Note: with each execution of the `list` command, the indices of all tasks will be 
+dynamically changed to refer to the task in the current list with the current indices.<br>
+In other words, indices of tasks are not tied to their sequence of creation, allowing the user
+to use commands much more flexibly, especially with the `find` command or the reordering parameters.
 
-## Instructions for manual testing
+Syntax:
 
-{Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
+`list` <br> `list date [asc / desc / spec "date"]`, where `"date"` can be in any common date format.
+
+Example of usage: 
+
+`list`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+        Here is the list of tasks:
+        1.[D][X] math exam (by: Oct 15 2020 10:30)
+        2.[D][X] CS exam (by: Oct 18 2020 15:00)
+        3.[E][X] exam review session (at: Oct 01 2020 08:00)
+    ____________________________________________________________
+   ```
+
+Example of usage: 
+
+`list date asc`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+        Here is the list of tasks:
+        1.[E][X] exam review session (at: Oct 01 2020 08:00)
+        2.[D][X] math exam (by: Oct 15 2020 10:30)
+        3.[D][X] CS exam (by: Oct 18 2020 15:00)
+    ____________________________________________________________
+   ```
+
+Example of usage: 
+
+`list date spec 10/15/20`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+        Here is the list of tasks:
+        1.[D][X] math exam (by: Oct 15 2020 10:30)
+    ____________________________________________________________
+   ```
+
+
+### `done` - Mark a task as done
+
+Typing `done` allows the user to mark the task at a specified *index* as **done**.<br>
+Note: *index* can be an integer number or a letter (`A` or `a` corresponds to 1).
+
+Syntax:
+
+`done [index]`
+
+Example of usage: 
+
+`done 1`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+        Nice! I've marked this task as done:
+        [D][V] ddl (by: Sep 15 2021 01:12)
+    ____________________________________________________________
+   ```
+
+
+### `undone` - Mark a task as undone
+
+Typing `undone` allows the user to mark the task at a specified *index* as **undone**.<br>
+Note: *index* can be an integer number or a letter (`A` or `a` corresponds to 1).
+
+Syntax:
+
+`undone [index]`
+
+Example of usage: 
+
+`undone 1`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+        Nice! I've marked this task as undone:
+        [D][X] math exam (by: Oct 15 2020 10:30)
+    ____________________________________________________________
+   ```
+
+
+### `find` - Find an event in the task list
+
+Typing `find` commands the program to search through the task list and print all tasks with the
+specified *keyword*. If there is no task with such a *keyword*, `[NOT FOUND]` will be printed instead.
+
+Syntax:
+
+`find [keyword]`
+
+Example of usage: 
+
+`find exam`
+
+Expected outcome (found):
+
+   ```  
+    ____________________________________________________________
+        Tasks with the specified keyword are:
+        1.[D][X] math exam (by: Oct 15 2020 10:30)
+        2.[D][X] CS exam (by: Oct 18 2020 15:00)
+        3.[E][X] exam review session (at: Oct 01 2020 08:00)
+    ____________________________________________________________
+   ```
+
+Expected outcome (not found):
+
+   ```  
+    ____________________________________________________________
+        Tasks with the specified keyword are:
+        [NOT FOUND]
+    ____________________________________________________________
+   ```
+
+### `postpone` - Postpone a task by index
+
+Typing `postpone` delays a task specified by the user or by default a day.<br>
+Note: Option `h` for an hour. Option `w` for a week. Option `y` for a year.
+
+Syntax:
+
+`postpone [index]` <br>
+`postpone [h/w/y] [index]` 
+
+Example of usage:
+
+`postpone 1`
+
+Expected outcome:
+ 
+    ```
+    ____________________________________________________________
+        I've postpone this task:
+        [D][X] project submission (by: Sep 16 2021 01:12)
+    ____________________________________________________________
+    ```
+
+Example of usage:
+
+`postpone h 1`
+
+Expected outcome:
+    
+    ```
+    ____________________________________________________________
+        I've postpone this task:
+        [D][X] project submission (by: Sep 16 2021 02:12)
+    ____________________________________________________________
+    ```
+
+Example of usage:
+
+`postpone w 1`
+
+Expected outcome:
+
+    ```
+    ____________________________________________________________
+        I've postpone this task:
+        [D][X] project submission (by: Sep 23 2021 02:12)
+    ____________________________________________________________
+    ```
+
+Example of usage:
+
+`postpone y 1`
+
+Expected outcome:
+
+    ```
+    ____________________________________________________________
+        I've postpone this task:
+        [D][X] project submission (by: Sep 23 2022 02:12)
+    ____________________________________________________________
+    ```
+
+
+### `reminder` - Print tasks that are due soon
+
+Typing `reminder` prints the tasks that are due within a certain time range or to activate the reminder.<br>
+Note: The reminder popup is set by default to emerge every 5 minutes.  
+
+Syntax:
+
+`reminder` <br>
+`reminder [on/off]`
+
+Example of usage: 
+
+`reminder`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+    Here are the tasks due within 3 days: 
+    [D][X] submission 2 (by: Oct 15 2020 02:00)
+    ____________________________________________________________
+   ```
+Example of usage:
+
+`reminder on`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+    Here are the tasks due within 3 days: 
+    [D][X] submission 2 (by: Oct 15 2020 02:00)
+    ____________________________________________________________
+   ```
+
+Example of usage:
+
+`reminder off`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+
+    ____________________________________________________________
+   ```
+
+
+### `snooze` - Delays reminder popup
+
+Typing `snooze` delays reminder popup by a default of 1 minute.
+
+Syntax:
+
+`snooze`
+
+Example of usage:
+
+`snooze`
+
+Expected outcome:
+
+    ```
+    ____________________________________________________________
+        I've snoozed the reminder for 1 minute. Will remind you in 6 minutes.
+    ____________________________________________________________    
+    ```
+
+
+## Features - Module Planner 
+
+### `take` - Take module
+
+Typing `take` marks specified module(s) as taken.
+
+Syntax:
+
+`take [index(es) / module code(s) (for modules only)]`
+
+Example of usage: 
+
+`take CS2113 CS2113T`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+    I have marked these modules as taken:
+    Module: CS2113
+    Module: CS2113T
+    ____________________________________________________________
+   ```
+
+### `untake` - Untake module
+
+Typing `untake` marks specified module(s) as not taken.
+
+Syntax:
+
+`untake [index(es) / module code(s) (for modules only)]`
+
+Example of usage: 
+
+`untake CS2113T`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+    I have marked these modules as not taken:
+    Module: CS2113T
+    ____________________________________________________________
+   ```
+
+### `sel` - Select items by index
+
+Typing `sel` selects the items specified.
+
+Syntax:
+
+`sel [index(es) (for the currently listed items) / module code(s) (for modules only)]`
+
+Example of usage: 
+
+`sel 1 2 3`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+    I have selected the items you specified:
+    Item 1: borrow book
+    Item 2: eat
+    Item 3: jumping
+    ____________________________________________________________
+   ```
+
+
+
+### `unsel` - Unselect items
+
+Typing `unsel` marks items specified as unselected.
+
+Syntax:
+
+`unsel [index(es) (for the currently listed items) / module code(s) (for modules only)]`
+
+Example of usage: 
+
+`unsel 1 2 3`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+    I have un-selected the items you specified:
+    Item 1: borrow book
+    Item 2: eat
+    Item 3: jumping
+    ____________________________________________________________
+   ```
+
+### `detail` - Prints item detail
+Typing `detail` prints the details of a specified item.
+
+Syntax:
+
+`detail [module code (for modules only) / index]`
+
+Example of usage: 
+
+`detail 1`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+    Here are the details you requested:
+    Item 1: [T][X] borrow book
+    ____________________________________________________________
+   ```
+
+Example of usage: 
+
+`detail CS2113T`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+    Here are the details you requested:
+    Item: CS2113T Software Engineering & Object-Oriented Programming 4MC
+    "This module introduces the necessary skills for systematic and rigorous development of software sys
+    tems. It covers requirements, design, implementation, quality assurance, and project management aspe
+    cts of small-to-medium size multi-person software projects. The module uses the Object Oriented Prog
+    ramming paradigm. Students of this module will receive hands-on practice of tools commonly used in t
+    he industry, such as test automation tools, build automation tools, and code revisioning tools will 
+    be covered.
+    Tasks: [NOT FOUND]
+    ____________________________________________________________
+   ```
+
+
+### `grade` - Add grade to course or module
+
+Typing `grade` allows the user to add grade to the user's taken course or module.
+
+Syntax:
+
+`grade` <br>
+`grade [-option] [module] [grade] {[module] [grade]...}` <br>
+
+`option: -s(show, default), -a(add)`
+
+Example of usage:
+
+`grade -a CS2113 A- CG1112 A-`
+
+Expected outcome:
+
+    ____________________________________________________________
+        These are your grades so far:
+        1. CS2113   A-
+        2. CG1112   A-
+    ____________________________________________________________
+    
+Example of usage:
+
+`grade`
+
+Expected outcome:
+
+    ____________________________________________________________
+        These are your grades so far:
+        1. CG1112   A-
+        2. CS1010   A
+        3. CS1231   B
+        4. CS2040C  A
+        5. CS2113   A-
+    ____________________________________________________________
+    
+
+### `goal` - Calculate how far the user is from his/her target CAP
+
+Typing `goal` allows the user to calculate how far the user is from his/her target CAP.
+
+Syntax:
+
+`goal [-option] [total MC] [target CAP] {[taken MC] [current CAP]}` <br>
+
+`option: -u(user's cap and mc), -c(custom cap and mc)`
+
+Example of usage:
+
+`goal -c 160 4.9 100 4.5`
+
+Expected outcome:
+
+    ____________________________________________________________
+        Your required average CAP is: 5.57
+        Looks like the target is a bit far away TT
+    ____________________________________________________________
+    
+Example of usage:
+
+`goal -u 160 4.9`
+
+Expected outcome:
+
+    ____________________________________________________________
+        Your required average CAP is: 4.89
+        Jia you! :D
+    ____________________________________________________________
+    
+
+### `mc` - Prints MCs
+
+Typing `mc` prints the number of MCs based on selected option. By default, this command focuses on the entire module list. In order to print the MC of taken modules, do remember to enter 'focus taken' before proceeding with this command. 
+
+Syntax:
+
+`mc [-option] [-detail]` <br>
+`option: -d(detailed)`
+
+Example of usage (when there are modules in the target): 
+
+`mc`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+    Here is the total MC:
+    22
+    ____________________________________________________________
+   ```
+Example of usage (when there are modules in the target): 
+
+`mc -d`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+    Here is the total MC:
+    EE1001: 4MCs
+    EE1001X: 4MCs
+    EE1002: 4MCs
+    EE1003: 4MCs
+    EE1111: 6MCs
+    ____________________________________________________________
+   ```
+
+### `cap` - Prints CAPs
+
+Typing `mc` prints the calculated CAP for courses based on selected option.
+
+Syntax:
+
+`cap [-option] [module] [grade] {[module] [grade]...}`
+`option: -u(user, default), -m(multiple/custom modules)`
+
+Example of usage (when there are modules in the target): 
+
+`cap`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+    Here is your existing CAP: 4.00
+    ____________________________________________________________
+   ```
+Example of usage (when there are modules in the target): 
+
+`cap -m CS2113 A CS1010 B`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+    Here is your existing CAP: 4.25
+    ____________________________________________________________
+   ```
+
+
+## Features - General Features for both Daily Tasks & Module Planner
+
+### `add` - Add task to module
+
+Typing `add` adds specified task(s) to specified module(s).
+
+Syntax:
+
+`add -task [index(es)] -mod [module code(s)]`
+
+Example of usage: 
+
+`add -task 1 2 -mod CS2113 CS2113T`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+    I have added the specified tasks to the specified modules.
+    CS2113 << tasks: borrow book; eat; 
+    CS2113T << tasks: borrow book; eat; 
+    ____________________________________________________________
+   ```
+
+### `clear` - Clear the task list
+
+Typing `clear` results in the program deleting all added tasks from the task list.
+
+Example of usage: 
+
+`clear`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+        Nice! I've cleared everything in the list.
+    ____________________________________________________________
+   ```
+
+### `delete` - Delete a task from the task list
+
+Typing `delete` deletes the task with specified *index* from the current task list.<br>
+Note: *index* can be an integer number or a letter (`A` or `a` corresponds to 1).
+
+Syntax:
+
+`delete [index]`
+
+Example of usage: 
+
+`delete 1`
+
+Expected outcome:
+    ```
+    ____________________________________________________________
+        
+    ____________________________________________________________
+    ```  
+
+### `edit` - Modify attributes of an item
+
+Typing `edit ` modifies the attributes of an task or module
+
+Syntax:
+
+`edit [-mod / -task] [index / code (for module only)] [field=new value]`
+
+`No space allowed around "=". Use "_" in place of space for the "[field=new value]" parameters`
+
+
+Example of usage:
+`edit -mod CS2113T grade=A`
+
+Exepected outcome:
+    
+    ```
+    ____________________________________________________________
+        Trying to modify the attribute(s) you specified:
+        grade=A; 
+    ____________________________________________________________
+    ```
+
+Example of usage:
+`edit -task 1 description=do_homework`
+
+Expected outcome:
+    
+    ```
+    ____________________________________________________________
+        Trying to modify the attribute(s) you specified:
+        description=do homework; 
+    ____________________________________________________________
+    list
+    ____________________________________________________________
+        Here is the list of items:
+        1.[T][X] do homework
+        2.[T][X] blah
+    ```
+
+Example of usage:
+`edit -task 1 type=event`
+    
+Expected outcome:
+    
+    ```
+    ____________________________________________________________
+        Trying to modify the attribute(s) you specified:
+        type=event; 
+    ____________________________________________________________
+    list
+    ____________________________________________________________
+        Here is the list of items:
+        1.[E][X] do homework (at: Jan 01 2021 00:00)
+        2.[T][X] blah    
+
+    ```
+
+Example of usage:
+`edit -mod CS2113 grade=A -task 1 description=do_homework type=event`
+
+Expected outcome:
+
+    ```
+    ____________________________________________________________
+        Trying to modify the attribute(s) you specified:
+        grade=A; 
+        description=do homework; type=event; 
+    ____________________________________________________________
+    list
+    ____________________________________________________________
+        Here is the list of items:
+        1.[E][X] do homework (at: Jan 01 2021 00:00)
+        2.[T][X] blah
+    ```
+
+
+
+### `focus` - Change the context of the program
+
+Typing `focus` changes the context that all other commands are based on to the specified target. <br>
+If no parameter is provided, the program will focus on `task`. <br>
+Other commands such as `list`, `done`, `sel`, etc. all operated based on the current focused context.
+
+Syntax:
+
+`focus`
+`focus [deadline / todo / event / task / mod / selected / taken]`
+
+Example of usage: 
+
+`focus mod`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+    Now we are focusing on:
+    mod
+    ____________________________________________________________
+   ```
+Example of usage: 
+
+`focus`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+    Now we are focusing on:
+    task
+    ____________________________________________________________
+   ```
+
+### `stats` - Prints Statistics
+
+Typing `stats` prints the percentage of the task completed.
+
+Syntax:
+
+`stats [-option] [-detail]` <br>
+`option: -mod` <br>
+`detail: [module code]`
+
+Example of usage (when focused on task list, and no task is completed): 
+
+`stats`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+    Here are the statistics: 
+    [0.0%]
+    ____________________________________________________________
+   ```
+Example of usage (when checking specific modules, with all task completed): 
+
+`stats -mod CS2113 `
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+    Here are the statistics: 
+    [100.0%]
+    ____________________________________________________________
+   ```
+
+### `help` - Print help text of the commands
+
+Typing `help` allows the user to either print a list of available commands, 
+or print the details of a specified command.
+
+Syntax:
+
+`help` <br> `help [target]`
+
+Example of usage: 
+
+`help`
+
+Expected outcome:
+
+   ```
+    ____________________________________________________________
+        Here are all available commands:
+        Command: bye  Description: Quit the program
+        Command: clear  Description: Clear the task list
+        Command: deadline  Description: Add a deadline to the task list
+        Command: delete  Description: Delete a task from the task list
+        Command: done  Description: Mark a task as done
+        Command: event  Description: Add an event to the task list
+        Command: find  Description: Find an event in the task list with the specified keyword
+        Command: help  Description: Print the list of available commands, or print the details of a specified command
+        Command: focus  Description: Change context. Changes the target of other commands to the specified target
+        Command: reminder  Description: List out events and deadlines tasks that are due within 3 days
+        Command: list  Description: Print a list of tasks/modules depending on the current Focus
+        Command: todo  Description: Add a todo to the task list
+        Command: undone  Description: Mark a task as undone
+        Command: unknown  Description: Prints the error message for an unrecognized command for debugging purposes
+        Command: next  Description: Switch the target region to the next page, keeping other regions unchanged.
+        Command: prev  Description: Switch the target region to the previous page, keeping other regions unchanged.
+        Command: fancy  Description: Switch to a fancy Cli (requires the shell to support ansi codes).
+        Command: plain  Description: Switch to a plain Cli.
+        Command: sel  Description: Make selection: Add specified item(s) to the selection.
+        Command: unsel  Description: Cancel selection: Make specified item(s) no longer selected.
+        Command: add  Description: Add task(s) to module(s): Add specified task(s) to specified module(s).
+        Command: take  Description: Take module(s): Mark specified module(s) as taken.
+        Command: untake  Description: Untake module(s): Mark specified module(s) as not taken.
+        Command: mc  Description: Print MCs: Print the number of MCs based on selected option.
+        Command: detail  Description: Print Details: Print the details of a specified module.
+        Command: cap  Description: Calculate CAP: Calculate CAP for courses based on selected option.
+        Use "help [target]" to see details :) Try "help help"!
+    ____________________________________________________________
+   ```
+Example of usage: 
+
+`help list`
+
+Expected outcome:
+
+   ```
+    ____________________________________________________________
+        Name: list
+        Description: Print a list of items depending on the current Focus
+        Syntax:
+        list
+        list date [asc / desc / spec "date"(any common date format)]
+        Usages:
+        1. "list" >> list all added items
+        2. "list date asc" >> list items with a "date" field in ascending order
+        3. "list date spec Oct 5 2020" >> list items with specific "date" field of Oct 5 2020
+    ____________________________________________________________
+
+   ```
+
+
+### `fancy` - Switch the UI to the fancy mode (GUI-like CLI)
+
+Typing `fancy` switches the UI to the fancy mode (GUI-like CLI interface).<br>
+This command has no effect if the UI is already in fancy mode.<br>
+The fancy mode only shows correctly if your terminal supports ansi escape codes.
+
+Syntax:
+
+`fancy`
+
+Example of usage: 
+
+`fancy`
+
+Expected outcome:
+
+the UI switches to fancy mode (GUI-like CLI interface).
+
+
+### `plain` - Switch the UI to the plain mode (pure-text CLI)
+
+Typing `plain` switches the UI to the plain mode (pure-text CLI interface). <br>
+This command has no effect if the UI is already in plain mode.<br>
+The plain mode shows correctly on all terminals.
+
+Syntax:
+
+`plain`
+
+Example of usage: 
+
+`plain`
+
+Expected outcome:
+
+The UI switches to plain mode (pure-text CLI interface).
+
+
+### `next` - Switch the target region to the next page
+
+Typing `next` switches the target region to the next page, should a next page exist.<br>
+This command has no effect on pure text CLI mode.
+
+Syntax:
+
+`next [region]` <br>
+`region: i(item list), s(selection), a(all, default)`
+
+Example of usage: 
+
+`next`
+
+Expected outcome ***(GUI mode only)***:
+
+The both regions of the GUI are switched to the next page if a next page is available.
+
+Example of usage: 
+
+`next i`
+
+Expected outcome ***(GUI mode only)***:
+
+The item list region (top) of the GUI is switched to the next page if a next page is available.
+
+
+### `prev` - Switch the target region to the previous page
+
+Typing `prev` switches the target region to the previous page, should a previous page exist.<br>
+This command has no effect on pure text CLI mode.
+
+Syntax:
+
+`prev [region]` <br>
+`region: i(item list), s(selection), a(all, default)`
+
+Example of usage: 
+
+`prev`
+
+Expected outcome ***(GUI mode only)***:
+
+The both regions of the GUI are switched to the pevious page if a previous page is available.
+
+Example of usage: 
+
+`prev i`
+
+Expected outcome ***(GUI mode only)***:
+
+The item list region (top) of the GUI is switched to the previous page if a previous page is available.
+
+
+
+### `unknown` - Prints error message
+
+Typing `unknown` or any string that is not a command will trigger the `unknown` command.<br>
+The `unknown` command prints an error message for debug purposes, it is also the default behaviour of the program
+when it fails to recognize the user's command. <br>
+
+Note: If the program recognizes the command successfully, yet fails to find required parameters, 
+it will not trigger this `unknown` command. It will print a syntax error and remind the user of
+the correct syntax instead.
+
+Syntax:
+
+`unknown` <br> `[anything that is not a command]`
+
+Example of usage: 
+
+`who is duke?`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+        OOPS, I don't know what that means :-( Try "help"!
+    ____________________________________________________________
+   ```
+
+### `bye` - Quit the program
+
+Typing `bye` results in the program saving the current task list to a local file named 
+`./data/duke.txt`, and then quitting the program.
+
+Example of usage: 
+
+`bye`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+        Bye. Hope to see you again soon!
+    ____________________________________________________________
+   ```
+
+
+### Triggering the syntax reminder
+
+Typing a correct command with wrong syntax will trigger the syntax reminder.
+
+Example of usage:
+
+`deadline /at 10-10-10`<br>
+
+Note that the command `deadline` is a correct command, but:<br>
+1. Description is missing
+2. Parameter name is wrong
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+        Invalid Command! Please check the syntax.
+        deadline [description] /by [time]
+    ____________________________________________________________
+   ```
+
+## FAQ
+
+**Q**: How do I transfer my data to another computer? 
+
+**A**: Send the `data` folder in your program directory to the program directory on your new device.
+
+**Q**: How do I run this program ?
+
+**A**: To run this program execute the jar file by ‘java -jar domnus.jar’
+
+## Command Summary
+
+A cheat sheet of commonly used commands:
+
+### Daily Tasks
+|**Action** | **Format**| **Examples**|
+|------------|-------------|-------------|
+|**todo**|`todo [description]`|`todo borrow book`|
+|**deadline**|`deadline [description] -by [time]`|`deadline project submission -by 21/9/15 1:12`|
+|**event**|`event [description] -at [time]`|`event concert -at May 13 2020 8:00`|
+|**list**|`list date [asc / desc / spec “date”]`|`list date asc`|
+|**done**|`done [index]`|`done 2`|
+|**undone**|`undone [index]`|`undone 2`|
+|**find**|`find [keyword]`|`find exam`|
+|**postpone**| `postpone [index]`|`postpone 1`|
+|**reminder**|`reminder [on/off]` |`reminder`|
+|**snooze**|`snooze`||
+
+
+### Module Planner
+|**Action** | **Format**| **Examples**|
+|------------|-------------|-------------|
+|**take**|`take [index / module code]`|`take CS2113T`|
+|**untake**|`untake [index / module code]`|`untake CS2113T`|
+|**sel**|`sel [index / module code]`|`sel 1 2 3`|
+|**unsel**|`unsel [index / module code]`|`unsel CS1010 CS2113`|
+|**detail**|`detail [index / module code]`|`detail CS2113T`|
+|**grade**|`grade [-option] [module] [grade] {[module] [grade]...}`|`grade -a CS2113 A CG1112 A-`|
+|**goal**|`goal [-option] [total MC] [target CAP] [taken MC] [current CAP]`|`goal -c 160 4.9 100 4.5`|
+|**mc**|`mc [-option] [-details]`|`mc -p`|
+|**cap**|`cap [-option] [module] [grade] {[module] [grade]...}`|`cap -m CS2113 A CG1112 A-`|
+
+
+### General Features
+|**Action** | **Format**| **Examples**|
+|------------|-------------|-------------|
+|**add**|`add -task [index] -mod [module code]`|`add -task 1 -mod CS2113`|
+|**clear** | `clear`||
+|**delete**|`delete [index]`|`delete 2`|
+|**edit**|`edit [-mod / -task] [index / code (for module only)]`|`edit -mod CS2113 grade=A -task 1 description=do_homework type=event`|
+|**focus**|`focus [deadline / todo / event / task / mod / selected / taken]`|`focus deadline`|
+|**stats**|`stats [target]`| `stats`|
+|**help**|`help [options]`|`help deadline`|
+|**fancy**|`fancy [option]`|`fancy`|
+|**plain**|`plain [option]`|`plain`|
+|**next**|`next [option]`|`next`|
+|**prev**|`prev [option]`|`prev`|
+|**bye**|`bye`||
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMTM1MzRdfQ==
+eyJoaXN0b3J5IjpbLTUzMzExNzkwOCwxNTM0MjcxNTU3LC0xMj
+k4MDQ4ODA2LC0xODA2MTAxNDc0LC03Mzk0NDY3ODYsMTc0ODU3
+MTY0OSwtMjA2MzE1ODk0LC04NzM5MjYzNywtODAwNTgyNjAxLD
+E2MzUwNDYzODgsLTE0ODA0NDQyNDUsLTU0OTU3MzczNiwtOTE0
+NTYxNjQ3LDExNzg3ODQ0MF19
 -->
