@@ -33,6 +33,9 @@ Given below are my contributions to the project.
 
 ### 2.2 Contributions to UG: 
 The following section shows my contribution to the DOMNUS User Guide. It includes: Domsun Tutorial, mc and stats. 
+{start of extract}
+{end of extract} 
+The Domsun tutorial section was a result of the peer feedback during the PE Dry run. As we have al
 
 
 {include some extracts from the document here}
@@ -43,6 +46,6 @@ The following section shows my contribution to the DOMNUS User Guide. It include
 ### 2.6 Contributions beyond the project team:  
  **2.6.1 Community**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NDUwODExNCwtNzg1MzYxODE4LC00Mz
+eyJoaXN0b3J5IjpbMTEwNDU1ODE3NywtNzg1MzYxODE4LC00Mz
 E1NjUyOV19
 -->
