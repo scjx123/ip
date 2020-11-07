@@ -12,15 +12,17 @@ Given below are my contributions to the project.
 New Feature: MC 
 New Feature: Statistics 
 
-Code contributed : https://github.com/AY2021S1-CS2113-T13-2/tp/tree/master
+Code contributed : Reposense link 
+
+Project Management 
 
 ### Summary of Contributions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMjIzNDQ5MCwxMjgzMTEyMzMxLC01Mz
-MxMTc5MDgsMTUzNDI3MTU1NywtMTI5ODA0ODgwNiwtMTgwNjEw
-MTQ3NCwtNzM5NDQ2Nzg2LDE3NDg1NzE2NDksLTIwNjMxNTg5NC
-wtODczOTI2MzcsLTgwMDU4MjYwMSwxNjM1MDQ2Mzg4LC0xNDgw
-NDQ0MjQ1LC01NDk1NzM3MzYsLTkxNDU2MTY0NywxMTc4Nzg0ND
-BdfQ==
+eyJoaXN0b3J5IjpbLTE3NTAxMjQ3NDAsMjAxMjIzNDQ5MCwxMj
+gzMTEyMzMxLC01MzMxMTc5MDgsMTUzNDI3MTU1NywtMTI5ODA0
+ODgwNiwtMTgwNjEwMTQ3NCwtNzM5NDQ2Nzg2LDE3NDg1NzE2ND
+ksLTIwNjMxNTg5NCwtODczOTI2MzcsLTgwMDU4MjYwMSwxNjM1
+MDQ2Mzg4LC0xNDgwNDQ0MjQ1LC01NDk1NzM3MzYsLTkxNDU2MT
+Y0NywxMTc4Nzg0NDBdfQ==
 -->
