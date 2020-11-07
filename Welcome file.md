@@ -25,8 +25,8 @@ Given below are my contributions to the project.
 **Highlights**:  This feature is capable of keeping track of individual module's task progress as well. This works in conjuncture with the ability to add individual task to the modules which allow user to better track his/her progress. 
 
 **Recurrence Feature**: Added the ability to allow user to add Recurring Tasks.
-**What it does**: Allows user to add weekly recurring task such as a weekly meeti
-**Justification**:
+**What it does**: Allows user to add weekly recurring task such as a weekly meeting or weekly quiz. 
+**Justification**: It is common to have a weekly meeting amongst the busy students schedule. This features enables the user to do so simply by adding `
 **Highlights**:
 **Credits**: 
 
@@ -41,6 +41,6 @@ Given below are my contributions to the project.
 ### 2.6 Contributions beyond the project team:  
  **2.6.1 Community**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwODIxMTU0MywtNzg1MzYxODE4LC00Mz
+eyJoaXN0b3J5IjpbMjAwNTUxNDk5NCwtNzg1MzYxODE4LC00Mz
 E1NjUyOV19
 -->
