@@ -19,8 +19,10 @@ Given below are my contributions to the project.
 **Justification**: This feature improves the product as user may want to keep track of his current taken module's MC so as to prevent overloading/underloading of modules in the upcoming semester. 
 **Highlights**: This enhancement works well with the exisiting CAP calculation feature, as it allows the aforementioned feature to make use of the total MC to do further mathematical calculation of the user's CAP. This aligns with the practice of code reusability. 
 
- New Feature: Added the ability to show the number of task that have been completed. 
- What it does: Allows users to track the current completion status of their tasks. 
+New Feature: Added the ability to show the number of task that have been completed. 
+**What it does**: Allows users to track the current completion status of their tasks.
+**Justification**
+**Highlights**  
 
 New Feature: Added the ability to allow user to add Recurring Tasks
 What it does: 
@@ -39,5 +41,5 @@ Credits:
 ### 2.6 Contributions beyond the project team:  
  **2.6.1 Community**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMTU2NTI5XX0=
+eyJoaXN0b3J5IjpbMjAwMjcxNzg2LC00MzE1NjUyOV19
 -->
