@@ -10,17 +10,19 @@ This is what out product looks like:
 ## 2. Summary of Contributions
 Given below are my contributions to the project. 
 
-New Feature: MC 
+New Feature: Added the ability to list total MCs based selected l. 
+What it does: allows user to list the total MC 
+
 New Feature: Statistics 
 
 Code contributed : Reposense link 
 
 Project Management 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjYxMzQ4MjMsLTE3NTAxMjQ3NDAsMj
-AxMjIzNDQ5MCwxMjgzMTEyMzMxLC01MzMxMTc5MDgsMTUzNDI3
-MTU1NywtMTI5ODA0ODgwNiwtMTgwNjEwMTQ3NCwtNzM5NDQ2Nz
-g2LDE3NDg1NzE2NDksLTIwNjMxNTg5NCwtODczOTI2MzcsLTgw
-MDU4MjYwMSwxNjM1MDQ2Mzg4LC0xNDgwNDQ0MjQ1LC01NDk1Nz
-M3MzYsLTkxNDU2MTY0NywxMTc4Nzg0NDBdfQ==
+eyJoaXN0b3J5IjpbMjA0NDU1NTM3OSwtMTc1MDEyNDc0MCwyMD
+EyMjM0NDkwLDEyODMxMTIzMzEsLTUzMzExNzkwOCwxNTM0Mjcx
+NTU3LC0xMjk4MDQ4ODA2LC0xODA2MTAxNDc0LC03Mzk0NDY3OD
+YsMTc0ODU3MTY0OSwtMjA2MzE1ODk0LC04NzM5MjYzNywtODAw
+NTgyNjAxLDE2MzUwNDYzODgsLTE0ODA0NDQyNDUsLTU0OTU3Mz
+czNiwtOTE0NTYxNjQ3LDExNzg3ODQ0MF19
 -->
