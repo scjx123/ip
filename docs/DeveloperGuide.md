@@ -24,7 +24,8 @@ Given below are my contributions to the project.
 New Feature: Added the ability to allow user to add Recurring Tasks 
 What it does: 
 Justification:
-Highlight:S
+Highlights:
+Credits: 
 
 **Code Contributed**: Reposense link 
 
@@ -38,11 +39,11 @@ Highlight:S
  **2.6.1 Community**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4NDE3MDMzNSwxNTM2ODg0MDcwLDYwMD
-Y4ODYxNCwtMTc1MDEyNDc0MCwyMDEyMjM0NDkwLDEyODMxMTIz
-MzEsLTUzMzExNzkwOCwxNTM0MjcxNTU3LC0xMjk4MDQ4ODA2LC
-0xODA2MTAxNDc0LC03Mzk0NDY3ODYsMTc0ODU3MTY0OSwtMjA2
-MzE1ODk0LC04NzM5MjYzNywtODAwNTgyNjAxLDE2MzUwNDYzOD
-gsLTE0ODA0NDQyNDUsLTU0OTU3MzczNiwtOTE0NTYxNjQ3LDEx
-Nzg3ODQ0MF19
+eyJoaXN0b3J5IjpbLTE4OTY1OTcwODUsMTUzNjg4NDA3MCw2MD
+A2ODg2MTQsLTE3NTAxMjQ3NDAsMjAxMjIzNDQ5MCwxMjgzMTEy
+MzMxLC01MzMxMTc5MDgsMTUzNDI3MTU1NywtMTI5ODA0ODgwNi
+wtMTgwNjEwMTQ3NCwtNzM5NDQ2Nzg2LDE3NDg1NzE2NDksLTIw
+NjMxNTg5NCwtODczOTI2MzcsLTgwMDU4MjYwMSwxNjM1MDQ2Mz
+g4LC0xNDgwNDQ0MjQ1LC01NDk1NzM3MzYsLTkxNDU2MTY0Nywx
+MTc4Nzg0NDBdfQ==
 -->
