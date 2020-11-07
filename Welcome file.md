@@ -22,10 +22,10 @@ Given below are my contributions to the project.
 **Statistic Feature**: Added the ability to show the statistics of the number of task that have been completed. 
 **What it does**: Allows users to track the current completion status of their tasks. 
 **Justification**: Very often, students are not sure of how much task have been completed or how much are they left with for the week. This feature enables them to keep track of their weekly progress. 
-**Highlights**:  This feature is capable of keeping track of individual module's task progress as well. This works in conjuncture with the ability to add individual task to the modules as well, as user will be able to better 
+**Highlights**:  This feature is capable of keeping track of individual module's task progress as well. This works in conjuncture with the ability to add individual task to the modules which allow user to better track his/her progress. 
 
-**Recurrence Feature**: Added the ability to allow user to add Recurring Tasks
-**What it does**: 
+**Recurrence Feature**: Added the ability to allow user to add Recurring Tasks.
+**What it does**: Allows user to add weekly recurring task such as a weekly meeti
 **Justification**:
 **Highlights**:
 **Credits**: 
@@ -41,6 +41,6 @@ Given below are my contributions to the project.
 ### 2.6 Contributions beyond the project team:  
  **2.6.1 Community**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDExMTU4ODMsLTc4NTM2MTgxOCwtND
-MxNTY1MjldfQ==
+eyJoaXN0b3J5IjpbMjEwODIxMTU0MywtNzg1MzYxODE4LC00Mz
+E1NjUyOV19
 -->
