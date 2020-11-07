@@ -10,8 +10,9 @@ This is what out product looks like:
 ## 2. Summary of Contributions
 Given below are my contributions to the project. 
 
-New Feature: Added the ability to list total MCs based on selected list. 
-What it does: Allows the user to print the total number of MC based on the list that he/she is focusing on (i.e list of taken module). 
+New Feature: Added the ability to list total number of MCs or the individual components that made up the MC based on the selected list.  
+What it does: Allows the user to print the total number of MC based on the list that he/she is focusing on (i.e list of taken module). See the individual components that made up the total MC using this feature. 
+Justificiation:  
 
 New Feature: Statistics 
 
@@ -19,10 +20,10 @@ Code contributed : Reposense link
 
 Project Management 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDUzNDYxMjgsLTE3NTAxMjQ3NDAsMj
-AxMjIzNDQ5MCwxMjgzMTEyMzMxLC01MzMxMTc5MDgsMTUzNDI3
-MTU1NywtMTI5ODA0ODgwNiwtMTgwNjEwMTQ3NCwtNzM5NDQ2Nz
-g2LDE3NDg1NzE2NDksLTIwNjMxNTg5NCwtODczOTI2MzcsLTgw
-MDU4MjYwMSwxNjM1MDQ2Mzg4LC0xNDgwNDQ0MjQ1LC01NDk1Nz
-M3MzYsLTkxNDU2MTY0NywxMTc4Nzg0NDBdfQ==
+eyJoaXN0b3J5IjpbMTI1OTE1ODQzOCwtMTc1MDEyNDc0MCwyMD
+EyMjM0NDkwLDEyODMxMTIzMzEsLTUzMzExNzkwOCwxNTM0Mjcx
+NTU3LC0xMjk4MDQ4ODA2LC0xODA2MTAxNDc0LC03Mzk0NDY3OD
+YsMTc0ODU3MTY0OSwtMjA2MzE1ODk0LC04NzM5MjYzNywtODAw
+NTgyNjAxLDE2MzUwNDYzODgsLTE0ODA0NDQyNDUsLTU0OTU3Mz
+czNiwtOTE0NTYxNjQ3LDExNzg3ODQ0MF19
 -->
