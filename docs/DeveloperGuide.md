@@ -5,7 +5,7 @@
 ### 1.1 Project Overview 
 DOMNUS - is a desktop application that helps in module and task tracking. It was developed under the module CS2113 Software Engineering & Object Oriented Programming. Within the schedule of approximately 7 weeks, my team of 5 Computer Eningeering students successfully created DOMNUS to help students to stay organize with respective to the modules they take in NUS. 
 
-{can add in your individual pa
+{can add in your individual paragraph if you like, otherwise can remove} 
 
 This is what out product looks like: 
 
@@ -38,10 +38,10 @@ Credits (optional):
  **2.6.1 Community**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTEzNTEzMjksLTE3NTAxMjQ3NDAsMj
-AxMjIzNDQ5MCwxMjgzMTEyMzMxLC01MzMxMTc5MDgsMTUzNDI3
-MTU1NywtMTI5ODA0ODgwNiwtMTgwNjEwMTQ3NCwtNzM5NDQ2Nz
-g2LDE3NDg1NzE2NDksLTIwNjMxNTg5NCwtODczOTI2MzcsLTgw
-MDU4MjYwMSwxNjM1MDQ2Mzg4LC0xNDgwNDQ0MjQ1LC01NDk1Nz
-M3MzYsLTkxNDU2MTY0NywxMTc4Nzg0NDBdfQ==
+eyJoaXN0b3J5IjpbNjAwNjg4NjE0LC0xNzUwMTI0NzQwLDIwMT
+IyMzQ0OTAsMTI4MzExMjMzMSwtNTMzMTE3OTA4LDE1MzQyNzE1
+NTcsLTEyOTgwNDg4MDYsLTE4MDYxMDE0NzQsLTczOTQ0Njc4Ni
+wxNzQ4NTcxNjQ5LC0yMDYzMTU4OTQsLTg3MzkyNjM3LC04MDA1
+ODI2MDEsMTYzNTA0NjM4OCwtMTQ4MDQ0NDI0NSwtNTQ5NTczNz
+M2LC05MTQ1NjE2NDcsMTE3ODc4NDQwXX0=
 -->
