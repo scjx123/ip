@@ -35,7 +35,7 @@ Given below are my contributions to the project.
 The following section shows my contribution to the DOMNUS User Guide. It includes: Domsun Tutorial, mc and stats. 
 {start of extract}
 {end of extract} 
-The Domsun tutorial section was a result of the peer feedback during the PE Dry run. As i realized the importance for user to have an intuition of bridge the learning gap by providing an intuitive picture guide for the user. 
+The Domsun tutorial section was a result of the peer feedback during the PE Dry run. As i realised the importance of building the intuition in user to know how the app actually works, i decided to bridge the learning gap by providing a pictorial guide for the user. 
 
 
 
@@ -48,6 +48,6 @@ The Domsun tutorial section was a result of the peer feedback during the PE Dry 
 ### 2.6 Contributions beyond the project team:  
  **2.6.1 Community**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNjc0NDEyOCwtNzg1MzYxODE4LC00Mz
-E1NjUyOV19
+eyJoaXN0b3J5IjpbLTExNDg5MzcyMTEsLTc4NTM2MTgxOCwtND
+MxNTY1MjldfQ==
 -->
