@@ -51,11 +51,12 @@ The following section shows my contribution to the DOMNUS Developer Guide. It in
 2. Wrote the ModuleParser code for (which was really taxing amount of data to sieve through due to incompatible formatting from excel into text file).
 3. For UG: Wrote the 'Domnus Tutorial' section 
 4. For DG: Wrote the Introduction, Setting up, (Design) 4.1, 4.2, 4.5, 4.6, Appendix A,B,C,D,E,F
-5. 
+5. Planned and recorded the first and second vi
+6. 
 ### 2.5 Review/monitoring contributions: 
 ### 2.6 Contributions beyond the project team:  
  **2.6.1 Community**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjIzODg0MjAsLTM5Nzc4MzM3MiwtMT
-E0ODkzNzIxMSwtNzg1MzYxODE4LC00MzE1NjUyOV19
+eyJoaXN0b3J5IjpbMTgwMzI3Njc2NiwtMzk3NzgzMzcyLC0xMT
+Q4OTM3MjExLC03ODUzNjE4MTgsLTQzMTU2NTI5XX0=
 -->
