@@ -47,11 +47,12 @@ The following section shows my contribution to the DOMNUS Developer Guide. It in
 {include some extracts from the document here}
 
 ### 2.4 Contributions to team-based tasks: 
-
+1. Retrieve a complete list of Module Data that includes its mc,name,pre
+2. 
 ### 2.5 Review/monitoring contributions: 
 ### 2.6 Contributions beyond the project team:  
  **2.6.1 Community**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4MTAwNTg0NiwtMzk3NzgzMzcyLC0xMT
+eyJoaXN0b3J5IjpbMTY3NzMwNTA5MiwtMzk3NzgzMzcyLC0xMT
 Q4OTM3MjExLC03ODUzNjE4MTgsLTQzMTU2NTI5XX0=
 -->
