@@ -7,6 +7,7 @@ DOMNUS - is a desktop application that helps in module and task tracking. It was
 
 This is what out product looks like: 
 
+## 2. Summary of Contributions
 Given below are my contributions to the project. 
 
 New Feature: MC 
@@ -15,14 +16,11 @@ New Feature: Statistics
 Code contributed : Reposense link 
 
 Project Management 
-
-### Summary of Contributions
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTAxMjQ3NDAsMjAxMjIzNDQ5MCwxMj
-gzMTEyMzMxLC01MzMxMTc5MDgsMTUzNDI3MTU1NywtMTI5ODA0
-ODgwNiwtMTgwNjEwMTQ3NCwtNzM5NDQ2Nzg2LDE3NDg1NzE2ND
-ksLTIwNjMxNTg5NCwtODczOTI2MzcsLTgwMDU4MjYwMSwxNjM1
-MDQ2Mzg4LC0xNDgwNDQ0MjQ1LC01NDk1NzM3MzYsLTkxNDU2MT
-Y0NywxMTc4Nzg0NDBdfQ==
+eyJoaXN0b3J5IjpbLTE3MjYxMzQ4MjMsLTE3NTAxMjQ3NDAsMj
+AxMjIzNDQ5MCwxMjgzMTEyMzMxLC01MzMxMTc5MDgsMTUzNDI3
+MTU1NywtMTI5ODA0ODgwNiwtMTgwNjEwMTQ3NCwtNzM5NDQ2Nz
+g2LDE3NDg1NzE2NDksLTIwNjMxNTg5NCwtODczOTI2MzcsLTgw
+MDU4MjYwMSwxNjM1MDQ2Mzg4LC0xNDgwNDQ0MjQ1LC01NDk1Nz
+M3MzYsLTkxNDU2MTY0NywxMTc4Nzg0NDBdfQ==
 -->
