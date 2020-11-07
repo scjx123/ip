@@ -15,7 +15,8 @@ Given below are my contributions to the project.
 **Justification**: This feature improves the product as user may want to keep track of his current taken module's MC so as to prevent overloading/underloading of modules in the upcoming semester. 
 **Highlights**: This enhancement works well with the exisiting CAP calculation feature, as it allows the aforementioned feature to make use of the total MC to do further mathematical calculation of the user's CAP. This aligns with the practice of code reusability. 
 
- New Feature: 
+ New Feature: Added the ability to show the number of task that have been completed. 
+ What it does: Allows user to track the current completion status of the task. 
 
 New Feature: Statistics 
 
@@ -23,10 +24,10 @@ Code contributed : Reposense link
 
 Project Management 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0NzI5OTIyMiwtMTc1MDEyNDc0MCwyMD
-EyMjM0NDkwLDEyODMxMTIzMzEsLTUzMzExNzkwOCwxNTM0Mjcx
-NTU3LC0xMjk4MDQ4ODA2LC0xODA2MTAxNDc0LC03Mzk0NDY3OD
-YsMTc0ODU3MTY0OSwtMjA2MzE1ODk0LC04NzM5MjYzNywtODAw
-NTgyNjAxLDE2MzUwNDYzODgsLTE0ODA0NDQyNDUsLTU0OTU3Mz
-czNiwtOTE0NTYxNjQ3LDExNzg3ODQ0MF19
+eyJoaXN0b3J5IjpbMzYwOTI0NzIxLC0xNzUwMTI0NzQwLDIwMT
+IyMzQ0OTAsMTI4MzExMjMzMSwtNTMzMTE3OTA4LDE1MzQyNzE1
+NTcsLTEyOTgwNDg4MDYsLTE4MDYxMDE0NzQsLTczOTQ0Njc4Ni
+wxNzQ4NTcxNjQ5LC0yMDYzMTU4OTQsLTg3MzkyNjM3LC04MDA1
+ODI2MDEsMTYzNTA0NjM4OCwtMTQ4MDQ0NDI0NSwtNTQ5NTczNz
+M2LC05MTQ1NjE2NDcsMTE3ODc4NDQwXX0=
 -->
