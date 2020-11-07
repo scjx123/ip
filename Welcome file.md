@@ -32,6 +32,8 @@ Given below are my contributions to the project.
 **Code Contributed**: ![Reposense link]()
 
 ### 2.2 Contributions to UG: 
+The following section shows my contribution to the DOMNUS User Guide. It includes: Domsun Tutorial, 
+
 {include some extracts from the document here}
 ### 2.3 Contributions to DG:
 {include some extracts from the document here}
@@ -40,6 +42,6 @@ Given below are my contributions to the project.
 ### 2.6 Contributions beyond the project team:  
  **2.6.1 Community**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNzIxNjA2NiwtNzg1MzYxODE4LC00Mz
+eyJoaXN0b3J5IjpbMTQ0ODA4NjMwNiwtNzg1MzYxODE4LC00Mz
 E1NjUyOV19
 -->
