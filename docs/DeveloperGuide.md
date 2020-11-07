@@ -21,7 +21,7 @@ Given below are my contributions to the project.
  New Feature: Added the ability to show the number of task that have been completed. 
  What it does: Allows users to track the current completion status of their tasks. 
 
-
+New Feature: Added the ability so allow user to repeat his tasks
 
 **Code Contributed**: Reposense link 
 
@@ -35,7 +35,7 @@ Given below are my contributions to the project.
  **2.6.1 Community**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NzUxMjg3NSw2MDA2ODg2MTQsLTE3NT
+eyJoaXN0b3J5IjpbMTUzNjg4NDA3MCw2MDA2ODg2MTQsLTE3NT
 AxMjQ3NDAsMjAxMjIzNDQ5MCwxMjgzMTEyMzMxLC01MzMxMTc5
 MDgsMTUzNDI3MTU1NywtMTI5ODA0ODgwNiwtMTgwNjEwMTQ3NC
 wtNzM5NDQ2Nzg2LDE3NDg1NzE2NDksLTIwNjMxNTg5NCwtODcz
