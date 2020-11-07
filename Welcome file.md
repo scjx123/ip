@@ -44,7 +44,7 @@ stats
 
 ### 2.3 Contributions to DG:
 The following section shows my contribution to the DOMNUS Developer Guide. It includes: Introduction, Setting up, (Design) 4.1, 4.2, 4.5, 4.6, (Implementation) 5.2, Appendix A,B,C,D,E,F. 
-
+It was really hard to come up with the di
 {include some extracts from the document here}
 
 ### 2.4 Contributions to team-based tasks: 
@@ -53,6 +53,6 @@ The following section shows my contribution to the DOMNUS Developer Guide. It in
 ### 2.6 Contributions beyond the project team:  
  **2.6.1 Community**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODEwMTQxMjAsLTM5Nzc4MzM3MiwtMT
-E0ODkzNzIxMSwtNzg1MzYxODE4LC00MzE1NjUyOV19
+eyJoaXN0b3J5IjpbMjEzNzUyODQwLC0zOTc3ODMzNzIsLTExND
+g5MzcyMTEsLTc4NTM2MTgxOCwtNDMxNTY1MjldfQ==
 -->
