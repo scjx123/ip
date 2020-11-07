@@ -21,7 +21,7 @@ Given below are my contributions to the project.
  New Feature: Added the ability to show the number of task that have been completed. 
  What it does: Allows users to track the current completion status of their tasks. 
 
-New Feature: Added the ability to allow user to add Recurring Tasks: 
+New Feature: Added the ability to allow user to add Recurring Tasks
 What it does: 
 Justification:
 Highlights:
@@ -39,11 +39,11 @@ Credits:
  **2.6.1 Community**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NTIxODM5MSwtMTg5NjU5NzA4NSwxNT
-M2ODg0MDcwLDYwMDY4ODYxNCwtMTc1MDEyNDc0MCwyMDEyMjM0
-NDkwLDEyODMxMTIzMzEsLTUzMzExNzkwOCwxNTM0MjcxNTU3LC
-0xMjk4MDQ4ODA2LC0xODA2MTAxNDc0LC03Mzk0NDY3ODYsMTc0
-ODU3MTY0OSwtMjA2MzE1ODk0LC04NzM5MjYzNywtODAwNTgyNj
-AxLDE2MzUwNDYzODgsLTE0ODA0NDQyNDUsLTU0OTU3MzczNiwt
-OTE0NTYxNjQ3XX0=
+eyJoaXN0b3J5IjpbLTEyMDIzMzAzNTMsLTQ0NTIxODM5MSwtMT
+g5NjU5NzA4NSwxNTM2ODg0MDcwLDYwMDY4ODYxNCwtMTc1MDEy
+NDc0MCwyMDEyMjM0NDkwLDEyODMxMTIzMzEsLTUzMzExNzkwOC
+wxNTM0MjcxNTU3LC0xMjk4MDQ4ODA2LC0xODA2MTAxNDc0LC03
+Mzk0NDY3ODYsMTc0ODU3MTY0OSwtMjA2MzE1ODk0LC04NzM5Mj
+YzNywtODAwNTgyNjAxLDE2MzUwNDYzODgsLTE0ODA0NDQyNDUs
+LTU0OTU3MzczNl19
 -->
