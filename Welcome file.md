@@ -29,7 +29,7 @@ Given below are my contributions to the project.
 **Justification**: It is common to have a weekly meeting amongst the busy students schedule. This features enables the user to do so simply by adding `Weekly` at the end of a deadline or event command. Be it a weekly quiz or weekly CCA meeting, this helps users to quickly setup a weekly schedule. 
 **Highlights**: The combination of this feature with the reminder feature done by the 2 other student Computer Engineer on our team, will enable the student using this app to plan ahead of his time for the upcoming schedule. Which is a key factor in productivity for the student. 
 
-**Code Contributed**: Reposense link 
+**Code Contributed**: ![Reposense link]()
 
 ### 2.2 Contributions to UG: 
 {include some extracts from the document here}
@@ -40,6 +40,6 @@ Given below are my contributions to the project.
 ### 2.6 Contributions beyond the project team:  
  **2.6.1 Community**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzkyNTQxMCwtNzg1MzYxODE4LC00Mz
+eyJoaXN0b3J5IjpbMjEwNzIxNjA2NiwtNzg1MzYxODE4LC00Mz
 E1NjUyOV19
 -->
