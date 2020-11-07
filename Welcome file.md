@@ -37,19 +37,20 @@ The following section shows my contribution to the DOMNUS User Guide. It include
 {end of extract} 
 The Domsun tutorial section was a result of the peer feedback during the PE Dry run. As i realised the importance of building the intuition in user to know how the app actually works, i decided to bridge the learning gap by providing a pictorial guide for the user. 
 
+{start of extract} 
+mc 
+stats
+{end of extract} 
 
-
-
-
-
-{include some extracts from the document here}
 ### 2.3 Contributions to DG:
+
+
 {include some extracts from the document here}
 ### 2.4 Contributions to team-based tasks: 
 ### 2.5 Review/monitoring contributions: 
 ### 2.6 Contributions beyond the project team:  
  **2.6.1 Community**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAzNDQ0NDQ5LC0xMTQ4OTM3MjExLC03OD
-UzNjE4MTgsLTQzMTU2NTI5XX0=
+eyJoaXN0b3J5IjpbMTIxNDc4NDM4MSwtMTE0ODkzNzIxMSwtNz
+g1MzYxODE4LC00MzE1NjUyOV19
 -->
