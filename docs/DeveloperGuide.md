@@ -9,11 +9,15 @@ This is what out product looks like:
 
 Given below are my contributions to the project. 
 
-New 
+New Feature: MC 
+New Feature: Statistics 
+
+Code contributed : https://github.com/AY2021S1-CS2113-T13-2/tp/tree/master
+
 ### Summary of Contributions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzk4NjgwMSwxMjgzMTEyMzMxLC01Mz
+eyJoaXN0b3J5IjpbMjAxMjIzNDQ5MCwxMjgzMTEyMzMxLC01Mz
 MxMTc5MDgsMTUzNDI3MTU1NywtMTI5ODA0ODgwNiwtMTgwNjEw
 MTQ3NCwtNzM5NDQ2Nzg2LDE3NDg1NzE2NDksLTIwNjMxNTg5NC
 wtODczOTI2MzcsLTgwMDU4MjYwMSwxNjM1MDQ2Mzg4LC0xNDgw
