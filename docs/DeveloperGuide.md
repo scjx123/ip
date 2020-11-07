@@ -10,8 +10,8 @@ This is what out product looks like:
 ## 2. Summary of Contributions
 Given below are my contributions to the project. 
 
-2.1 Code contributed : Reposense link
-2.2 Enhancements Implemented: 
+### 2.1 Code contributed : Reposense link
+### 2.2 Enhancements Implemented: 
 New Feature: 
 What it does:
 Justification:
@@ -24,12 +24,12 @@ Credits (optional):
 2.6 Review/monitoring contributions: 
 2.7 Contributions beyond the project team:  
  2.7.1 Community
- 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzA0OTA5NjksLTE3NTAxMjQ3NDAsMj
-AxMjIzNDQ5MCwxMjgzMTEyMzMxLC01MzMxMTc5MDgsMTUzNDI3
-MTU1NywtMTI5ODA0ODgwNiwtMTgwNjEwMTQ3NCwtNzM5NDQ2Nz
-g2LDE3NDg1NzE2NDksLTIwNjMxNTg5NCwtODczOTI2MzcsLTgw
-MDU4MjYwMSwxNjM1MDQ2Mzg4LC0xNDgwNDQ0MjQ1LC01NDk1Nz
-M3MzYsLTkxNDU2MTY0NywxMTc4Nzg0NDBdfQ==
+eyJoaXN0b3J5IjpbNTgwMTQ0ODQ1LC0xNzUwMTI0NzQwLDIwMT
+IyMzQ0OTAsMTI4MzExMjMzMSwtNTMzMTE3OTA4LDE1MzQyNzE1
+NTcsLTEyOTgwNDg4MDYsLTE4MDYxMDE0NzQsLTczOTQ0Njc4Ni
+wxNzQ4NTcxNjQ5LC0yMDYzMTU4OTQsLTg3MzkyNjM3LC04MDA1
+ODI2MDEsMTYzNTA0NjM4OCwtMTQ4MDQ0NDI0NSwtNTQ5NTczNz
+M2LC05MTQ1NjE2NDcsMTE3ODc4NDQwXX0=
 -->
