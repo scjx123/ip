@@ -4,9 +4,8 @@
 
 ## 1. Overview
 ### 1.1 Project Overview 
-DOMNUS - is a desktop application that helps in module and task tracking. It was developed under the module CS2113 Software Engineering & Object Oriented Programming. Within the schedule of approximately 7 weeks, my team of 5 Computer Eningeering students successfully created DOMNUS to help students to stay organize with respective to the modules they take in NUS. 
+DOMNUS - is a desktop application that helps in module and task tracking. It was developed under the module CS2113 Software Engineering & Object Oriented Programming. Within the schedule of approximately 7 weeks, my team of 5 Computer Engineering students successfully created DOMNUS to help students to stay organize with respective to the modules they take in NUS. 
 
-{can add in your individual paragraph if you like, otherwise can remove} 
 
 This is what out product looks like: 
 
@@ -29,7 +28,7 @@ Given below are my contributions to the project.
 **Justification**: It is common to have a weekly meeting amongst the busy students schedule. This features enables the user to do so simply by adding `Weekly` at the end of a deadline or event command. Be it a weekly quiz or weekly CCA meeting, this helps users to quickly setup a weekly schedule. 
 **Highlights**: The combination of this feature with the reminder feature done by the 2 other student Computer Engineer on our team, will enable the student using this app to plan ahead of his time for the upcoming schedule. Which is a key factor in productivity for the student. 
 
-**Code Contributed**: ![Reposense link]()
+**Code Contributed**: ![Reposense link](https://nus-cs2113-ay2021s1.github.io/tp-dashboard/#breakdown=true&search=scjx123)
 
 ### 2.2 Contributions to UG: 
 The following section shows my contribution to the DOMNUS User Guide. It includes: Domsun Tutorial, mc and stats. 
@@ -54,9 +53,11 @@ The following section shows my contribution to the DOMNUS Developer Guide. It in
 5. Planned and recorded the first and second video demo. 
 6. 
 ### 2.5 Review/monitoring contributions: 
+
 ### 2.6 Contributions beyond the project team:  
  **2.6.1 Community**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTQzNzE1NjEsLTM5Nzc4MzM3MiwtMT
-E0ODkzNzIxMSwtNzg1MzYxODE4LC00MzE1NjUyOV19
+eyJoaXN0b3J5IjpbMTMyODEwNjI2NywtMTE5NDM3MTU2MSwtMz
+k3NzgzMzcyLC0xMTQ4OTM3MjExLC03ODUzNjE4MTgsLTQzMTU2
+NTI5XX0=
 -->
