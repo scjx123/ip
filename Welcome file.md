@@ -27,7 +27,7 @@ Given below are my contributions to the project.
 **Recurrence Feature**: Added the ability to allow user to add Recurring Tasks.
 **What it does**: Allows user to add weekly recurring task such as a weekly meeting or weekly quiz. 
 **Justification**: It is common to have a weekly meeting amongst the busy students schedule. This features enables the user to do so simply by adding `Weekly` at the end of a deadline or event command. Be it a weekly quiz or weekly CCA meeting, this helps users to quickly setup a weekly schedule. 
-**Highlights**: The combination of this feature with the reminder feature done by the 2 other comp
+**Highlights**: The combination of this feature with the reminder feature done by the 2 other student Computer Engineer on our team, improves the larger overview of our app as we are now looking at a weekly timescale and 3 days reminder timescale respectively.  
 **Credits**: 
 
 **Code Contributed**: Reposense link 
@@ -41,6 +41,6 @@ Given below are my contributions to the project.
 ### 2.6 Contributions beyond the project team:  
  **2.6.1 Community**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzM4OTg1ODEsLTc4NTM2MTgxOCwtND
-MxNTY1MjldfQ==
+eyJoaXN0b3J5IjpbNjM5NjgwMDMzLC03ODUzNjE4MTgsLTQzMT
+U2NTI5XX0=
 -->
