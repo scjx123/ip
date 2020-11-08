@@ -33,9 +33,26 @@ Given below are my contributions to the project.
 ### 2.2 Contributions to UG: 
 The following section shows my contribution to the DOMNUS User Guide. It includes: Domsun Tutorial, mc and stats. 
 {start of extract}
+### Domsun Tutorial 
+Here is an overview of how Domsun works. It maintains 3 key lists that you should take note. 
+![here](Images/Overview1.PNG)
+
+1. `focus` command focuses the app onto the list of task that you currently have. 
+2. Likewise, `focus mod`focuses the app on the entire list of modules available in NUS, while `focus taken` is the list of taken modules of your choice. 
+3. To add a task under a module, you may enter the command `add -task 1 3 -mod CS2113`. 1 and 3 here are indices of the tasks in the task list. So be sure to have some task added BEFORE typing this command. 
+4. To mark a module as 'taken', you may enter `take CS2113 CS1010` while focusing on the module list by using `focus mod`. alternatively, you may use the indices method as before such as `take 1 4` to take the 1st and 2nd module available on the module list. 
+5. The `list` commands follows the app's current focus. If it is focusing on list of task, typing list will show all task. Likewise for modules and taken. 
+6. Typing `detail 1` when focusing on task list, will display the 1st index, task details. 
+7. Note that `detail 2` here will display different results as the two indicies of 2 represent different modules! The one on the left represents CG2027 while the one on the right represent CS1010. 
+
+**A point to note before venturing into the libraries of commands that we have.**<br>
+You can switch between fancy mode display, and plain display anytime during the program. 
+During `list` command, you will be able to toggle between pages of fancy by using `prev` and `next`
+However, the current version of fancy mode is still in beta, hence, it is expected to not be able to fully display certain commands that are too long. such as `help`, `detail`,`mc` etc. Do look forward to the next update!
+![here](Images/Overview2.PNG)
 {end of extract} 
 The Domsun tutorial section was a result of the peer feedback during the PE Dry run. As i realised the importance of building the intuition in user to know how the app actually works, i decided to bridge the learning gap by providing a pictorial guide for the user. 
-
+Below shows the extract of my 
 {start of extract} 
 mc 
 stats
@@ -264,6 +281,5 @@ Expected: Shows you the calculated cap from given input modules. <br>
 ### 2.6 Contributions beyond the project team:  
  **2.6.1 Community**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTk2Mjc4NjAsLTIxMjI0MjUxMjFdfQ
-==
+eyJoaXN0b3J5IjpbMjEwODY1NDQ1LC0yMTIyNDI1MTIxXX0=
 -->
