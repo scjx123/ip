@@ -52,7 +52,7 @@ However, the current version of fancy mode is still in beta, hence, it is expect
 ![here](Images/Overview2.PNG)
 {end of extract} 
 The Domsun tutorial section was a result of the peer feedback during the PE Dry run. As i realised the importance of building the intuition in user to know how the app actually works, i decided to bridge the learning gap by providing a pictorial guide for the user. 
-Below shows the extract of my 
+Below shows the extract of the `mc` and `stats` section contributed by me in the User Guide. 
 {start of extract} 
 mc 
 stats
@@ -281,5 +281,5 @@ Expected: Shows you the calculated cap from given input modules. <br>
 ### 2.6 Contributions beyond the project team:  
  **2.6.1 Community**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwODY1NDQ1LC0yMTIyNDI1MTIxXX0=
+eyJoaXN0b3J5IjpbLTkwODI2NDgxMCwtMjEyMjQyNTEyMV19
 -->
