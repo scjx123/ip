@@ -43,7 +43,20 @@ stats
 
 ### 2.3 Contributions to DG:
 The following section shows my contribution to the DOMNUS Developer Guide. It includes: Introduction, Setting up, (Design) 4.1, 4.2, 4.5, 4.6, (Implementation) 5.2, Appendix A,B,C,D,E,F. 
-{include some extracts from the document here}
+{start of extract}
+### 4.1 Architecture
+The **Architecture Diagram** below represents a high-level design overview of the App. Specifically, it is done with an N-tier architectural style, where the higher layers make use of services provided by lower layers. 
+
+![here](Images/Architecture_Diagram.PNG)
+
+As shown in the above diagram, user only interacts with the UI layer and their commands, in turn will be passed to next adjacent layer. Given below is a quick overview of each component. 
+
+**4.2 Main Layer**<br>
+The `main` layer, it contains a single class known as `Domnus`. Its purpose can be split into 3 parts: 
+
+At Start Up: It calls upon the `storage` component to load user's past data and it also loads the complete module list that is packaged inside the JAR file. <br>
+At Operating: It connects the relevant component of the program to ensure the program is operating as per the intended logic flow. <br>
+At Shutdown: It exits the running loop of the program to shutdown the program successfully. <br>
 
 ### 2.4 Contributions to team-based tasks: 
 1. Retrieved a complete list of Module Data that includes its relevant details such as Module Code, MC, Prerequisites, etc. 
@@ -56,3 +69,6 @@ The following section shows my contribution to the DOMNUS Developer Guide. It in
 
 ### 2.6 Contributions beyond the project team:  
  **2.6.1 Community**
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIxMjI0MjUxMjFdfQ==
+-->
