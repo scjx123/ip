@@ -8,6 +8,7 @@ DOMNUS - is a desktop application that helps in module and task tracking. It was
 
 
 This is what out product looks like: 
+![here](../UI.png)
 
 ## 2. Summary of Contributions
 Given below are my contributions to the project. 
@@ -165,7 +166,7 @@ During saving phase:
 ### 5.2 Statistic Feature 
 
 The statistic feature is facilitated by the StatsAction class. It extends `Action` class, and it functions under the architectural component `execute`. Internally, it stores an arraylist of Item object in `targetList`. This class implements the following operation: 
-
+![statsDiagram](Images/StatsActionClass.png)
  - `prepare()` - Sets `isMod` flag according to user's 
  - `act()`- Gets `targetList` and calculates the raw ratio of the completed items.
  - `roundedRatioBar()`- Returns a rounded ratio enclosed in square brackets for printing. 
