@@ -167,6 +167,7 @@ During saving phase:
 ### 5.2 Statistic Feature 
 
 The statistic feature is facilitated by the StatsAction class. It extends `Action` class, and it functions under the architectural component `execute`. Internally, it stores an arraylist of Item object in `targetList`. This class implements the following operation: 
+![statsDiagram](Images/StatsActionClass.png)
  - `prepare()` - Sets `isMod` flag according to user's 
  - `act()`- Gets `targetList` and calculates the raw ratio of the completed items.
  - `roundedRatioBar()`- Returns a rounded ratio enclosed in square brackets for printing. 
@@ -349,3 +350,6 @@ Expected: Shows you the calculated cap from given input modules. <br>
 3. For UG: Wrote the 'Domnus Tutorial' section 
 4. For DG: Wrote the Introduction, Setting up, (Design) 4.1, 4.2, 4.5, 4.6, Appendix A,B,C,D,E,F
 5. Planned and recorded the first and second video demo. 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTY1MDA4OTIyOV19
+-->
