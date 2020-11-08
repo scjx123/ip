@@ -37,7 +37,7 @@ The following section shows my contribution to the DOMNUS User Guide. It include
 {start of extract}
 ### Domsun Tutorial 
 Here is an overview of how Domsun works. It maintains 3 key lists that you should take note. 
-![here](Images/Overview1.PNG)
+![here](../Images/Overview1.PNG)
 
 1. `focus` command focuses the app onto the list of task that you currently have. 
 2. Likewise, `focus mod`focuses the app on the entire list of modules available in NUS, while `focus taken` is the list of taken modules of your choice. 
@@ -51,7 +51,7 @@ Here is an overview of how Domsun works. It maintains 3 key lists that you shoul
 You can switch between fancy mode display, and plain display anytime during the program. 
 During `list` command, you will be able to toggle between pages of fancy by using `prev` and `next`
 However, the current version of fancy mode is still in beta, hence, it is expected to not be able to fully display certain commands that are too long. such as `help`, `detail`,`mc` etc. Do look forward to the next update!
-![here](Images/Overview2.PNG)
+![here](../Images/Overview2.PNG)
 {end of extract} 
 The Domsun tutorial section was a result of the peer feedback during the PE Dry run. As i realised the importance of building the intuition in user to know how the app actually works, i decided to bridge the learning gap by providing a pictorial guide for the user. 
 Below shows the extract of the `mc` and `stats` section contributed by me in the User Guide. 
@@ -135,7 +135,7 @@ The following section shows my contribution to the DOMNUS Developer Guide. It in
 ### 4.1 Architecture
 The **Architecture Diagram** below represents a high-level design overview of the App. Specifically, it is done with an N-tier architectural style, where the higher layers make use of services provided by lower layers. 
 
-![here](Images/Architecture_Diagram.PNG)
+![here](../Images/Architecture_Diagram.PNG)
 
 As shown in the above diagram, user only interacts with the UI layer and their commands, in turn will be passed to next adjacent layer. Given below is a quick overview of each component. 
 
@@ -166,10 +166,12 @@ During saving phase:
 ### 5.2 Statistic Feature 
 
 The statistic feature is facilitated by the StatsAction class. It extends `Action` class, and it functions under the architectural component `execute`. Internally, it stores an arraylist of Item object in `targetList`. This class implements the following operation: 
-![statsDiagram](Images/StatsActionClass.png)
  - `prepare()` - Sets `isMod` flag according to user's 
  - `act()`- Gets `targetList` and calculates the raw ratio of the completed items.
  - `roundedRatioBar()`- Returns a rounded ratio enclosed in square brackets for printing. 
+ 
+![statsDiagram](../Images/StatsActionClass.png)
+
 Given below is an example usage scenario and how the statistic mechanism behaves at each step. 
 
 Step 1. The user enters `stats -mod CS2113`	once the execute layer executes the message and calls `action.prepare()` class, `StatsAction` will begin its `prepare()` operation
@@ -184,7 +186,7 @@ Step 6. This ratio will be passed into `roundedRatioBar` to return *String* of a
 
 Step 7. Now `StatsAction` is completed and it will return this string back to `Command` to store it under the String variable `result`. The `Main` layer will retrieve `result`, before passing it onto `UI` layer for printing. 
 
-![statsDiagram](Images/StatsAction.png)
+![statsDiagram](../Images/StatsAction.png)
 
 **Design consideration:**
 
@@ -346,7 +348,3 @@ Expected: Shows you the calculated cap from given input modules. <br>
 3. For UG: Wrote the 'Domnus Tutorial' section 
 4. For DG: Wrote the Introduction, Setting up, (Design) 4.1, 4.2, 4.5, 4.6, Appendix A,B,C,D,E,F
 5. Planned and recorded the first and second video demo. 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDQyODUyOTQsLTMxODk5OTc0MCwtMj
-EyMjQyNTEyMV19
--->
