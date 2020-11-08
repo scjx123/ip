@@ -75,6 +75,183 @@ During saving phase:
 1) For the user's task: This layer saves any changes that the user made to the task list onto a text file. 
 2) For the module list: This layer saves any module marked `TAKEN` by the user onto a text file, together with the relevant module information such as module's code, and grade attained (if any).  
 
+### 5.2 Statistic Feature 
+The statistic feature is facilitated by the StatsAction class. It extends `Action` class, and it functions under the architectural component `execute`. Internally, it stores an arraylist of Item object in `targetList`. This class implements the following operation: 
+
+ - `prepare()` - Sets `isMod` flag according to user's 
+ - `act()`- Gets `targetList` and calculates the raw ratio of the completed items.
+ - `roundedRatioBar()`- Returns a rounded ratio enclosed in square brackets for printing. 
+
+Given below is an example usage scenario and how the statistic mechanism behaves at each step. 
+
+Step 1. The user enters `stats -mod CS2113`	once the execute layer executes the message and calls `action.prepare()` class, `StatsAction` will begin its `prepare()` operation
+
+Step 2. `prepare()` looks at the input called `ParamNode args` which is user command processed by Command Intepreter layer, and starts to identify whether user has enter the keyword `mod ` if `userInput` contains the keyword, then `isMod` flag will be set. 
+
+Step 3. Next, execute layer will call `action.act()` which causes StatsAction to begin its `act()` operation. If `isMod` flag is set, `act()` will search for the user specified module and get the list of tasks tagged to it.
+
+Step 5. Once the list of task is obtain, the operation will loop through the task list and count the number of completed task followed by generating a ratio. 
+
+Step 6. This ratio will be passed into `roundedRatioBar` to return *String* of a rounded ratio to 1 decimal place enclosing it in square brackets. 
+
+Step 7. Now `StatsAction` is completed and it will return this string back to `Command` to store it under the String variable `result`. The `Main` layer will retrieve `result`, before passing it onto `UI` layer for printing. 
+
+![statsDiagram](Images/StatsAction.png)
+
+**Design consideration:**
+
+**Aspect : How statistics executes**
+ - **Alternative 1 (current choice):** Create a separate class and get list of tasks/taken modules' task and scan through them to calculate statistics
+	 - Pros: Reduces Coupling and increase testability as a software unit itself. 
+	 - Cons: May have performance issues in terms of memory usage 
+
+ - **Alternative 2:** initialize statistics as zero and each task contains an aspect called statistics
+	 - Pros: Will use less memory since the task itself will be deleted. 
+	 - Cons: Stats will be updated constantly even though we do not need it. 
+## Appendix A. Product scope
+### Target user profile
+
+ - has a need to manage significant number of schedules 
+ - prefer desktop apps over other types 
+ - can type fast
+ - prefers typing to mouse interactions 
+ - is reasonably comfortable using CLI apps 
+
+### Value proposition
+All in one app to track tasks and their dates, monitor productivity and calculate cap. 
+
+## Appendix B. User Stories
+
+|Priority| As a ... | I want to ... | So that I can ...|
+|--------|----------|---------------|------------------|
+| *** |Student before start of semester|List the modules MC|Follow the recommended MC |
+| *** |Student before start of semester|List of module available|Easily Choose which modules to take|
+| ** |Student before start of semester|Find the modules either by keyword, module code or even MC |Easily see the desired modules |
+| ** |Student before start of semester|Select the modules but not taking it yet |Easily whether the MC fits my requirement |
+| *  |Student before start of semester|Find out the etails of the Module|To find out more about the modules.|
+| *** |Student before start of semester|Take the desired modules|Mark the modules that i want to take as taken  |
+| *** |Student during the semester|Add tasks such as todo,deadline and event into my list|Easily keep track of all the task i have to complete  |
+| ** |Student during the semester|Have a Reminder of which deadline is due soon|Ensure that no task is missed out  |
+| *** |Student during the semester|Add task to modules |Easily know which tasks belongs to which modules  |
+| *** |Student during the semester|Delete task once they are completed |Remove unnecessary task on the list |
+| ** |Student after the semester|Calculate the CAP of my individual modules|Easily find out my performance this semester |
+| * |Student after the semester|Clear the list of tasks and modules|Start afresh for the next semester |
+
+{More to be added}
+## Appendix C. Use Cases: 
+This section describes the Use Cases for some of the features implemented in DOMNUS. 
+
+**Use Case: Taking a module 
+MSS:** 
+
+ 1. User requests to list all modules 
+ 2. DOMNUS shows a list of modules 
+ 3. User requests to mark a specific module as 'taken' 
+ 4. DOMNUS marks the module as taken
+
+Use case ends.<br>
+**Extensions** \
+&nbsp;&nbsp;&nbsp;3a. The module given is invalid\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3a.1Use case shows `[NOT FOUND]` message
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use case resumes at step 3\
+&nbsp;&nbsp;&nbsp;3b. User adds in the wrong module \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3b.1The `untake` command can be used to untake the taken module
+
+**Use Case: List MC**
+**MSS:**
+
+
+ 1. User requests to list total MC on the current list.
+ 2. DOMNUS shows the total MC of the current list. Default list is entire modules list.
+
+Use case ends.<br> 
+**Extensions** 
+
+&nbsp;&nbsp;&nbsp;1a. User not focusing on the correct list \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1a1. DOMNUS shows the entire module list total MC instead of the 'taken' list MC
+
+
+## Appendix D. Non-Functional Requirements
+
+1.  Should work on any  _mainstream OS_  as long as it has Java  `11`  or above installed.
+2.  Should be able to hold up to 1000 persons without a noticeable sluggishness in performance for typical usage.
+3.  A user with above average typing speed for regular English text (i.e. not code, not system admin commands) should be able to accomplish most of the tasks faster using commands than using the mouse.
+
+_{More to be added}_
+
+## Appendix E. Glossary
+
+ - N-tier Architectural Style 
+	 - In the n-tier style, high layers make use of services provided by lower layers. Lower layers are independent of higher layers. 
+ - Mainstream OS: Windows, Linux, Unix, OS-X
+ - Private contact detail 
+
+## Appendix F. Instructions for manual testing
+
+1. Launch and Shutdown 
+Step 1: Download the latest version of  `DOMNUS`  from  [Our Release Page](https://github.com/AY2021S1-CS2113-T13-2/tp/releases/tag/v1.0).\
+Step 2: Copy the file to the folder you want to use as the home folder for your Mobile Nusmod.\
+Step 3: Open the Command Prompt if you are running on Windows or Terminal if you are running on Mac OS.\
+Step 4: Navigate to your home folder and type  **‘java -jar domnus.jar’**
+
+2. Switching between Fancy and CLI 
+Test case: `fancy`<br>
+Expected: Switches to fancy mode of display <br>
+Test case: `plain`<br>
+Expected: Switches to plain mode of display<br>
+Test case: `Fancy` ,`Plain`<br>
+Expected: Error message due to cap sensitive. <br>
+3. Focusing between different list
+Test case: `focus mod`/`task`/`todo`/`deadline`/`event`/`selected`/`taken`<br>
+           Expected : Shows the current list you are focused on. No list will be shown. <br>
+Test case: `focus taken` <br>
+Expected: Shows the current list of modules you have taken. <br>
+Other incorrect focus commands to try: `focus 0` , `focus what?`, ... (focus on non-existent list) <br>
+Expected : Error message due to invalid command. <br>
+	
+4. List Modules/Task
+Test case: `focus mod` -> `list`<br>
+Expected: Shows the list of modules. <br>
+Test case: `focus task` -> `list` <br>
+Expected: Shows the current list of task. <br>
+	
+5. Find Modules 
+Test case: `focus mod` -> `find Engin`<br>
+Expected: Shows the list of available modules with keyword 'Engin' <br>
+Test case:  `focus mod` -> `find 2113`<br>
+Expected: Shows the list of modules with keyword '2113'<br>
+Test case: `focus task`-> find deadline <br>
+Expected: Show list of deadline modules 
+
+6. Details of Modules 
+Test cases: `detail CS2113`<br>
+Expected: Shows Module code, name, mc, and description. <br>
+Test cases: `detail 1`<br>
+Expected: Shows the information of the 1st task based on the current list focused on. <br>
+Test cases: `detail xyz` No detail of such item is found. <br>
+
+7. Take Modules 
+Test cases: `focus mod` -> `take 1 2` <br>
+Expected: Takes the 1st and 2nd module on the module list.<br>
+Test cases: `focus task` -> `take 1 2` <br>
+Expected: Task is not module, therefore it cannot be taken.<br>
+Test cases: `focus mod` -> `take CS2113` <br>
+Expected: Mark CS2113 as taken.<br>
+Test cases: `focus mod` -> `take cs2113`<br>
+Expected: Module not found as inputs are case sensitive. <br>
+
+8. Reminder <br>
+Test cases: `reminder `<br>
+Expected: Shows task that are due within 3 days. <br>
+
+9. Cap Calculation <br>
+Test cases: `cap`<br>
+Expected: Shows you the calculated cap from stored useer data. <br>
+Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-`<br>
+Expected: Shows you the calculated cap from given input modules. <br>
+{End of extract} 
+
+
 ### 2.4 Contributions to team-based tasks: 
 1. Retrieved a complete list of Module Data that includes its relevant details such as Module Code, MC, Prerequisites, etc. 
 2. Wrote the ModuleParser code for (which was really taxing amount of data to sieve through due to incompatible formatting from excel into text file).
@@ -87,5 +264,6 @@ During saving phase:
 ### 2.6 Contributions beyond the project team:  
  **2.6.1 Community**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc0ODg3NjY0LC0yMTIyNDI1MTIxXX0=
+eyJoaXN0b3J5IjpbLTE1NTk2Mjc4NjAsLTIxMjI0MjUxMjFdfQ
+==
 -->
