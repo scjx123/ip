@@ -33,8 +33,8 @@ Given below are my contributions to the project.
 [Reposense link](https://nus-cs2113-ay2021s1.github.io/tp-dashboard/#breakdown=true&search=scjx123&sort=groupTitle&sortWithin=title&since=2020-09-27&timeframe=commit&mergegroup=&groupSelect=groupByRepos&checkedFileTypes=docs~functional-code~test-code~other)
 
 ### 2.2 Contributions to UG: 
-The following section shows my contribution to the DOMNUS User Guide. It includes: Domsun Tutorial, mc and stats. 
-{start of extract}
+The following section shows my contribution to the DOMNUS User Guide. It includes: Domsun Tutorial, mc and stats. <br>
+{start of extract}<br>
 ### Domsun Tutorial 
 Here is an overview of how Domsun works. It maintains 3 key lists that you should take note. 
 ![here](../Images/Overview1.PNG)
@@ -51,11 +51,12 @@ Here is an overview of how Domsun works. It maintains 3 key lists that you shoul
 You can switch between fancy mode display, and plain display anytime during the program. 
 During `list` command, you will be able to toggle between pages of fancy by using `prev` and `next`
 However, the current version of fancy mode is still in beta, hence, it is expected to not be able to fully display certain commands that are too long. such as `help`, `detail`,`mc` etc. Do look forward to the next update!
-![here](../Images/Overview2.PNG)
-{end of extract} 
-The Domsun tutorial section was a result of the peer feedback during the PE Dry run. As i realised the importance of building the intuition in user to know how the app actually works, i decided to bridge the learning gap by providing a pictorial guide for the user. 
-Below shows the extract of the `mc` and `stats` section contributed by me in the User Guide. 
-{start of extract} 
+![here](../Images/Overview2.PNG)<br>
+{end of extract} <br>
+The Domsun tutorial section was a result of the peer feedback during the PE Dry run. As i realised the importance of building the intuition in user to know how the app actually works, i decided to bridge the learning gap by providing a pictorial guide for the user. <br>
+
+Below shows the extract of the `mc` and `stats` section contributed by me in the User Guide. <br>
+{start of extract} <br>
 ### `mc` - Prints MCs
 
 Typing `mc` prints the number of MCs based on selected option. By default, this command focuses on the entire module list. In order to print the MC of taken modules, do remember to enter 'focus taken' before proceeding with this command. 
@@ -130,7 +131,7 @@ Expected outcome:
 {end of extract} 
 
 ### 2.3 Contributions to DG:
-The following section shows my contribution to the DOMNUS Developer Guide. It includes: Introduction, Setting up, (Design) 4.1, 4.2, 4.5, 4.6, (Implementation) 5.2, Appendix A,B,C,D,E,F. 
+The following section shows my contribution to the DOMNUS Developer Guide. It includes: Introduction, Setting up, (Design) 4.1, 4.2, 4.5, 4.6, (Implementation) 5.2, Appendix A,B,C,D,E,F. <br>
 {start of extract}
 ### 4.1 Architecture
 The **Architecture Diagram** below represents a high-level design overview of the App. Specifically, it is done with an N-tier architectural style, where the higher layers make use of services provided by lower layers. 
@@ -166,7 +167,6 @@ During saving phase:
 ### 5.2 Statistic Feature 
 
 The statistic feature is facilitated by the StatsAction class. It extends `Action` class, and it functions under the architectural component `execute`. Internally, it stores an arraylist of Item object in `targetList`. This class implements the following operation: 
-![statsDiagram](Images/StatsActionClass.png)
  - `prepare()` - Sets `isMod` flag according to user's 
  - `act()`- Gets `targetList` and calculates the raw ratio of the completed items.
  - `roundedRatioBar()`- Returns a rounded ratio enclosed in square brackets for printing. 
@@ -349,6 +349,3 @@ Expected: Shows you the calculated cap from given input modules. <br>
 3. For UG: Wrote the 'Domnus Tutorial' section 
 4. For DG: Wrote the Introduction, Setting up, (Design) 4.1, 4.2, 4.5, 4.6, Appendix A,B,C,D,E,F
 5. Planned and recorded the first and second video demo. 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODM1NTU1NDNdfQ==
--->
