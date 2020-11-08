@@ -344,11 +344,7 @@ Expected: Shows you the calculated cap from given input modules. <br>
 3. For UG: Wrote the 'Domnus Tutorial' section 
 4. For DG: Wrote the Introduction, Setting up, (Design) 4.1, 4.2, 4.5, 4.6, Appendix A,B,C,D,E,F
 5. Planned and recorded the first and second video demo. 
-6. 
-### 2.5 Review/monitoring contributions: 
-
-### 2.6 Contributions beyond the project team:  
- **2.6.1 Community**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxODk5OTc0MCwtMjEyMjQyNTEyMV19
+eyJoaXN0b3J5IjpbLTE1NDQyODUyOTQsLTMxODk5OTc0MCwtMj
+EyMjQyNTEyMV19
 -->
