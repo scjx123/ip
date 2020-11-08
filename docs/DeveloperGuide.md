@@ -58,6 +58,23 @@ At Start Up: It calls upon the `storage` component to load user's past data and 
 At Operating: It connects the relevant component of the program to ensure the program is operating as per the intended logic flow. <br>
 At Shutdown: It exits the running loop of the program to shutdown the program successfully. <br>
 
+**4.5 Execute Layer**<br>
+The `Execute` layer carries out the relevant actions required based on the analyzed input. All of the features in the program are stored under this layer which is under the package name `command`. To summarize, this layer is responsible for: 
+
+1) Match the user's command to the relevant actions.
+2) Throw any exception based on errorneous user input/invalid conditions. 
+
+**4.6 Storage Layer**<br>
+The `Storage` layer loads, saves, and do pre-data processing before performing the two aforementioned action. It is active in 2 phases. 
+
+During loading phase: 
+1) For the user's task: This layer translates the previously (if any) saved data format into recognizable commands and loads these data as per how the app functions during runtime. 
+2) For the module list: This layer conducts simple parsing of the text file containing all the modules and stores them creates individual item known as `SingleModule` before loading them into an arraylist. 
+
+During saving phase: 
+1) For the user's task: This layer saves any changes that the user made to the task list onto a text file. 
+2) For the module list: This layer saves any module marked `TAKEN` by the user onto a text file, together with the relevant module information such as module's code, and grade attained (if any).  
+
 ### 2.4 Contributions to team-based tasks: 
 1. Retrieved a complete list of Module Data that includes its relevant details such as Module Code, MC, Prerequisites, etc. 
 2. Wrote the ModuleParser code for (which was really taxing amount of data to sieve through due to incompatible formatting from excel into text file).
@@ -70,5 +87,5 @@ At Shutdown: It exits the running loop of the program to shutdown the program su
 ### 2.6 Contributions beyond the project team:  
  **2.6.1 Community**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjI0MjUxMjFdfQ==
+eyJoaXN0b3J5IjpbMzc0ODg3NjY0LC0yMTIyNDI1MTIxXX0=
 -->
