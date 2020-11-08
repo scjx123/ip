@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>lexical</OriginalElement>
+  <nodes>
+    <node x="3.0138888888888857" y="356.0">lexical.Parser</node>
+    <node x="81.26388888888889" y="126.0">lexical.Token</node>
+    <node x="0.0" y="252.0">lexical.Lexer</node>
+    <node x="52.874999999999986" y="0.0">lexical.Types</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="0.8561946902654868" x="163.5" y="215.99999999999997" />
+  <SelectedNodes>
+    <node>lexical.Parser</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

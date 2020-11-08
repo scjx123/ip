@@ -1,135 +1,60 @@
+# Developer Guide
 
-# Chan Jian Xiang - Project Portfolio Page
+## 1. Table of content
+**1. Table of content**\
+**2. Introduction**\
+**3. Setting Up**\
+**4. Design**\
+&nbsp;&nbsp;&nbsp;4.1 Architecture\
+&nbsp;&nbsp;&nbsp;4.2 Main Layer\
+&nbsp;&nbsp;&nbsp;4.3 UI Layer\
+&nbsp;&nbsp;&nbsp;4.4 Command Interpreter Layer\
+&nbsp;&nbsp;&nbsp;4.5 Executor Layer\
+&nbsp;&nbsp;&nbsp;4.6 Storage Layer\
+&nbsp;&nbsp;&nbsp;4.7 Flow of DOMSUN\
+**5. Implementation**\
+&nbsp;&nbsp;&nbsp;5.1 Module Planner Feature\
+&nbsp;&nbsp;&nbsp;5.2 Checker Feature\
+&nbsp;&nbsp;&nbsp;5.3 Cap Caculator Feature\
+&nbsp;&nbsp;&nbsp;5.4 Reminder Feature\
+&nbsp;&nbsp;&nbsp;5.5 Postpone Feature\
+**6. Appendix A Product Scope**\
+**7. Appendix B User Stories** \
+**8. Appendix C Use Cases** \
+**9. Appendix D Non-funcitonal Requirements** \
+**10. Appendix E Glossary** \
+**11. Appendix F. Instruction for Manual Testing**
 
+## 2. Introduction
+Domsun is a CLI program that allows users to manage tasks and modules. <br>
+Users will be able to browse and select modules, create and arrange tasks, add tasks to modules,<br>
+create reminders and calculate their MCs / CAPs.
 
-## 1. Overview
-### 1.1 Project Overview 
-DOMNUS - is a desktop application that helps in module and task tracking. It was developed under the module CS2113 Software Engineering & Object Oriented Programming. Within the schedule of approximately 7 weeks, my team of 5 Computer Engineering students successfully created DOMNUS to help students to stay organize with respective to the modules they take in NUS. 
-
-
-This is what out product looks like: 
-
-## 2. Summary of Contributions
-Given below are my contributions to the project. 
-
-### 2.1 Enhancements Implemented: 
-**MC Feature**: Added the ability to list total number of MCs or the individual components that made up the MC based on the selected list.
-**What it does**: Allows the user to print the total number of MC based on the list that he/she is focusing on (i.e list of taken module). See the individual components that made up the total MC using this feature by typing `mc -d`
-**Justification**: This feature improves the product as user would want to keep track of his current taken module's MC so as to prevent overloading/under-loading of modules in the upcoming semester. 
-**Highlights**: This enhancement works well with the existing CAP calculation feature, as it allows the aforementioned feature to make use of the total MC to do further mathematical calculation of the user's CAP. This aligns with the practice of code reusability. 
-
-**Statistic Feature**: Added the ability to show the statistics of the number of task that have been completed. 
-**What it does**: Allows users to track the current completion status of their tasks. 
-**Justification**: Very often, students are not sure of how much task have been completed or how much are they left with for the week. This feature enables them to keep track of their weekly progress. 
-**Highlights**:  This feature is capable of keeping track of individual module's task progress as well. This works in conjuncture with the ability to add individual task to the modules which allow user to better track his/her progress. 
-
-**Recurrence Feature**: Added the ability to allow user to add Recurring Tasks.
-**What it does**: Allows user to add weekly recurring task such as a weekly meeting or weekly quiz. 
-**Justification**: It is common to have a weekly meeting amongst the busy students schedule. This features enables the user to do so simply by adding `Weekly` at the end of a deadline or event command. Be it a weekly quiz or weekly CCA meeting, this helps users to quickly setup a weekly schedule. 
-**Highlights**: The combination of this feature with the reminder feature done by the 2 other student Computer Engineer on our team, will enable the student using this app to plan ahead of his time for the upcoming schedule. Which is a key factor in productivity for the student. 
-
-**Code Contributed**: ![Reposense link](https://nus-cs2113-ay2021s1.github.io/tp-dashboard/#breakdown=true&search=scjx123)
-
-### 2.2 Contributions to UG: 
-The following section shows my contribution to the DOMNUS User Guide. It includes: Domsun Tutorial, mc and stats. 
-{start of extract}
-### Domsun Tutorial 
-Here is an overview of how Domsun works. It maintains 3 key lists that you should take note. 
-![here](Images/Overview1.PNG)
-
-1. `focus` command focuses the app onto the list of task that you currently have. 
-2. Likewise, `focus mod`focuses the app on the entire list of modules available in NUS, while `focus taken` is the list of taken modules of your choice. 
-3. To add a task under a module, you may enter the command `add -task 1 3 -mod CS2113`. 1 and 3 here are indices of the tasks in the task list. So be sure to have some task added BEFORE typing this command. 
-4. To mark a module as 'taken', you may enter `take CS2113 CS1010` while focusing on the module list by using `focus mod`. alternatively, you may use the indices method as before such as `take 1 4` to take the 1st and 2nd module available on the module list. 
-5. The `list` commands follows the app's current focus. If it is focusing on list of task, typing list will show all task. Likewise for modules and taken. 
-6. Typing `detail 1` when focusing on task list, will display the 1st index, task details. 
-7. Note that `detail 2` here will display different results as the two indicies of 2 represent different modules! The one on the left represents CG2027 while the one on the right represent CS1010. 
-
-**A point to note before venturing into the libraries of commands that we have.**<br>
-You can switch between fancy mode display, and plain display anytime during the program. 
-During `list` command, you will be able to toggle between pages of fancy by using `prev` and `next`
-However, the current version of fancy mode is still in beta, hence, it is expected to not be able to fully display certain commands that are too long. such as `help`, `detail`,`mc` etc. Do look forward to the next update!
-![here](Images/Overview2.PNG)
-{end of extract} 
-The Domsun tutorial section was a result of the peer feedback during the PE Dry run. As i realised the importance of building the intuition in user to know how the app actually works, i decided to bridge the learning gap by providing a pictorial guide for the user. 
-Below shows the extract of the `mc` and `stats` section contributed by me in the User Guide. 
-{start of extract} 
-### `mc` - Prints MCs
-
-Typing `mc` prints the number of MCs based on selected option. By default, this command focuses on the entire module list. In order to print the MC of taken modules, do remember to enter 'focus taken' before proceeding with this command. 
-
-Syntax:
-
-`mc [-option] [-detail]` <br>
-`option: -d(detailed)`
-
-Example of usage (when there are modules in the target): 
-
-`mc`
-
-Expected outcome:
-
-   ```  
-    ____________________________________________________________
-    Here is the total MC:
-    22
-    ____________________________________________________________
+## 3. Setting Up
+1. **Configure Intellij for JDK 11**, as described [here](https://se-education.org/guides/tutorials/intellijJdk.html).
+1. **Import the project _as a Gradle project_**, as described [here](https://se-education.org/guides/tutorials/intellijImportGradleProject.html).
+1. **Verify the set up**: After the importing is complete, locate the `src/main/java/seedu/duke/Domnus.java` file, right-click it, and choose `Run Domnus.main()`. If the setup is correct, you should see something like the below:
    ```
-Example of usage (when there are modules in the target): 
 
-`mc -d`
+    > Task :compileJava UP-TO-DATE
+    > Task :processResources UP-TO-DATE
+    > Task :classes UP-TO-DATE
+    
+    > Task :Domnus.main()
+    	____________________________________________________________
+    		Hello, I'm Domnus. What can I do for you?
+    	____________________________________________________________
+    	____________________________________________________________
+    		Here are the tasks due within 3 days: 
+    		No task within 3 days from now
+    	____________________________________________________________
 
-Expected outcome:
-
-   ```  
-    ____________________________________________________________
-    Here is the total MC:
-    EE1001: 4MCs
-    EE1001X: 4MCs
-    EE1002: 4MCs
-    EE1003: 4MCs
-    EE1111: 6MCs
-    ____________________________________________________________
    ```
-### `stats` - Prints Statistics
+   
+ Type  `bye` to ensure there is no error saving or creating a new file when exiting. Re-launch and type `help` for all commands available in the program. 
 
-Typing `stats` prints the percentage of the task completed.
+## 4. Design
 
-Syntax:
-
-`stats [-option] [-detail]` <br>
-`option: -mod` <br>
-`detail: [module code]`
-
-Example of usage (when focused on task list, and no task is completed): 
-
-`stats`
-
-Expected outcome:
-
-   ```  
-    ____________________________________________________________
-    Here are the statistics: 
-    [0.0%]
-    ____________________________________________________________
-   ```
-Example of usage (when checking specific modules, with all task completed): 
-
-`stats -mod CS2113 `
-
-Expected outcome:
-
-   ```  
-    ____________________________________________________________
-    Here are the statistics: 
-    [100.0%]
-    ____________________________________________________________
-   ```
-{end of extract} 
-
-### 2.3 Contributions to DG:
-The following section shows my contribution to the DOMNUS Developer Guide. It includes: Introduction, Setting up, (Design) 4.1, 4.2, 4.5, 4.6, (Implementation) 5.2, Appendix A,B,C,D,E,F. 
-{start of extract}
 ### 4.1 Architecture
 The **Architecture Diagram** below represents a high-level design overview of the App. Specifically, it is done with an N-tier architectural style, where the higher layers make use of services provided by lower layers. 
 
@@ -143,6 +68,23 @@ The `main` layer, it contains a single class known as `Domnus`. Its purpose can 
 At Start Up: It calls upon the `storage` component to load user's past data and it also loads the complete module list that is packaged inside the JAR file. <br>
 At Operating: It connects the relevant component of the program to ensure the program is operating as per the intended logic flow. <br>
 At Shutdown: It exits the running loop of the program to shutdown the program successfully. <br>
+
+**4.3 UI Layer**<br>
+Main gets user input and displays messages through the use of UI component. 
+The UI layer entails the package *visualize*, which contains classes *ColoredString*, *Bitmap*, *UI*, *Cli*, 
+*FancyCli* and enumerations *Color* and *Sprite* in the following structure:
+![uml](Images/Package%20visualize.png)
+
+UI's interaction with user<br>
+UI gets user input through *nextline()*, and renders strings as a user-comprehensible interface through 
+*update(String, Data)*.
+
+UI's interaction with the rest of the program<br>
+UI passes the user's input string out to the DOMNUS object, which then passes the string to the Command Interpreter layer.
+UI also reads data from the Data object for refreshing purposes, but does not modify it. 
+
+**4.4 Command Interpreter Layer**<br>
+Upon receiving command from the UI, DOMNUS would pass the entire user input into Command Interpreter (CI)
 
 **4.5 Execute Layer**<br>
 The `Execute` layer carries out the relevant actions required based on the analyzed input. All of the features in the program are stored under this layer which is under the package name `command`. To summarize, this layer is responsible for: 
@@ -161,13 +103,98 @@ During saving phase:
 1) For the user's task: This layer saves any changes that the user made to the task list onto a text file. 
 2) For the module list: This layer saves any module marked `TAKEN` by the user onto a text file, together with the relevant module information such as module's code, and grade attained (if any).  
 
-### 5.2 Statistic Feature 
+**4.7 Flow of DOMSUN**<br>
+The sequence diagram below shows the main interaction of classes with each other throughout the whole lifecycle of DOMSUM.
+![uml](Images/DOMNUS_Main_Flow.png)
 
+## 5. Implementation<br>
+This section highlights some of our project's key feature and its implementation. 
+
+### 5.1 Take Feature
+The take mechanism is facilitated by the `TakeAction` class and is extensively used by other classes via inheritance. 
+The take mechanism does the following: Comprehends user input and generate target identifiers, 
+filters the targets from data, and performs the specified operations on the targets. 
+The `TakeAction` class extends `Action` class, 
+and internally it stores an arraylist of `Item` object in `targetBackup` field to restore the disruptions to the 
+`data` object. Additionally, it implements the following operation: 
+
+ - `prepare()` - Interpret the `ParamNode` arguments and creates target identifiers for the `act()` function. 
+ In `TakeAction` the identifiers are `ArrayList` objects, `codes` and `indices`. 
+ - `act()`- Get the target items from `data` based on identifiers, do `modifyObject()` on each target, and return a 
+ `String` as the execution result for this action.
+ - `modifyObject()` - Performs the actual operation of modifying the target item. In `TakeAction`, it assigns the 
+ `isTaken` field of the target item as `true`.
+ - `getObjectInfo()` - Controls what is the text representation of the target object in the return string.
+ - `safetyCheck()`- Sets the `isBlind` flag if user's input has a void parameter tree, thereby specifying the default 
+ mode of action for this command. 
+ - `superAct()` - Returns `super.Act()`. Used as the break out node in the prototype chain for the inherited classes 
+ to be able to call the method `Act()` of the ancestor. In child classes of `TakeAction`, this method can be overloaded
+ to return `super.superAct()` to start the upward propogation.
+ - `superPrepare()` - Returns `super.Prepare()`. Used as the break out node in the prototype chain for the inherited 
+ classes to be able to call the method `Prepare()` of the ancestor. In child classes of `TakeAction`, this method can 
+ be overloaded to return `super.superPrepare()` to start the upward propogation.
+
+Given below is an example usage scenario and how the take mechanism behaves at each step. 
+
+Step 1. The user enters `take 1 2 CS2113`. Once the execute layer (`Command` object) executes the message and calls 
+`action.prepare()`, `TakeAction` will begin its `prepare()` operation.
+
+Step 2. `prepare()` calls its prototype and extracts information from the `ParamNode` tree.
+
+Step 3. `prepare()` checks if the command has a void parameter tree. If so, it calls the `safetyCheck()` method to 
+ perform the default operation (sets the `isBlind` flag and ensure that the `act()` will execute in the `blind` 
+ mode in this case). Otherwise, it parses the user parameters into `codes` or `indices` depending on 
+ the most probable interpretations, and throws a custom exception `CommandException` object in case of exceptions.
+ In this case, `1` and `2` will be added to `indices` and `CS2113` will be added to `codes`.
+
+Step 4. Next, execute layer will call `action.act()` which causes `TakeAction` to begin its `act()` operation.
+
+Step 5. `act()` stores the current state of the `data` object into its `flag` field and `targetBackup` field to prevent 
+unwanted changes to the `data` object.
+
+Step 6. `act()` enters either the `blind` mode or the `normal` mode depending on the value of `isBlind`.
+
+Step 7. If in `blind` mode, `act()` filters out all items in `data` by using the `blindSearch` flag. 
+In this case this flag is set to `Constants.SELECTED` to search through all selected items. In the children classes
+of `TakeAction`, however, this variable may be reset to other values to have different blind search behaviours. 
+Otherwise, in `normal` mode, `act()` filters out items from `data` based on identifiers, 
+in this case `codes` and `indices`.
+
+Step 8. `act()` loops through all filtered items and calls `modifyObject()` on each of them.
+
+Step 9. `modidyObject()` modifies the objects of interest, in this case by setting the `isTaken` field to true.
+
+Step 10. Depending on the result of `modifyObject()`, `act()` parses the suitable string for output through the use of 
+a `StringBuilder` object, in the process calling `getObjectInfo()` to get the textual descriptions of the targets.
+
+Step 11. `act()` restores the previous state to the `data` object using the `flag` field and the `targetBackup` field.
+
+Step 12. `act()` replaces the string `Constants.TEXT_PLACEHOLDER` in the default output string for TakeAction 
+defined in `Constants.messageMap` with the actual result string, and returns it.
+
+**Design consideration:**
+
+1. Reuseable - functions such as `modyfiObject()` can be overloaded in child classes to achieve different functions.
+1. Low coupling - `prepare()` is not aware of the program `data`, and `act()` is not aware of the user input.
+1. Uniform - `TakeAction` as well as all other actions have uniform input and outputs, and can be mapped 
+indescriminatively to any `Command` object and executed indifferently.
+
+**Aspect : How TakeAction executes**
+ - **Alternative 1 (current choice):** calls `getTarget()` method of `data` object using different flags 
+ to get wanted targets.
+    - Pros: Easy to implement and easy to read. Easily extendable by adding more flags in the `getTarget()` method.
+    - Cons: Slow. Everytime we `act()` on something, the `data` object needs to do the filtering again.
+ - **Alternative 2:** Have many different lists or maps, each stores one category of data
+    - Pros: Fast, no need filtering in most cases.
+    - Cons: Harder to implement and extend. Everytime we want a new functionality we would need to create a new list.
+
+### 5.2 Statistic Feature 
 The statistic feature is facilitated by the StatsAction class. It extends `Action` class, and it functions under the architectural component `execute`. Internally, it stores an arraylist of Item object in `targetList`. This class implements the following operation: 
 
  - `prepare()` - Sets `isMod` flag according to user's 
  - `act()`- Gets `targetList` and calculates the raw ratio of the completed items.
  - `roundedRatioBar()`- Returns a rounded ratio enclosed in square brackets for printing. 
+
 Given below is an example usage scenario and how the statistic mechanism behaves at each step. 
 
 Step 1. The user enters `stats -mod CS2113`	once the execute layer executes the message and calls `action.prepare()` class, `StatsAction` will begin its `prepare()` operation
@@ -194,6 +221,153 @@ Step 7. Now `StatsAction` is completed and it will return this string back to `C
  - **Alternative 2:** initialize statistics as zero and each task contains an aspect called statistics
 	 - Pros: Will use less memory since the task itself will be deleted. 
 	 - Cons: Stats will be updated constantly even though we do not need it. 
+
+### 5.3 CAP calculator feature
+
+This feature extends `Action` to execute command given by the user, output are then passed on to `Ui` for display. 
+Additionally, it implements the following operations:
+
+* `CalculateCapAction#act()` - Calculate the user CAP based on stored user grades / input modules.
+* `CalculateCapAction#prepare()` - Parse user command to suitable parameter for `CalculateCapAction#act()` function.
+
+Given below is an example usage scenario and how thecap calculator mechanism behaves at each step.
+
+Step 1. The user executes `cap` command find his current CAP grade. Command is then parsed by `CalculateCapAction#prepare()` to be passed as arguments for `CalculateCapAction#act()`.
+
+Step 2. `CalculateCapAction#act()` retrieves data from the stored user's grades.
+
+Step 3. `CalculateCapAction#act()` then retrieves module data from the `modulelist.txt` to determine Modular Credit (MC) allocation.
+
+Step 4. CAP value is calculated and returned to the user through `Ui`.
+
+The following activity diagram summarizes what happens when a user executes a new command:
+
+![cap uml diagram](Images/CalculateCapSequence.png)
+
+### 5.4 Reminder Feature
+
+The proposed reminder mechanism is facilitated by `ReminderAction`. It extends `Action` and the output is passed onto `UI` for display. Additionally, it implements the following operations:
+
+* `ReminderAction#act()`- List out the deadlines and events tasks that are due within 3 days
+
+Given below is an example usage scenario and how the reminder mechanism behaves at each step.
+
+Step 1. The user executes `reminder` command to list out tasks due within 3 days. Command is then parsed by `ReminderAction#act()`.
+
+Step 2. `ReminderAction#act` retrieves tasklist data from the user's list
+
+Step 3. `ReminderAction#act` then sorts the due dates in ascending order
+
+Step 4: Tasks due within 3 days are returned to the user through Ui
+
+The following sequence diagram diagram shows how the reminder operation works
+
+![Reminder_Sequence_Diagram](Images/ReminderAction_Sequence_Diagram.png)
+
+### 5.5 Remind Feature
+
+Another proposed manual reminder mechanism is facilitated by `RemindAction`. It extends `Action` to execute command given by the user, output are then passed on to `Ui` for display. 
+Additionally, it implements the following operations:
+
+* `RemindAction#act()` - Set the reminder to be executed on the chosen time.
+* `RemindAction#prepare()` - Parse user command to suitable parameter for `RemindAction#act()` function.
+* `RemindAction#getSchedule` - Returns the schedule set by the user.
+
+Given below is an example usage scenario and how the remind mechanism behaves at each step.
+
+Step 1. The user executes `remind [time]` command to set schedule for the reminder. Command is then parsed by `RemindAction#prepare()` to be passed as arguments for `RemindAction#act()`.
+
+Step 2. `RemindAction#act()` calls `RemindAction#getSchedule` to pass the schedule later in `Ui`.
+
+Step 3. The schedule is returned to the user through `Ui`.
+
+The following activity diagram summarizes what happens when a user executes a new command:
+
+![Postpone_Sequence_Diagram](Images/Remind.png)
+
+### 5.6 Snooze Feature
+
+The proposed snooze mechanism is facilitated by `SnoozeAction`. It extends `Action` to execute command given by the user, output are then passed on to `Ui` for display. 
+Additionally, it implements the following operations:
+
+* `RemindAction#getNewInterval` - Returns the new interval set by the user.
+
+Given below is an example usage scenario and how the snooze mechanism behaves at each step.
+
+Step 1. The user executes `snooze` command to snooze for the reminder. 
+
+Step 2. `SnoozeAction#getNewInterval` sets and returns the new interval.
+
+Step 3. The new interval is returned to the user through `Ui`.
+
+The following activity diagram summarizes what happens when a user executes a new command:
+
+![Postpone_Sequence_Diagram](Images/Snooze.png)
+
+### 5.8 Postpone Feature
+
+The proposed undo/redo mechanism is facilitated by `PostponeAction`. It extends `Action` to execute command given by the user, output are then passed on to `Ui` for display. 
+Additionally, it implements the following operations:
+
+* `PostponeAction#act()` - Postpone the deadline or event task by the chosen parameter.
+* `PostponeAction#prepare()` - Parse user command to suitable parameter for `PostponeAction#act()` function.
+
+Given below is an example usage scenario and how the postpone mechanism behaves at each step.
+
+Step 1. The user executes `postpone [index]` command to postpone the targeted task. Command is then parsed by `PostponeAction#prepare()` to be passed as arguments for `PostponeAction#act()`.
+
+Step 2. `PostponeAction#act()` re-sets the date of the targeted task from the stored user's tasks by default a day.
+
+Step 3. `PostponeAction#act()` then updates the stored user's data.
+
+Step 4. Postponed target task is returned to the user through `Ui`.
+
+The following activity diagram summarizes what happens when a user executes a new command:
+
+![Postpone_Sequence_Diagram](Images/PostponeAction_Sequence_Diagram.png)
+
+### 5.7 Grade feature
+
+This extends `TakeAction` to register modules as `isTaken` from `moduleList.txt`, output are then passed on to `Ui` for display. 
+Additionally, it implements the following operations:
+
+* `GradeAction#act()` - Calculate the user CAP based on stored user grades / input modules.
+* `GradeAction#prepare()` - Parse user command to suitable parameter for `GradeAction#act()` function.
+
+Given below is an example usage scenario and how the grade feature mechanism behaves at each step.
+
+Step 1. The user executes `grade GER1000 A-` command find his current CAP grade. Command is then parsed by `GradeAction#prepare()` to be passed as arguments for `GradeAction#act()`.
+
+Step 2. `GradeAction#act()` takes in data prepared by `GradeAction#prepare()`.
+
+Step 3. `GradeAction#act()` then retrieves module data from the `modulelist.txt` to determine module details.
+
+Step 4. Grade is attributed to the corresponding modules and response message is returned to the user through `Ui`.
+
+The following activity diagram summarizes what happens when a user executes a new command:
+
+![Grade_Sequence_Diagram](Images/GradeSequence.png)
+
+### 5.8 Focus Feature
+
+The proposed focus mechanism is facilitated by `FocusAction`. It extends `Action` to execute command given by the user, output are then passed on to `Ui` for display. 
+Additionally, it implements the following operations:
+
+* `FocusAction#act()` - Sets the task flag by the chosen parameter.
+* `FocusAction#prepare()` - Parse user command to suitable parameter for `PostponeAction#act()` function.
+
+Given below is an example usage scenario and how the focus mechanism behaves at each step.
+
+Step 1. The user executes `focus [task type]` command to filter based on task type. Command is then parsed by `FocusAction#prepare()` to be passed as arguments for `FocusAction#act()`.
+
+Step 2. `FocusAction#act()` then sets flag in the data.
+
+Step 3. Changed context is returned to inform the user through `Ui`.
+
+The following activity diagram summarizes what happens when a user executes a new command:
+
+![Postpone_Sequence_Diagram](Images/Focus.png)
+
 ## Appendix A. Product scope
 ### Target user profile
 
@@ -335,16 +509,3 @@ Test cases: `cap`<br>
 Expected: Shows you the calculated cap from stored useer data. <br>
 Test cases: `cap -m CS2113 A+ EE2026 B CS1010 B-`<br>
 Expected: Shows you the calculated cap from given input modules. <br>
-{End of extract} 
-
-
-### 2.4 Contributions to team-based tasks: 
-1. Retrieved a complete list of Module Data that includes its relevant details such as Module Code, MC, Prerequisites, etc. 
-2. Wrote the ModuleParser code for (which was really taxing amount of data to sieve through due to incompatible formatting from excel into text file).
-3. For UG: Wrote the 'Domnus Tutorial' section 
-4. For DG: Wrote the Introduction, Setting up, (Design) 4.1, 4.2, 4.5, 4.6, Appendix A,B,C,D,E,F
-5. Planned and recorded the first and second video demo. 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDQyODUyOTQsLTMxODk5OTc0MCwtMj
-EyMjQyNTEyMV19
--->
