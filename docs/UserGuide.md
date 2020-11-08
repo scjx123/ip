@@ -1,5 +1,6 @@
 # User Guide
-![here](Images/Logo.PNG)
+![here](Images/Logo.PNG)png)
+
 ## Introduction
 
 Domsun is a **Desktop Command Line Interface (CLI) program that allows users to manage tasks and modules.** <br>
@@ -62,7 +63,7 @@ create reminders, calculate and set goals for their MCs / CAPs.
 ### Running the program
 
 Open your command line or terminal and navigate to the folder where you downloaded the jar file (e.g., `~/downloads`). 
-Then simply run the command `java -jar domsun.jar`:
+Then simply run the comman ` -jaomsun.jar`:
 
 ```batch
 $ cd ~/downloads
@@ -75,7 +76,7 @@ $ java -jar domsun.jar
 
 ### Domsun Tutorial 
 Here is an overview of how Domsun works. It maintains 3 key lists that you should take note. 
-![here](Images/Overview1.PNG)
+![here](Images/Overview1pic2.PNG)
 
 1. `focus` command focuses the app onto the list of task that you currently have. 
 2. Likewise, `focus mod`focuses the app on the entire list of modules available in NUS, while `focus taken` is the list of taken modules of your choice. 
@@ -89,11 +90,14 @@ Here is an overview of how Domsun works. It maintains 3 key lists that you shoul
 You can switch between fancy mode display, and plain display anytime during the program. 
 During `list` command, you will be able to toggle between pages of fancy by using `prev` and `next`
 However, the current version of fancy mode is still in beta, hence, it is expected to not be able to fully display certain commands that are too long. such as `help`, `detail`,`mc` etc. Do look forward to the next update!
-![here](Images/Overview2.PNG)
+![here](Images/Overview2 etes 
 
-## Features 
 
-### Addition and removal of tasks
+
+Features . 
+. N
+
+#### Addition and removal of tasks
 The program allows user to add or delete tasks from the task list.<br>
 The program also provides shortcuts such as the `clear` command to delete tasks quickly.
 
@@ -112,9 +116,9 @@ The *time* field consists of a *date* part (such as `Oct 13 1998`), and a *time*
 ### Fuzzy parsing
 The program fuzzily parses user's inputs with respect to date and time.<br>
 Supports any date format delimited by `" "`, `-` and `/`, with days, months and years in any order, such as 
-`"Oct 13 1998"`, `13/10/1998` and `1998-10-13`.<br>
-Supports any time format delimited by `:` in 1 or 2 digits, such as
-`1:1:0`, `01:01:00`, `1:01` and `01:1`. Does not support the notations "am" or "pm".
+`"Oct 13 1998"`, `13/10/193/98` and `1998-10-13`.<br>
+Supports any time format delimited by `:` in 1 or 2 digits, such as13
+`1:1:0`, `01:01:00`, `1:01` and, `01:1`. Does not support the notations "am" or c.
 
 ### Auto-save and auto-load
 The program saves the tasks list automatically every time the list changes. <br>
@@ -194,15 +198,15 @@ Expected outcome:
     ____________________________________________________________
    ```
 
-   ```
-    ____________________________________________________________
-        Noted. I've removed this task:
-        [D][X] ddl (by: Sep 15 2021 01:12)
-        Now you have 0 tasks in the list.
+ in the list.
     ____________________________________________________________
    ```
 
-### `event` - Add an event to the task list
+### `event   ```
+    ____________________________________________________________
+         task:
+        [D][X] ddl (by: Sep 15 2021 01:12)
+        Now you have 0 tasks` - Add an event to the task list
 
 Typing `event` allows the program to parse user's input and create an ***event*** object with 
 specified *description* and *time*. It will be appended to the end of the task list.
@@ -251,7 +255,7 @@ Expected outcome:
 
    ```  
     ____________________________________________________________
-        Here is the list of tasks:
+        Here is the list ofNoted. I've removed this tasks:
         1.[D][X] math exam (by: Oct 15 2020 10:30)
         2.[D][X] CS exam (by: Oct 18 2020 15:00)
         3.[E][X] exam review session (at: Oct 01 2020 08:00)
@@ -328,7 +332,7 @@ Expected outcome:
    ```  
     ____________________________________________________________
         Nice! I've marked this task as undone:
-        [D][X] math exam (by: Oct 15 2020 10:30)
+        [DE][X] math exam (by: Oct 15 2020 10:30)
     ____________________________________________________________
    ```
 
@@ -550,7 +554,10 @@ Typing `sel` selects the items specified.
 Syntax:
 
 `sel [index(es) (for the currently listed items) / module code(s) (for modules only)]`
-
+ed on selected option.
+        Use "help [target]" to see details :) Try "help help"!
+    ____________________________________________________________
+   ```
 Example of usage: 
 
 `sel 1 2 3`
@@ -564,6 +571,7 @@ Expected outcome:
     Item 2: eat
     Item 3: jumping
     ____________________________________________________________
+
    ```
 
 
@@ -596,7 +604,11 @@ Typing `detail` prints the details of a specified item.
 
 Syntax:
 
-`detail [module code (for modules only) / index]`
+`detail [module code (for modules only) / index]
+        2.[D][X] CS exam (by: Oct 18 2020 15:00)
+        3.[E][X] exam review session (at: Oct 01 2020 08:00)
+    ____________________________________________________________
+   ```
 
 Example of usage: 
 
@@ -606,8 +618,11 @@ Expected outcome:
 
    ```  
     ____________________________________________________________
-    Here are the details you requested:
-    Item 1: [T][X] borrow book
+    Here areis the details you requested:
+    Item 1: [T][X] borrow booklist of tasks:
+        1.[E][X] exam review session (at: Oct 01 2020 08:00)
+        2.[D][X] math exam (by: Oct 15 2020 10:30)
+        3.[D][X] CS exam (by: Oct 18 2020 15:00)
     ____________________________________________________________
    ```
 
@@ -627,7 +642,8 @@ Expected outcome:
     ramming paradigm. Students of this module will receive hands-on practice of tools commonly used in t
     he industry, such as test automation tools, build automation tools, and code revisioning tools will 
     be covered.
-    Tasks: [NOT FOUND]
+    Tasks: [NOT FOUND]    Here is the list of tasks:
+        1.[D][X] math exam (by: Oct 15 2020 10:30)
     ____________________________________________________________
    ```
 
@@ -995,11 +1011,34 @@ Syntax:
 
 Example of usage: 
 
-`help`
+`hel`
 
 Expected outcome:
 
+   ```  
+    ____________________________________________________________
+    I have selected the items you specified:
+    Item 1: borrow book
+    Item 2: eat
+    Item 3: jumping
+    ____________________________________________________________
    ```
+
+### `take` - Take module
+
+Typing `take` marks specified module(s) as taken.
+
+Syntax:
+
+`take [index(es) / module code(s) (for modules only)]`
+
+Example of usage: 
+
+`helptake CS2113 CS2113T`
+
+Expected outcome:
+
+   ```  
     ____________________________________________________________
         Here are all available commands:
         Command: bye  Description: Quit the program
@@ -1080,7 +1119,22 @@ The plain mode shows correctly on all terminals.
 
 Syntax:
 
-`plain`
+`plain   ```  
+    ____________________________________________________________
+        Got it. I've added this task:
+        [T][X] class
+        Now you have 1 tasks in the list.
+    ____________________________________________________________
+   ```
+
+### `undone` - Mark a task as undone
+
+Typing `undone` allows the user to mark the task at a specified *index* as **undone**.<br>
+Note: *index* can be an integer number or a letter (`A` or `a` corresponds to 1).
+
+Syntax:
+
+`undone [index]`
 
 Example of usage: 
 
@@ -1175,17 +1229,23 @@ Expected outcome:
 ### `bye` - Quit the program
 
 Typing `bye` results in the program saving the current task list to a local file named 
-`./data/duke.txt`, and then quitting the program.
+`./data/duke.txt`, and then quitting the program.unsel` - Unselect items
+
+Typing `unsel` marks items specified as unselected.
+
+Syntax:
+
+`unsel [index(es) (for the currently listed items) / module code(s) (for modules only)]`
 
 Example of usage: 
 
-`bye`
+``
 
 Expected outcome:
 
    ```  
     ____________________________________________________________
-        Bye. Hope to see you again soon!
+    
     ____________________________________________________________
    ```
 
@@ -1233,7 +1293,7 @@ A cheat sheet of commonly used commands:
 |**event**|`event [description] -at [time]`|`event concert -at May 13 2020 8:00`|
 |**list**|`list date [asc / desc / spec “date”]`|`list date asc`|
 |**done**|`done [index]`|`done 2`|
-|**undone**|`undone [index]`|`undone 2`|
+|**undone**|`undondelete [index]`|`undone 2`|
 |**find**|`find [keyword]`|`find exam`|
 |**postpone**| `postpone [index]`|`postpone 1`|
 |**reminder**|`reminder [on/off]` |`reminder`|
@@ -1269,3 +1329,6 @@ A cheat sheet of commonly used commands:
 |**next**|`next [option]`|`next`|
 |**prev**|`prev [option]`|`prev`|
 |**bye**|`bye`||
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNDYzOTEzMjQ1XX0=
+-->
