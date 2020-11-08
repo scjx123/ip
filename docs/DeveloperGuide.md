@@ -54,8 +54,77 @@ However, the current version of fancy mode is still in beta, hence, it is expect
 The Domsun tutorial section was a result of the peer feedback during the PE Dry run. As i realised the importance of building the intuition in user to know how the app actually works, i decided to bridge the learning gap by providing a pictorial guide for the user. 
 Below shows the extract of the `mc` and `stats` section contributed by me in the User Guide. 
 {start of extract} 
-mc 
-stats
+### `mc` - Prints MCs
+
+Typing `mc` prints the number of MCs based on selected option. By default, this command focuses on the entire module list. In order to print the MC of taken modules, do remember to enter 'focus taken' before proceeding with this command. 
+
+Syntax:
+
+`mc [-option] [-detail]` <br>
+`option: -d(detailed)`
+
+Example of usage (when there are modules in the target): 
+
+`mc`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+    Here is the total MC:
+    22
+    ____________________________________________________________
+   ```
+Example of usage (when there are modules in the target): 
+
+`mc -d`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+    Here is the total MC:
+    EE1001: 4MCs
+    EE1001X: 4MCs
+    EE1002: 4MCs
+    EE1003: 4MCs
+    EE1111: 6MCs
+    ____________________________________________________________
+   ```
+### `stats` - Prints Statistics
+
+Typing `stats` prints the percentage of the task completed.
+
+Syntax:
+
+`stats [-option] [-detail]` <br>
+`option: -mod` <br>
+`detail: [module code]`
+
+Example of usage (when focused on task list, and no task is completed): 
+
+`stats`
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+    Here are the statistics: 
+    [0.0%]
+    ____________________________________________________________
+   ```
+Example of usage (when checking specific modules, with all task completed): 
+
+`stats -mod CS2113 `
+
+Expected outcome:
+
+   ```  
+    ____________________________________________________________
+    Here are the statistics: 
+    [100.0%]
+    ____________________________________________________________
+   ```
 {end of extract} 
 
 ### 2.3 Contributions to DG:
@@ -281,5 +350,5 @@ Expected: Shows you the calculated cap from given input modules. <br>
 ### 2.6 Contributions beyond the project team:  
  **2.6.1 Community**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwODI2NDgxMCwtMjEyMjQyNTEyMV19
+eyJoaXN0b3J5IjpbNDE1MjgxMTg0LC0yMTIyNDI1MTIxXX0=
 -->
