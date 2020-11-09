@@ -136,7 +136,7 @@ The following section shows my contribution to the DOMNUS Developer Guide. It in
 ### 4.1 Architecture
 The **Architecture Diagram** below represents a high-level design overview of the App. Specifically, it is done with an N-tier architectural style, where the higher layers make use of services provided by lower layers. 
 
-![here](Images/Architecture_Diagram.PNG)
+![here](../Images/Architecture_Diagram.PNG)
 
 As shown in the above diagram, the user only interacts with the UI layer and their commands, in turn, will be passed to the next adjacent layer. Given below is a quick overview of each component. 
 
@@ -188,7 +188,7 @@ Step 6. This ratio will be passed into `roundedRatioBar` to return *String* of a
 
 Step 7. Now `StatsAction` is completed and it will return this string back to `Command` to store it under the String variable `result`. The `Main` layer will retrieve `result`, before passing it onto `UI` layer for printing. 
 
-![statsDiagram](Images/StatsAction.png)
+![statsDiagram](../Images/StatsAction.png)
 
 **Design consideration:**
 
